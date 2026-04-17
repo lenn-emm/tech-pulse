@@ -1,29 +1,6 @@
 const { createClient } = supabase;
 const sb = createClient(window.ENV.SUPABASE_URL, window.ENV.SUPABASE_ANON_KEY);
 
-// ── Burger Menu ──────────────────────────────────────────────────────────────
-
-function initMenu() {
-  const burger = document.getElementById('burger');
-  const menu = document.getElementById('menu');
-  if (!burger || !menu) return;
-
-  burger.addEventListener('click', () => {
-    const open = burger.classList.toggle('open');
-    menu.classList.toggle('open', open);
-    burger.setAttribute('aria-expanded', open);
-    document.body.style.overflow = open ? 'hidden' : '';
-  });
-
-  menu.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      burger.classList.remove('open');
-      menu.classList.remove('open');
-      document.body.style.overflow = '';
-    });
-  });
-}
-
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
 function formatDate(iso) {
@@ -178,7 +155,6 @@ function escAttr(url) {
 // ── Init ─────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
-  initMenu();
   loadCurrentEdition();
   loadArchive();
 });
