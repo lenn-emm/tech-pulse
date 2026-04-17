@@ -14,7 +14,7 @@
   </script>
 </head>
 <body>
-  <nav>
+  <nav class="topnav">
     <a class="nav-logo" href="index.html">Tech Pulse</a>
     <button class="burger" id="burger" aria-label="Menü" aria-expanded="false" aria-controls="menu">
       <span></span><span></span><span></span>
@@ -29,6 +29,14 @@
   <main>
     <div id="edition-container"></div>
   </main>
+
+  <a class="fab" href="archive.html" aria-label="Zum Archiv">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="4" width="18" height="5" rx="1"/>
+      <path d="M5 9v10a1 1 0 001 1h12a1 1 0 001-1V9"/>
+      <path d="M10 14h4"/>
+    </svg>
+  </a>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="app.js"></script>
