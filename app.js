@@ -73,7 +73,6 @@ async function loadCurrentEdition() {
 
   setContent(container, `
     <header class="edition-header">
-      <p class="edition-label">Aktuelle Edition</p>
       <h1 class="edition-title">${escHtml(edition.title)}</h1>
       <p class="edition-date">${formatDate(edition.edition_date)}</p>
       ${edition.summary ? `<p class="edition-summary">${escHtml(edition.summary)}</p>` : ''}
