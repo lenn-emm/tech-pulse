@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Pulse</title>
+  <meta name="description" content="KI-kuratierte Tech-News — die wichtigsten KI-Meldungen der Woche." />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.ENV = {
+      SUPABASE_URL: "https://rjmyjuejdhcnijerwwwe.supabase.co",
+      SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJqbXlqdWVqZGhjbmlqZXJ3d3dlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0Mjg4NDMsImV4cCI6MjA5MjAwNDg0M30.21k5mfWbccw8wI4wbilQdt0Vp6qA2-3Ki-pOGkmDHJw"
+    };
+  </script>
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="index.html">Tech Pulse</a>
+    <button class="burger" id="burger" aria-label="Menü" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="menu-overlay" id="menu" role="dialog" aria-label="Navigation">
+    <a href="index.html" class="active">Aktuelle Edition</a>
+    <a href="archive.html">Archiv</a>
+  </div>
+
+  <main>
+    <div id="edition-container"></div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>
