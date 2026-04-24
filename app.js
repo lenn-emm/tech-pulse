@@ -89,11 +89,12 @@ function renderHero(a) {
 function renderFeature(a) {
   const url = escAttr(a.source_url);
   const img = safeUrl(a.image_url);
+  const zoneLabel = a.zone ? escHtml(ZONE_LABELS[a.zone] || a.zone) : '';
   return `
-    <a href="${url}" target="_blank" rel="noopener noreferrer" class="mod-feature">
-      ${img ? `<div class="feature-img">${imgTag(img, true)}</div>` : ''}
+    <a href="${url}" target="_blank" rel="noopener noreferrer" class="mod-feature${img ? '' : ' no-image'}">
+      ${img ? `<div class="feature-img">${imgTag(img, true)}</div><div class="feature-overlay"></div>` : ''}
       <div class="feature-body">
-        ${zoneBadge(a.zone)}
+        ${zoneLabel ? `<span class="feature-zone-label">${zoneLabel}</span>` : ''}
         <h3 class="feature-title">${escHtml(a.title)}</h3>
         ${a.summary ? `<p class="feature-summary">${escHtml(a.summary)}</p>` : ''}
         <div class="feature-meta">
@@ -324,39 +325,39 @@ async function loadVideos() {
     )
   );
 
-  const sections = CHANNELS.map((ch, i) => {
-    const videos = results[i].data;
-    if (!videos?.length) return '';
+  const channelVideos = results.map((r, i) =>
+    (r.data || []).map(v => ({ ...v, channelName: CHANNELS[i].name }))
+  );
 
-    const cards = videos.map(v => {
-      const thumb = `https://img.youtube.com/vi/${escHtml(v.video_id)}/maxresdefault.jpg`;
-      const url = `https://www.youtube.com/watch?v=${escHtml(v.video_id)}`;
-      return `
-        <a href="${url}" target="_blank" rel="noopener noreferrer" class="video-card">
-          <div class="video-thumb">
-            <img src="${thumb}" alt="" loading="lazy">
-            <div class="video-play">▶</div>
-          </div>
-          <div class="video-body">
-            <h3 class="video-title">${escHtml(v.title)}</h3>
-            <p class="video-date">${formatDate(v.published_at)}</p>
-          </div>
-        </a>`;
-    }).join('');
+  const maxLen = Math.max(...channelVideos.map(v => v.length));
+  const interleaved = [];
+  for (let i = 0; i < maxLen; i++) {
+    channelVideos.forEach(videos => { if (videos[i]) interleaved.push(videos[i]); });
+  }
 
+  if (!interleaved.length) return '';
+
+  const cards = interleaved.map(v => {
+    const thumb = `https://img.youtube.com/vi/${escHtml(v.video_id)}/maxresdefault.jpg`;
+    const url = `https://www.youtube.com/watch?v=${escHtml(v.video_id)}`;
     return `
-      <div class="video-channel-section">
-        <p class="video-channel-label">${escHtml(ch.name)}</p>
-        <div class="video-grid video-grid-3">${cards}</div>
-      </div>`;
-  }).filter(Boolean);
-
-  if (!sections.length) return '';
+      <a href="${url}" target="_blank" rel="noopener noreferrer" class="video-card">
+        <div class="video-thumb">
+          <img src="${thumb}" alt="" loading="lazy">
+          <div class="video-play">▶</div>
+          <span class="video-channel-badge">${escHtml(v.channelName)}</span>
+        </div>
+        <div class="video-body">
+          <h3 class="video-title">${escHtml(v.title)}</h3>
+          <p class="video-date">${formatDate(v.published_at)}</p>
+        </div>
+      </a>`;
+  }).join('');
 
   return `
     <section class="video-pulse">
       <p class="video-pulse-label">Video Pulse</p>
-      ${sections.join('')}
+      <div class="video-carousel">${cards}</div>
     </section>`;
 }
 
@@ -381,10 +382,59 @@ function initNav() {
   });
 }
 
+// ── Card expand sheet ─────────────────────────────────────────────────────────
+
+function initCardSheet() {
+  const sheet = document.createElement('div');
+  sheet.className = 'card-sheet';
+  sheet.innerHTML = `
+    <div class="card-sheet-backdrop"></div>
+    <div class="card-sheet-panel">
+      <div class="card-sheet-handle"></div>
+      <div class="card-sheet-body"></div>
+      <a class="card-sheet-cta" target="_blank" rel="noopener noreferrer">Zum Artikel ↗</a>
+    </div>`;
+  document.body.appendChild(sheet);
+
+  function closeSheet() {
+    sheet.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  sheet.querySelector('.card-sheet-backdrop').addEventListener('click', closeSheet);
+  sheet.querySelector('.card-sheet-handle').addEventListener('click', closeSheet);
+
+  document.addEventListener('click', e => {
+    const card = e.target.closest('.mod-feature, .mod-hero');
+    if (!card || e.target.closest('.card-sheet')) return;
+
+    const summaryEl = card.querySelector('.feature-summary, .hero-summary');
+    const isTruncated = summaryEl && summaryEl.scrollHeight > summaryEl.clientHeight + 4;
+    if (!isTruncated) return;
+
+    e.preventDefault();
+
+    const zone = card.querySelector('.feature-zone-label, .hero-zone')?.textContent.trim() || '';
+    const title = card.querySelector('.feature-title, .hero-title')?.textContent.trim() || '';
+    const summary = summaryEl?.textContent.trim() || '';
+    const source = card.querySelector('.source-link, .hero-source')?.textContent.trim() || '';
+
+    sheet.querySelector('.card-sheet-body').innerHTML = `
+      ${zone ? `<span class="card-sheet-zone">${escHtml(zone)}</span>` : ''}
+      <h2 class="card-sheet-title">${escHtml(title)}</h2>
+      <p class="card-sheet-summary">${escHtml(summary)}</p>
+      ${source ? `<p class="card-sheet-source">${escHtml(source)}</p>` : ''}`;
+    sheet.querySelector('.card-sheet-cta').href = card.href;
+    sheet.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+}
+
 // ── Init ──────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
+  initCardSheet();
   loadCurrentEdition();
   loadArchive();
 });
