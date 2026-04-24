@@ -24,7 +24,7 @@ jobs:
 
           CHANNELS = [
             ('UCv90NdTyTp7ZPPRvvSZaS5w', 'Digitale Profis'),
-            ('UC3oNi6PDOFqEmeg7oqAeumg', 'On the Way to New Work'),
+            ('UCDx6L69jmKBJbNu5GnkCilg', 'Christoph Magnussen'),
           ]
 
           NS = {
