@@ -20,3 +20,17 @@ ALTER TABLE articles
 -- Schnellerer Zugriff auf Hero-Artikel je Edition (Archiv-Seite)
 CREATE INDEX IF NOT EXISTS articles_format_edition_idx
   ON articles (edition_id, format);
+
+-- ── Video Pulse — Migration v3 ──────────────────────────────────────────────
+
+CREATE TABLE IF NOT EXISTS videos (
+  id           UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  channel_id   TEXT NOT NULL,
+  channel_name TEXT NOT NULL,
+  video_id     TEXT NOT NULL UNIQUE,
+  title        TEXT NOT NULL,
+  published_at TIMESTAMPTZ NOT NULL,
+  created_at   TIMESTAMPTZ DEFAULT now()
+);
+
+CREATE INDEX IF NOT EXISTS videos_published_idx ON videos (published_at DESC);
