@@ -107,9 +107,9 @@ function renderFeature(a) {
 function renderStandard(a, spanClass) {
   const url = escAttr(a.source_url);
   const img = safeUrl(a.image_url);
-  const cls = spanClass ? `mod-standard ${spanClass}` : 'mod-standard';
+  const classes = ['mod-standard', spanClass, !img && a.zone ? `zone-accent-${a.zone}` : ''].filter(Boolean).join(' ');
   return `
-    <a href="${url}" target="_blank" rel="noopener noreferrer" class="${cls}">
+    <a href="${url}" target="_blank" rel="noopener noreferrer" class="${classes}">
       ${img ? `<div class="standard-img">${imgTag(img, true)}</div>` : ''}
       <div class="standard-body">
         ${zoneBadge(a.zone)}
@@ -231,7 +231,6 @@ async function loadCurrentEdition() {
   container.innerHTML = `
     <div class="edition-intro">
       ${edition.edition_date ? `<p class="edition-eyebrow">${formatDate(edition.edition_date)}</p>` : ''}
-      <h1 class="edition-title">${escHtml(edition.title)}</h1>
       ${edition.summary ? `<p class="edition-summary">${escHtml(edition.summary)}</p>` : ''}
     </div>
     ${hero ? renderHero(hero) : ''}
