@@ -228,6 +228,8 @@ async function loadCurrentEdition() {
   const hero = list.find(a => a.format === 'hero');
   const rest = list.filter(a => a.format !== 'hero');
 
+  const videosHtml = await loadVideos();
+
   container.innerHTML = `
     <div class="edition-intro">
       ${edition.edition_date ? `<p class="edition-eyebrow">${formatDate(edition.edition_date)}</p>` : ''}
@@ -235,6 +237,7 @@ async function loadCurrentEdition() {
     </div>
     ${hero ? renderHero(hero) : ''}
     ${rest.length ? buildGrid(rest) : ''}
+    ${videosHtml}
   `;
 }
 
@@ -301,6 +304,42 @@ async function loadArchive() {
     <div class="archive-header"><h1>Archiv</h1></div>
     <div class="archive-list">${items}</div>
   `;
+}
+
+// ── Video Pulse ───────────────────────────────────────────────────────────────
+
+async function loadVideos() {
+  const { data: videos } = await sb
+    .from('videos')
+    .select('*')
+    .order('published_at', { ascending: false })
+    .limit(4);
+
+  if (!videos?.length) return '';
+
+  const cards = videos.map(v => {
+    const thumb = `https://img.youtube.com/vi/${escHtml(v.video_id)}/maxresdefault.jpg`;
+    const url = `https://www.youtube.com/watch?v=${escHtml(v.video_id)}`;
+    const date = formatDate(v.published_at);
+    return `
+      <a href="${url}" target="_blank" rel="noopener noreferrer" class="video-card">
+        <div class="video-thumb">
+          <img src="${thumb}" alt="" loading="lazy">
+          <div class="video-play">▶</div>
+        </div>
+        <div class="video-body">
+          <p class="video-channel">${escHtml(v.channel_name)}</p>
+          <h3 class="video-title">${escHtml(v.title)}</h3>
+          <p class="video-date">${date}</p>
+        </div>
+      </a>`;
+  }).join('');
+
+  return `
+    <section class="video-pulse">
+      <p class="video-pulse-label">Video Pulse</p>
+      <div class="video-grid">${cards}</div>
+    </section>`;
 }
 
 // ── Nav burger ────────────────────────────────────────────────────────────────
