@@ -148,35 +148,23 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 48px;
   padding-bottom: 36px;
   border-bottom: 1px solid var(--border);
-  max-width: 760px;
+  max-width: 720px;
 }
 
 .edition-eyebrow {
   font-size: 13px;
   font-weight: 500;
   color: var(--gray);
-  margin-bottom: 10px;
-}
-
-.edition-title {
-  font-size: clamp(32px, 5vw, 52px);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.05;
-  color: var(--text);
-  margin-bottom: 12px;
-}
-
-.edition-date {
-  font-size: 14px;
-  color: var(--gray);
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+  letter-spacing: 0.01em;
 }
 
 .edition-summary {
-  font-size: clamp(16px, 2vw, 19px);
-  line-height: 1.65;
-  color: #3a3a3c;
+  font-size: clamp(18px, 2.2vw, 22px);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text);
+  letter-spacing: -0.01em;
 }
 
 /* ── Hero module ── */
@@ -275,6 +263,7 @@ a { color: inherit; text-decoration: none; }
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr;
+  align-items: start;
 }
 
 @media (min-width: 768px) {
@@ -292,12 +281,12 @@ a { color: inherit; text-decoration: none; }
   background: var(--gray-light);
   border-radius: var(--radius);
   overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
 .mod-feature:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.12);
 }
 
 .mod-feature:hover .feature-img img { transform: scale(1.04); }
@@ -358,20 +347,27 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
 .mod-standard:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.1);
 }
 
 .mod-standard:hover .standard-img img { transform: scale(1.04); }
+
+/* Zone accent stripe on image-less cards */
+.zone-accent-core     { border-top: 3px solid var(--accent); }
+.zone-accent-adjacent { border-top: 3px solid #7c3aed; }
+.zone-accent-outside  { border-top: 3px solid #059669; }
+.zone-accent-wildcard { border-top: 3px solid #d97706; }
 
 @media (min-width: 768px) {
   .mod-standard          { grid-column: span 4; }
   .mod-standard.span-6   { grid-column: span 6; }
   .mod-standard.span-8   { grid-column: span 8; }
+  .mod-standard.span-12  { grid-column: span 12; }
 }
 
 .standard-img {
