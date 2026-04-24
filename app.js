@@ -104,11 +104,12 @@ function renderFeature(a) {
     </a>`;
 }
 
-function renderStandard(a) {
+function renderStandard(a, spanClass) {
   const url = escAttr(a.source_url);
   const img = safeUrl(a.image_url);
+  const cls = spanClass ? `mod-standard ${spanClass}` : 'mod-standard';
   return `
-    <a href="${url}" target="_blank" rel="noopener noreferrer" class="mod-standard">
+    <a href="${url}" target="_blank" rel="noopener noreferrer" class="${cls}">
       ${img ? `<div class="standard-img">${imgTag(img, true)}</div>` : ''}
       <div class="standard-body">
         ${zoneBadge(a.zone)}
@@ -183,7 +184,12 @@ function buildGrid(articles) {
     } else if (a.format === 'quote')   { parts.push(renderQuote(a));   i++; }
     else if (a.format === 'feature')   { parts.push(renderFeature(a)); i++; }
     else if (a.format === 'visual')    { parts.push(renderVisual(a));  i++; }
-    else                               { parts.push(renderStandard(a)); i++; }
+    else {
+      const group = [];
+      while (i < articles.length && articles[i].format !== 'quick' && articles[i].format !== 'quote' && articles[i].format !== 'feature' && articles[i].format !== 'visual' && articles[i].format !== 'hero') group.push(articles[i++]);
+      const spanClass = group.length === 1 ? 'span-8' : group.length === 2 ? 'span-6' : 'span-4';
+      group.forEach(g => parts.push(renderStandard(g, spanClass)));
+    }
   }
   return `<div class="magazine-grid">${parts.join('')}</div>`;
 }
@@ -224,9 +230,8 @@ async function loadCurrentEdition() {
 
   container.innerHTML = `
     <div class="edition-intro">
-      <p class="edition-eyebrow">Tech Pulse</p>
+      ${edition.edition_date ? `<p class="edition-eyebrow">${formatDate(edition.edition_date)}</p>` : ''}
       <h1 class="edition-title">${escHtml(edition.title)}</h1>
-      <p class="edition-date">${formatDate(edition.edition_date)}</p>
       ${edition.summary ? `<p class="edition-summary">${escHtml(edition.summary)}</p>` : ''}
     </div>
     ${hero ? renderHero(hero) : ''}
