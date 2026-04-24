@@ -309,36 +309,54 @@ async function loadArchive() {
 // ── Video Pulse ───────────────────────────────────────────────────────────────
 
 async function loadVideos() {
-  const { data: videos } = await sb
-    .from('videos')
-    .select('*')
-    .order('published_at', { ascending: false })
-    .limit(4);
+  const CHANNELS = [
+    { id: 'UCv90NdTyTp7ZPPRvvSZaS5w', name: 'Digitale Profis' },
+    { id: 'UCDx6L69jmKBJbNu5GnkCilg', name: 'Christoph Magnussen' },
+  ];
 
-  if (!videos?.length) return '';
+  const results = await Promise.all(
+    CHANNELS.map(ch =>
+      sb.from('videos')
+        .select('*')
+        .eq('channel_id', ch.id)
+        .order('published_at', { ascending: false })
+        .limit(3)
+    )
+  );
 
-  const cards = videos.map(v => {
-    const thumb = `https://img.youtube.com/vi/${escHtml(v.video_id)}/maxresdefault.jpg`;
-    const url = `https://www.youtube.com/watch?v=${escHtml(v.video_id)}`;
-    const date = formatDate(v.published_at);
+  const sections = CHANNELS.map((ch, i) => {
+    const videos = results[i].data;
+    if (!videos?.length) return '';
+
+    const cards = videos.map(v => {
+      const thumb = `https://img.youtube.com/vi/${escHtml(v.video_id)}/maxresdefault.jpg`;
+      const url = `https://www.youtube.com/watch?v=${escHtml(v.video_id)}`;
+      return `
+        <a href="${url}" target="_blank" rel="noopener noreferrer" class="video-card">
+          <div class="video-thumb">
+            <img src="${thumb}" alt="" loading="lazy">
+            <div class="video-play">▶</div>
+          </div>
+          <div class="video-body">
+            <h3 class="video-title">${escHtml(v.title)}</h3>
+            <p class="video-date">${formatDate(v.published_at)}</p>
+          </div>
+        </a>`;
+    }).join('');
+
     return `
-      <a href="${url}" target="_blank" rel="noopener noreferrer" class="video-card">
-        <div class="video-thumb">
-          <img src="${thumb}" alt="" loading="lazy">
-          <div class="video-play">▶</div>
-        </div>
-        <div class="video-body">
-          <p class="video-channel">${escHtml(v.channel_name)}</p>
-          <h3 class="video-title">${escHtml(v.title)}</h3>
-          <p class="video-date">${date}</p>
-        </div>
-      </a>`;
-  }).join('');
+      <div class="video-channel-section">
+        <p class="video-channel-label">${escHtml(ch.name)}</p>
+        <div class="video-grid video-grid-3">${cards}</div>
+      </div>`;
+  }).filter(Boolean);
+
+  if (!sections.length) return '';
 
   return `
     <section class="video-pulse">
       <p class="video-pulse-label">Video Pulse</p>
-      <div class="video-grid">${cards}</div>
+      ${sections.join('')}
     </section>`;
 }
 
