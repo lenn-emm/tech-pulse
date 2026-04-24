@@ -57,7 +57,9 @@ jobs:
               print(f'RSS-Fehler {channel_name}: {e}')
               continue
 
-            for entry in root.findall('atom:entry', NS):
+            entries = root.findall('atom:entry', NS)
+            print(f'[{channel_name}] {len(entries)} Einträge im RSS')
+            for entry in entries:
               vid   = entry.find('yt:videoId', NS).text
               title = entry.find('atom:title',    NS).text
               pub   = entry.find('atom:published', NS).text
