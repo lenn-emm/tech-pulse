@@ -43,8 +43,8 @@
       "format": "feature",
       "zone": "adjacent",
       "category": "product",
-      "title": "Google Cloud Next '26: Gemini-Agenten-Plattform und Siri-Partnerschaft",
-      "summary": "Auf der Google Cloud Next '26 in Las Vegas präsentierte Google die Gemini Enterprise Agent Platform (Evolution von Vertex AI) mit einem Agent Marketplace und 70+ vorgefertigten Agenten sowie neue TPU-8-Chips der 8. Generation und einen 750-Millionen-Dollar-Innovationsfonds. Google-Cloud-CEO Thomas Kurian bestätigte zudem, dass Gemini ab iOS 27 die Basis von Apples überarbeitetem Siri bildet – ein jährlicher Deal im Milliarden-Dollar-Bereich. Die Konferenz markiert Googles Ambitionen als führende Unternehmens-KI-Plattform.",
+      "title": "Google Cloud Next ’26: Gemini-Agenten-Plattform und Siri-Partnerschaft",
+      "summary": "Auf der Google Cloud Next ’26 in Las Vegas präsentierte Google die Gemini Enterprise Agent Platform (Evolution von Vertex AI) mit einem Agent Marketplace und 70+ vorgefertigten Agenten sowie neue TPU-8-Chips der 8. Generation und einen 750-Millionen-Dollar-Innovationsfonds. Google-Cloud-CEO Thomas Kurian bestätigte zudem, dass Gemini ab iOS 27 die Basis von Apples überarbeitetem Siri bildet – ein jährlicher Deal im Milliarden-Dollar-Bereich. Die Konferenz markiert Googles Ambitionen als führende Unternehmens-KI-Plattform.",
       "source_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/next-2026/",
       "source_name": "Google Blog",
       "read_time_min": 5
@@ -55,7 +55,7 @@
       "zone": "outside",
       "category": "research",
       "title": "Sony-Roboter Ace besiegt Elite-Tischtennisspieler – Nature-Cover",
-      "summary": "Sonys KI-Roboter „Project Ace" ist das erste autonome System, das professionelle Tischtennisspieler unter offiziellen ITTF-Wettkampfbedingungen besiegt hat – dokumentiert in einem Nature-Cover-Paper. Ereignisbasierte Visionssensoren und modellfreies Reinforcement Learning ermöglichen Reaktionszeiten und Präzision auf Elite-Niveau. Der Durchbruch gilt als Meilenstein für verkörperte KI und eröffnet Fragen zur Leistungsfähigkeit autonomer Systeme in der physischen Welt.",
+      "summary": "Sonys KI-Roboter Project Ace ist das erste autonome System, das professionelle Tischtennisspieler unter offiziellen ITTF-Wettkampfbedingungen besiegt hat – dokumentiert in einem Nature-Cover-Paper. Ereignisbasierte Visionssensoren und modellfreies Reinforcement Learning ermöglichen Reaktionszeiten und Präzision auf Elite-Niveau. Der Durchbruch gilt als Meilenstein für verkörperte KI und eröffnet Fragen zur Leistungsfähigkeit autonomer Systeme in der physischen Welt.",
       "source_url": "https://www.nature.com/articles/s41586-026-10338-5",
       "source_name": "Nature",
       "read_time_min": 8
@@ -66,7 +66,7 @@
       "zone": "core",
       "category": "product",
       "title": "Gemini April-Drop: Mac-App, Lyria-3-Musik-KI und 3D-Modelle",
-      "summary": "Googles April-Drop für die Gemini-App bringt eine native Mac-App, NotebookLM direkt in der Gemini-Oberfläche sowie das Musik-Modell Lyria 3 Pro für bis zu 3-minütige Audio-Tracks aus der Cloud. Neu hinzu kommen 3D-Modell-Generierung und interaktive Diagrammerstellung via dem neuen Nano-Banana-2-Bildmodell. Damit baut Google seinen Multimodal-Vorsprung aus und schließt in Musik-KI zu Sora und Suno auf.",
+      "summary": "Googles April-Drop für die Gemini-App bringt eine native Mac-App, NotebookLM direkt in der Gemini-Oberfläche sowie das Musik-Modell Lyria 3 Pro für bis zu 3-minütige Audio-Tracks aus der Cloud. Neu hinzu kommen 3D-Modell-Generierung und interaktive Diagrammerstellung via dem neuen Nano-Banana-2-Bildmodell. Damit baut Google seinen Multimodal-Vorsprung aus und schließt in Musik-KI zu Sora und Suno auf.",
       "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-drop-april-2026/",
       "source_name": "Google Blog",
       "read_time_min": 3
