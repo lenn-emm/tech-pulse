@@ -64,24 +64,19 @@ function badgeOnDark(zone) {
   return `<span class="badge-on-dark">${escHtml(label)}</span>`;
 }
 
+const ARROW_SVG = `<svg class="arrow" width="11" height="11" viewBox="0 0 11 11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8L8 3M3.5 3H8v4.5"/></svg>`;
+
 function sourcePill(url, name, onDark = false) {
   const href = escAttr(url);
+  if (href === '#') return '';
   const cls = onDark ? 'source-pill on-dark' : 'source-pill';
-  return `<a href="${href}" target="_blank" rel="noopener noreferrer" class="${cls}" onclick="event.stopPropagation()">
-    <span>${escHtml(name || 'Quelle')}</span><span class="arrow">↗</span>
-  </a>`;
-}
-
-// Span-version for use inside card <a> wrappers (avoids invalid nested <a>)
-function sourcePillSpan(name, onDark = false) {
-  const cls = onDark ? 'source-pill on-dark' : 'source-pill';
-  return `<span class="${cls}"><span>${escHtml(name || 'Quelle')}</span><span class="arrow">↗</span></span>`;
+  return `<a href="${href}" target="_blank" rel="noopener noreferrer" class="${cls}"><span>${escHtml(name || 'Quelle')}</span>${ARROW_SVG}</a>`;
 }
 
 function imgTag(url, lazy = true) {
   const src = safeUrl(url);
   if (!src) return '';
-  return `<img src="${escHtml(src)}" alt="" loading="${lazy ? 'lazy' : 'eager'}">`;
+  return `<img src="${escHtml(src)}" alt="" loading="${lazy ? 'lazy' : 'eager'}" onerror="this.style.display='none'">`;
 }
 
 // ── Image placeholder SVG ─────────────────────────────────────────────────────
@@ -100,26 +95,29 @@ function imgPlaceholder(extraClass = '') {
 function renderHero(a) {
   const img = safeUrl(a.image_url);
   const href = escAttr(a.source_url);
+  const titleHtml = href !== '#'
+    ? `<h2 class="hero-title"><a href="${href}" target="_blank" rel="noopener noreferrer">${escHtml(a.title)}</a></h2>`
+    : `<h2 class="hero-title">${escHtml(a.title)}</h2>`;
+  const slug = zoneSlug(a.zone);
   const bgLayer = img
     ? `<div class="card-img-bg">${imgTag(img, false)}</div><div class="img-overlay-hero"></div>`
-    : `<div class="card-img-placeholder"></div><div class="img-overlay-hero"></div>`;
+    : `<div class="card-fallback-bg" data-zone="${slug}"></div><div class="img-overlay-hero"></div>`;
   return `
-    <a href="${href}" target="_blank" rel="noopener noreferrer" class="card-hero-link">
+    <article class="card-hero-link">
       ${bgLayer}
       <div class="hero-body">
         ${badgeOnDark(a.zone)}
-        <h2 class="hero-title">${escHtml(a.title)}</h2>
+        ${titleHtml}
         ${a.summary ? `<p class="hero-summary">${escHtml(a.summary)}</p>` : ''}
-        <div class="hero-source">${sourcePillSpan(a.source_name, true)}</div>
+        <div class="hero-source">${sourcePill(a.source_url, a.source_name, true)}</div>
       </div>
-    </a>`;
+    </article>`;
 }
 
 // ── Default card (white background) ──────────────────────────────────────────
 
 function renderDefaultCard(a) {
   const img = safeUrl(a.image_url);
-  const href = escAttr(a.source_url);
   const imgBlock = img
     ? `<div class="card-img-container">
          <div class="card-default-img">${imgTag(img)}</div>
@@ -130,63 +128,66 @@ function renderDefaultCard(a) {
          <div class="badge-img-overlay">${badge(a.zone)}</div>
        </div>`;
   return `
-    <a href="${href}" target="_blank" rel="noopener noreferrer" class="card-default-link">
+    <article class="card-default-link">
       ${imgBlock}
       <div class="card-body">
         <h3 class="card-title">${escHtml(a.title)}</h3>
         ${a.summary ? `<p class="card-summary">${escHtml(a.summary)}</p>` : ''}
-        <div class="card-footer">${sourcePillSpan(a.source_name)}</div>
+        <div class="card-footer">${sourcePill(a.source_url, a.source_name)}</div>
       </div>
-    </a>`;
+    </article>`;
 }
 
 // ── Image-bg card (dark overlay) ─────────────────────────────────────────────
 
+function zoneSlug(zone) {
+  return (zone || '').toString().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'default';
+}
+
 function renderImageBgCard(a) {
   const img = safeUrl(a.image_url);
-  const href = escAttr(a.source_url);
+  const slug = zoneSlug(a.zone);
   const bgLayer = img
     ? `<div class="card-img-bg">${imgTag(img)}</div><div class="img-overlay-card"></div>`
-    : `<div class="card-img-placeholder"></div><div class="img-overlay-card"></div>`;
+    : `<div class="card-fallback-bg" data-zone="${slug}"></div><div class="img-overlay-card"></div>`;
   return `
-    <a href="${href}" target="_blank" rel="noopener noreferrer" class="card-imagebg-link">
+    <article class="card-imagebg-link">
       ${bgLayer}
       <div class="card-imagebg-body">
         <div style="margin-bottom:10px;">${badgeOnDark(a.zone)}</div>
         <h3 class="card-imagebg-title">${escHtml(a.title)}</h3>
         ${a.summary ? `<p class="card-imagebg-summary">${escHtml(a.summary)}</p>` : ''}
-        <div style="padding-top:14px;">${sourcePillSpan(a.source_name, true)}</div>
+        <div style="padding-top:14px;">${sourcePill(a.source_url, a.source_name, true)}</div>
       </div>
-    </a>`;
+    </article>`;
 }
 
 // ── Compact card (text-only, quick format) ────────────────────────────────────
 
-function renderCompact(a) {
-  const url = escAttr(a.source_url);
+function renderCompact(a, idx = 0) {
+  const slug = zoneSlug(a.zone);
+  const variant = idx % 3;
   return `
-    <a href="${url}" target="_blank" rel="noopener noreferrer"
-       style="text-decoration:none;color:inherit;display:block;">
-      <div class="card-compact">
+    <article class="card-compact" data-zone="${slug}" data-variant="${variant}">
+      <div class="card-compact-meta">
         ${badge(a.zone)}
-        <h3 class="card-compact-title">${escHtml(a.title)}</h3>
-        ${a.summary ? `<p class="card-compact-summary">${escHtml(a.summary)}</p>` : ''}
-        <div class="card-compact-footer">${sourcePill(a.source_url, a.source_name)}</div>
+        ${sourcePill(a.source_url, a.source_name)}
       </div>
-    </a>`;
+      <h3 class="card-compact-title">${escHtml(a.title)}</h3>
+      ${a.summary ? `<p class="card-compact-summary">${escHtml(a.summary)}</p>` : ''}
+    </article>`;
 }
 
 // ── Quote module ──────────────────────────────────────────────────────────────
 
 function renderQuote(a) {
-  const url = escAttr(a.source_url);
   const text = a.quote_text || a.title;
   return `
-    <div class="grid-span-full" style="padding:48px 32px;background:var(--badge-bg);border-radius:var(--radius);text-align:center;">
-      <span style="font-size:72px;line-height:0.6;color:var(--accent);font-family:Georgia,serif;margin-bottom:28px;display:block;">"</span>
-      <blockquote style="font-size:clamp(20px,2.8vw,28px);font-weight:500;letter-spacing:-0.02em;line-height:1.4;color:var(--text);max-width:720px;margin:0 auto 20px;">${escHtml(text)}</blockquote>
-      ${a.quote_author ? `<p style="font-size:14px;color:var(--text2);margin-bottom:16px;">— ${escHtml(a.quote_author)}</p>` : ''}
-      ${url !== '#' ? `<a href="${url}" target="_blank" rel="noopener noreferrer" class="source-pill">${escHtml(a.source_name || 'Quelle')} ↗</a>` : ''}
+    <div class="grid-span-full quote-block">
+      <span class="quote-mark">"</span>
+      <blockquote class="quote-text">${escHtml(text)}</blockquote>
+      ${a.quote_author ? `<p class="quote-author">— ${escHtml(a.quote_author)}</p>` : ''}
+      ${sourcePill(a.source_url, a.source_name)}
     </div>`;
 }
 
@@ -195,28 +196,17 @@ function renderQuote(a) {
 function buildGrid(articles) {
   const gridItems = [];
   const compactItems = [];
-  let imgBgCounter = 0;
 
-  articles.forEach((a, idx) => {
+  articles.forEach(a => {
     if (a.format === 'quick') {
-      compactItems.push(renderCompact(a));
+      compactItems.push(renderCompact(a, compactItems.length));
       return;
     }
     if (a.format === 'quote') {
       gridItems.push(renderQuote(a));
       return;
     }
-    const hasImg = safeUrl(a.image_url);
-    const useImageBg = hasImg && (a.format === 'feature' || a.format === 'visual' || imgBgCounter % 2 === 0);
-    if (hasImg && (a.format === 'feature' || a.format === 'visual')) {
-      gridItems.push(renderImageBgCard(a));
-    } else if (hasImg && imgBgCounter % 2 === 0) {
-      gridItems.push(renderImageBgCard(a));
-      imgBgCounter++;
-    } else {
-      gridItems.push(renderDefaultCard(a));
-      if (hasImg) imgBgCounter++;
-    }
+    gridItems.push(renderImageBgCard(a));
   });
 
   const grid = gridItems.length
@@ -291,12 +281,15 @@ function buildVideoSection(videos) {
   if (!videos.length) return '';
 
   const cards = videos.map(v => {
-    const thumb = `https://img.youtube.com/vi/${escHtml(v.video_id)}/maxresdefault.jpg`;
-    const url = `https://www.youtube.com/watch?v=${escHtml(v.video_id)}`;
+    const id = escHtml(v.video_id);
+    const thumbHi = `https://img.youtube.com/vi/${id}/maxresdefault.jpg`;
+    const thumbLo = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+    const url = `https://www.youtube.com/watch?v=${id}`;
     return `
       <a href="${url}" target="_blank" rel="noopener noreferrer" class="video-item">
         <div class="video-thumb">
-          <img src="${thumb}" alt="" loading="lazy">
+          <img src="${thumbHi}" alt="" loading="lazy"
+               onerror="if(this.dataset.fb!=='1'){this.dataset.fb='1';this.src='${thumbLo}';}else{this.style.display='none';}">
           <div class="video-play-btn">
             <div class="video-play-circle">
               <svg width="16" height="18" viewBox="0 0 16 18" fill="#fff" aria-hidden="true">
@@ -315,9 +308,22 @@ function buildVideoSection(videos) {
     <section class="video-section">
       <div class="video-header">
         <h2 class="video-title-main">Video Pulse</h2>
-        <div class="video-nav-btns">
-          <button class="video-nav-btn" id="vid-prev" aria-label="Zurück">‹</button>
-          <button class="video-nav-btn" id="vid-next" aria-label="Vor">›</button>
+        <div class="video-controls">
+          <div class="video-progress" id="video-progress" role="presentation">
+            <div class="video-progress-thumb" id="video-progress-thumb"></div>
+          </div>
+          <div class="video-nav-btns">
+            <button class="video-nav-btn" id="vid-prev" aria-label="Zurück">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 2L4 7l5 5"/>
+              </svg>
+            </button>
+            <button class="video-nav-btn" id="vid-next" aria-label="Vor">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 2l5 5-5 5"/>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
       <div class="video-scroller" id="video-scroller">
@@ -330,33 +336,79 @@ function initVideoNav() {
   const scroller = document.getElementById('video-scroller');
   const prev = document.getElementById('vid-prev');
   const next = document.getElementById('vid-next');
+  const track = document.getElementById('video-progress');
+  const thumb = document.getElementById('video-progress-thumb');
   if (!scroller || !prev || !next) return;
-  prev.addEventListener('click', () => scroller.scrollBy({ left: -(scroller.clientWidth * 0.8), behavior: 'smooth' }));
-  next.addEventListener('click', () => scroller.scrollBy({ left: scroller.clientWidth * 0.8, behavior: 'smooth' }));
+
+  function step(dir) {
+    scroller.scrollBy({ left: dir * scroller.clientWidth * 0.8, behavior: 'smooth' });
+  }
+  prev.addEventListener('click', () => step(-1));
+  next.addEventListener('click', () => step(1));
+
+  function updateProgress() {
+    if (!track || !thumb) return;
+    const max = scroller.scrollWidth - scroller.clientWidth;
+    if (max <= 0) {
+      track.style.display = 'none';
+      prev.disabled = true;
+      next.disabled = true;
+      return;
+    }
+    track.style.display = '';
+    const visibleRatio = scroller.clientWidth / scroller.scrollWidth;
+    const scrollRatio = scroller.scrollLeft / max;
+    const trackW = track.clientWidth;
+    const thumbW = Math.max(24, trackW * visibleRatio);
+    const thumbX = (trackW - thumbW) * scrollRatio;
+    thumb.style.width = thumbW + 'px';
+    thumb.style.transform = `translateX(${thumbX}px)`;
+    prev.disabled = scroller.scrollLeft <= 1;
+    next.disabled = scroller.scrollLeft >= max - 1;
+  }
+
+  scroller.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+  setTimeout(updateProgress, 300);
 }
 
 // ── Index page ────────────────────────────────────────────────────────────────
+
+function renderSkeleton() {
+  return `
+    <div class="skeleton-wrap" aria-hidden="true">
+      <div class="skeleton skeleton-line" style="width:160px;height:14px;"></div>
+      <div class="skeleton skeleton-line" style="width:90%;height:22px;margin-top:18px;"></div>
+      <div class="skeleton skeleton-line" style="width:75%;height:22px;margin-top:8px;"></div>
+      <div class="skeleton skeleton-hero" style="margin-top:40px;"></div>
+      <div class="skeleton-grid" style="margin-top:24px;">
+        <div class="skeleton skeleton-card"></div>
+        <div class="skeleton skeleton-card"></div>
+        <div class="skeleton skeleton-card"></div>
+      </div>
+    </div>`;
+}
 
 async function loadCurrentEdition() {
   const container = document.getElementById('magazine');
   if (!container) return;
 
-  const { data: editions, error: edErr } = await sb
-    .from('editions')
-    .select('*')
-    .eq('is_current', true)
-    .limit(1);
+  container.innerHTML = renderSkeleton();
+
+  const params = new URLSearchParams(window.location.search);
+  const editionId = params.get('edition');
+
+  let edQ = sb.from('editions').select('*');
+  edQ = editionId ? edQ.eq('id', editionId) : edQ.eq('is_current', true);
+  const { data: editions, error: edErr } = await edQ.limit(1);
 
   if (edErr || !editions?.length) {
-    container.innerHTML = '<p class="error">Keine aktuelle Edition gefunden.</p>';
+    container.innerHTML = '<p class="error">Keine Edition gefunden.</p>';
     return;
   }
 
   const edition = editions[0];
-
-  // Update nav edition label
-  const navEd = document.getElementById('nav-edition');
-  if (navEd && edition.title) navEd.textContent = `Tech Pulse · ${edition.title}`;
 
   const { data: articles, error: artErr } = await sb
     .from('articles')
@@ -373,13 +425,18 @@ async function loadCurrentEdition() {
   const hero = list.find(a => a.format === 'hero');
   const rest = list.filter(a => a.format !== 'hero');
 
-  const videos = await loadVideos();
+  const videos = editionId ? [] : await loadVideos();
 
   const dateStr = edition.edition_date
     ? new Date(edition.edition_date).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' })
     : '';
 
+  const archiveBack = editionId
+    ? `<a class="archive-back" href="archive.html"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2L4 7l5 5"/></svg> Archiv</a>`
+    : '';
+
   container.innerHTML = `
+    ${archiveBack}
     ${dateStr ? `<p class="masthead">${escHtml(dateStr)}</p>` : ''}
     ${edition.summary ? `<div class="edition-intro"><p>${escHtml(edition.summary)}</p></div>` : ''}
     ${hero ? renderHero(hero) : ''}
@@ -409,6 +466,14 @@ async function loadArchive() {
   const container = document.getElementById('archive-page');
   if (!container) return;
 
+  container.innerHTML = `
+    <div class="skeleton-wrap" aria-hidden="true">
+      <div class="skeleton skeleton-line" style="width:140px;height:34px;"></div>
+      <div class="skeleton skeleton-line" style="width:100%;height:18px;margin-top:36px;"></div>
+      <div class="skeleton skeleton-line" style="width:100%;height:18px;margin-top:24px;"></div>
+      <div class="skeleton skeleton-line" style="width:100%;height:18px;margin-top:24px;"></div>
+    </div>`;
+
   const { data: editions, error: edErr } = await sb
     .from('editions')
     .select('*')
@@ -436,16 +501,13 @@ async function loadArchive() {
   const countMap = Object.fromEntries(countResults.map(r => [r.id, r.count]));
 
   const items = editions.map(ed => {
-    const href = ed.is_current ? 'index.html' : null;
+    const href = ed.is_current ? 'index.html' : `index.html?edition=${encodeURIComponent(ed.id)}`;
     const dateStr = formatDate(ed.edition_date);
     const count = countMap[ed.id];
 
     return `
       <li>
-        ${href
-          ? `<a href="${href}" class="archive-item">`
-          : `<div class="archive-item" style="opacity:0.45;">`
-        }
+        <a href="${href}" class="archive-item">
           <div>
             <div class="archive-item-title">
               ${escHtml(ed.title)}
@@ -455,7 +517,7 @@ async function loadArchive() {
           </div>
           <div class="archive-item-date show-wide">${dateStr}</div>
           <div class="archive-item-count show-wide">${count} Artikel</div>
-        ${href ? `</a>` : `</div>`}
+        </a>
       </li>`;
   }).join('');
 
@@ -498,17 +560,53 @@ async function loadVideos() {
 
 // ── Nav ───────────────────────────────────────────────────────────────────────
 
+let _savedScrollY = 0;
+
+function lockBodyScroll() {
+  _savedScrollY = window.scrollY;
+  const b = document.body;
+  b.style.position = 'fixed';
+  b.style.top = `-${_savedScrollY}px`;
+  b.style.left = '0';
+  b.style.right = '0';
+  b.style.width = '100%';
+}
+
+function unlockBodyScroll() {
+  const b = document.body;
+  b.style.position = '';
+  b.style.top = '';
+  b.style.left = '';
+  b.style.right = '';
+  b.style.width = '';
+  window.scrollTo(0, _savedScrollY);
+}
+
 function initNav() {
   const burger = document.getElementById('burger');
   const overlay = document.getElementById('nav-overlay');
   if (!burger || !overlay) return;
+  const panel = overlay.querySelector('#nav-panel');
+
+  function focusables() {
+    return panel ? [...panel.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])')] : [];
+  }
 
   function setOpen(open) {
+    const wasOpen = overlay.classList.contains('open');
+    if (open === wasOpen) return;
     overlay.classList.toggle('open', open);
     burger.classList.toggle('open', open);
     burger.setAttribute('aria-expanded', open ? 'true' : 'false');
     burger.setAttribute('aria-label', open ? 'Menü schliessen' : 'Menü öffnen');
-    document.body.style.overflow = open ? 'hidden' : '';
+    if (open) {
+      lockBodyScroll();
+      const f = focusables();
+      if (f.length) f[0].focus();
+    } else {
+      unlockBodyScroll();
+      burger.focus();
+    }
   }
 
   burger.addEventListener('click', () => {
@@ -520,7 +618,14 @@ function initNav() {
   });
 
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') setOpen(false);
+    if (!overlay.classList.contains('open')) return;
+    if (e.key === 'Escape') { setOpen(false); return; }
+    if (e.key !== 'Tab') return;
+    const f = focusables();
+    if (!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { last.focus(); e.preventDefault(); }
+    else if (!e.shiftKey && document.activeElement === last) { first.focus(); e.preventDefault(); }
   });
 
   window.addEventListener('resize', scheduleMasonry);
