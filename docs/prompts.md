@@ -217,32 +217,30 @@ Schema-Referenz: data/next-edition.schema.json im Repo.
 Niemals JSON per String-Konkatenation bauen — immer json.dumps().
 
 ═══════════════════════════════════════════════════════════════
-SCHRITT 6 — PUSH (zwei Dateien)
+SCHRITT 6 — PUSH (nur eine Datei)
 ═══════════════════════════════════════════════════════════════
-  # A) next-edition.json — triggert edition-publish.yml → Supabase-Write
-  res_a = gh_put("data/next-edition.json", edition_payload, f"edition: {heute}")
-  print("✓ next-edition.json:", res_a["content"]["html_url"])
+  # next-edition.json triggert edition-publish.yml → schreibt Supabase
+  # UND regeneriert data/recent-articles.json (das ist NICHT deine Aufgabe).
+  res = gh_put("data/next-edition.json", edition_payload, f"edition: {heute}")
+  print("✓ Gepusht:", res["content"]["html_url"])
 
-  # B) recent-articles.json — neue Artikel vorne, alte dahinter, Cap auf 80
-  new_recent_articles = [
-      {"title": a["title"], "source_url": a["source_url"], "edition_date": heute}
-      for a in edition_payload["articles"]
-  ] + recent["articles"]
-  recent_payload = {"articles": new_recent_articles[:80]}
-  res_b = gh_put("data/recent-articles.json", recent_payload, f"recent: {heute}")
-  print("✓ recent-articles.json:", res_b["content"]["html_url"])
+WICHTIG: Schreibe NICHT recent-articles.json selbst — der Workflow erledigt das
+nach dem Supabase-Write automatisch (Single Source of Truth = Supabase).
 
 FEHLERBEHANDLUNG:
-- HTTP 401/403 beim Push  → Token ungültig oder ohne contents:write Scope.
-                            STOP. Keine Workarounds. Klare Fehlermeldung ausgeben.
+- HTTP 401/403 beim Push        → Token ungültig oder ohne contents:write Scope.
+                                  STOP. Keine Workarounds. Klare Fehlermeldung ausgeben.
 - HTTP 409 / 422 (SHA-Konflikt) → einmal gh_get neu, sha holen, gh_put wiederholen.
-- Andere Fehler            → Stacktrace ausgeben, abbrechen.
+- Andere Fehler                 → Stacktrace ausgeben, abbrechen.
 
 ERFOLG:
 Der Push von next-edition.json auf main triggert automatisch edition-publish.yml.
-Der Workflow setzt die bisherige Edition auf is_current=false (NIEMALS löschen)
-und schreibt die neue Edition + Artikel in Supabase. Editionen aus den Vorwochen
-bleiben dauerhaft über archive.html erreichbar.
+Der Workflow:
+  1) setzt die bisherige Edition auf is_current=false (NIEMALS löschen)
+  2) schreibt die neue Edition + Artikel in Supabase
+  3) regeneriert data/recent-articles.json mit den letzten 80 Artikeln aus Supabase
+     → ist beim nächsten Routine-Run als Dedup-Fenster verfügbar
+Editionen aus den Vorwochen bleiben dauerhaft über archive.html erreichbar.
 ```
 
 ---
