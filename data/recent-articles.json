@@ -1,4 +1,101 @@
 {
-  "_comment": "Rollendes Fenster der zuletzt veröffentlichten Artikel (max. 80). Wird von der Claude-Cloud-Routine für Deduplizierung gelesen und nach jedem Run aktualisiert.",
-  "articles": []
+  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
+  "articles": [
+    {
+      "title": "OpenAI startet GPT-5.5: Erstes neu trainiertes Modell seit GPT-4",
+      "source_url": "https://openai.com/index/introducing-gpt-5-5/"
+    },
+    {
+      "title": "78 KI-Gesetze in 27 US-Bundesstaaten: Regulierungswelle rollt an",
+      "source_url": "https://www.transparencycoalition.ai/news/ai-legislative-update-april24-2026"
+    },
+    {
+      "title": "SpaceX sichert sich 60-Mrd.-Dollar-Kaufoption für Coding-KI Cursor",
+      "source_url": "https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60-billion/"
+    },
+    {
+      "title": "Meta und Microsoft streichen je ~10% der Stellen für KI-Ausgaben",
+      "source_url": "https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html"
+    },
+    {
+      "title": "Gemini April-Drop: Mac-App, Lyria-3-Musik-KI und 3D-Modelle",
+      "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-drop-april-2026/"
+    },
+    {
+      "title": "Sony-Roboter Ace besiegt Elite-Tischtennisspieler – Nature-Cover",
+      "source_url": "https://www.nature.com/articles/s41586-026-10338-5"
+    },
+    {
+      "title": "Google Cloud Next ’26: Gemini-Agenten-Plattform und Siri-Partnerschaft",
+      "source_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/next-2026/"
+    },
+    {
+      "title": "Google investiert bis zu 40 Mrd. Dollar in Anthropic",
+      "source_url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/"
+    },
+    {
+      "title": "DeepSeek V4: Größtes Open-Weight-Modell fordert Frontier-KIs heraus",
+      "source_url": "https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/"
+    },
+    {
+      "title": "KI entdeckt neue Physik im Plasma — jenseits bekannter Regeln",
+      "source_url": "https://www.sciencedaily.com/releases/2026/04/260422044635.htm"
+    },
+    {
+      "title": "IWF: Globales Wachstum 2026 unter Druck",
+      "source_url": "https://www.imf.org/en/Publications/WEO/Issues/2026/04/22/world-economic-outlook-april-2026"
+    },
+    {
+      "title": "Infosys und OpenAI: Strategische Enterprise-KI-Partnerschaft",
+      "source_url": "https://www.prnewswire.com/news-releases/infosys-announces-strategic-collaboration-with-openai-to-accelerate-enterprise-ai-transformation-and-unlock-ai-value-at-scale-302750174.html"
+    },
+    {
+      "title": "Gemini CLI bekommt Subagenten — wie Codex und Claude Code",
+      "source_url": "https://techcrunch.com/2026/04/22/google-cloud-next-new-tpu-ai-chips-compete-with-nvidia/"
+    },
+    {
+      "title": "Mira Muratis Lab sichert Milliarden-Deal mit Google Cloud",
+      "source_url": "https://techcrunch.com/2026/04/22/exclusive-google-deepens-thinking-machines-lab-ties-with-new-multi-billion-dollar-deal/"
+    },
+    {
+      "title": "Anthropic sichert 5 Gigawatt Compute-Kapazität bei Amazon",
+      "source_url": "https://www.fool.com/investing/2026/04/22/anthropic-just-announced-huge-news-for-alphabet-an/"
+    },
+    {
+      "title": "Google Cloud Next: KI-Agenten-Plattform gegen OpenAI und Anthropic",
+      "source_url": "https://techcrunch.com/2026/04/22/google-makes-an-interesting-choice-with-its-new-agent-building-tool-for-enterprises/"
+    },
+    {
+      "title": "OpenAI GPT-5.5: Das Modell für agentische Arbeit",
+      "source_url": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/"
+    },
+    {
+      "title": "DeepSeek V4-Pro: Frontier-Leistung zum Bruchteil des Preises",
+      "source_url": "https://www.aljazeera.com/economy/2026/4/24/chinas-deepseek-unveils-latest-model-a-year-after-upending-global-tech"
+    },
+    {
+      "title": "OpenAI bringt GPT-5.4-Cyber für Sicherheitsprofis",
+      "source_url": "https://thehackernews.com/2026/04/openai-launches-gpt-54-cyber-with.html"
+    },
+    {
+      "title": "MIT Technology Review: So steht KI wirklich da",
+      "source_url": "https://www.technologyreview.com/2026/04/13/1135675/want-to-understand-the-current-state-of-ai-check-out-these-charts/"
+    },
+    {
+      "title": "Nur 20 % der Firmen kassieren 75 % der KI-Gewinne",
+      "source_url": "https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-performance-study.html"
+    },
+    {
+      "title": "TSMC-Gewinn steigt um 58 % dank KI-Chip-Nachfrage",
+      "source_url": "https://www.cnbc.com/2026/04/16/tsmc-q1-profit-58-percent-ai-chip-demand-record.html"
+    },
+    {
+      "title": "Stanford AI Index: China holt fast vollständig auf",
+      "source_url": "https://fortune.com/2026/04/16/stanford-study-how-has-china-gained-on-us-ai-war/"
+    },
+    {
+      "title": "Meta Llama 4: Open-Source trifft Multimodalität",
+      "source_url": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+    }
+  ]
 }
