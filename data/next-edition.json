@@ -1,6 +1,9 @@
 {
-  "edition_date": "2026-04-25",
-  "title": "Tech Pulse — Samstag, 25. April 2026",
+  "edition": {
+    "edition_date": "2026-04-25",
+    "title": "Tech Pulse — Samstag, 25. April 2026",
+    "summary": "GPT-5.5, DeepSeek V4, Googles 40-Mrd.-Wette auf Anthropic, Cloud Next, Sony-Roboter und die KI-Regulierungswelle in den USA."
+  },
   "articles": [
     {
       "position": 1,
