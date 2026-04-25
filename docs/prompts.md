@@ -46,177 +46,203 @@ Fang direkt an.
 
 ---
 
-## Prompt 2a — Tägliche Edition (Claude Cloud Routine) v2
+## Prompt 2a — Tägliche Edition (Claude Cloud Routine) v3
+
+**v3-Änderungen gegenüber v2:**
+- Dedup läuft nicht mehr über Supabase (anon-Key wird dort 403'd), sondern über
+  `data/recent-articles.json` im Repo selbst. Die Routine liest und schreibt diese
+  Datei direkt über die GitHub Contents API.
+- Idempotenz-Check: Routine liest zuerst `data/next-edition.json` und bricht ab,
+  wenn `edition_date` bereits = heute.
+- PAT muss EINMALIG am Anfang des Prompts gesetzt werden (`GITHUB_TOKEN = "ghp_…"`).
+- Strikt nur Python urllib für Schreib-/Leseoperationen. Kein git, kein curl, kein
+  MCP-Push (alle scheitern in der Cloud-Umgebung mit 403).
 
 Dieser Prompt läuft als Routine in Claude Cloud (täglich morgens). Er recherchiert,
-baut `data/next-edition.json` und schreibt sie direkt über die GitHub Contents API
-nach main. Der GitHub-Action-Workflow `edition-publish.yml` triggert automatisch und
-schreibt die Edition nach Supabase (alte Editionen: `is_current=false` — **nie löschen**).
+baut `data/next-edition.json` + aktualisiert `data/recent-articles.json` und pusht
+beides direkt über die GitHub Contents API. Der Workflow `edition-publish.yml`
+triggert automatisch und schreibt die Edition nach Supabase (alte Editionen:
+`is_current=false` — **nie löschen**).
 
 JSON-Schema: `data/next-edition.schema.json` im Repo.
 
 ```
 Du bist der Redakteur von "Tech Pulse" — einer täglichen, KI-kuratierten Tech-News-Edition
-im Magazin-Stil. Erstelle die heutige Edition.
+im Magazin-Stil. Erstelle die heutige Edition vollautomatisch.
 
-══════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════
+KONFIGURATION (einmalig setzen, dann nie wieder anfassen)
+═══════════════════════════════════════════════════════════════
+GITHUB_TOKEN = "ghp_DEIN_TOKEN_HIER"   ← VOR DEM ERSTEN RUN ERSETZEN!
+REPO         = "lenn-emm/tech-pulse"
+SUPABASE_URL = "https://rjmyjuejdhcnijerwwwe.supabase.co"
+
+WICHTIGE REGELN für Schreib-/Leseoperationen:
+- Ausschließlich Python urllib. KEIN git, KEIN curl, KEIN subprocess, KEIN MCP-Push.
+- Alle drei Alternativen scheitern in der Cloud-Umgebung mit 403 — verschwende keine Zeit.
+- Nur die GitHub Contents API ist zuverlässig.
+
+═══════════════════════════════════════════════════════════════
+PYTHON-HELFER (am Anfang einmal definieren, dann verwenden)
+═══════════════════════════════════════════════════════════════
+  import urllib.request, json, base64, sys
+  from urllib.error import HTTPError
+
+  HEADERS = {
+    "Authorization": f"Bearer {GITHUB_TOKEN}",
+    "Accept": "application/vnd.github.v3+json",
+    "User-Agent": "TechPulse-Routine/3"
+  }
+
+  def gh_get(path):
+      """Liest Datei aus dem Repo. Gibt (data, sha) oder (None, None) zurück."""
+      url = f"https://api.github.com/repos/{REPO}/contents/{path}"
+      try:
+          r = urllib.request.Request(url, headers=HEADERS)
+          resp = json.loads(urllib.request.urlopen(r, timeout=15).read())
+          content = base64.b64decode(resp["content"]).decode("utf-8")
+          return json.loads(content), resp["sha"]
+      except HTTPError as e:
+          if e.code == 404:
+              return None, None
+          raise
+
+  def gh_put(path, payload, message):
+      """Schreibt JSON-Datei ins Repo (create or update auf main)."""
+      url = f"https://api.github.com/repos/{REPO}/contents/{path}"
+      _, sha = gh_get(path)
+      body = {
+          "message": message,
+          "content": base64.b64encode(
+              json.dumps(payload, ensure_ascii=False, indent=2).encode("utf-8")
+          ).decode("ascii"),
+          "branch": "main"
+      }
+      if sha:
+          body["sha"] = sha
+      req = urllib.request.Request(
+          url, data=json.dumps(body).encode(),
+          headers={**HEADERS, "Content-Type": "application/json"},
+          method="PUT"
+      )
+      return json.loads(urllib.request.urlopen(req, timeout=20).read())
+
+═══════════════════════════════════════════════════════════════
 SCHRITT 1 — DATUM
-══════════════════════════════════════════════════
-Aktuelles Datum Europe/Berlin → edition_date (YYYY-MM-DD).
-Edition-Titel: "Tech Pulse — <Wochentag>, DD. Monat YYYY" auf Deutsch.
+═══════════════════════════════════════════════════════════════
+heute  = aktuelles Datum (Europe/Berlin) als YYYY-MM-DD
+titel  = "Tech Pulse — <Wochentag>, DD. Monat YYYY"  (Deutsch)
 
-══════════════════════════════════════════════════
-SCHRITT 2 — DEDUPLIZIERUNG (zuerst, bevor du recherchierst)
-══════════════════════════════════════════════════
-Rufe per Python urllib die letzten 80 Artikel aus Supabase ab:
+═══════════════════════════════════════════════════════════════
+SCHRITT 2 — IDEMPOTENZ-CHECK + DEDUP-DATEN LADEN
+═══════════════════════════════════════════════════════════════
+  # A) Ist heute schon eine Edition gepusht?
+  existing, _ = gh_get("data/next-edition.json")
+  if existing and existing.get("edition", {}).get("edition_date") == heute:
+      print(f"Edition für {heute} existiert bereits. Abbruch.")
+      sys.exit(0)
 
-  import urllib.request, json
-  url = "https://rjmyjuejdhcnijerwwwe.supabase.co/rest/v1/articles?select=title,source_url&order=created_at.desc&limit=80"
-  req = urllib.request.Request(url, headers={
-    "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJqbXlqdWVqZGhjbmlqZXJ3d3dlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0Mjg4NDMsImV4cCI6MjA5MjAwNDg0M30.21k5mfWbccw8wI4wbilQdt0Vp6qA2-3Ki-pOGkmDHJw",
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJqbXlqdWVqZGhjbmlqZXJ3d3dlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0Mjg4NDMsImV4cCI6MjA5MjAwNDg0M30.21k5mfWbccw8wI4wbilQdt0Vp6qA2-3Ki-pOGkmDHJw"
-  })
-  known = json.loads(urllib.request.urlopen(req, timeout=10).read())
-  known_urls   = {a["source_url"] for a in known}
-  known_titles = {a["title"].lower()[:40] for a in known}
+  # B) Bisherige Artikel laden (rollendes Fenster der letzten 80)
+  recent, _ = gh_get("data/recent-articles.json")
+  if recent is None:
+      recent = {"articles": []}
+  known_urls   = {a["source_url"] for a in recent["articles"]}
+  known_titles = {a["title"].lower()[:40] for a in recent["articles"]}
 
-Falls der Request fehlschlägt (Timeout, Netzwerk): mit leerem known-Set weitermachen,
-kurzen Hinweis im Summary vermerken ("Dedup nicht möglich").
+═══════════════════════════════════════════════════════════════
+SCHRITT 3 — RECHERCHE (WebSearch, kein WebFetch, kein curl)
+═══════════════════════════════════════════════════════════════
+Suche die wichtigsten KI- und Tech-News der letzten 24 Stunden via WebSearch.
+Empfohlene Suchstrategien:
 
-Prüfe auch: Existiert für das heutige Datum bereits eine Edition?
-  url2 = "https://rjmyjuejdhcnijerwwwe.supabase.co/rest/v1/editions?edition_date=eq.YYYY-MM-DD&select=id"
-  → Falls Ergebnis nicht leer: Abbruch. Nichts pushen.
+  Core      (KI-Labs):       "Anthropic news today" · "OpenAI announcement today"
+                             "Google DeepMind today" · "Hugging Face release today"
+  Adjacent  (Tech-Medien):   "The Verge AI today" · "TechCrunch AI today"
+                             "Ars Technica AI today" · "MIT Tech Review AI"
+  Outside   (Forschung):     "arxiv AI paper today" · "Nature AI research"
+                             "Stratechery latest" · "Import AI newsletter"
+  Wildcard  (Überraschung):  "Hacker News top AI today" · "404 Media tech today"
+                             "Simon Willison blog latest"
 
-══════════════════════════════════════════════════
-SCHRITT 3 — RECHERCHE
-══════════════════════════════════════════════════
-Suche per WebSearch (NICHT WebFetch, nicht curl) nach den wichtigsten KI- und Tech-News
-der letzten 24 Stunden. Nutze diese Suchstrategien:
+Filtere konsequent:
+- Nur Meldungen ≤ 24h alt
+- Verwerfe wenn source_url in known_urls
+- Verwerfe wenn title.lower()[:40] in known_titles
+- Primärquelle bevorzugen, keine Aggregatoren
 
-Core (KI-Labs):
-  "Anthropic news today" / "OpenAI announcement today" / "Google DeepMind news today"
-  "Hugging Face release today" / "AI model release April 2026"
-
-Adjacent (Tech-Medien):
-  "The Verge AI news today" / "TechCrunch AI today" / "Ars Technica AI today"
-  "MIT Technology Review AI this week"
-
-Outside (Forschung):
-  "arxiv AI paper today" / "Nature AI research this week"
-  "Stratechery latest" / "Import AI newsletter latest"
-
-Wildcard (Überraschung):
-  "Hacker News top AI story today" / "404 Media tech story today"
-  "Simon Willison blog latest"
-
-Pro Quelle: 1–2 Suchen reichen. Keine Aggregatoren (keine Google News Snippet-Seiten),
-direkt zur Primärquelle navigieren.
-
-Filtere: Nur Meldungen der letzten 24 Stunden. Verwerfe alles, dessen source_url oder
-Titel (erste 40 Zeichen) in known_urls / known_titles ist.
-
-══════════════════════════════════════════════════
-SCHRITT 4 — KURATIEREN & TEXTEN
-══════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════
+SCHRITT 4 — KURATIEREN
+═══════════════════════════════════════════════════════════════
 ARTIKELMIX (Pflicht):
-- 1× hero     (zone core/adjacent, Aufmacher des Tages)
-- 4–5× feature oder visual  (Mischung aller Zonen)
-- 2–3× quick  (knapp, 1 Satz Headline + 1–2 Satz Summary)
-- optional 1× quote  (markantes Zitat einer Person aus einem der Artikel)
+  1× hero               (zone core/adjacent, Aufmacher des Tages)
+  4–5× feature/visual   (Mischung aller Zonen)
+  2–3× quick            (knapp, 1 Satz Headline + 1–2 Satz Summary)
+  optional 1× quote     (markantes Zitat einer Person)
 
 ZONEN-VERTEILUNG (Richtwert):
   core 40–50 % · adjacent 25–35 % · outside 15–20 % · wildcard 5–10 %
 
-QUALITÄTSKRITERIEN:
-  Aufnehmen: Was jemand im Innovation-Management wissen sollte.
-  Weglassen:  Reine Funding-Meldungen, Promo, Gerüchte, Aggregatoren, Doppelmeldungen.
-
 PRO ARTIKEL:
-  title:        max. 10 Wörter, kein Clickbait
-  summary:      2–3 Sätze. Satz 1: Was. Satz 2: Warum relevant. Satz 3 (opt.): Einordnung.
-  source_url:   direkter Link zur Primärquelle
-  source_name:  Name der Quelle (z.B. "The Verge")
-  category:     model_release | company_news | research | product | regulation
-  format:       hero | feature | visual | standard | quick | quote
-  zone:         core | adjacent | outside | wildcard
-  read_time_min: 1–10
-  position:     Reihenfolge nach Relevanz (1 = oben)
-  (bei format=quote: zusätzlich quote_text + quote_author)
+  title          max. 10 Wörter, kein Clickbait
+  summary        2–3 Sätze: Was · Warum relevant · (Einordnung)
+  source_url     direkter Link zur Primärquelle
+  source_name    z.B. "The Verge"
+  category       model_release | company_news | research | product | regulation
+  format         hero | feature | visual | standard | quick | quote
+  zone           core | adjacent | outside | wildcard
+  read_time_min  1–10
+  position       Reihenfolge nach Relevanz (1 = oben)
+  (bei quote:    quote_text + quote_author zusätzlich)
 
-Kein image_url — das Frontend nutzt automatische Zonen-Farbverläufe.
+KEIN image_url — Frontend nutzt automatische Zonen-Farbverläufe.
 
-Falls nach Dedup weniger als 5 brauchbare Artikel übrig: Abbruch, nichts pushen.
+Falls nach Dedup < 5 brauchbare Artikel: Abbruch, nichts pushen.
 
-══════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════
 SCHRITT 5 — JSON BAUEN & VALIDIEREN
-══════════════════════════════════════════════════
-Baue das JSON exakt nach diesem Schema (siehe auch data/next-edition.schema.json im Repo):
-
-{
-  "edition": {
-    "title": "Tech Pulse — Montag, 28. April 2026",
-    "edition_date": "2026-04-28",
-    "summary": "1–2 Sätze, was diese Edition ausmacht"
-  },
-  "articles": [
-    {
-      "title": "...", "summary": "...", "source_url": "...", "source_name": "...",
-      "category": "...", "format": "...", "zone": "...",
-      "read_time_min": 3, "position": 1
-    }
-  ]
-}
-
-Validiere mit Python json.loads() vor dem Push. Kein manuelles JSON-Zusammenbauen
-mit String-Konkatenation — immer json.dumps() verwenden.
-
-══════════════════════════════════════════════════
-SCHRITT 6 — AUF GITHUB PUSHEN (GitHub Contents API via Python)
-══════════════════════════════════════════════════
-WICHTIG: Kein git, kein curl, kein subprocess. Ausschließlich Python urllib.
-
-  import urllib.request, json, base64
-
-  GITHUB_TOKEN = "DEIN_PAT_HIER"
-  REPO    = "lenn-emm/tech-pulse"
-  PATH    = "data/next-edition.json"
-  API_URL = f"https://api.github.com/repos/{REPO}/contents/{PATH}"
-  HEADERS = {
-    "Authorization": f"Bearer {GITHUB_TOKEN}",
-    "Accept": "application/vnd.github.v3+json",
-    "Content-Type": "application/json",
-    "User-Agent": "TechPulse-Routine/2"
+═══════════════════════════════════════════════════════════════
+  edition_payload = {
+      "edition": {
+          "title":        titel,
+          "edition_date": heute,
+          "summary":      "1–2 Sätze, was diese Edition ausmacht"
+      },
+      "articles": [ ... ]   # die kuratierten Artikel
   }
 
-  # 1) SHA holen falls Datei existiert
-  sha = None
-  try:
-    r = urllib.request.Request(API_URL, headers=HEADERS)
-    existing = json.loads(urllib.request.urlopen(r, timeout=15).read())
-    sha = existing.get("sha")
-  except urllib.error.HTTPError as e:
-    if e.code != 404:
-      raise
+  # Validieren: round-trip durch json muss klappen
+  json.loads(json.dumps(edition_payload, ensure_ascii=False))
 
-  # 2) Datei anlegen oder updaten
-  content_b64 = base64.b64encode(
-    json.dumps(edition_payload, ensure_ascii=False, indent=2).encode("utf-8")
-  ).decode("ascii")
+Schema-Referenz: data/next-edition.schema.json im Repo.
+Niemals JSON per String-Konkatenation bauen — immer json.dumps().
 
-  body = {"message": f"edition: {edition_date}", "content": content_b64, "branch": "main"}
-  if sha:
-    body["sha"] = sha
+═══════════════════════════════════════════════════════════════
+SCHRITT 6 — PUSH (zwei Dateien)
+═══════════════════════════════════════════════════════════════
+  # A) next-edition.json — triggert edition-publish.yml → Supabase-Write
+  res_a = gh_put("data/next-edition.json", edition_payload, f"edition: {heute}")
+  print("✓ next-edition.json:", res_a["content"]["html_url"])
 
-  req = urllib.request.Request(
-    API_URL, data=json.dumps(body).encode(), headers=HEADERS, method="PUT"
-  )
-  resp = json.loads(urllib.request.urlopen(req, timeout=20).read())
-  print("✓ Gepusht:", resp["content"]["html_url"])
+  # B) recent-articles.json — neue Artikel vorne, alte dahinter, Cap auf 80
+  new_recent_articles = [
+      {"title": a["title"], "source_url": a["source_url"], "edition_date": heute}
+      for a in edition_payload["articles"]
+  ] + recent["articles"]
+  recent_payload = {"articles": new_recent_articles[:80]}
+  res_b = gh_put("data/recent-articles.json", recent_payload, f"recent: {heute}")
+  print("✓ recent-articles.json:", res_b["content"]["html_url"])
 
-Der Push auf main triggert automatisch edition-publish.yml, der:
-- die bisherige Edition auf is_current=false setzt (NIEMALS löschen)
-- die neue Edition + Artikel in Supabase schreibt
-- Editionen bleiben dauerhaft im Archiv erreichbar
+FEHLERBEHANDLUNG:
+- HTTP 401/403 beim Push  → Token ungültig oder ohne contents:write Scope.
+                            STOP. Keine Workarounds. Klare Fehlermeldung ausgeben.
+- HTTP 409 / 422 (SHA-Konflikt) → einmal gh_get neu, sha holen, gh_put wiederholen.
+- Andere Fehler            → Stacktrace ausgeben, abbrechen.
+
+ERFOLG:
+Der Push von next-edition.json auf main triggert automatisch edition-publish.yml.
+Der Workflow setzt die bisherige Edition auf is_current=false (NIEMALS löschen)
+und schreibt die neue Edition + Artikel in Supabase. Editionen aus den Vorwochen
+bleiben dauerhaft über archive.html erreichbar.
 ```
 
 ---

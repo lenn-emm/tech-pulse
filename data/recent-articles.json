@@ -1,0 +1,4 @@
+{
+  "_comment": "Rollendes Fenster der zuletzt veröffentlichten Artikel (max. 80). Wird von der Claude-Cloud-Routine für Deduplizierung gelesen und nach jedem Run aktualisiert.",
+  "articles": []
+}
