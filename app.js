@@ -24,6 +24,14 @@ function escAttr(url) {
   }
 }
 
+function safeUrl(url) {
+  if (!url) return '';
+  try {
+    const u = new URL(url);
+    return (u.protocol === 'https:' || u.protocol === 'http:') ? u.href : '';
+  } catch { return ''; }
+}
+
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 function formatDate(iso) {
@@ -33,166 +41,298 @@ function formatDate(iso) {
   });
 }
 
-const ZONE_LABELS = {
-  core:     'KI Core',
-  adjacent: 'Adjacent',
-  outside:  'Kontext',
-  wildcard: 'Wildcard',
+const CATEGORY_LABELS = {
+  core:      'KI Core',
+  adjacent:  'Tech',
+  outside:   'Kontext',
+  wildcard:  'Wildcard',
 };
 
-function zoneBadge(zone) {
-  if (!zone) return '';
-  return `<span class="zone-badge">${escHtml(ZONE_LABELS[zone] || zone)}</span>`;
+function categoryLabel(zone) {
+  return CATEGORY_LABELS[zone] || zone || '';
 }
 
-function readTime(min) {
-  return min ? `<span class="read-time">${min} Min.</span>` : '';
+function badge(zone) {
+  const label = categoryLabel(zone);
+  if (!label) return '';
+  return `<span class="badge">${escHtml(label)}</span>`;
 }
 
-// Returns validated http/https URL string, or '' for anything invalid/missing.
-function safeUrl(url) {
-  if (!url) return '';
-  try {
-    const u = new URL(url);
-    return (u.protocol === 'https:' || u.protocol === 'http:') ? u.href : '';
-  } catch { return ''; }
+function badgeOnDark(zone) {
+  const label = categoryLabel(zone);
+  if (!label) return '';
+  return `<span class="badge-on-dark">${escHtml(label)}</span>`;
 }
 
-function imgTag(url, lazy) {
+function sourcePill(url, name, onDark = false) {
+  const href = escAttr(url);
+  const cls = onDark ? 'source-pill on-dark' : 'source-pill';
+  return `<a href="${href}" target="_blank" rel="noopener noreferrer" class="${cls}" onclick="event.stopPropagation()">
+    <span>${escHtml(name || 'Quelle')}</span><span class="arrow">↗</span>
+  </a>`;
+}
+
+// Span-version for use inside card <a> wrappers (avoids invalid nested <a>)
+function sourcePillSpan(name, onDark = false) {
+  const cls = onDark ? 'source-pill on-dark' : 'source-pill';
+  return `<span class="${cls}"><span>${escHtml(name || 'Quelle')}</span><span class="arrow">↗</span></span>`;
+}
+
+function imgTag(url, lazy = true) {
   const src = safeUrl(url);
   if (!src) return '';
-  const loading = lazy ? 'lazy' : 'eager';
-  return `<img src="${escHtml(src)}" alt="" loading="${loading}">`;
+  return `<img src="${escHtml(src)}" alt="" loading="${lazy ? 'lazy' : 'eager'}">`;
 }
 
-// ── Module renderers ──────────────────────────────────────────────────────────
+// ── Image placeholder SVG ─────────────────────────────────────────────────────
+
+function imgPlaceholder(extraClass = '') {
+  return `<div class="card-default-img-placeholder ${extraClass}">
+    <svg viewBox="0 0 100 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="0" x2="100" y2="56" stroke="#D2D2D7" stroke-width="0.4" vector-effect="non-scaling-stroke"/>
+      <line x1="100" y1="0" x2="0" y2="56" stroke="#D2D2D7" stroke-width="0.4" vector-effect="non-scaling-stroke"/>
+    </svg>
+  </div>`;
+}
+
+// ── Hero card ─────────────────────────────────────────────────────────────────
 
 function renderHero(a) {
-  const url = escAttr(a.source_url);
   const img = safeUrl(a.image_url);
+  const href = escAttr(a.source_url);
+  const bgLayer = img
+    ? `<div class="card-img-bg">${imgTag(img, false)}</div><div class="img-overlay-hero"></div>`
+    : `<div class="card-img-placeholder"></div><div class="img-overlay-hero"></div>`;
   return `
-    <a href="${url}" target="_blank" rel="noopener noreferrer"
-       class="mod-hero${img ? '' : ' no-image'}">
-      ${img ? `<div class="hero-img">${imgTag(img, false)}</div><div class="hero-overlay"></div>` : ''}
-      <div class="hero-content">
-        ${zoneBadge(a.zone) ? `<p class="hero-zone">${escHtml(ZONE_LABELS[a.zone] || a.zone)}</p>` : ''}
+    <a href="${href}" target="_blank" rel="noopener noreferrer" class="card-hero-link">
+      ${bgLayer}
+      <div class="hero-body">
+        ${badgeOnDark(a.zone)}
         <h2 class="hero-title">${escHtml(a.title)}</h2>
         ${a.summary ? `<p class="hero-summary">${escHtml(a.summary)}</p>` : ''}
-        <div class="hero-meta">
-          <span class="hero-source">${escHtml(a.source_name || 'Quelle')}</span>
-          ${readTime(a.read_time_min)}
-        </div>
+        <div class="hero-source">${sourcePillSpan(a.source_name, true)}</div>
       </div>
     </a>`;
 }
 
-function renderFeature(a) {
-  const url = escAttr(a.source_url);
+// ── Default card (white background) ──────────────────────────────────────────
+
+function renderDefaultCard(a) {
   const img = safeUrl(a.image_url);
-  const zoneLabel = a.zone ? escHtml(ZONE_LABELS[a.zone] || a.zone) : '';
+  const href = escAttr(a.source_url);
+  const imgBlock = img
+    ? `<div class="card-img-container">
+         <div class="card-default-img">${imgTag(img)}</div>
+         <div class="badge-img-overlay">${badgeOnDark(a.zone)}</div>
+       </div>`
+    : `<div class="card-img-container">
+         ${imgPlaceholder()}
+         <div class="badge-img-overlay">${badge(a.zone)}</div>
+       </div>`;
   return `
-    <a href="${url}" target="_blank" rel="noopener noreferrer" class="mod-feature${img ? '' : ' no-image'}">
-      ${img ? `<div class="feature-img">${imgTag(img, true)}</div><div class="feature-overlay"></div>` : ''}
-      <div class="feature-body">
-        ${zoneLabel ? `<span class="feature-zone-label">${zoneLabel}</span>` : ''}
-        <h3 class="feature-title">${escHtml(a.title)}</h3>
-        ${a.summary ? `<p class="feature-summary">${escHtml(a.summary)}</p>` : ''}
-        <div class="feature-meta">
-          <span class="source-link">${escHtml(a.source_name || 'Quelle')} ↗</span>
-          ${readTime(a.read_time_min)}
-        </div>
+    <a href="${href}" target="_blank" rel="noopener noreferrer" class="card-default-link">
+      ${imgBlock}
+      <div class="card-body">
+        <h3 class="card-title">${escHtml(a.title)}</h3>
+        ${a.summary ? `<p class="card-summary">${escHtml(a.summary)}</p>` : ''}
+        <div class="card-footer">${sourcePillSpan(a.source_name)}</div>
       </div>
     </a>`;
 }
 
-function renderStandard(a, spanClass) {
-  const url = escAttr(a.source_url);
+// ── Image-bg card (dark overlay) ─────────────────────────────────────────────
+
+function renderImageBgCard(a) {
   const img = safeUrl(a.image_url);
-  const classes = ['mod-standard', spanClass, !img && a.zone ? `zone-accent-${a.zone}` : ''].filter(Boolean).join(' ');
+  const href = escAttr(a.source_url);
+  const bgLayer = img
+    ? `<div class="card-img-bg">${imgTag(img)}</div><div class="img-overlay-card"></div>`
+    : `<div class="card-img-placeholder"></div><div class="img-overlay-card"></div>`;
   return `
-    <a href="${url}" target="_blank" rel="noopener noreferrer" class="${classes}">
-      ${img ? `<div class="standard-img">${imgTag(img, true)}</div>` : ''}
-      <div class="standard-body">
-        ${zoneBadge(a.zone)}
-        <h3 class="standard-title">${escHtml(a.title)}</h3>
-        ${a.summary ? `<p class="standard-summary">${escHtml(a.summary)}</p>` : ''}
-        <div class="standard-meta">
-          <span>${escHtml(a.source_name || 'Quelle')}</span>
-          ${readTime(a.read_time_min)}
-        </div>
+    <a href="${href}" target="_blank" rel="noopener noreferrer" class="card-imagebg-link">
+      ${bgLayer}
+      <div class="card-imagebg-body">
+        <div style="margin-bottom:10px;">${badgeOnDark(a.zone)}</div>
+        <h3 class="card-imagebg-title">${escHtml(a.title)}</h3>
+        ${a.summary ? `<p class="card-imagebg-summary">${escHtml(a.summary)}</p>` : ''}
+        <div style="padding-top:14px;">${sourcePillSpan(a.source_name, true)}</div>
       </div>
     </a>`;
 }
 
-function renderQuick(a) {
+// ── Compact card (text-only, quick format) ────────────────────────────────────
+
+function renderCompact(a) {
   const url = escAttr(a.source_url);
   return `
-    <a href="${url}" target="_blank" rel="noopener noreferrer" class="mod-quick">
-      <span class="quick-title">${escHtml(a.title)}</span>
-      <span class="quick-meta">${escHtml(a.source_name || 'Quelle')}</span>
+    <a href="${url}" target="_blank" rel="noopener noreferrer"
+       style="text-decoration:none;color:inherit;display:block;">
+      <div class="card-compact">
+        ${badge(a.zone)}
+        <h3 class="card-compact-title">${escHtml(a.title)}</h3>
+        ${a.summary ? `<p class="card-compact-summary">${escHtml(a.summary)}</p>` : ''}
+        <div class="card-compact-footer">${sourcePill(a.source_url, a.source_name)}</div>
+      </div>
     </a>`;
 }
 
-function renderQuickGroup(articles) {
-  return `
-    <div class="quick-section">
-      <p class="quick-label">Quick Pulse</p>
-      <div class="quick-row">
-        ${articles.map(renderQuick).join('')}
-      </div>
-    </div>`;
-}
+// ── Quote module ──────────────────────────────────────────────────────────────
 
 function renderQuote(a) {
   const url = escAttr(a.source_url);
   const text = a.quote_text || a.title;
   return `
-    <div class="mod-quote">
-      <span class="quote-mark">"</span>
-      <blockquote class="quote-text">${escHtml(text)}</blockquote>
-      ${a.quote_author ? `<p class="quote-author">— ${escHtml(a.quote_author)}</p>` : ''}
-      ${url !== '#' ? `<a href="${url}" target="_blank" rel="noopener noreferrer" class="quote-link">${escHtml(a.source_name || 'Quelle')} ↗</a>` : ''}
+    <div class="grid-span-full" style="padding:48px 32px;background:var(--badge-bg);border-radius:var(--radius);text-align:center;">
+      <span style="font-size:72px;line-height:0.6;color:var(--accent);font-family:Georgia,serif;margin-bottom:28px;display:block;">"</span>
+      <blockquote style="font-size:clamp(20px,2.8vw,28px);font-weight:500;letter-spacing:-0.02em;line-height:1.4;color:var(--text);max-width:720px;margin:0 auto 20px;">${escHtml(text)}</blockquote>
+      ${a.quote_author ? `<p style="font-size:14px;color:var(--text2);margin-bottom:16px;">— ${escHtml(a.quote_author)}</p>` : ''}
+      ${url !== '#' ? `<a href="${url}" target="_blank" rel="noopener noreferrer" class="source-pill">${escHtml(a.source_name || 'Quelle')} ↗</a>` : ''}
     </div>`;
-}
-
-function renderVisual(a) {
-  const url = escAttr(a.source_url);
-  const img = safeUrl(a.image_url);
-  return `
-    <a href="${url}" target="_blank" rel="noopener noreferrer"
-       class="mod-visual${img ? '' : ' no-image'}">
-      ${img ? `<div class="visual-img">${imgTag(img, true)}</div><div class="visual-overlay"></div>` : ''}
-      <div class="visual-content">
-        ${zoneBadge(a.zone)}
-        <h3 class="visual-title">${escHtml(a.title)}</h3>
-        <p class="visual-meta">${escHtml(a.source_name || 'Quelle')} ↗</p>
-      </div>
-    </a>`;
 }
 
 // ── Grid builder ──────────────────────────────────────────────────────────────
 
-// Groups consecutive quick articles; renders all other formats individually.
 function buildGrid(articles) {
-  const parts = [];
-  let i = 0;
-  while (i < articles.length) {
-    const a = articles[i];
+  const gridItems = [];
+  const compactItems = [];
+  let imgBgCounter = 0;
+
+  articles.forEach((a, idx) => {
     if (a.format === 'quick') {
-      const group = [];
-      while (i < articles.length && articles[i].format === 'quick') group.push(articles[i++]);
-      parts.push(renderQuickGroup(group));
-    } else if (a.format === 'quote')   { parts.push(renderQuote(a));   i++; }
-    else if (a.format === 'feature')   { parts.push(renderFeature(a)); i++; }
-    else if (a.format === 'visual')    { parts.push(renderVisual(a));  i++; }
-    else {
-      const group = [];
-      while (i < articles.length && articles[i].format !== 'quick' && articles[i].format !== 'quote' && articles[i].format !== 'feature' && articles[i].format !== 'visual' && articles[i].format !== 'hero') group.push(articles[i++]);
-      const spanClass = group.length === 1 ? 'span-8' : group.length === 2 ? 'span-6' : 'span-4';
-      group.forEach(g => parts.push(renderStandard(g, spanClass)));
+      compactItems.push(renderCompact(a));
+      return;
     }
+    if (a.format === 'quote') {
+      gridItems.push(renderQuote(a));
+      return;
+    }
+    const hasImg = safeUrl(a.image_url);
+    const useImageBg = hasImg && (a.format === 'feature' || a.format === 'visual' || imgBgCounter % 2 === 0);
+    if (hasImg && (a.format === 'feature' || a.format === 'visual')) {
+      gridItems.push(renderImageBgCard(a));
+    } else if (hasImg && imgBgCounter % 2 === 0) {
+      gridItems.push(renderImageBgCard(a));
+      imgBgCounter++;
+    } else {
+      gridItems.push(renderDefaultCard(a));
+      if (hasImg) imgBgCounter++;
+    }
+  });
+
+  const grid = gridItems.length
+    ? `<div class="cards-grid">${gridItems.join('')}</div>`
+    : '';
+
+  const compact = compactItems.length
+    ? `<div class="compact-section">${compactItems.join('')}</div>`
+    : '';
+
+  return grid + compact;
+}
+
+// ── Masonry layout ────────────────────────────────────────────────────────────
+
+let _masonryRaf = null;
+
+function applyMasonry() {
+  const grid = document.querySelector('.cards-grid');
+  if (!grid) return;
+  const items = [...grid.children];
+  if (!items.length) return;
+
+  if (window.innerWidth < 700) {
+    grid.style.position = '';
+    grid.style.height = '';
+    items.forEach(item => {
+      item.style.position = '';
+      item.style.width = '';
+      item.style.left = '';
+      item.style.top = '';
+    });
+    return;
   }
-  return `<div class="magazine-grid">${parts.join('')}</div>`;
+
+  const cols = window.innerWidth >= 1024 ? 3 : 2;
+  const gap = 20;
+  grid.style.position = 'relative';
+  const totalWidth = grid.offsetWidth;
+  const colWidth = (totalWidth - gap * (cols - 1)) / cols;
+  const colHeights = new Array(cols).fill(0);
+
+  items.forEach(item => {
+    if (item.classList.contains('grid-span-full')) {
+      const top = Math.max(...colHeights);
+      item.style.position = 'absolute';
+      item.style.width = totalWidth + 'px';
+      item.style.left = '0';
+      item.style.top = top + 'px';
+      colHeights.fill(top + item.offsetHeight + gap);
+    } else {
+      const col = colHeights.indexOf(Math.min(...colHeights));
+      item.style.position = 'absolute';
+      item.style.width = colWidth + 'px';
+      item.style.left = col * (colWidth + gap) + 'px';
+      item.style.top = colHeights[col] + 'px';
+      colHeights[col] += item.offsetHeight + gap;
+    }
+  });
+
+  grid.style.height = Math.max(...colHeights) - gap + 'px';
+}
+
+function scheduleMasonry() {
+  cancelAnimationFrame(_masonryRaf);
+  _masonryRaf = requestAnimationFrame(applyMasonry);
+}
+
+// ── Video section ─────────────────────────────────────────────────────────────
+
+function buildVideoSection(videos) {
+  if (!videos.length) return '';
+
+  const cards = videos.map(v => {
+    const thumb = `https://img.youtube.com/vi/${escHtml(v.video_id)}/maxresdefault.jpg`;
+    const url = `https://www.youtube.com/watch?v=${escHtml(v.video_id)}`;
+    return `
+      <a href="${url}" target="_blank" rel="noopener noreferrer" class="video-item">
+        <div class="video-thumb">
+          <img src="${thumb}" alt="" loading="lazy">
+          <div class="video-play-btn">
+            <div class="video-play-circle">
+              <svg width="16" height="18" viewBox="0 0 16 18" fill="#fff" aria-hidden="true">
+                <path d="M0 1.5C0 .67.91.18 1.6.62l12.8 7.5a1 1 0 010 1.76L1.6 17.38C.9 17.82 0 17.33 0 16.5v-15z"/>
+              </svg>
+            </div>
+          </div>
+          ${v.duration ? `<span class="video-duration">${escHtml(v.duration)}</span>` : ''}
+        </div>
+        <h3 class="video-item-title">${escHtml(v.title)}</h3>
+        <div class="video-item-channel">${escHtml(v.channelName || v.channel_name || '')}</div>
+      </a>`;
+  }).join('');
+
+  return `
+    <section class="video-section">
+      <div class="video-header">
+        <h2 class="video-title-main">Video Pulse</h2>
+        <div class="video-nav-btns">
+          <button class="video-nav-btn" id="vid-prev" aria-label="Zurück">‹</button>
+          <button class="video-nav-btn" id="vid-next" aria-label="Vor">›</button>
+        </div>
+      </div>
+      <div class="video-scroller" id="video-scroller">
+        ${cards}
+      </div>
+    </section>`;
+}
+
+function initVideoNav() {
+  const scroller = document.getElementById('video-scroller');
+  const prev = document.getElementById('vid-prev');
+  const next = document.getElementById('vid-next');
+  if (!scroller || !prev || !next) return;
+  prev.addEventListener('click', () => scroller.scrollBy({ left: -(scroller.clientWidth * 0.8), behavior: 'smooth' }));
+  next.addEventListener('click', () => scroller.scrollBy({ left: scroller.clientWidth * 0.8, behavior: 'smooth' }));
 }
 
 // ── Index page ────────────────────────────────────────────────────────────────
@@ -214,6 +354,10 @@ async function loadCurrentEdition() {
 
   const edition = editions[0];
 
+  // Update nav edition label
+  const navEd = document.getElementById('nav-edition');
+  if (navEd && edition.title) navEd.textContent = `Tech Pulse · ${edition.title}`;
+
   const { data: articles, error: artErr } = await sb
     .from('articles')
     .select('*')
@@ -229,17 +373,34 @@ async function loadCurrentEdition() {
   const hero = list.find(a => a.format === 'hero');
   const rest = list.filter(a => a.format !== 'hero');
 
-  const videosHtml = await loadVideos();
+  const videos = await loadVideos();
+
+  const dateStr = edition.edition_date
+    ? new Date(edition.edition_date).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' })
+    : '';
 
   container.innerHTML = `
-    <div class="edition-intro">
-      ${edition.edition_date ? `<p class="edition-eyebrow">${formatDate(edition.edition_date)}</p>` : ''}
-      ${edition.summary ? `<p class="edition-summary">${escHtml(edition.summary)}</p>` : ''}
-    </div>
+    ${dateStr ? `<p class="masthead">${escHtml(dateStr)}</p>` : ''}
+    ${edition.summary ? `<div class="edition-intro"><p>${escHtml(edition.summary)}</p></div>` : ''}
     ${hero ? renderHero(hero) : ''}
     ${rest.length ? buildGrid(rest) : ''}
-    ${videosHtml}
+    ${buildVideoSection(videos)}
   `;
+
+  initVideoNav();
+
+  requestAnimationFrame(applyMasonry);
+  const imgs = container.querySelectorAll('img');
+  let pending = imgs.length || 1;
+  function onSettled() { if (--pending <= 0) applyMasonry(); }
+  if (!imgs.length) { onSettled(); }
+  else imgs.forEach(img => {
+    if (img.complete) onSettled();
+    else {
+      img.addEventListener('load', onSettled, { once: true });
+      img.addEventListener('error', onSettled, { once: true });
+    }
+  });
 }
 
 // ── Archive page ──────────────────────────────────────────────────────────────
@@ -265,49 +426,46 @@ async function loadArchive() {
 
   const ids = editions.map(e => e.id);
 
-  // Fetch hero images and article counts in parallel
-  const [{ data: heroRows }, countResults] = await Promise.all([
-    ids.length
-      ? sb.from('articles').select('edition_id, image_url').in('edition_id', ids).eq('format', 'hero')
-      : Promise.resolve({ data: [] }),
-    Promise.all(editions.map(e =>
+  const countResults = await Promise.all(
+    editions.map(e =>
       sb.from('articles').select('id', { count: 'exact', head: true }).eq('edition_id', e.id)
         .then(({ count }) => ({ id: e.id, count: count ?? 0 }))
-    )),
-  ]);
+    )
+  );
 
-  const heroMap = Object.fromEntries((heroRows || []).map(r => [r.edition_id, r.image_url]));
   const countMap = Object.fromEntries(countResults.map(r => [r.id, r.count]));
 
   const items = editions.map(ed => {
-    const img = safeUrl(heroMap[ed.id]);
     const href = ed.is_current ? 'index.html' : null;
-    const disabled = href ? '' : 'aria-disabled="true"';
+    const dateStr = formatDate(ed.edition_date);
+    const count = countMap[ed.id];
+
     return `
-      <a ${href ? `href="${href}"` : ''} class="archive-item" ${disabled}>
-        <div class="archive-thumb">
-          ${img ? `<img src="${img}" alt="" loading="lazy">` : '<div class="img-placeholder"></div>'}
-        </div>
-        <div class="archive-item-body">
-          <p class="archive-item-title">${escHtml(ed.title)}</p>
-          <div class="archive-item-meta">
-            <span>${formatDate(ed.edition_date)}</span>
-            <span>·</span>
-            <span>${countMap[ed.id]} Artikel</span>
-            ${ed.is_current ? '<span class="current-badge">Aktuell</span>' : ''}
+      <li>
+        ${href
+          ? `<a href="${href}" class="archive-item">`
+          : `<div class="archive-item" style="opacity:0.45;">`
+        }
+          <div>
+            <div class="archive-item-title">
+              ${escHtml(ed.title)}
+              ${ed.is_current ? `<span class="archive-current-badge">Aktuell</span>` : ''}
+            </div>
+            <div class="archive-item-meta-sm hide-wide">${dateStr} · ${count} Artikel</div>
           </div>
-        </div>
-        ${ed.is_current ? '<span class="archive-chevron">›</span>' : ''}
-      </a>`;
+          <div class="archive-item-date show-wide">${dateStr}</div>
+          <div class="archive-item-count show-wide">${count} Artikel</div>
+        ${href ? `</a>` : `</div>`}
+      </li>`;
   }).join('');
 
   container.innerHTML = `
-    <div class="archive-header"><h1>Archiv</h1></div>
-    <div class="archive-list">${items}</div>
+    <h1 class="archive-heading">Archiv</h1>
+    <ul class="archive-list">${items}</ul>
   `;
 }
 
-// ── Video Pulse ───────────────────────────────────────────────────────────────
+// ── Video loader ──────────────────────────────────────────────────────────────
 
 async function loadVideos() {
   const CHANNELS = [
@@ -329,112 +487,51 @@ async function loadVideos() {
     (r.data || []).map(v => ({ ...v, channelName: CHANNELS[i].name }))
   );
 
-  const maxLen = Math.max(...channelVideos.map(v => v.length));
+  const maxLen = Math.max(0, ...channelVideos.map(v => v.length));
   const interleaved = [];
   for (let i = 0; i < maxLen; i++) {
     channelVideos.forEach(videos => { if (videos[i]) interleaved.push(videos[i]); });
   }
 
-  if (!interleaved.length) return '';
-
-  const cards = interleaved.map(v => {
-    const thumb = `https://img.youtube.com/vi/${escHtml(v.video_id)}/maxresdefault.jpg`;
-    const url = `https://www.youtube.com/watch?v=${escHtml(v.video_id)}`;
-    return `
-      <a href="${url}" target="_blank" rel="noopener noreferrer" class="video-card">
-        <div class="video-thumb">
-          <img src="${thumb}" alt="" loading="lazy">
-          <div class="video-play">▶</div>
-          <span class="video-channel-badge">${escHtml(v.channelName)}</span>
-        </div>
-        <div class="video-body">
-          <h3 class="video-title">${escHtml(v.title)}</h3>
-          <p class="video-date">${formatDate(v.published_at)}</p>
-        </div>
-      </a>`;
-  }).join('');
-
-  return `
-    <section class="video-pulse">
-      <p class="video-pulse-label">Video Pulse</p>
-      <div class="video-carousel">${cards}</div>
-    </section>`;
+  return interleaved;
 }
 
-// ── Nav burger ────────────────────────────────────────────────────────────────
+// ── Nav ───────────────────────────────────────────────────────────────────────
 
 function initNav() {
   const burger = document.getElementById('burger');
-  const menu = document.getElementById('nav-menu');
-  if (!burger || !menu) return;
+  const overlay = document.getElementById('nav-overlay');
+  const closeBtn = document.getElementById('nav-close');
+  if (!burger || !overlay) return;
 
-  burger.addEventListener('click', () => {
-    const open = burger.getAttribute('aria-expanded') === 'true';
-    burger.setAttribute('aria-expanded', String(!open));
-    menu.classList.toggle('open', !open);
-  });
+  function openMenu() {
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
 
-  document.addEventListener('click', e => {
-    if (!burger.contains(e.target) && !menu.contains(e.target)) {
-      burger.setAttribute('aria-expanded', 'false');
-      menu.classList.remove('open');
-    }
-  });
-}
-
-// ── Card expand sheet ─────────────────────────────────────────────────────────
-
-function initCardSheet() {
-  const sheet = document.createElement('div');
-  sheet.className = 'card-sheet';
-  sheet.innerHTML = `
-    <div class="card-sheet-backdrop"></div>
-    <div class="card-sheet-panel">
-      <div class="card-sheet-handle"></div>
-      <div class="card-sheet-body"></div>
-      <a class="card-sheet-cta" target="_blank" rel="noopener noreferrer">Zum Artikel ↗</a>
-    </div>`;
-  document.body.appendChild(sheet);
-
-  function closeSheet() {
-    sheet.classList.remove('open');
+  function closeMenu() {
+    overlay.classList.remove('open');
     document.body.style.overflow = '';
   }
 
-  sheet.querySelector('.card-sheet-backdrop').addEventListener('click', closeSheet);
-  sheet.querySelector('.card-sheet-handle').addEventListener('click', closeSheet);
+  burger.addEventListener('click', openMenu);
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
 
-  document.addEventListener('click', e => {
-    const card = e.target.closest('.mod-feature, .mod-hero');
-    if (!card || e.target.closest('.card-sheet')) return;
-
-    const summaryEl = card.querySelector('.feature-summary, .hero-summary');
-    const isTruncated = summaryEl && summaryEl.scrollHeight > summaryEl.clientHeight + 4;
-    if (!isTruncated) return;
-
-    e.preventDefault();
-
-    const zone = card.querySelector('.feature-zone-label, .hero-zone')?.textContent.trim() || '';
-    const title = card.querySelector('.feature-title, .hero-title')?.textContent.trim() || '';
-    const summary = summaryEl?.textContent.trim() || '';
-    const source = card.querySelector('.source-link, .hero-source')?.textContent.trim() || '';
-
-    sheet.querySelector('.card-sheet-body').innerHTML = `
-      ${zone ? `<span class="card-sheet-zone">${escHtml(zone)}</span>` : ''}
-      <h2 class="card-sheet-title">${escHtml(title)}</h2>
-      <p class="card-sheet-summary">${escHtml(summary)}</p>
-      ${source ? `<p class="card-sheet-source">${escHtml(source)}</p>` : ''}`;
-    sheet.querySelector('.card-sheet-cta').href = card.href;
-    sheet.classList.add('open');
-    document.body.style.overflow = 'hidden';
+  overlay.addEventListener('click', e => {
+    if (!e.target.closest('#nav-panel')) closeMenu();
   });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeMenu();
+  });
+
+  window.addEventListener('resize', scheduleMasonry);
 }
 
 // ── Init ──────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
-  initCardSheet();
   loadCurrentEdition();
   loadArchive();
 });
