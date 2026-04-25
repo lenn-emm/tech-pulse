@@ -10,6 +10,8 @@ on:
 jobs:
   publish-edition:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -95,3 +97,42 @@ jobs:
             req('articles', data=rows)
           print(f'{len(rows)} Artikel eingetragen.')
           PYEOF
+
+      - name: recent-articles.json aus Supabase regenerieren (Dedup-Fenster)
+        env:
+          SUPABASE_URL: https://rjmyjuejdhcnijerwwwe.supabase.co
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          python3 << 'PYEOF'
+          import json, os, urllib.request
+
+          URL = os.environ['SUPABASE_URL']
+          KEY = os.environ['SUPABASE_SERVICE_ROLE_KEY']
+          HDR = {'apikey': KEY, 'Authorization': f'Bearer {KEY}'}
+
+          q = 'rest/v1/articles?select=title,source_url&order=created_at.desc&limit=80'
+          r = urllib.request.Request(f'{URL}/{q}', headers=HDR)
+          articles = json.loads(urllib.request.urlopen(r, timeout=15).read())
+
+          payload = {
+            "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
+            "articles": [{"title": a["title"], "source_url": a["source_url"]} for a in articles]
+          }
+
+          with open('data/recent-articles.json', 'w', encoding='utf-8') as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2)
+
+          print(f'recent-articles.json mit {len(articles)} Einträgen aktualisiert.')
+          PYEOF
+
+      - name: recent-articles.json committen (falls geändert)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/recent-articles.json
+          if git diff --staged --quiet; then
+            echo "Keine Änderungen an recent-articles.json — übersprungen."
+          else
+            git commit -m "auto: recent-articles.json (Dedup-Fenster aktualisiert)"
+            git push
+          fi
