@@ -501,28 +501,26 @@ async function loadVideos() {
 function initNav() {
   const burger = document.getElementById('burger');
   const overlay = document.getElementById('nav-overlay');
-  const closeBtn = document.getElementById('nav-close');
   if (!burger || !overlay) return;
 
-  function openMenu() {
-    overlay.classList.add('open');
-    document.body.style.overflow = 'hidden';
+  function setOpen(open) {
+    overlay.classList.toggle('open', open);
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? 'Menü schliessen' : 'Menü öffnen');
+    document.body.style.overflow = open ? 'hidden' : '';
   }
 
-  function closeMenu() {
-    overlay.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-
-  burger.addEventListener('click', openMenu);
-  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  burger.addEventListener('click', () => {
+    setOpen(!overlay.classList.contains('open'));
+  });
 
   overlay.addEventListener('click', e => {
-    if (!e.target.closest('#nav-panel')) closeMenu();
+    if (!e.target.closest('#nav-panel') && !e.target.closest('#burger')) setOpen(false);
   });
 
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeMenu();
+    if (e.key === 'Escape') setOpen(false);
   });
 
   window.addEventListener('resize', scheduleMasonry);

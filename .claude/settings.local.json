@@ -6,7 +6,12 @@
       "Bash(curl -s -X DELETE 'https://rjmyjuejdhcnijerwwwe.supabase.co/rest/v1/editions?id=eq.cd8560d8-0abb-4a9d-a760-ed86892a7016' -H 'apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJqbXlqdWVqZGhjbmlqZXJ3d3dlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NjQyODg0MywiZXhwIjoyMDkyMDA0ODQzfQ.7w5XV-CjSiu-WfiJchX0hkzI-FpD6avLkZmOqld52w8' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJqbXlqdWVqZGhjbmlqZXJ3d3dlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NjQyODg0MywiZXhwIjoyMDkyMDA0ODQzfQ.7w5XV-CjSiu-WfiJchX0hkzI-FpD6avLkZmOqld52w8')",
       "Bash(curl -s -X POST https://rjmyjuejdhcnijerwwwe.supabase.co/rest/v1/editions -H 'apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJqbXlqdWVqZGhjbmlqZXJ3d3dlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NjQyODg0MywiZXhwIjoyMDkyMDA0ODQzfQ.7w5XV-CjSiu-WfiJchX0hkzI-FpD6avLkZmOqld52w8' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJqbXlqdWVqZGhjbmlqZXJ3d3dlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NjQyODg0MywiZXhwIjoyMDkyMDA0ODQzfQ.7w5XV-CjSiu-WfiJchX0hkzI-FpD6avLkZmOqld52w8' -H 'Content-Type: application/json' -H 'Prefer: return=representation' -d '{ *)",
       "Bash(curl -s -X POST https://rjmyjuejdhcnijerwwwe.supabase.co/rest/v1/articles -H 'apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJqbXlqdWVqZGhjbmlqZXJ3d3dlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NjQyODg0MywiZXhwIjoyMDkyMDA0ODQzfQ.7w5XV-CjSiu-WfiJchX0hkzI-FpD6avLkZmOqld52w8' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJqbXlqdWVqZGhjbmlqZXJ3d3dlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NjQyODg0MywiZXhwIjoyMDkyMDA0ODQzfQ.7w5XV-CjSiu-WfiJchX0hkzI-FpD6avLkZmOqld52w8' -H 'Content-Type: application/json' -H 'Prefer: return=minimal' -d '[ *)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Read(//Users/lennyemmel/Desktop/**)",
+      "Bash(unzip -l Tech-Update-handoff.zip)",
+      "Read(//private/tmp/tech-update-extract/**)",
+      "Read(//private/tmp/tech-update-extract/tech-update/**)",
+      "Bash(gh pr create --title 'feat: Liquid Glass redesign — masonry layout, no flip cards, full-text cards' --body ' *)"
     ]
   }
 }
