@@ -1,0 +1,97 @@
+name: Tech Pulse — Edition Publish
+
+# Triggert, sobald die Cloud-Routine eine neue data/next-edition.json pusht.
+on:
+  push:
+    paths:
+      - 'data/next-edition.json'
+  workflow_dispatch:
+
+jobs:
+  publish-edition:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Edition + Artikel in Supabase schreiben
+        env:
+          SUPABASE_URL: https://rjmyjuejdhcnijerwwwe.supabase.co
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          python3 << 'PYEOF'
+          import json, os, urllib.request, urllib.parse, sys
+
+          URL = os.environ['SUPABASE_URL']
+          KEY = os.environ['SUPABASE_SERVICE_ROLE_KEY']
+          HDR = {
+            'apikey': KEY,
+            'Authorization': f'Bearer {KEY}',
+            'Content-Type': 'application/json',
+            'Prefer': 'return=representation',
+          }
+
+          def req(path, data=None, method=None, headers=None):
+            h = dict(HDR)
+            if headers: h.update(headers)
+            r = urllib.request.Request(
+              f'{URL}/rest/v1/{path}',
+              data=(json.dumps(data).encode() if data is not None else None),
+              headers=h,
+              method=method or ('POST' if data is not None else 'GET'),
+            )
+            with urllib.request.urlopen(r, timeout=20) as resp:
+              body = resp.read()
+              return json.loads(body) if body else None
+
+          with open('data/next-edition.json', 'r', encoding='utf-8') as f:
+            payload = json.load(f)
+
+          edition_in = payload['edition']
+          articles_in = payload.get('articles', [])
+
+          title = edition_in['title']
+          edition_date = edition_in['edition_date']
+          summary = edition_in.get('summary')
+
+          q = urllib.parse.urlencode({'edition_date': f'eq.{edition_date}', 'select': 'id'})
+          existing = req(f'editions?{q}')
+          if existing:
+            print(f'Edition {edition_date} existiert bereits — überspringe.')
+            sys.exit(0)
+
+          req('editions?is_current=eq.true',
+              data={'is_current': False},
+              method='PATCH')
+          print('Alte Editionen archiviert (is_current=false).')
+
+          new_edition = req('editions', data=[{
+            'title': title,
+            'edition_date': edition_date,
+            'summary': summary,
+            'is_current': True,
+          }])
+          edition_id = new_edition[0]['id']
+          print(f'Neue Edition: {edition_id} — {title}')
+
+          rows = []
+          for i, a in enumerate(articles_in, start=1):
+            rows.append({
+              'edition_id':    edition_id,
+              'title':         a['title'],
+              'summary':       a.get('summary'),
+              'source_url':    a.get('source_url'),
+              'source_name':   a.get('source_name'),
+              'category':      a.get('category'),
+              'position':      a.get('position', i),
+              'format':        a.get('format', 'standard'),
+              'zone':          a.get('zone', 'core'),
+              'image_url':     a.get('image_url'),
+              'read_time_min': a.get('read_time_min'),
+              'quote_text':    a.get('quote_text'),
+              'quote_author':  a.get('quote_author'),
+            })
+
+          if rows:
+            req('articles', data=rows)
+          print(f'{len(rows)} Artikel eingetragen.')
+          PYEOF
