@@ -1,0 +1,108 @@
+{
+  "edition": {
+    "edition_date": "2026-04-25",
+    "title": "Tech Pulse — Samstag, 25. April 2026",
+    "summary": "GPT-5.5, DeepSeek V4, Googles 40-Mrd.-Wette auf Anthropic, Cloud Next, Sony-Roboter und die KI-Regulierungswelle in den USA."
+  },
+  "articles": [
+    {
+      "position": 1,
+      "format": "hero",
+      "zone": "core",
+      "category": "model_release",
+      "title": "OpenAI startet GPT-5.5: Erstes neu trainiertes Modell seit GPT-4",
+      "summary": "OpenAI hat GPT-5.5 lanciert – das erste vollständig neu trainierte Basismodell seit GPT-4, mit 1-Millionen-Token-Kontext und besonderer Stärke in Coding, Computer-Use und Wissenschaftsagenten. Das Modell steht Plus-, Pro-, Business- und Enterprise-ChatGPT-Nutzern sofort zur Verfügung und kostet 5 bzw. 30 US-Dollar pro Million Tokens – günstiger als von Analysten erwartet. GPT-5.5 markiert laut OpenAI den Beginn einer Modell-Generation, die auf eigenständige Wissensarbeit ausgelegt ist.",
+      "source_url": "https://openai.com/index/introducing-gpt-5-5/",
+      "source_name": "OpenAI",
+      "read_time_min": 6
+    },
+    {
+      "position": 2,
+      "format": "feature",
+      "zone": "core",
+      "category": "model_release",
+      "title": "DeepSeek V4: Größtes Open-Weight-Modell fordert Frontier-KIs heraus",
+      "summary": "DeepSeek hat V4-Pro und V4-Flash vorgestellt – mit 1,6 Billionen Gesamtparametern (49 Mrd. aktiv) das bisher größte öffentlich verfügbare Open-Weight-Modell, entwickelt auf Huawei-Chips und vollständig quelloffen. Ein 1-Millionen-Token-Kontext und ein Preis von 3,48 US-Dollar pro Million Output-Tokens unterbieten OpenAI und Anthropic drastisch. Laut frühen Benchmarks schließt V4-Pro den Abstand zu proprietären Frontier-Modellen erheblich.",
+      "source_url": "https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/",
+      "source_name": "TechCrunch",
+      "read_time_min": 4
+    },
+    {
+      "position": 3,
+      "format": "feature",
+      "zone": "core",
+      "category": "company_news",
+      "title": "Google investiert bis zu 40 Mrd. Dollar in Anthropic",
+      "summary": "Google (Alphabet) kündigte eine Investition von bis zu 40 Milliarden Dollar in Anthropic an: 10 Mrd. sofort bei einer Bewertung von 350 Mrd. Dollar, weitere 30 Mrd. an Meilensteine geknüpft. Dies folgt auf Amazons 25-Mrd.-Dollar-Engagement wenige Tage zuvor und macht Anthropic zur gemeinschaftlichen KI-Wette von zwei der größten Technologiekonzerne der Welt. Ein Großteil der Mittel ist für Infrastrukturausgaben auf Google Cloud vorgesehen.",
+      "source_url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
+      "source_name": "TechCrunch",
+      "read_time_min": 4
+    },
+    {
+      "position": 4,
+      "format": "feature",
+      "zone": "adjacent",
+      "category": "product",
+      "title": "Google Cloud Next ’26: Gemini-Agenten-Plattform und Siri-Partnerschaft",
+      "summary": "Auf der Google Cloud Next ’26 in Las Vegas präsentierte Google die Gemini Enterprise Agent Platform (Evolution von Vertex AI) mit einem Agent Marketplace und 70+ vorgefertigten Agenten sowie neue TPU-8-Chips der 8. Generation und einen 750-Millionen-Dollar-Innovationsfonds. Google-Cloud-CEO Thomas Kurian bestätigte zudem, dass Gemini ab iOS 27 die Basis von Apples überarbeitetem Siri bildet – ein jährlicher Deal im Milliarden-Dollar-Bereich. Die Konferenz markiert Googles Ambitionen als führende Unternehmens-KI-Plattform.",
+      "source_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/next-2026/",
+      "source_name": "Google Blog",
+      "read_time_min": 5
+    },
+    {
+      "position": 5,
+      "format": "feature",
+      "zone": "outside",
+      "category": "research",
+      "title": "Sony-Roboter Ace besiegt Elite-Tischtennisspieler – Nature-Cover",
+      "summary": "Sonys KI-Roboter Project Ace ist das erste autonome System, das professionelle Tischtennisspieler unter offiziellen ITTF-Wettkampfbedingungen besiegt hat – dokumentiert in einem Nature-Cover-Paper. Ereignisbasierte Visionssensoren und modellfreies Reinforcement Learning ermöglichen Reaktionszeiten und Präzision auf Elite-Niveau. Der Durchbruch gilt als Meilenstein für verkörperte KI und eröffnet Fragen zur Leistungsfähigkeit autonomer Systeme in der physischen Welt.",
+      "source_url": "https://www.nature.com/articles/s41586-026-10338-5",
+      "source_name": "Nature",
+      "read_time_min": 8
+    },
+    {
+      "position": 6,
+      "format": "visual",
+      "zone": "core",
+      "category": "product",
+      "title": "Gemini April-Drop: Mac-App, Lyria-3-Musik-KI und 3D-Modelle",
+      "summary": "Googles April-Drop für die Gemini-App bringt eine native Mac-App, NotebookLM direkt in der Gemini-Oberfläche sowie das Musik-Modell Lyria 3 Pro für bis zu 3-minütige Audio-Tracks aus der Cloud. Neu hinzu kommen 3D-Modell-Generierung und interaktive Diagrammerstellung via dem neuen Nano-Banana-2-Bildmodell. Damit baut Google seinen Multimodal-Vorsprung aus und schließt in Musik-KI zu Sora und Suno auf.",
+      "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-drop-april-2026/",
+      "source_name": "Google Blog",
+      "read_time_min": 3
+    },
+    {
+      "position": 7,
+      "format": "quick",
+      "zone": "adjacent",
+      "category": "company_news",
+      "title": "Meta und Microsoft streichen je ~10% der Stellen für KI-Ausgaben",
+      "summary": "Meta baut rund 8.000 Jobs (10% der Belegschaft) ab; Microsoft bietet Buyouts für etwa 7% seiner US-Mitarbeiter an – in derselben Woche, in der beide Konzerne massive KI-Investitionen ankündigen. Mit über 23.000 betroffenen Stellen in wenigen Tagen gilt dies als erstes deutliches Signal einer KI-getriebenen Umstrukturierung in Big Tech.",
+      "source_url": "https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html",
+      "source_name": "CNBC",
+      "read_time_min": 3
+    },
+    {
+      "position": 8,
+      "format": "quick",
+      "zone": "wildcard",
+      "category": "company_news",
+      "title": "SpaceX sichert sich 60-Mrd.-Dollar-Kaufoption für Coding-KI Cursor",
+      "summary": "SpaceX hat eine Option auf den Erwerb des KI-Coding-Startups Anysphere (Cursor) für 60 Milliarden Dollar vereinbart – alternativ eine 10-Mrd.-Dollar-Kooperation auf dem Colossus-Supercomputer. Der Deal kam kurz nachdem Microsoft einen Kauf verworfen hatte und Cursor eine 2-Mrd.-Finanzierungsrunde bei 50-Mrd.-Bewertung laufen hatte. Elon Musk positioniert SpaceX damit als KI-Powerhouse vor dem geplanten Börsengang.",
+      "source_url": "https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60-billion/",
+      "source_name": "TechCrunch",
+      "read_time_min": 3
+    },
+    {
+      "position": 9,
+      "format": "quick",
+      "zone": "adjacent",
+      "category": "regulation",
+      "title": "78 KI-Gesetze in 27 US-Bundesstaaten: Regulierungswelle rollt an",
+      "summary": "In 27 US-Bundesstaaten sind aktuell 78 KI-Gesetzentwürfe aktiv – Washington hat zwei KI-Transparenzgesetze unterzeichnet, Utah alle neun seiner KI-Vorlagen; Arizona steht kurz vor weiteren Regelungen zur Konversations-KI. Der entstehende Flickenteppich unterschiedlicher Anforderungen dürfte Unternehmen in den Bereichen automatisierte Entscheidungen und Chatbots zunehmend unter Compliance-Druck setzen.",
+      "source_url": "https://www.transparencycoalition.ai/news/ai-legislative-update-april24-2026",
+      "source_name": "Transparency Coalition",
+      "read_time_min": 4
+    }
+  ]
+}
