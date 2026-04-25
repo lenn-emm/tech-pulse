@@ -407,27 +407,7 @@ a { color: inherit; text-decoration: none; }
 }
 .hero-title a:hover { background-size: 100% 1.5px; }
 
-.card-img-bg {
-  position: absolute;
-  inset: 0;
-  background: var(--badge-bg);
-  overflow: hidden;
-}
-
-.card-img-bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s ease;
-}
-
-.card-img-placeholder {
-  position: absolute;
-  inset: 0;
-  background: #2c2c2e;
-}
-
-/* Category-based vibrant gradient fallback when no image available */
+/* Category-based vibrant gradient background */
 .card-fallback-bg {
   position: absolute;
   inset: 0;
@@ -575,38 +555,6 @@ a { color: inherit; text-decoration: none; }
 
 /* ── Default card (white) ── */
 
-.card-default-img {
-  aspect-ratio: 16/9;
-  max-height: 220px;
-  background: var(--badge-bg);
-  overflow: hidden;
-  border-radius: 0;
-  flex-shrink: 0;
-}
-
-.card-default-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.card-default-img-placeholder {
-  width: 100%;
-  aspect-ratio: 16/9;
-  max-height: 220px;
-  background: var(--badge-bg);
-  position: relative;
-  flex-shrink: 0;
-}
-
-.card-default-img-placeholder svg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .card-body {
   padding: 18px 18px 20px;
   flex: 1;
@@ -679,20 +627,6 @@ a { color: inherit; text-decoration: none; }
   mask-image: linear-gradient(to bottom, #000 0%, #000 45%, transparent 100%);
   z-index: -1;
   pointer-events: none;
-}
-
-/* ── Default card: badge overlay on image ── */
-
-.card-img-container {
-  position: relative;
-  flex-shrink: 0;
-}
-
-.badge-img-overlay {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  z-index: 1;
 }
 
 /* ── Compact card (text-only list) ── */
@@ -1126,7 +1060,7 @@ a { color: inherit; text-decoration: none; }
   .show-wide { display: block; }
 }
 
-/* ── Card image-bg link wrapper (non-flip) ── */
+/* ── Card color-bg link wrapper ── */
 
 .card-imagebg-link {
   display: block;
@@ -1137,19 +1071,6 @@ a { color: inherit; text-decoration: none; }
   overflow: hidden;
   box-shadow: var(--card-shadow);
   background: #1C1C1E;
-  text-decoration: none;
-  color: inherit;
-}
-
-/* ── Card default link wrapper (non-flip) ── */
-
-.card-default-link {
-  display: flex;
-  flex-direction: column;
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--card-shadow);
-  background: var(--bg);
   text-decoration: none;
   color: inherit;
 }

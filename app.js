@@ -73,38 +73,18 @@ function sourcePill(url, name, onDark = false) {
   return `<a href="${href}" target="_blank" rel="noopener noreferrer" class="${cls}"><span>${escHtml(name || 'Quelle')}</span>${ARROW_SVG}</a>`;
 }
 
-function imgTag(url, lazy = true) {
-  const src = safeUrl(url);
-  if (!src) return '';
-  return `<img src="${escHtml(src)}" alt="" loading="${lazy ? 'lazy' : 'eager'}" onerror="this.style.display='none'">`;
-}
-
-// ── Image placeholder SVG ─────────────────────────────────────────────────────
-
-function imgPlaceholder(extraClass = '') {
-  return `<div class="card-default-img-placeholder ${extraClass}">
-    <svg viewBox="0 0 100 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <line x1="0" y1="0" x2="100" y2="56" stroke="#D2D2D7" stroke-width="0.4" vector-effect="non-scaling-stroke"/>
-      <line x1="100" y1="0" x2="0" y2="56" stroke="#D2D2D7" stroke-width="0.4" vector-effect="non-scaling-stroke"/>
-    </svg>
-  </div>`;
-}
-
 // ── Hero card ─────────────────────────────────────────────────────────────────
 
 function renderHero(a) {
-  const img = safeUrl(a.image_url);
   const href = escAttr(a.source_url);
   const titleHtml = href !== '#'
     ? `<h2 class="hero-title"><a href="${href}" target="_blank" rel="noopener noreferrer">${escHtml(a.title)}</a></h2>`
     : `<h2 class="hero-title">${escHtml(a.title)}</h2>`;
   const slug = zoneSlug(a.zone);
-  const bgLayer = img
-    ? `<div class="card-img-bg">${imgTag(img, false)}</div><div class="img-overlay-hero"></div>`
-    : `<div class="card-fallback-bg" data-zone="${slug}"></div><div class="img-overlay-hero"></div>`;
   return `
     <article class="card-hero-link">
-      ${bgLayer}
+      <div class="card-fallback-bg" data-zone="${slug}"></div>
+      <div class="img-overlay-hero"></div>
       <div class="hero-body">
         ${badgeOnDark(a.zone)}
         ${titleHtml}
@@ -114,45 +94,18 @@ function renderHero(a) {
     </article>`;
 }
 
-// ── Default card (white background) ──────────────────────────────────────────
-
-function renderDefaultCard(a) {
-  const img = safeUrl(a.image_url);
-  const imgBlock = img
-    ? `<div class="card-img-container">
-         <div class="card-default-img">${imgTag(img)}</div>
-         <div class="badge-img-overlay">${badgeOnDark(a.zone)}</div>
-       </div>`
-    : `<div class="card-img-container">
-         ${imgPlaceholder()}
-         <div class="badge-img-overlay">${badge(a.zone)}</div>
-       </div>`;
-  return `
-    <article class="card-default-link">
-      ${imgBlock}
-      <div class="card-body">
-        <h3 class="card-title">${escHtml(a.title)}</h3>
-        ${a.summary ? `<p class="card-summary">${escHtml(a.summary)}</p>` : ''}
-        <div class="card-footer">${sourcePill(a.source_url, a.source_name)}</div>
-      </div>
-    </article>`;
-}
-
-// ── Image-bg card (dark overlay) ─────────────────────────────────────────────
+// ── Color-bg card (dark overlay) ─────────────────────────────────────────────
 
 function zoneSlug(zone) {
   return (zone || '').toString().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'default';
 }
 
 function renderImageBgCard(a) {
-  const img = safeUrl(a.image_url);
   const slug = zoneSlug(a.zone);
-  const bgLayer = img
-    ? `<div class="card-img-bg">${imgTag(img)}</div><div class="img-overlay-card"></div>`
-    : `<div class="card-fallback-bg" data-zone="${slug}"></div><div class="img-overlay-card"></div>`;
   return `
     <article class="card-imagebg-link">
-      ${bgLayer}
+      <div class="card-fallback-bg" data-zone="${slug}"></div>
+      <div class="img-overlay-card"></div>
       <div class="card-imagebg-body">
         <div style="margin-bottom:10px;">${badgeOnDark(a.zone)}</div>
         <h3 class="card-imagebg-title">${escHtml(a.title)}</h3>
