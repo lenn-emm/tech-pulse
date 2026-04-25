@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Tech Pulse — next-edition.json",
+  "description": "Dieses Schema wird von der Claude-Cloud-Routine geschrieben und von edition-publish.yml gelesen.",
+  "type": "object",
+  "required": ["edition", "articles"],
+  "properties": {
+    "edition": {
+      "type": "object",
+      "required": ["title", "edition_date"],
+      "properties": {
+        "title":        { "type": "string", "example": "Tech Pulse — Montag, 28. April 2026" },
+        "edition_date": { "type": "string", "format": "date", "example": "2026-04-28" },
+        "summary":      { "type": "string", "description": "1–2 Sätze, was diese Edition ausmacht" }
+      }
+    },
+    "articles": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": ["title", "summary", "source_url", "source_name", "category", "format", "zone", "position"],
+        "properties": {
+          "title":         { "type": "string", "description": "Max. 10 Wörter, kein Clickbait" },
+          "summary":       { "type": "string", "description": "2–3 Sätze: Was passierte · Warum relevant · Einordnung" },
+          "source_url":    { "type": "string", "format": "uri", "description": "Direktlink zur Primärquelle" },
+          "source_name":   { "type": "string", "example": "The Verge" },
+          "category":      { "type": "string", "enum": ["model_release", "company_news", "research", "product", "regulation"] },
+          "format":        { "type": "string", "enum": ["hero", "feature", "visual", "standard", "quick", "quote"] },
+          "zone":          { "type": "string", "enum": ["core", "adjacent", "outside", "wildcard"] },
+          "position":      { "type": "integer", "minimum": 1, "description": "Reihenfolge nach Relevanz" },
+          "read_time_min": { "type": "integer", "minimum": 1, "maximum": 10 },
+          "quote_text":    { "type": "string", "description": "Nur bei format=quote" },
+          "quote_author":  { "type": "string", "description": "Nur bei format=quote" }
+        }
+      }
+    }
+  }
+}

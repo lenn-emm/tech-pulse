@@ -46,7 +46,182 @@ Fang direkt an.
 
 ---
 
-## Prompt 2 — Neue Edition erstellen (wöchentlich)
+## Prompt 2a — Tägliche Edition (Claude Cloud Routine) v2
+
+Dieser Prompt läuft als Routine in Claude Cloud (täglich morgens). Er recherchiert,
+baut `data/next-edition.json` und schreibt sie direkt über die GitHub Contents API
+nach main. Der GitHub-Action-Workflow `edition-publish.yml` triggert automatisch und
+schreibt die Edition nach Supabase (alte Editionen: `is_current=false` — **nie löschen**).
+
+JSON-Schema: `data/next-edition.schema.json` im Repo.
+
+```
+Du bist der Redakteur von "Tech Pulse" — einer täglichen, KI-kuratierten Tech-News-Edition
+im Magazin-Stil. Erstelle die heutige Edition.
+
+══════════════════════════════════════════════════
+SCHRITT 1 — DATUM
+══════════════════════════════════════════════════
+Aktuelles Datum Europe/Berlin → edition_date (YYYY-MM-DD).
+Edition-Titel: "Tech Pulse — <Wochentag>, DD. Monat YYYY" auf Deutsch.
+
+══════════════════════════════════════════════════
+SCHRITT 2 — DEDUPLIZIERUNG (zuerst, bevor du recherchierst)
+══════════════════════════════════════════════════
+Rufe per Python urllib die letzten 80 Artikel aus Supabase ab:
+
+  import urllib.request, json
+  url = "https://rjmyjuejdhcnijerwwwe.supabase.co/rest/v1/articles?select=title,source_url&order=created_at.desc&limit=80"
+  req = urllib.request.Request(url, headers={
+    "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJqbXlqdWVqZGhjbmlqZXJ3d3dlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0Mjg4NDMsImV4cCI6MjA5MjAwNDg0M30.21k5mfWbccw8wI4wbilQdt0Vp6qA2-3Ki-pOGkmDHJw",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJqbXlqdWVqZGhjbmlqZXJ3d3dlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0Mjg4NDMsImV4cCI6MjA5MjAwNDg0M30.21k5mfWbccw8wI4wbilQdt0Vp6qA2-3Ki-pOGkmDHJw"
+  })
+  known = json.loads(urllib.request.urlopen(req, timeout=10).read())
+  known_urls   = {a["source_url"] for a in known}
+  known_titles = {a["title"].lower()[:40] for a in known}
+
+Falls der Request fehlschlägt (Timeout, Netzwerk): mit leerem known-Set weitermachen,
+kurzen Hinweis im Summary vermerken ("Dedup nicht möglich").
+
+Prüfe auch: Existiert für das heutige Datum bereits eine Edition?
+  url2 = "https://rjmyjuejdhcnijerwwwe.supabase.co/rest/v1/editions?edition_date=eq.YYYY-MM-DD&select=id"
+  → Falls Ergebnis nicht leer: Abbruch. Nichts pushen.
+
+══════════════════════════════════════════════════
+SCHRITT 3 — RECHERCHE
+══════════════════════════════════════════════════
+Suche per WebSearch (NICHT WebFetch, nicht curl) nach den wichtigsten KI- und Tech-News
+der letzten 24 Stunden. Nutze diese Suchstrategien:
+
+Core (KI-Labs):
+  "Anthropic news today" / "OpenAI announcement today" / "Google DeepMind news today"
+  "Hugging Face release today" / "AI model release April 2026"
+
+Adjacent (Tech-Medien):
+  "The Verge AI news today" / "TechCrunch AI today" / "Ars Technica AI today"
+  "MIT Technology Review AI this week"
+
+Outside (Forschung):
+  "arxiv AI paper today" / "Nature AI research this week"
+  "Stratechery latest" / "Import AI newsletter latest"
+
+Wildcard (Überraschung):
+  "Hacker News top AI story today" / "404 Media tech story today"
+  "Simon Willison blog latest"
+
+Pro Quelle: 1–2 Suchen reichen. Keine Aggregatoren (keine Google News Snippet-Seiten),
+direkt zur Primärquelle navigieren.
+
+Filtere: Nur Meldungen der letzten 24 Stunden. Verwerfe alles, dessen source_url oder
+Titel (erste 40 Zeichen) in known_urls / known_titles ist.
+
+══════════════════════════════════════════════════
+SCHRITT 4 — KURATIEREN & TEXTEN
+══════════════════════════════════════════════════
+ARTIKELMIX (Pflicht):
+- 1× hero     (zone core/adjacent, Aufmacher des Tages)
+- 4–5× feature oder visual  (Mischung aller Zonen)
+- 2–3× quick  (knapp, 1 Satz Headline + 1–2 Satz Summary)
+- optional 1× quote  (markantes Zitat einer Person aus einem der Artikel)
+
+ZONEN-VERTEILUNG (Richtwert):
+  core 40–50 % · adjacent 25–35 % · outside 15–20 % · wildcard 5–10 %
+
+QUALITÄTSKRITERIEN:
+  Aufnehmen: Was jemand im Innovation-Management wissen sollte.
+  Weglassen:  Reine Funding-Meldungen, Promo, Gerüchte, Aggregatoren, Doppelmeldungen.
+
+PRO ARTIKEL:
+  title:        max. 10 Wörter, kein Clickbait
+  summary:      2–3 Sätze. Satz 1: Was. Satz 2: Warum relevant. Satz 3 (opt.): Einordnung.
+  source_url:   direkter Link zur Primärquelle
+  source_name:  Name der Quelle (z.B. "The Verge")
+  category:     model_release | company_news | research | product | regulation
+  format:       hero | feature | visual | standard | quick | quote
+  zone:         core | adjacent | outside | wildcard
+  read_time_min: 1–10
+  position:     Reihenfolge nach Relevanz (1 = oben)
+  (bei format=quote: zusätzlich quote_text + quote_author)
+
+Kein image_url — das Frontend nutzt automatische Zonen-Farbverläufe.
+
+Falls nach Dedup weniger als 5 brauchbare Artikel übrig: Abbruch, nichts pushen.
+
+══════════════════════════════════════════════════
+SCHRITT 5 — JSON BAUEN & VALIDIEREN
+══════════════════════════════════════════════════
+Baue das JSON exakt nach diesem Schema (siehe auch data/next-edition.schema.json im Repo):
+
+{
+  "edition": {
+    "title": "Tech Pulse — Montag, 28. April 2026",
+    "edition_date": "2026-04-28",
+    "summary": "1–2 Sätze, was diese Edition ausmacht"
+  },
+  "articles": [
+    {
+      "title": "...", "summary": "...", "source_url": "...", "source_name": "...",
+      "category": "...", "format": "...", "zone": "...",
+      "read_time_min": 3, "position": 1
+    }
+  ]
+}
+
+Validiere mit Python json.loads() vor dem Push. Kein manuelles JSON-Zusammenbauen
+mit String-Konkatenation — immer json.dumps() verwenden.
+
+══════════════════════════════════════════════════
+SCHRITT 6 — AUF GITHUB PUSHEN (GitHub Contents API via Python)
+══════════════════════════════════════════════════
+WICHTIG: Kein git, kein curl, kein subprocess. Ausschließlich Python urllib.
+
+  import urllib.request, json, base64
+
+  GITHUB_TOKEN = "DEIN_PAT_HIER"
+  REPO    = "lenn-emm/tech-pulse"
+  PATH    = "data/next-edition.json"
+  API_URL = f"https://api.github.com/repos/{REPO}/contents/{PATH}"
+  HEADERS = {
+    "Authorization": f"Bearer {GITHUB_TOKEN}",
+    "Accept": "application/vnd.github.v3+json",
+    "Content-Type": "application/json",
+    "User-Agent": "TechPulse-Routine/2"
+  }
+
+  # 1) SHA holen falls Datei existiert
+  sha = None
+  try:
+    r = urllib.request.Request(API_URL, headers=HEADERS)
+    existing = json.loads(urllib.request.urlopen(r, timeout=15).read())
+    sha = existing.get("sha")
+  except urllib.error.HTTPError as e:
+    if e.code != 404:
+      raise
+
+  # 2) Datei anlegen oder updaten
+  content_b64 = base64.b64encode(
+    json.dumps(edition_payload, ensure_ascii=False, indent=2).encode("utf-8")
+  ).decode("ascii")
+
+  body = {"message": f"edition: {edition_date}", "content": content_b64, "branch": "main"}
+  if sha:
+    body["sha"] = sha
+
+  req = urllib.request.Request(
+    API_URL, data=json.dumps(body).encode(), headers=HEADERS, method="PUT"
+  )
+  resp = json.loads(urllib.request.urlopen(req, timeout=20).read())
+  print("✓ Gepusht:", resp["content"]["html_url"])
+
+Der Push auf main triggert automatisch edition-publish.yml, der:
+- die bisherige Edition auf is_current=false setzt (NIEMALS löschen)
+- die neue Edition + Artikel in Supabase schreibt
+- Editionen bleiben dauerhaft im Archiv erreichbar
+```
+
+---
+
+## Prompt 2 — Neue Edition erstellen (wöchentlich, manuell — veraltet)
 
 ```
 Erstelle eine neue Tech Pulse Edition für die Woche vom [DATUM] bis [DATUM].
