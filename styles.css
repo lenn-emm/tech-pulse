@@ -73,9 +73,15 @@ body {
   /* sticky greift in einem nicht-scrollenden body nicht — die Nav bleibt
      oben, weil sie als erstes Flex-Item natürlich oben sitzt. */
   .nav { position: relative; }
+  /* max-width/margin:auto wirken im normalen Flow als Begrenzung; im Flex-Body
+     werden sie zur Soll-Größe und sprengen die Viewport-Breite — daher hier
+     überschreiben, sodass der Scroll-Container immer viewport-breit ist. */
   .magazine,
   .archive-page {
     flex: 1 1 auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
     overflow-y: auto;
     overscroll-behavior-y: none;
     -webkit-overflow-scrolling: touch;
