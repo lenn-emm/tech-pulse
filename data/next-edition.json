@@ -1,108 +1,97 @@
 {
   "edition": {
-    "title": "Tech Pulse — Samstag, 25. April 2026",
-    "edition_date": "2026-04-25",
-    "summary": "GPT-5.5, DeepSeek V4, Googles 40-Mrd.-Wette auf Anthropic, Cloud Next, Sony-Roboter und die KI-Regulierungswelle in den USA."
+    "title": "Tech Pulse — Sonntag, 26. April 2026",
+    "edition_date": "2026-04-26",
+    "summary": "Cohere und Aleph Alpha formen die erste transatlantische Sovereign-AI-Alternative zu US-Dominatoren, während Anthropics Project Glasswing zeigt: KI findet Sicherheitslücken im industriellen Maßstab — doch die Welt muss erst noch lernen, damit umzugehen."
   },
   "articles": [
     {
       "position": 1,
       "format": "hero",
       "zone": "core",
-      "category": "model_release",
-      "title": "OpenAI startet GPT-5.5: Erstes neu trainiertes Modell seit GPT-4",
-      "summary": "OpenAI hat GPT-5.5 lanciert – das erste vollständig neu trainierte Basismodell seit GPT-4, mit 1-Millionen-Token-Kontext und besonderer Stärke in Coding, Computer-Use und Wissenschaftsagenten. Das Modell steht Plus-, Pro-, Business- und Enterprise-ChatGPT-Nutzern sofort zur Verfügung und kostet 5 bzw. 30 US-Dollar pro Million Tokens – günstiger als von Analysten erwartet. GPT-5.5 markiert laut OpenAI den Beginn einer Modell-Generation, die auf eigenständige Wissensarbeit ausgelegt ist.",
-      "source_url": "https://openai.com/index/introducing-gpt-5-5/",
-      "source_name": "OpenAI",
-      "read_time_min": 6
+      "category": "company_news",
+      "title": "Cohere und Aleph Alpha fusionieren zur transatlantischen KI-Alternative",
+      "summary": "Die kanadische KI-Firma Cohere übernimmt das deutsche Aleph Alpha in einem Deal, der das kombinierte Unternehmen auf rund 20 Milliarden Dollar bewertet — gestützt von 600 Millionen Dollar der Schwarz-Gruppe und mit Rückendeckung beider Regierungen. Das Duo positioniert sich als erste ernstzunehmende westliche Sovereign-AI-Plattform für regulierte Branchen wie Finanzen, Verteidigung und Gesundheit — ein Angebot für Unternehmen, die US-Cloud-Abhängigkeit vermeiden wollen. Die Fusion signalisiert, dass 'Sovereign AI' vom politischen Schlagwort zum messbaren Marktangebot wird.",
+      "source_url": "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/",
+      "source_name": "TechCrunch",
+      "read_time_min": 5
     },
     {
       "position": 2,
       "format": "feature",
       "zone": "core",
-      "category": "model_release",
-      "title": "DeepSeek V4: Größtes Open-Weight-Modell fordert Frontier-KIs heraus",
-      "summary": "DeepSeek hat V4-Pro und V4-Flash vorgestellt – mit 1,6 Billionen Gesamtparametern (49 Mrd. aktiv) das bisher größte öffentlich verfügbare Open-Weight-Modell, entwickelt auf Huawei-Chips und vollständig quelloffen. Ein 1-Millionen-Token-Kontext und ein Preis von 3,48 US-Dollar pro Million Output-Tokens unterbieten OpenAI und Anthropic drastisch. Laut frühen Benchmarks schließt V4-Pro den Abstand zu proprietären Frontier-Modellen erheblich.",
-      "source_url": "https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/",
-      "source_name": "TechCrunch",
-      "read_time_min": 4
+      "category": "research",
+      "title": "Glasswing: KI findet Jahrzehnte-alte Bugs — doch wer patcht sie?",
+      "summary": "Anthropics Project Glasswing hat mit Claude Mythos Preview Tausende Sicherheitslücken in allen wichtigen Betriebssystemen aufgedeckt — darunter ein 27 Jahre alter OpenBSD-Bug und ein 17 Jahre alter FreeBSD-RCE, die Generationen menschlicher Auditoren überlebt hatten. Die Cloud Security Alliance warnt nun, dass CISOs auf die bevorstehende Patch-Flut nicht vorbereitet sind: AI-basierte Sicherheitsforschung entdeckt Schwachstellen schneller, als Entwicklerteams sie schließen können. Die zentrale Frage ist nicht mehr 'Kann KI Bugs finden?', sondern 'Kann die Welt mit dem Ergebnis umgehen?'",
+      "source_url": "https://thehackernews.com/2026/04/project-glasswing-proved-ai-can-find.html",
+      "source_name": "The Hacker News",
+      "read_time_min": 6
     },
     {
       "position": 3,
       "format": "feature",
-      "zone": "core",
-      "category": "company_news",
-      "title": "Google investiert bis zu 40 Mrd. Dollar in Anthropic",
-      "summary": "Google (Alphabet) kündigte eine Investition von bis zu 40 Milliarden Dollar in Anthropic an: 10 Mrd. sofort bei einer Bewertung von 350 Mrd. Dollar, weitere 30 Mrd. an Meilensteine geknüpft. Dies folgt auf Amazons 25-Mrd.-Dollar-Engagement wenige Tage zuvor und macht Anthropic zur gemeinschaftlichen KI-Wette von zwei der größten Technologiekonzerne der Welt. Ein Großteil der Mittel ist für Infrastrukturausgaben auf Google Cloud vorgesehen.",
-      "source_url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
-      "source_name": "TechCrunch",
+      "zone": "adjacent",
+      "category": "product",
+      "title": "Google Deep Research Max: 160 Suchen — Report wartet morgens auf dem Schreibtisch",
+      "summary": "Google hat Deep Research und Deep Research Max auf Basis von Gemini 3.1 Pro als autonome Recherche-Agenten gestartet: Der Max-Tier kombiniert Webdaten mit unternehmenseigenen Quellen via MCP, führt bis zu 160 Suchen aus und liefert einen vollständig bequellten Analyse-Report. Auf dem Benchmark DeepSearchQA klettert Max von 66,1 % auf 93,3 %; der Standard-Agent ist für Echtzeit-Chat-Szenarien optimiert. Mit der MCP-Integration tritt Google direkt gegen Perplexity, OpenAI Deep Research und Anthropic Research an.",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/",
+      "source_name": "Google Blog",
       "read_time_min": 4
     },
     {
       "position": 4,
-      "format": "feature",
-      "zone": "adjacent",
-      "category": "product",
-      "title": "Google Cloud Next '26: Gemini-Agenten-Plattform und Siri-Partnerschaft",
-      "summary": "Auf der Google Cloud Next '26 in Las Vegas präsentierte Google die Gemini Enterprise Agent Platform (Evolution von Vertex AI) mit einem Agent Marketplace und 70+ vorgefertigten Agenten sowie neue TPU-8-Chips der 8. Generation und einen 750-Millionen-Dollar-Innovationsfonds. Google-Cloud-CEO Thomas Kurian bestätigte zudem, dass Gemini ab iOS 27 die Basis von Apples überarbeitetem Siri bildet – ein jährlicher Deal im Milliarden-Dollar-Bereich. Die Konferenz markiert Googles Ambitionen als führende Unternehmens-KI-Plattform.",
-      "source_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/next-2026/",
-      "source_name": "Google Blog",
-      "read_time_min": 5
+      "format": "visual",
+      "zone": "core",
+      "category": "model_release",
+      "title": "OpenAI Privacy Filter: Quelloffenes PII-Modell läuft lokal auf dem Laptop",
+      "summary": "OpenAI hat Privacy Filter veröffentlicht — ein 1,5-Milliarden-Parameter-Modell (50M aktiv), das PII wie Namen, Adressen, API-Keys und Passwörter mit 96 % F1-Score erkennt und maskiert, ohne die Daten die eigene Maschine verlassen zu lassen. Das Modell ist unter Apache 2.0 lizenziert, läuft direkt im Browser oder auf dem Laptop und ist via GitHub und Hugging Face verfügbar. Es ist die erste Open-Weight-PII-Lösung eines Frontier-Labs und gibt DSGVO-sensiblen Unternehmen ein starkes Compliance-Werkzeug ohne Cloud-Abhängigkeit.",
+      "source_url": "https://openai.com/index/introducing-openai-privacy-filter/",
+      "source_name": "OpenAI",
+      "read_time_min": 3
     },
     {
       "position": 5,
       "format": "feature",
-      "zone": "outside",
-      "category": "research",
-      "title": "Sony-Roboter Ace besiegt Elite-Tischtennisspieler – Nature-Cover",
-      "summary": "Sonys KI-Roboter Project Ace ist das erste autonome System, das professionelle Tischtennisspieler unter offiziellen ITTF-Wettkampfbedingungen besiegt hat – dokumentiert in einem Nature-Cover-Paper. Ereignisbasierte Visionssensoren und modellfreies Reinforcement Learning ermöglichen Reaktionszeiten und Präzision auf Elite-Niveau. Der Durchbruch gilt als Meilenstein für verkörperte KI und eröffnet Fragen zur Leistungsfähigkeit autonomer Systeme in der physischen Welt.",
-      "source_url": "https://www.nature.com/articles/s41586-026-10338-5",
-      "source_name": "Nature",
-      "read_time_min": 8
+      "zone": "wildcard",
+      "category": "product",
+      "title": "App Store wächst 104 %: KI-Entwicklerwerkzeuge treiben historischen Boom",
+      "summary": "Weltweit stieg die Zahl neuer App-Veröffentlichungen im ersten Quartal 2026 um 60 % gegenüber dem Vorjahr — im April 2026 sogar auf 104 % Wachstum auf iOS. KI-Entwicklungswerkzeuge halbieren die Zeit von der Idee bis zum Deployment und öffnen das App-Ökosystem einer völlig neuen Entwicklergeneration ohne tiefe Native-Expertise. Für Apple und Google bedeutet das explodierende Kurationsprobleme; für Nutzer steigt der Signal-Rausch-Abstand erheblich.",
+      "source_url": "https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/",
+      "source_name": "TechCrunch",
+      "read_time_min": 3
     },
     {
       "position": 6,
-      "format": "visual",
-      "zone": "core",
-      "category": "product",
-      "title": "Gemini April-Drop: Mac-App, Lyria-3-Musik-KI und 3D-Modelle",
-      "summary": "Googles April-Drop für die Gemini-App bringt eine native Mac-App, NotebookLM direkt in der Gemini-Oberfläche sowie das Musik-Modell Lyria 3 Pro für bis zu 3-minütige Audio-Tracks aus der Cloud. Neu hinzu kommen 3D-Modell-Generierung und interaktive Diagrammerstellung via dem neuen Nano-Banana-2-Bildmodell. Damit baut Google seinen Multimodal-Vorsprung aus und schließt in Musik-KI zu Sora und Suno auf.",
-      "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-drop-april-2026/",
-      "source_name": "Google Blog",
+      "format": "quick",
+      "zone": "adjacent",
+      "category": "company_news",
+      "title": "Vercel-Datenleck: KI-Tool als Einfallstor, Daten für 2 Mio. Dollar feilgeboten",
+      "summary": "Ein Angriff über das KI-Tool Context AI ermöglichte es Hackern, Kundendaten von Vercel zu stehlen und für 2 Millionen Dollar auf BreachForums anzubieten. Der Angriff begann mit Infostealer-Malware auf einem Context-AI-Gerät und eskalierte via kompromittierter OAuth-Token zu Vercels internen Systemen — ein Paradebeispiel für AI-Supply-Chain-Risiken.",
+      "source_url": "https://thehackernews.com/2026/04/vercel-breach-tied-to-context-ai-hack.html",
+      "source_name": "The Hacker News",
       "read_time_min": 3
     },
     {
       "position": 7,
       "format": "quick",
-      "zone": "adjacent",
+      "zone": "core",
       "category": "company_news",
-      "title": "Meta und Microsoft streichen je ~10% der Stellen für KI-Ausgaben",
-      "summary": "Meta baut rund 8.000 Jobs (10% der Belegschaft) ab; Microsoft bietet Buyouts für etwa 7% seiner US-Mitarbeiter an – in derselben Woche, in der beide Konzerne massive KI-Investitionen ankündigen. Mit über 23.000 betroffenen Stellen in wenigen Tagen gilt dies als erstes deutliches Signal einer KI-getriebenen Umstrukturierung in Big Tech.",
-      "source_url": "https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html",
-      "source_name": "CNBC",
+      "title": "MCP-Designfehler ermöglicht Codeausführung auf 200.000 KI-Servern",
+      "summary": "OX Security entdeckte eine systemische RCE-Lücke im Design von Anthropics Model Context Protocol, die über 150 Millionen Downloads und mehr als 200.000 Server betrifft — darunter Claude Code, Cursor, LangChain und Gemini CLI. Anthropic bezeichnete das Verhalten als 'expected behavior': Sanitization sei Aufgabe der Entwickler.",
+      "source_url": "https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html",
+      "source_name": "The Hacker News",
       "read_time_min": 3
     },
     {
       "position": 8,
       "format": "quick",
-      "zone": "wildcard",
-      "category": "company_news",
-      "title": "SpaceX sichert sich 60-Mrd.-Dollar-Kaufoption für Coding-KI Cursor",
-      "summary": "SpaceX hat eine Option auf den Erwerb des KI-Coding-Startups Anysphere (Cursor) für 60 Milliarden Dollar vereinbart – alternativ eine 10-Mrd.-Dollar-Kooperation auf dem Colossus-Supercomputer. Der Deal kam kurz nachdem Microsoft einen Kauf verworfen hatte und Cursor eine 2-Mrd.-Finanzierungsrunde bei 50-Mrd.-Bewertung laufen hatte. Elon Musk positioniert SpaceX damit als KI-Powerhouse vor dem geplanten Börsengang.",
-      "source_url": "https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60-billion/",
-      "source_name": "TechCrunch",
-      "read_time_min": 3
-    },
-    {
-      "position": 9,
-      "format": "quick",
       "zone": "adjacent",
-      "category": "regulation",
-      "title": "78 KI-Gesetze in 27 US-Bundesstaaten: Regulierungswelle rollt an",
-      "summary": "In 27 US-Bundesstaaten sind aktuell 78 KI-Gesetzentwürfe aktiv – Washington hat zwei KI-Transparenzgesetze unterzeichnet, Utah alle neun seiner KI-Vorlagen; Arizona steht kurz vor weiteren Regelungen zur Konversations-KI. Der entstehende Flickenteppich unterschiedlicher Anforderungen dürfte Unternehmen in den Bereichen automatisierte Entscheidungen und Chatbots zunehmend unter Compliance-Druck setzen.",
-      "source_url": "https://www.transparencycoalition.ai/news/ai-legislative-update-april24-2026",
-      "source_name": "Transparency Coalition",
-      "read_time_min": 4
+      "category": "product",
+      "title": "Claude Design fordert Figma heraus — Aktie bricht 7 % ein",
+      "summary": "Anthropic hat Claude Design (powered by Opus 4.7) als KI-Prototyping-Tool gestartet: Nutzer beschreiben Designs in natürlicher Sprache, Claude baut den ersten Entwurf und passt sich automatisch an das Design-System des Teams an. Die Ankündigung ließ Figmas Aktie um mehr als 7 % einbrechen.",
+      "source_url": "https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/",
+      "source_name": "TechCrunch",
+      "read_time_min": 2
     }
   ]
 }
