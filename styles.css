@@ -1025,6 +1025,11 @@ a { color: inherit; text-decoration: none; }
   touch-action: pan-x;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
+  /* Performance auf Mobile-Safari: Browser isoliert Paint-Updates auf
+     diesen Bereich (kein Repaint von sticky nav o.ä.), und der Scroll
+     wird als GPU-Compositing-Operation behandelt. */
+  contain: paint;
+  will-change: scroll-position;
 }
 
 .video-scroller::-webkit-scrollbar { display: none; }
@@ -1042,6 +1047,12 @@ a { color: inherit; text-decoration: none; }
   scroll-snap-align: start;
   cursor: pointer;
   font-family: var(--font);
+  /* Eigener GPU-Compositing-Layer pro Card — Mobile-Safari kann den
+     horizontalen Scroll dann hardware-beschleunigt rendern, ohne
+     den Main-Thread bei jedem Frame zu involvieren. */
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .video-thumb {
