@@ -2,6 +2,46 @@
   "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
     {
+      "title": "Cohere und Aleph Alpha fusionieren zur transatlantischen KI-Alternative",
+      "source_url": "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/",
+      "edition_date": "2026-04-26"
+    },
+    {
+      "title": "Glasswing: KI findet Jahrzehnte-alte Bugs — doch wer patcht sie?",
+      "source_url": "https://thehackernews.com/2026/04/project-glasswing-proved-ai-can-find.html",
+      "edition_date": "2026-04-26"
+    },
+    {
+      "title": "Google Deep Research Max: 160 Suchen — Report wartet morgens auf dem Schreibtisch",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/",
+      "edition_date": "2026-04-26"
+    },
+    {
+      "title": "OpenAI Privacy Filter: Quelloffenes PII-Modell läuft lokal auf dem Laptop",
+      "source_url": "https://openai.com/index/introducing-openai-privacy-filter/",
+      "edition_date": "2026-04-26"
+    },
+    {
+      "title": "App Store wächst 104 %: KI-Entwicklerwerkzeuge treiben historischen Boom",
+      "source_url": "https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/",
+      "edition_date": "2026-04-26"
+    },
+    {
+      "title": "Vercel-Datenleck: KI-Tool als Einfallstor, Daten für 2 Mio. Dollar feilgeboten",
+      "source_url": "https://thehackernews.com/2026/04/vercel-breach-tied-to-context-ai-hack.html",
+      "edition_date": "2026-04-26"
+    },
+    {
+      "title": "MCP-Designfehler ermöglicht Codeausführung auf 200.000 KI-Servern",
+      "source_url": "https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html",
+      "edition_date": "2026-04-26"
+    },
+    {
+      "title": "Claude Design fordert Figma heraus — Aktie bricht 7 % ein",
+      "source_url": "https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/",
+      "edition_date": "2026-04-26"
+    },
+    {
       "title": "OpenAI startet GPT-5.5: Erstes neu trainiertes Modell seit GPT-4",
       "source_url": "https://openai.com/index/introducing-gpt-5-5/"
     },
