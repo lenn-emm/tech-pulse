@@ -34,3 +34,52 @@ CREATE TABLE IF NOT EXISTS videos (
 );
 
 CREATE INDEX IF NOT EXISTS videos_published_idx ON videos (published_at DESC);
+
+-- ── Push Subscriptions — Migration v4 ───────────────────────────────────────
+-- Speichert Web-Push-Subscriptions (PWA). Endpoint ist eindeutig pro Gerät;
+-- bei Re-Subscription (z.B. nach Browser-Reset) per ON CONFLICT aktualisiert.
+
+CREATE TABLE IF NOT EXISTS push_subscriptions (
+  id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  endpoint    TEXT NOT NULL UNIQUE,
+  p256dh      TEXT NOT NULL,
+  auth        TEXT NOT NULL,
+  user_agent  TEXT,
+  topics      TEXT[] NOT NULL DEFAULT ARRAY['edition','video']::TEXT[],
+  created_at  TIMESTAMPTZ NOT NULL DEFAULT now(),
+  last_seen   TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+CREATE INDEX IF NOT EXISTS push_subscriptions_topics_idx
+  ON push_subscriptions USING GIN (topics);
+
+-- RLS: Anonyme Clients dürfen sich subscriben/unsubscriben (nur eigener Endpoint),
+-- aber NIEMALS andere Subscriptions lesen. Workflow nutzt service-role-key (umgeht RLS).
+
+ALTER TABLE push_subscriptions ENABLE ROW LEVEL SECURITY;
+
+DROP POLICY IF EXISTS push_subscriptions_anon_insert ON push_subscriptions;
+CREATE POLICY push_subscriptions_anon_insert
+  ON push_subscriptions
+  FOR INSERT
+  TO anon
+  WITH CHECK (true);
+
+-- Update erlaubt für upsert (ON CONFLICT … DO UPDATE),
+-- aber nur am eigenen Endpoint — der Endpoint selbst darf nicht geändert werden.
+DROP POLICY IF EXISTS push_subscriptions_anon_update ON push_subscriptions;
+CREATE POLICY push_subscriptions_anon_update
+  ON push_subscriptions
+  FOR UPDATE
+  TO anon
+  USING (true)
+  WITH CHECK (true);
+
+DROP POLICY IF EXISTS push_subscriptions_anon_delete ON push_subscriptions;
+CREATE POLICY push_subscriptions_anon_delete
+  ON push_subscriptions
+  FOR DELETE
+  TO anon
+  USING (true);
+
+-- Bewusst KEIN SELECT für anon — Subscriptions bleiben privat.

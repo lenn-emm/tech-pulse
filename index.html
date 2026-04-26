@@ -2,14 +2,32 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Tech Pulse</title>
   <meta name="description" content="KI-kuratierte Tech-News — die wichtigsten Meldungen der Woche im Magazin-Format." />
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0071E3" />
+  <meta name="color-scheme" content="light" />
+
+  <!-- iOS / Apple Web App -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Tech Pulse" />
+  <link rel="apple-touch-icon" href="icons/icon-180.png" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/icon-16.png" />
+  <link rel="shortcut icon" href="favicon.ico" />
+
   <link rel="stylesheet" href="styles.css" />
   <script>
     window.ENV = {
       SUPABASE_URL: "https://rjmyjuejdhcnijerwwwe.supabase.co",
-      SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJqbXlqdWVqZGhjbmlqZXJ3d3dlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0Mjg4NDMsImV4cCI6MjA5MjAwNDg0M30.21k5mfWbccw8wI4wbilQdt0Vp6qA2-3Ki-pOGkmDHJw"
+      SUPABASE_ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJqbXlqdWVqZGhjbmlqZXJ3d3dlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0Mjg4NDMsImV4cCI6MjA5MjAwNDg0M30.21k5mfWbccw8wI4wbilQdt0Vp6qA2-3Ki-pOGkmDHJw",
+      VAPID_PUBLIC_KEY: "BPM7X3qRCfneHA4EP_O4ijxrPvUoqd9b0aC1wyDzNN3KwGe7BX3T6Cfl0HP_Qrn7l7ZbrYLyXDKt-rj_W3ZZepc"
     };
   </script>
 </head>

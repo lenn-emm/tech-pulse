@@ -584,10 +584,226 @@ function initNav() {
   window.addEventListener('resize', scheduleMasonry);
 }
 
+// ── PWA / Service Worker ──────────────────────────────────────────────────────
+
+function initPWA() {
+  if (!('serviceWorker' in navigator)) return;
+  const register = () => {
+    navigator.serviceWorker
+      .register('sw.js', { scope: './' })
+      .then((reg) => initPush(reg))
+      .catch((err) => console.warn('[PWA] Service Worker konnte nicht registriert werden:', err));
+  };
+  // Im Hintergrund registrieren — aber nur warten, wenn `load` noch nicht
+  // gefeuert hat. Sonst direkt registrieren (Race Condition vermeiden).
+  if (document.readyState === 'complete') {
+    register();
+  } else {
+    window.addEventListener('load', register, { once: true });
+  }
+}
+
+// ── Push Notifications ────────────────────────────────────────────────────────
+
+function pushSupported() {
+  return (
+    'serviceWorker' in navigator &&
+    'PushManager' in window &&
+    'Notification' in window
+  );
+}
+
+function isStandalonePWA() {
+  // iOS / Android / Desktop-PWA
+  return (
+    window.matchMedia('(display-mode: standalone)').matches ||
+    window.navigator.standalone === true
+  );
+}
+
+function isIOS() {
+  const ua = navigator.userAgent || '';
+  return /iPad|iPhone|iPod/.test(ua) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+}
+
+function urlBase64ToUint8Array(base64) {
+  const padding = '='.repeat((4 - (base64.length % 4)) % 4);
+  const b64 = (base64 + padding).replace(/-/g, '+').replace(/_/g, '/');
+  const raw = atob(b64);
+  const out = new Uint8Array(raw.length);
+  for (let i = 0; i < raw.length; i++) out[i] = raw.charCodeAt(i);
+  return out;
+}
+
+function arrayBufferToBase64(buf) {
+  const bytes = new Uint8Array(buf);
+  let bin = '';
+  for (let i = 0; i < bytes.byteLength; i++) bin += String.fromCharCode(bytes[i]);
+  return btoa(bin);
+}
+
+async function getCurrentSubscription(reg) {
+  try { return await reg.pushManager.getSubscription(); } catch { return null; }
+}
+
+async function savePushSubscription(sub) {
+  const json = sub.toJSON();
+  const payload = {
+    endpoint: json.endpoint,
+    p256dh: json.keys.p256dh,
+    auth: json.keys.auth,
+    user_agent: navigator.userAgent,
+  };
+  const { error } = await sb
+    .from('push_subscriptions')
+    .upsert(payload, { onConflict: 'endpoint' });
+  if (error) throw error;
+}
+
+async function deletePushSubscription(endpoint) {
+  // Nicht kritisch wenn das fehlschlägt: Workflow räumt 410-er ohnehin später auf.
+  await sb.from('push_subscriptions').delete().eq('endpoint', endpoint);
+}
+
+function renderPushUI(state) {
+  const panel = document.getElementById('nav-panel');
+  if (!panel) return;
+  let host = panel.querySelector('.push-settings');
+  if (!host) {
+    host = document.createElement('div');
+    host.className = 'push-settings';
+    panel.appendChild(host);
+  }
+
+  // States: 'unsupported-ios-needs-install' | 'unsupported' | 'denied'
+  //       | 'subscribed' | 'unsubscribed' | 'busy'
+  const isOn = state.status === 'subscribed';
+  const busy = state.status === 'busy';
+  const disabled = busy || state.status === 'unsupported' || state.status === 'unsupported-ios-needs-install' || state.status === 'denied';
+
+  let hint = '';
+  if (state.status === 'denied') {
+    hint = 'In den Browser-Einstellungen für diese Seite aktivieren.';
+  } else if (state.status === 'unsupported-ios-needs-install') {
+    hint = 'Auf iPhone: Teilen → „Zum Home-Bildschirm“, dann hier aktivieren.';
+  } else if (state.status === 'unsupported') {
+    hint = 'Dein Browser unterstützt keine Push-Benachrichtigungen.';
+  }
+
+  host.innerHTML = `
+    <div class="push-row">
+      <div class="push-label">
+        <span class="push-title">Benachrichtigungen</span>
+        <span class="push-sub">Neue Editions & Videos</span>
+      </div>
+      <button
+        type="button"
+        class="push-toggle ${isOn ? 'on' : ''}"
+        role="switch"
+        aria-checked="${isOn ? 'true' : 'false'}"
+        aria-label="Benachrichtigungen ${isOn ? 'deaktivieren' : 'aktivieren'}"
+        ${disabled ? 'disabled' : ''}
+      >
+        <span class="push-toggle-thumb"></span>
+      </button>
+    </div>
+    ${hint ? `<p class="push-hint">${escHtml(hint)}</p>` : ''}
+  `;
+
+  if (!disabled) {
+    host.querySelector('.push-toggle').addEventListener('click', () => {
+      togglePush(isOn);
+    });
+  }
+}
+
+let pushRegistration = null;
+
+async function togglePush(currentlyOn) {
+  if (!pushRegistration) return;
+  renderPushUI({ status: 'busy' });
+  try {
+    if (currentlyOn) {
+      const sub = await getCurrentSubscription(pushRegistration);
+      if (sub) {
+        await deletePushSubscription(sub.endpoint).catch(() => {});
+        await sub.unsubscribe();
+      }
+      renderPushUI({ status: 'unsubscribed' });
+    } else {
+      // Permission anfragen (User-Geste)
+      const perm = await Notification.requestPermission();
+      if (perm !== 'granted') {
+        renderPushUI({ status: perm === 'denied' ? 'denied' : 'unsubscribed' });
+        return;
+      }
+      const sub = await pushRegistration.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: urlBase64ToUint8Array(window.ENV.VAPID_PUBLIC_KEY),
+      });
+      await savePushSubscription(sub);
+      renderPushUI({ status: 'subscribed' });
+    }
+  } catch (err) {
+    console.warn('[Push] Toggle fehlgeschlagen:', err);
+    // Fallback: aktuellen Zustand neu laden
+    await refreshPushUI();
+  }
+}
+
+async function refreshPushUI() {
+  if (!pushRegistration) return;
+  if (!pushSupported()) {
+    if (isIOS() && !isStandalonePWA()) {
+      renderPushUI({ status: 'unsupported-ios-needs-install' });
+    } else {
+      renderPushUI({ status: 'unsupported' });
+    }
+    return;
+  }
+  if (Notification.permission === 'denied') {
+    renderPushUI({ status: 'denied' });
+    return;
+  }
+  const sub = await getCurrentSubscription(pushRegistration);
+  renderPushUI({ status: sub ? 'subscribed' : 'unsubscribed' });
+}
+
+async function initPush(reg) {
+  pushRegistration = reg;
+
+  // SW kann uns sagen, wenn Subscription abgelaufen ist
+  navigator.serviceWorker.addEventListener('message', async (event) => {
+    if (event.data && event.data.type === 'pushsubscriptionchange') {
+      try {
+        const sub = await reg.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: urlBase64ToUint8Array(window.ENV.VAPID_PUBLIC_KEY),
+        });
+        await savePushSubscription(sub);
+      } catch (e) { console.warn('[Push] Re-Subscribe fehlgeschlagen:', e); }
+      refreshPushUI();
+    }
+  });
+
+  if (!pushSupported()) {
+    if (isIOS() && !isStandalonePWA()) {
+      renderPushUI({ status: 'unsupported-ios-needs-install' });
+    } else {
+      renderPushUI({ status: 'unsupported' });
+    }
+    return;
+  }
+
+  await refreshPushUI();
+}
+
 // ── Init ──────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
   loadCurrentEdition();
   loadArchive();
+  initPWA();
 });
