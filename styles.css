@@ -55,52 +55,54 @@ body {
 }
 
 /* ── Native-App-Feeling (nur in der installierten PWA) ──
-   Verhindert das iOS-Rubber-Band-Scrolling: body wird festgepinnt,
-   Inhalt scrollt im inneren Container, Bounce wird per
-   overscroll-behavior unterbunden. Im Browser unverändert. */
-@media (display-mode: standalone) {
-  html, body {
-    height: 100%;
-    overflow: hidden;
-    overscroll-behavior: none;
-  }
-  body {
-    position: fixed;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  /* sticky greift in einem nicht-scrollenden body nicht — die Nav bleibt
-     oben, weil sie als erstes Flex-Item natürlich oben sitzt. */
-  .nav {
-    position: relative;
-    /* Notch / Status-Bar: Höhe + Top-Padding aus der Safe-Area, damit der
-       Inhalt unter der Statusleiste sitzt statt darunter eingeklemmt. */
-    height: calc(var(--nav-h) + env(safe-area-inset-top));
-    padding-top: env(safe-area-inset-top);
-    padding-left: max(20px, env(safe-area-inset-left));
-    padding-right: max(20px, env(safe-area-inset-right));
-  }
-  /* Burger-Panel öffnet von oben — sein Top-Padding muss auch unter die Notch */
-  .nav-panel {
-    padding-top: calc(var(--nav-h) + env(safe-area-inset-top) + 24px);
-  }
-  /* max-width/margin:auto wirken im normalen Flow als Begrenzung; im Flex-Body
-     werden sie zur Soll-Größe und sprengen die Viewport-Breite — daher hier
-     überschreiben, sodass der Scroll-Container immer viewport-breit ist. */
-  .magazine,
-  .archive-page {
-    flex: 1 1 auto;
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    overflow-y: auto;
-    overscroll-behavior-y: none;
-    -webkit-overflow-scrolling: touch;
-    /* Bottom-Padding um den Home-Indicator umfließen — Inhalte sollen nicht
-       direkt am Display-Rand kleben. */
-    padding-bottom: calc(80px + env(safe-area-inset-bottom));
-  }
+   Aktiv über die Klasse html.pwa-mode, die in app.js früh gesetzt wird
+   (matchMedia(display-mode: standalone) ODER navigator.standalone). Reine
+   @media-Detection ist auf iOS unzuverlässig — daher class-basiert. */
+html.pwa-mode,
+html.pwa-mode body {
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+html.pwa-mode body {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+}
+/* sticky greift in einem nicht-scrollenden body nicht — die Nav bleibt
+   oben, weil sie als erstes Flex-Item natürlich oben sitzt. */
+html.pwa-mode .nav {
+  position: relative;
+  /* Im Flex-Body würde flex-shrink:1 die Nav auf Burger-Höhe zusammenpressen,
+     wenn der Content groß ist — daher hier explizit 0. */
+  flex-shrink: 0;
+  /* Notch / Status-Bar: Höhe + Top-Padding aus der Safe-Area, damit der
+     Inhalt unter der Statusleiste sitzt statt darunter eingeklemmt. */
+  height: calc(var(--nav-h) + env(safe-area-inset-top));
+  padding-top: env(safe-area-inset-top);
+  padding-left: max(20px, env(safe-area-inset-left));
+  padding-right: max(20px, env(safe-area-inset-right));
+}
+/* Burger-Panel öffnet von oben — sein Top-Padding muss auch unter die Notch */
+html.pwa-mode .nav-panel {
+  padding-top: calc(var(--nav-h) + env(safe-area-inset-top) + 24px);
+}
+/* max-width/margin:auto wirken im normalen Flow als Begrenzung; im Flex-Body
+   werden sie zur Soll-Größe und sprengen die Viewport-Breite — daher hier
+   überschreiben, sodass der Scroll-Container immer viewport-breit ist. */
+html.pwa-mode .magazine,
+html.pwa-mode .archive-page {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-y: auto;
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
+  /* Bottom-Padding um den Home-Indicator umfließen — Inhalte sollen nicht
+     direkt am Display-Rand kleben. */
+  padding-bottom: calc(80px + env(safe-area-inset-bottom));
 }
 
 a { color: inherit; text-decoration: none; }
@@ -972,8 +974,11 @@ a { color: inherit; text-decoration: none; }
   width: 24px;
   border-radius: 999px;
   background: rgba(28, 28, 30, 0.55);
-  transition: width 220ms ease, transform 220ms ease;
-  will-change: transform, width;
+  /* Keine transition auf transform — der Thumb folgt dem Scroll direkt
+     (synchron, nicht hinterherlaufend). Width-Animation ist tolerabel,
+     weil die nur bei Resize läuft. */
+  transition: width 220ms ease;
+  will-change: transform;
 }
 
 .video-nav-btns {
@@ -1015,6 +1020,11 @@ a { color: inherit; text-decoration: none; }
   margin-right: -20px;
   padding-right: 20px;
   scrollbar-width: none;
+  /* iOS: Touch-Drags klar als horizontal interpretieren — verhindert
+     Konflikt mit dem vertikalen Page-Scroll und macht das Wischen smooth. */
+  touch-action: pan-x;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
 }
 
 .video-scroller::-webkit-scrollbar { display: none; }
