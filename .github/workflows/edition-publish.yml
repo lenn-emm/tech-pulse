@@ -15,10 +15,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Edition + Artikel in Supabase schreiben
+      - name: pywebpush installieren
+        run: python3 -m pip install --quiet pywebpush
+
+      - name: Edition + Artikel in Supabase schreiben + Push senden
         env:
           SUPABASE_URL: https://rjmyjuejdhcnijerwwwe.supabase.co
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
         run: |
           python3 << 'PYEOF'
           import json, os, urllib.request, urllib.parse, sys
@@ -96,6 +100,51 @@ jobs:
           if rows:
             req('articles', data=rows)
           print(f'{len(rows)} Artikel eingetragen.')
+
+          # ── Push-Benachrichtigungen ─────────────────────────────────────────
+          vapid_priv = os.environ.get('VAPID_PRIVATE_KEY', '').strip()
+          if not vapid_priv:
+            print('Kein VAPID_PRIVATE_KEY gesetzt — Push übersprungen.')
+            sys.exit(0)
+
+          from pywebpush import webpush, WebPushException
+
+          push_payload = json.dumps({
+            'title': 'Tech Pulse · Neu',
+            'body':  title,
+            'url':   './index.html',
+            'tag':   f'edition-{edition_date}',
+          })
+          subs = req('push_subscriptions?select=id,endpoint,p256dh,auth') or []
+          print(f'{len(subs)} Subscription(s) gefunden.')
+          sent = 0
+          for s in subs:
+            try:
+              webpush(
+                subscription_info={
+                  'endpoint': s['endpoint'],
+                  'keys': {'p256dh': s['p256dh'], 'auth': s['auth']},
+                },
+                data=push_payload,
+                vapid_private_key=vapid_priv,
+                vapid_claims={'sub': 'mailto:push@tech-pulse.app'},
+              )
+              sent += 1
+            except WebPushException as e:
+              code = getattr(getattr(e, 'response', None), 'status_code', None)
+              if code in (404, 410):
+                # Subscription abgelaufen oder ungültig → entsorgen
+                req(
+                  f'push_subscriptions?id=eq.{s["id"]}',
+                  method='DELETE',
+                  headers={'Prefer': 'return=minimal'},
+                )
+                print(f'  − abgelaufen, gelöscht: {s["endpoint"][:60]}…')
+              else:
+                print(f'  ! Push-Fehler ({code}): {e}')
+            except Exception as e:
+              print(f'  ! Push-Fehler: {e}')
+          print(f'Push-Benachrichtigungen gesendet: {sent}/{len(subs)}.')
           PYEOF
 
       - name: recent-articles.json aus Supabase regenerieren (Dedup-Fenster)

@@ -9,10 +9,14 @@ jobs:
   check-videos:
     runs-on: ubuntu-latest
     steps:
-      - name: YouTube RSS prüfen & neue Videos in Supabase eintragen
+      - name: pywebpush installieren
+        run: python3 -m pip install --quiet pywebpush
+
+      - name: YouTube RSS prüfen, neue Videos in Supabase eintragen + Push senden
         env:
           SUPABASE_URL: https://rjmyjuejdhcnijerwwwe.supabase.co
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
         run: |
           python3 << 'PYEOF'
           import urllib.request, json, os
@@ -45,7 +49,7 @@ jobs:
             return {v['video_id'] for v in json.loads(raw)}
 
           known = existing_ids()
-          added = 0
+          new_videos = []  # für Push-Benachrichtigungen
 
           for channel_id, channel_name in CHANNELS:
             rss_url = f'https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}'
@@ -75,10 +79,61 @@ jobs:
               try:
                 fetch(f'{URL}/rest/v1/videos', data=payload)
                 known.add(vid)
-                added += 1
+                new_videos.append({'channel_name': channel_name, 'video_id': vid, 'title': title})
                 print(f'+ {channel_name}: {title}')
               except Exception as e:
                 print(f'Insert-Fehler {vid}: {e}')
 
-          print(f'\nFertig — {added} neues Video(s) eingetragen.')
+          print(f'\nFertig — {len(new_videos)} neues Video(s) eingetragen.')
+
+          # ── Push-Benachrichtigungen ─────────────────────────────────────────
+          if not new_videos:
+            print('Keine neuen Videos — Push übersprungen.')
+            raise SystemExit(0)
+
+          vapid_priv = os.environ.get('VAPID_PRIVATE_KEY', '').strip()
+          if not vapid_priv:
+            print('Kein VAPID_PRIVATE_KEY gesetzt — Push übersprungen.')
+            raise SystemExit(0)
+
+          from pywebpush import webpush, WebPushException
+
+          subs_raw = fetch(f'{URL}/rest/v1/push_subscriptions?select=id,endpoint,p256dh,auth')
+          subs = json.loads(subs_raw) or []
+          print(f'{len(subs)} Subscription(s) gefunden.')
+
+          for v in new_videos:
+            push_payload = json.dumps({
+              'title': f'{v["channel_name"]} · Neu',
+              'body':  v['title'],
+              'url':   f'https://www.youtube.com/watch?v={v["video_id"]}',
+              'tag':   f'video-{v["video_id"]}',
+            })
+            sent = 0
+            for s in list(subs):
+              try:
+                webpush(
+                  subscription_info={
+                    'endpoint': s['endpoint'],
+                    'keys': {'p256dh': s['p256dh'], 'auth': s['auth']},
+                  },
+                  data=push_payload,
+                  vapid_private_key=vapid_priv,
+                  vapid_claims={'sub': 'mailto:push@tech-pulse.app'},
+                )
+                sent += 1
+              except WebPushException as e:
+                code = getattr(getattr(e, 'response', None), 'status_code', None)
+                if code in (404, 410):
+                  fetch(
+                    f'{URL}/rest/v1/push_subscriptions?id=eq.{s["id"]}',
+                    method='DELETE',
+                  )
+                  subs.remove(s)
+                  print(f'  − abgelaufen, gelöscht: {s["endpoint"][:60]}…')
+                else:
+                  print(f'  ! Push-Fehler ({code}): {e}')
+              except Exception as e:
+                print(f'  ! Push-Fehler: {e}')
+            print(f'  „{v["title"][:60]}…“ → {sent}/{len(subs)} ausgeliefert.')
           PYEOF
