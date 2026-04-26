@@ -72,7 +72,19 @@ body {
   }
   /* sticky greift in einem nicht-scrollenden body nicht — die Nav bleibt
      oben, weil sie als erstes Flex-Item natürlich oben sitzt. */
-  .nav { position: relative; }
+  .nav {
+    position: relative;
+    /* Notch / Status-Bar: Höhe + Top-Padding aus der Safe-Area, damit der
+       Inhalt unter der Statusleiste sitzt statt darunter eingeklemmt. */
+    height: calc(var(--nav-h) + env(safe-area-inset-top));
+    padding-top: env(safe-area-inset-top);
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
+  /* Burger-Panel öffnet von oben — sein Top-Padding muss auch unter die Notch */
+  .nav-panel {
+    padding-top: calc(var(--nav-h) + env(safe-area-inset-top) + 24px);
+  }
   /* max-width/margin:auto wirken im normalen Flow als Begrenzung; im Flex-Body
      werden sie zur Soll-Größe und sprengen die Viewport-Breite — daher hier
      überschreiben, sodass der Scroll-Container immer viewport-breit ist. */
@@ -85,6 +97,9 @@ body {
     overflow-y: auto;
     overscroll-behavior-y: none;
     -webkit-overflow-scrolling: touch;
+    /* Bottom-Padding um den Home-Indicator umfließen — Inhalte sollen nicht
+       direkt am Display-Rand kleben. */
+    padding-bottom: calc(80px + env(safe-area-inset-bottom));
   }
 }
 
