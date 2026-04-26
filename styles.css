@@ -54,6 +54,34 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ── Native-App-Feeling (nur in der installierten PWA) ──
+   Verhindert das iOS-Rubber-Band-Scrolling: body wird festgepinnt,
+   Inhalt scrollt im inneren Container, Bounce wird per
+   overscroll-behavior unterbunden. Im Browser unverändert. */
+@media (display-mode: standalone) {
+  html, body {
+    height: 100%;
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+  body {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  /* sticky greift in einem nicht-scrollenden body nicht — die Nav bleibt
+     oben, weil sie als erstes Flex-Item natürlich oben sitzt. */
+  .nav { position: relative; }
+  .magazine,
+  .archive-page {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    overscroll-behavior-y: none;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 a { color: inherit; text-decoration: none; }
 
 /* ── Nav ── */
