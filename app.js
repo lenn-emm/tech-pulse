@@ -299,31 +299,52 @@ function initVideoNav() {
   prev.addEventListener('click', () => step(-1));
   next.addEventListener('click', () => step(1));
 
-  function updateProgress() {
+  // Layout-abhängige Werte werden nur bei Resize/Init neu gemessen — beim
+  // Scrollen ändert sich nur scrollLeft, nicht die Container-Geometrie.
+  let max = 0, trackW = 0, thumbW = 0;
+  let prevDisabledState = null, nextDisabledState = null;
+  let rafId = 0;
+
+  function recalcLayout() {
     if (!track || !thumb) return;
-    const max = scroller.scrollWidth - scroller.clientWidth;
+    max = scroller.scrollWidth - scroller.clientWidth;
     if (max <= 0) {
       track.style.display = 'none';
       prev.disabled = true;
       next.disabled = true;
+      prevDisabledState = nextDisabledState = true;
       return;
     }
     track.style.display = '';
+    trackW = track.clientWidth;
     const visibleRatio = scroller.clientWidth / scroller.scrollWidth;
-    const scrollRatio = scroller.scrollLeft / max;
-    const trackW = track.clientWidth;
-    const thumbW = Math.max(24, trackW * visibleRatio);
-    const thumbX = (trackW - thumbW) * scrollRatio;
+    thumbW = Math.max(24, trackW * visibleRatio);
     thumb.style.width = thumbW + 'px';
-    thumb.style.transform = `translateX(${thumbX}px)`;
-    prev.disabled = scroller.scrollLeft <= 1;
-    next.disabled = scroller.scrollLeft >= max - 1;
+    schedule();
   }
 
-  scroller.addEventListener('scroll', updateProgress, { passive: true });
-  window.addEventListener('resize', updateProgress);
-  updateProgress();
-  setTimeout(updateProgress, 300);
+  function update() {
+    rafId = 0;
+    if (max <= 0) return;
+    const scrollRatio = scroller.scrollLeft / max;
+    const thumbX = (trackW - thumbW) * scrollRatio;
+    // translate3d → GPU-Compositing, kein Layout, kein Paint im Hauptthread
+    thumb.style.transform = `translate3d(${thumbX}px, 0, 0)`;
+    const pd = scroller.scrollLeft <= 1;
+    const nd = scroller.scrollLeft >= max - 1;
+    if (pd !== prevDisabledState) { prev.disabled = pd; prevDisabledState = pd; }
+    if (nd !== nextDisabledState) { next.disabled = nd; nextDisabledState = nd; }
+  }
+
+  function schedule() {
+    if (rafId) return;
+    rafId = requestAnimationFrame(update);
+  }
+
+  scroller.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('resize', recalcLayout);
+  recalcLayout();
+  setTimeout(recalcLayout, 300);
 }
 
 // ── Index page ────────────────────────────────────────────────────────────────
