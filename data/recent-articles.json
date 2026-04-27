@@ -1,6 +1,40 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "Meta setzt auf AWS-Graviton-Chips für agentische KI",
+      "source_url": "https://about.fb.com/news/2026/04/meta-partners-with-aws-on-graviton-chips-to-power-agentic-ai/",
+      "edition_date": "2026-04-27"
+    },
+    {
+      "title": "Anthropic erklärt Claude-Code-Probleme: Drei Bugs, ein Postmortem",
+      "source_url": "https://www.anthropic.com/engineering/april-23-postmortem",
+      "edition_date": "2026-04-27"
+    },
+    {
+      "title": "Sergey Brin ruft Google-Strike-Team gegen Claude auf",
+      "source_url": "https://sherwood.news/tech/google-deepmind-builds-strike-team-to-catch-up-to-anthropic-models/",
+      "edition_date": "2026-04-27"
+    },
+    {
+      "title": "Hugging Face ml-intern automatisiert LLM-Post-Training",
+      "source_url": "https://www.marktechpost.com/2026/04/21/hugging-face-releases-ml-intern-an-open-source-ai-agent-that-automates-the-llm-post-training-workflow/",
+      "edition_date": "2026-04-27"
+    },
+    {
+      "title": "Siemens droht EU: KI-Regulierung kostet Investitionen",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-04-20/siemens-threatens-to-skip-europe-for-ai-spending-due-to-rules",
+      "edition_date": "2026-04-27"
+    },
+    {
+      "title": "Warum die breite Öffentlichkeit KI ablehnt",
+      "source_url": "https://simonwillison.net/2026/Apr/24/the-people-do-not-yearn-for-automation/",
+      "edition_date": "2026-04-27"
+    },
+    {
+      "title": "Magnificent Seven: KI-Capex im Fokus der Q1-Zahlen",
+      "source_url": "https://www.cnbc.com/2026/04/26/stock-market-today-live-updates.html",
+      "edition_date": "2026-04-27"
+    },
     {
       "title": "Cohere und Aleph Alpha fusionieren zur transatlantischen KI-Alternative",
       "source_url": "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/",
