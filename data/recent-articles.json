@@ -1,6 +1,41 @@
 {
   "articles": [
     {
+      "title": "OpenAI und Microsoft beerdigen die AGI-Klausel",
+      "source_url": "https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/",
+      "edition_date": "2026-04-28"
+    },
+    {
+      "title": "EU zwingt Google, Android für KI-Rivalen zu öffnen",
+      "source_url": "https://thenextweb.com/news/google-eu-android-gemini-rivals-dma",
+      "edition_date": "2026-04-28"
+    },
+    {
+      "title": "Google DeepMind eröffnet ersten KI-Campus außerhalb UK in Seoul",
+      "source_url": "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/",
+      "edition_date": "2026-04-28"
+    },
+    {
+      "title": "Anthropic eröffnet Sydney-Büro, benennt ANZ-Chef",
+      "source_url": "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand",
+      "edition_date": "2026-04-28"
+    },
+    {
+      "title": "Morgen: Mag-7-Zahlen testen die KI-Investitionsthese",
+      "source_url": "https://stockpil.com/mag-7-earnings-cloud-ai-spending",
+      "edition_date": "2026-04-28"
+    },
+    {
+      "title": "DeepSeeks mHC löst Millionen-Dollar-Trainingsproblem",
+      "source_url": "https://www.theneurondaily.com/p/deepseek-just-fixed-what-breaks-100m-ai-training-runs",
+      "edition_date": "2026-04-28"
+    },
+    {
+      "title": "Simon Willison: Zehn Jahre AGI-Klausel in einem Nebensatz",
+      "source_url": "https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/",
+      "edition_date": "2026-04-28"
+    },
+    {
       "title": "Meta setzt auf AWS-Graviton-Chips für agentische KI",
       "source_url": "https://about.fb.com/news/2026/04/meta-partners-with-aws-on-graviton-chips-to-power-agentic-ai/",
       "edition_date": "2026-04-27"
