@@ -1,6 +1,41 @@
 {
   "articles": [
     {
+      "title": "Google öffnet Gemini für geheime US-Militäroperationen",
+      "source_url": "https://techcrunch.com/2026/04/28/google-expands-pentagons-access-to-its-ai-after-anthropics-refusal/",
+      "edition_date": "2026-04-29"
+    },
+    {
+      "title": "Mag-7 Earnings-Tag: Vier Tech-Riesen berichten heute",
+      "source_url": "https://wallstreethorizon.com/blog/Mag-7-Earnings-on-Deck-Q1-2026",
+      "edition_date": "2026-04-29"
+    },
+    {
+      "title": "AlphaGo-Schöpfer gründet KI-Lab ohne menschliche Daten",
+      "source_url": "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/",
+      "edition_date": "2026-04-29"
+    },
+    {
+      "title": "The Reasoning Trap: Klügere Agenten halluzinieren mehr Tools",
+      "source_url": "https://openreview.net/forum?id=vHKUXkrpVs",
+      "edition_date": "2026-04-29"
+    },
+    {
+      "title": "Citigroup hebt KI-Marktprognose auf 4,2 Billionen Dollar",
+      "source_url": "https://finance.yahoo.com/sectors/technology/articles/citigroup-lifts-ai-market-view-093520700.html",
+      "edition_date": "2026-04-29"
+    },
+    {
+      "title": "LeRobot-Lücke: Kritische RCE in Hugging-Face-Robotikplattform",
+      "source_url": "https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html",
+      "edition_date": "2026-04-29"
+    },
+    {
+      "title": "600 Google-Mitarbeiter warnen vor Pentagon-KI-Deal",
+      "source_url": "https://gizmodo.com/google-signs-pentagon-ai-deal-despite-employee-backlash-2000751724",
+      "edition_date": "2026-04-29"
+    },
+    {
       "title": "OpenAI und Microsoft beerdigen die AGI-Klausel",
       "source_url": "https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/",
       "edition_date": "2026-04-28"
