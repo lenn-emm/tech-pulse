@@ -1,14 +1,14 @@
 {
   "edition": {
-    "title": "Tech Pulse — Dienstag, 28. April 2026",
-    "edition_date": "2026-04-28",
-    "summary": "Historische Neuordnung im KI-Machtgefüge: OpenAI und Microsoft erklären die AGI-Klausel für tot — und die EU zwingt Google gleichzeitig, Android für Claude und ChatGPT zu öffnen. Während Google DeepMind seinen ersten Außen-Campus in Seoul aufschlägt, stehen morgen die Q1-Zahlen der Magnificent Seven auf dem Prüfstand."
+    "title": "Tech Pulse — Mittwoch, 29. April 2026",
+    "edition_date": "2026-04-29",
+    "summary": "Google unterzeichnet einen klassifizierten KI-Vertrag mit dem Pentagon — und wird damit zum einzigen der großen KI-Labs, das militärische Geheimoperationen unterstützt, während Anthropic diesen Schritt verweigerte. Parallel beginnt der größte Tech-Earnings-Tag des Jahres: Microsoft, Alphabet, Meta und Amazon berichten heute, ob KI-Investitionen in dreistelliger Milliardenhöhe endlich die Umsatzkurve biegen."
   },
   "articles": [
     {
-      "title": "OpenAI und Microsoft beerdigen die AGI-Klausel",
-      "summary": "OpenAI und Microsoft haben ihre Partnerschaft grundlegend neu verhandelt: Microsofts Lizenz auf OpenAIs Technologie wird bis 2032 verlängert, ist aber fortan nicht mehr exklusiv — und die umstrittene AGI-Klausel, die für den Fall des Erreichens echter KI eine Sonderrolle vorsah, gilt als tot. Die Formulierung \"unabhängig von OpenAIs technologischem Fortschritt\" im neuen Vertrag bedeutet: Microsoft verzichtet auf jede Sonderstellung beim AGI-Ereignis. Parallel räumte die Restrukturierung OpenAIs Weg für seinen milliardenschweren Amazon-Deal frei — Microsoft hatte zuvor rechtliche Einwände wegen exklusiver Nutzungsrechte erhoben.",
-      "source_url": "https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/",
+      "title": "Google öffnet Gemini für geheime US-Militäroperationen",
+      "summary": "Google hat am 28. April einen klassifizierten Vertrag mit dem US-Verteidigungsministerium unterzeichnet, der dem Pentagon uneingeschränkten Zugang zu seinen fortschrittlichsten KI-Modellen für 'jeden gesetzlichen Regierungszweck' gewährt — einschließlich der Befugnis, Googles KI-Sicherheitsfilter nach Regierungswunsch anzupassen. Mehr als 600 Google-Mitarbeiter und hochrangige DeepMind-Forscher protestierten in einem offenen Brief und warnten vor dem Einsatz der KI in 'unmenschlichen oder extrem schädlichen Weisen' außerhalb jeder Unternehmenskontrolle. Der Kontrast ist scharf: Anthropic hatte eine ähnliche Partnerschaft verweigert, woraufhin die Trump-Administration die Beziehungen zu Anthropic abbrach und das Unternehmen als Lieferkettenrisiko einstufte.",
+      "source_url": "https://techcrunch.com/2026/04/28/google-expands-pentagons-access-to-its-ai-after-anthropics-refusal/",
       "source_name": "TechCrunch",
       "category": "company_news",
       "format": "hero",
@@ -17,21 +17,21 @@
       "position": 1
     },
     {
-      "title": "EU zwingt Google, Android für KI-Rivalen zu öffnen",
-      "summary": "Die Europäische Kommission hat Google im Rahmen des Digital Markets Act (DMA) offiziell aufgefordert, ChatGPT, Claude und anderen KI-Assistenten dieselben Android-Systemzugänge zu gewähren wie Gemini — darunter Kamera, Mikrofon, E-Mail und systemweite Aktionen. Google muss außerdem anonymisierte Suchdaten mit KI-Chatbot-Anbietern auf fairen Bedingungen teilen. Dritte haben bis 13. Mai Zeit für Feedback; eine Endentscheidung der Kommission wird bis Ende Juli erwartet — bei Nichterfüllung drohen Strafen von bis zu 10 % des weltweiten Jahresumsatzes.",
-      "source_url": "https://thenextweb.com/news/google-eu-android-gemini-rivals-dma",
-      "source_name": "The Next Web",
-      "category": "regulation",
-      "format": "feature",
+      "title": "Mag-7 Earnings-Tag: Vier Tech-Riesen berichten heute",
+      "summary": "Microsoft, Alphabet, Meta und Amazon melden heute nach Börsenschluss ihre Q1-2026-Ergebnisse — der entscheidende Stresstest für die KI-Investitionsthese nach 700+ Mrd. Dollar Datencenter-Ausgaben in 2026. Analysten prüfen: Azures erwartetes Wachstum von 37–38 % (Vorquartal 39 %), Google Clouds 240-Mrd.-Dollar-Backlog, Metas 135-Mrd.-Dollar-Capex-Plan und AWS' Ziel, die KI-Run-Rate über 15 Mrd. Dollar zu treiben. Die Marktreaktion wird Tech-Bewertungen für das zweite Halbjahr 2026 prägen.",
+      "source_url": "https://wallstreethorizon.com/blog/Mag-7-Earnings-on-Deck-Q1-2026",
+      "source_name": "Wall Street Horizon",
+      "category": "company_news",
+      "format": "visual",
       "zone": "adjacent",
-      "read_time_min": 4,
+      "read_time_min": 3,
       "position": 2
     },
     {
-      "title": "Google DeepMind eröffnet ersten KI-Campus außerhalb UK in Seoul",
-      "summary": "Zehn Jahre nach dem legendären AlphaGo-Match gegen Lee Se-dol kündigt Google DeepMind gemeinsam mit Südkoreas Präsident Lee Jae-myung seinen ersten KI-Campus außerhalb Großbritanniens an — am selben Ort im Seouler Four Seasons Hotel. Der bis Ende 2026 geplante Campus gibt Forschern der Seoul National University und des KAIST Zugang zu Googles KI-for-Science-Modellen und entsendet mindestens zehn DeepMind-Forscher für das staatliche K-Moonshot-Programm in den Bereichen Biotech, Klimaforschung und Energie. Die symbolisch aufgeladene Standortwahl ist kein Zufall: Korea steht als Hardwarelieferant (Samsung, SK Hynix) und Wissenschaftsnation im Zentrum von Googles asiatischer KI-Strategie.",
-      "source_url": "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/",
-      "source_name": "Google DeepMind",
+      "title": "AlphaGo-Schöpfer gründet KI-Lab ohne menschliche Daten",
+      "summary": "David Silver, der Erfinder von AlphaGo und ehemaliger Leiter des Reinforcement-Learning-Teams bei Google DeepMind, hat mit Ineffable Intelligence ein KI-Labor gegründet, das ausschließlich auf Verstärkungslernen ohne menschliche Trainingsdaten setzt — mit dem Ziel, eine 'Superlernmaschine' zu erschaffen, die Wissen autonom entdeckt. Die Seed-Finanzierung von 1,1 Milliarden Dollar, ko-geführt von Sequoia und Lightspeed mit Beteiligung von Nvidia, Google und dem britischen Sovereign AI Fund, ist die größte Seed-Runde in der europäischen Startup-Geschichte und bewertet Ineffable mit 5,1 Milliarden Dollar. Silver hat öffentlich zugesagt, 100 Prozent seiner Unternehmensgewinne über Founders Pledge zu spenden.",
+      "source_url": "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/",
+      "source_name": "TechCrunch",
       "category": "company_news",
       "format": "feature",
       "zone": "core",
@@ -39,47 +39,49 @@
       "position": 3
     },
     {
-      "title": "Anthropic eröffnet Sydney-Büro, benennt ANZ-Chef",
-      "summary": "Anthropic hat am 28. April offiziell seinen Sydney-Standort eröffnet — der vierte Asia-Pacific-Stützpunkt nach Singapur, Tokio und Seoul. Theo Hourmouzis, ehemaliger SVP bei Snowflake für Australien, Neuseeland und ASEAN, übernimmt als General Manager ANZ. Im Hintergrund steht eine strategische Partnerschaft mit der Commonwealth Bank of Australia als Anker-Unternehmenskunde; Anthropic will Claude in die kritischen Arbeitsabläufe australischer Konzerne integrieren.",
-      "source_url": "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand",
-      "source_name": "Anthropic",
-      "category": "company_news",
+      "title": "The Reasoning Trap: Klügere Agenten halluzinieren mehr Tools",
+      "summary": "Ein auf der ICLR 2026 in Rio de Janeiro vorgestelltes Paper belegt ein kontraintuitives Dilemma: Stärkeres Schlussfolgern durch Reinforcement Learning erhöht die Tool-Halluzinationsrate im gleichen Maß wie die Aufgabenleistung steigt — 96 % der Unternehmen setzen bereits KI-Agenten in Produktion ein, ohne diesen Zusammenhang zu kennen. Die Autoren entwickelten SimpleToolHalluBench, ein Diagnosebenchmark für zwei Fehlermodi: kein passendes Tool verfügbar und nur Ablenkungswerkzeuge vorhanden. Prompt-Engineering und DPO lindern das Problem nur teilweise; die Studie spricht von einem fundamentalen Zuverlässigkeits-Fähigkeits-Kompromiss.",
+      "source_url": "https://openreview.net/forum?id=vHKUXkrpVs",
+      "source_name": "OpenReview / ICLR 2026",
+      "category": "research",
       "format": "feature",
-      "zone": "core",
-      "read_time_min": 3,
+      "zone": "outside",
+      "read_time_min": 4,
       "position": 4
     },
     {
-      "title": "Morgen: Mag-7-Zahlen testen die KI-Investitionsthese",
-      "summary": "Microsoft, Alphabet, Meta und Amazon berichten am 29. April ihre Q1-2026-Ergebnisse — und die entscheidende Frage ist, ob die explodierenden KI-Ausgaben den Umsatz proportional antreiben: Azure nahe 38 % Wachstum, Google-Cloud-Backlog bei 243 Mrd. Dollar, AWS-KI-Run-Rate über 15 Mrd. Dollar. Metas 135-Mrd.-Dollar-Capex-Plan für 2026 wird am härtesten geprüft; Analysten erwarten 20 % EPS-Wachstum für die Mag-7-Gruppe insgesamt. Die Marktreaktion dürfte Tech-Bewertungen für den Rest des Jahres prägen.",
-      "source_url": "https://stockpil.com/mag-7-earnings-cloud-ai-spending",
-      "source_name": "StockPil",
-      "category": "company_news",
-      "format": "visual",
-      "zone": "adjacent",
-      "read_time_min": 3,
-      "position": 5
-    },
-    {
-      "title": "DeepSeeks mHC löst Millionen-Dollar-Trainingsproblem",
-      "summary": "DeepSeek hat einen neuen Algorithmus namens mHC (Manifold-constrained Hyper-Connections) veröffentlicht, der Gradient-Spikes in sehr großen Trainingsläufen stabilisieren soll — jene plötzlichen Instabilitäten, die Dutzende Millionen Dollar teure Runs zum Absturz bringen. The Neuron Daily bezeichnet den Ansatz als potenziellen Game-Changer für kosteneffizientes Frontier-Scaling: Statt teurer Checkpoints und Neustarts stabilisiert mHC den Trainingsfluss mathematisch auf Mannigfaltigkeitsebene.",
-      "source_url": "https://www.theneurondaily.com/p/deepseek-just-fixed-what-breaks-100m-ai-training-runs",
-      "source_name": "The Neuron Daily",
-      "category": "research",
-      "format": "quick",
-      "zone": "outside",
-      "read_time_min": 2,
-      "position": 6
-    },
-    {
-      "title": "Simon Willison: Zehn Jahre AGI-Klausel in einem Nebensatz",
-      "summary": "Simon Willison hat auf seinem Blog die vollständige Geschichte der Microsoft-OpenAI-AGI-Klausel rekonstruiert — von ihrer Einführung 2019 bis zu ihrer stillen Beerdigung im April 2026 durch den Satz \"unabhängig von OpenAIs technologischen Fortschritten\". Ein seltener Blick auf die vertragliche Architektur hinter einer der folgenreichsten Unternehmenspartnerschaften im KI-Zeitalter.",
-      "source_url": "https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/",
-      "source_name": "Simon Willison's Weblog",
+      "title": "Citigroup hebt KI-Marktprognose auf 4,2 Billionen Dollar",
+      "summary": "Citigroup hat seine langfristige KI-Marktprognose von 3,5 auf 4,2 Billionen Dollar bis 2030 angehoben — davon 1,9 Billionen Dollar aus Unternehmens-KI, getrieben von schneller als erwartet skalierendem Enterprise-Coding und KI-Automatisierung. Als Beleg nennt Citi Anthropics Umsatzsprung von 1 Mrd. Jahresumsatz Ende 2024 auf 30 Mrd. Dollar Anfang 2026.",
+      "source_url": "https://finance.yahoo.com/sectors/technology/articles/citigroup-lifts-ai-market-view-093520700.html",
+      "source_name": "Yahoo Finance / Reuters",
       "category": "company_news",
       "format": "quick",
       "zone": "wildcard",
       "read_time_min": 2,
+      "position": 5
+    },
+    {
+      "title": "LeRobot-Lücke: Kritische RCE in Hugging-Face-Robotikplattform",
+      "summary": "CVE-2026-25874 (CVSS 9,8) ermöglicht unauthentifizierten Angreifern, über Pickle-Deserialisierung im LeRobot-PolicyServer beliebigen Code auf GPU-Systemen auszuführen — die Lücke ist noch ungepacht, obwohl LeRobot über 21.500 GitHub-Stars und weite Verbreitung in Forschungslabors hat. Betreiber sollen sofort auf safetensors umsteigen und gRPC-Ports mit Authentifizierung sichern.",
+      "source_url": "https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html",
+      "source_name": "The Hacker News",
+      "category": "research",
+      "format": "quick",
+      "zone": "adjacent",
+      "read_time_min": 2,
+      "position": 6
+    },
+    {
+      "title": "600 Google-Mitarbeiter warnen vor Pentagon-KI-Deal",
+      "summary": "Mehr als 600 Google-Mitarbeiter und hochrangige DeepMind-Forscher unterzeichneten kurz vor Abschluss des Vertrags einen offenen Brief an CEO Sundar Pichai, in dem sie die Partnerschaft als gefährlichen Schritt in undurchsichtige Operationen außerhalb von Googles Kontrolle bezeichneten.",
+      "quote_text": "Wir fordern Sundar Pichai auf, diese Partnerschaft abzulehnen. Sobald unsere KI-Technologie klassifizierte Operationen betritt, verlieren wir jede Aufsicht darüber, ob sie in unmenschlicher oder extrem schädlicher Weise eingesetzt wird.",
+      "quote_author": "Offener Brief von 600+ Google-Mitarbeitern und DeepMind-Forschern, April 2026",
+      "source_url": "https://gizmodo.com/google-signs-pentagon-ai-deal-despite-employee-backlash-2000751724",
+      "source_name": "Gizmodo",
+      "category": "company_news",
+      "format": "quote",
+      "zone": "core",
+      "read_time_min": 1,
       "position": 7
     }
   ]
