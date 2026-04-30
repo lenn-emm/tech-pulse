@@ -83,3 +83,17 @@ CREATE POLICY push_subscriptions_anon_delete
   USING (true);
 
 -- Bewusst KEIN SELECT für anon — Subscriptions bleiben privat.
+
+-- ── Videos RLS — Migration v5 ───────────────────────────────────────────────
+-- Frontend liest Videos anonym (Video-Pulse-Sektion); Workflow nutzt
+-- service-role-key (umgeht RLS). Bisher war RLS deaktiviert → Supabase-Advisor
+-- meldete "RLS Disabled in Public" für public.videos.
+
+ALTER TABLE videos ENABLE ROW LEVEL SECURITY;
+
+DROP POLICY IF EXISTS videos_anon_select ON videos;
+CREATE POLICY videos_anon_select
+  ON videos
+  FOR SELECT
+  TO anon
+  USING (true);
