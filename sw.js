@@ -12,7 +12,7 @@
  * activate() automatisch entsorgt.
  */
 
-const CACHE_VERSION = 'v1.0.0';
+const CACHE_VERSION = 'v1.1.0';
 const CORE_CACHE    = `tp-core-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `tp-runtime-${CACHE_VERSION}`;
 
@@ -80,8 +80,16 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Supabase REST-API: stale-while-revalidate
+  // Supabase REST-API
   if (url.hostname.endsWith('.supabase.co') && url.pathname.startsWith('/rest/v1/')) {
+    // Die "aktuelle Edition" (is_current=eq.true) wechselt täglich — hier
+    // muss das Netz gewinnen, sonst zeigt der erste Aufruf nach einem
+    // Edition-Wechsel die Vortagsausgabe aus dem Cache.
+    if (url.pathname.endsWith('/editions') && url.searchParams.get('is_current') === 'eq.true') {
+      event.respondWith(networkFirst(req));
+      return;
+    }
+    // Restliche REST-Calls (Artikel pro Edition, Videos): stale-while-revalidate
     event.respondWith(staleWhileRevalidate(req));
     return;
   }
