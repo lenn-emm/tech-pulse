@@ -1,6 +1,41 @@
 {
   "articles": [
     {
+      "title": "Claude Security in öffentlicher Beta für Enterprise-Kunden",
+      "source_url": "https://claude.com/product/claude-security",
+      "edition_date": "2026-05-01"
+    },
+    {
+      "title": "Hyperscaler investieren 2026 über 700 Milliarden Dollar in KI",
+      "source_url": "https://fortune.com/2026/04/30/big-tech-hyperscalers-will-spend-700-billion-on-ai-infrastructure-this-year-with-no-clear-end-in-sight-eye-on-ai/",
+      "edition_date": "2026-05-01"
+    },
+    {
+      "title": "SoftBank baut Roze AI: Roboter für Rechenzentren, 100-Mrd.-IPO",
+      "source_url": "https://techcrunch.com/2026/04/29/softbank-is-creating-a-robotics-company-that-builds-data-centers-and-already-eyeing-a-100b-ipo/",
+      "edition_date": "2026-05-01"
+    },
+    {
+      "title": "EU AI Act: Trilog-Verhandlungen erneut gescheitert",
+      "source_url": "https://thenextweb.com/news/eu-ai-act-omnibus-deal-fails-april-2026-talks",
+      "edition_date": "2026-05-01"
+    },
+    {
+      "title": "Meta hebt KI-CapEx auf bis zu 145 Milliarden Dollar an",
+      "source_url": "https://www.cnbc.com/2026/04/29/meta-q1-earnings-report-2026.html",
+      "edition_date": "2026-05-01"
+    },
+    {
+      "title": "40.000 Tech-Jobs in April durch KI-Priorisierung gestrichen",
+      "source_url": "https://www.businesstoday.in/technology/story/tech-layoffs-2026-nearly-40000-jobs-lost-in-april-amid-changing-ai-priorities-528282-2026-04-30",
+      "edition_date": "2026-05-01"
+    },
+    {
+      "title": "KI-Ausgaben könnten 2027 Billion-Dollar-Marke übersteigen",
+      "source_url": "https://www.cnbc.com/2026/04/30/ai-boom-big-tech-capital-expenditures-now-seen-topping-1-trillion-in-2027-.html",
+      "edition_date": "2026-05-01"
+    },
+    {
       "title": "Mag-7-Quartalszahlen: KI-Investitionen zahlen sich endlich aus",
       "source_url": "https://sherwood.news/markets/amazon-q1-2026-earnings-report-guidance-aws-cloud-ai-boom/",
       "edition_date": "2026-04-30"
