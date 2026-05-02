@@ -1,274 +1,253 @@
 {
+  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
     {
-      "title": "Claude Security in öffentlicher Beta für Enterprise-Kunden",
-      "source_url": "https://claude.com/product/claude-security",
-      "edition_date": "2026-05-01"
+      "title": "Pentagon unterschreibt KI-Deals mit 8 Firmen — Anthropic verbannt",
+      "source_url": "https://www.defensenews.com/news/pentagon-congress/2026/05/01/pentagon-freezes-out-anthropic-as-it-signs-deals-with-ai-rivals/"
+    },
+    {
+      "title": "Zitat des Tages: James Baker über KI und die Zukunft der Institutionen",
+      "source_url": "https://www.defenseone.com/technology/2026/05/former-head-pentagons-think-tank-joins-anthropic/413256/"
+    },
+    {
+      "title": "Weißes Haus nimmt Gespräche mit Anthropic nach Mythos-Ankündigung wieder auf",
+      "source_url": "https://www.axios.com/2026/05/01/washington-new-anthropic-problem"
+    },
+    {
+      "title": "Pentagon-CTO: Anthropic-Blacklist bleibt — Mythos als Sicherheits-Sonderfall",
+      "source_url": "https://www.cnbc.com/2026/05/01/pentagon-anthropic-blacklist-mythos-michael.html"
+    },
+    {
+      "title": "Nature-Bericht: Menschen schlagen KI-Agenten bei komplexer Forschungsarbeit",
+      "source_url": "https://www.nature.com/articles/d41586-026-01199-z"
+    },
+    {
+      "title": "Hangzhou-Gericht: KI-Automatisierung ist kein Kündigungsgrund",
+      "source_url": "https://www.caixinglobal.com/2026-04-30/chinese-courts-rule-companies-cannot-fire-workers-simply-to-replace-them-with-ai-102439602.html"
+    },
+    {
+      "title": "Huawei zielt auf 12 Mrd. Dollar KI-Chip-Umsatz — Ascend dominiert China",
+      "source_url": "https://www.androidheadlines.com/2026/05/huawei-china-ai-market-share-nvidia-exit-ascend-950.html"
+    },
+    {
+      "title": "Anthropic holt Ex-Pentagon-Strategiechef Baker — mitten im Militärstreit",
+      "source_url": "https://www.defenseone.com/technology/2026/05/former-head-pentagons-think-tank-joins-anthropic/413256/"
     },
     {
       "title": "Hyperscaler investieren 2026 über 700 Milliarden Dollar in KI",
-      "source_url": "https://fortune.com/2026/04/30/big-tech-hyperscalers-will-spend-700-billion-on-ai-infrastructure-this-year-with-no-clear-end-in-sight-eye-on-ai/",
-      "edition_date": "2026-05-01"
-    },
-    {
-      "title": "SoftBank baut Roze AI: Roboter für Rechenzentren, 100-Mrd.-IPO",
-      "source_url": "https://techcrunch.com/2026/04/29/softbank-is-creating-a-robotics-company-that-builds-data-centers-and-already-eyeing-a-100b-ipo/",
-      "edition_date": "2026-05-01"
-    },
-    {
-      "title": "EU AI Act: Trilog-Verhandlungen erneut gescheitert",
-      "source_url": "https://thenextweb.com/news/eu-ai-act-omnibus-deal-fails-april-2026-talks",
-      "edition_date": "2026-05-01"
-    },
-    {
-      "title": "Meta hebt KI-CapEx auf bis zu 145 Milliarden Dollar an",
-      "source_url": "https://www.cnbc.com/2026/04/29/meta-q1-earnings-report-2026.html",
-      "edition_date": "2026-05-01"
-    },
-    {
-      "title": "40.000 Tech-Jobs in April durch KI-Priorisierung gestrichen",
-      "source_url": "https://www.businesstoday.in/technology/story/tech-layoffs-2026-nearly-40000-jobs-lost-in-april-amid-changing-ai-priorities-528282-2026-04-30",
-      "edition_date": "2026-05-01"
+      "source_url": "https://fortune.com/2026/04/30/big-tech-hyperscalers-will-spend-700-billion-on-ai-infrastructure-this-year-with-no-clear-end-in-sight-eye-on-ai/"
     },
     {
       "title": "KI-Ausgaben könnten 2027 Billion-Dollar-Marke übersteigen",
-      "source_url": "https://www.cnbc.com/2026/04/30/ai-boom-big-tech-capital-expenditures-now-seen-topping-1-trillion-in-2027-.html",
-      "edition_date": "2026-05-01"
+      "source_url": "https://www.cnbc.com/2026/04/30/ai-boom-big-tech-capital-expenditures-now-seen-topping-1-trillion-in-2027-.html"
     },
     {
-      "title": "Mag-7-Quartalszahlen: KI-Investitionen zahlen sich endlich aus",
-      "source_url": "https://sherwood.news/markets/amazon-q1-2026-earnings-report-guidance-aws-cloud-ai-boom/",
-      "edition_date": "2026-04-30"
+      "title": "40.000 Tech-Jobs in April durch KI-Priorisierung gestrichen",
+      "source_url": "https://www.businesstoday.in/technology/story/tech-layoffs-2026-nearly-40000-jobs-lost-in-april-amid-changing-ai-priorities-528282-2026-04-30"
+    },
+    {
+      "title": "Meta hebt KI-CapEx auf bis zu 145 Milliarden Dollar an",
+      "source_url": "https://www.cnbc.com/2026/04/29/meta-q1-earnings-report-2026.html"
+    },
+    {
+      "title": "EU AI Act: Trilog-Verhandlungen erneut gescheitert",
+      "source_url": "https://thenextweb.com/news/eu-ai-act-omnibus-deal-fails-april-2026-talks"
+    },
+    {
+      "title": "SoftBank baut Roze AI: Roboter für Rechenzentren, 100-Mrd.-IPO",
+      "source_url": "https://techcrunch.com/2026/04/29/softbank-is-creating-a-robotics-company-that-builds-data-centers-and-already-eyeing-a-100b-ipo/"
+    },
+    {
+      "title": "Claude Security in öffentlicher Beta für Enterprise-Kunden",
+      "source_url": "https://claude.com/product/claude-security"
     },
     {
       "title": "Google Cloud wächst 63 Prozent: KI löst Werbung als Treiber ab",
-      "source_url": "https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html",
-      "edition_date": "2026-04-30"
-    },
-    {
-      "title": "AWS knackt 15-Milliarden-KI-Runrate im stärksten Quartal seit Jahren",
-      "source_url": "https://www.cnbc.com/2026/04/29/aws-earnings-q1-2026.html",
-      "edition_date": "2026-04-30"
-    },
-    {
-      "title": "Anthropic öffnet Managed Agents Memory für alle Entwickler",
-      "source_url": "https://www.anthropic.com/news/claude-opus-4-7",
-      "edition_date": "2026-04-30"
-    },
-    {
-      "title": "Recursive Language Models: PrimeIntellect skizziert das Paradigma 2026",
-      "source_url": "https://www.primeintellect.ai/blog/rlm",
-      "edition_date": "2026-04-30"
-    },
-    {
-      "title": "OpenAI-Codex und GPT-5.5 jetzt auf Amazon Bedrock verfügbar",
-      "source_url": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/",
-      "edition_date": "2026-04-30"
-    },
-    {
-      "title": "Studie: Ein Drittel aller neuen Websites ist KI-generiert",
-      "source_url": "https://www.404media.co/study-finds-a-third-of-new-websites-are-ai-generated/",
-      "edition_date": "2026-04-30"
-    },
-    {
-      "title": "Zig-Projekt erklärt, warum es KI-Beiträge grundsätzlich ablehnt",
-      "source_url": "https://simonwillison.net/2026/Apr/30/zig-anti-ai/",
-      "edition_date": "2026-04-30"
+      "source_url": "https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html"
     },
     {
       "title": "Sundar Pichai: KI ist erstmals primärer Cloud-Wachstumstreiber",
-      "source_url": "https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html",
-      "edition_date": "2026-04-30"
+      "source_url": "https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html"
+    },
+    {
+      "title": "Zig-Projekt erklärt, warum es KI-Beiträge grundsätzlich ablehnt",
+      "source_url": "https://simonwillison.net/2026/Apr/30/zig-anti-ai/"
+    },
+    {
+      "title": "Studie: Ein Drittel aller neuen Websites ist KI-generiert",
+      "source_url": "https://www.404media.co/study-finds-a-third-of-new-websites-are-ai-generated/"
+    },
+    {
+      "title": "OpenAI-Codex und GPT-5.5 jetzt auf Amazon Bedrock verfügbar",
+      "source_url": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/"
+    },
+    {
+      "title": "Recursive Language Models: PrimeIntellect skizziert das Paradigma 2026",
+      "source_url": "https://www.primeintellect.ai/blog/rlm"
+    },
+    {
+      "title": "Anthropic öffnet Managed Agents Memory für alle Entwickler",
+      "source_url": "https://www.anthropic.com/news/claude-opus-4-7"
+    },
+    {
+      "title": "AWS knackt 15-Milliarden-KI-Runrate im stärksten Quartal seit Jahren",
+      "source_url": "https://www.cnbc.com/2026/04/29/aws-earnings-q1-2026.html"
+    },
+    {
+      "title": "Mag-7-Quartalszahlen: KI-Investitionen zahlen sich endlich aus",
+      "source_url": "https://sherwood.news/markets/amazon-q1-2026-earnings-report-guidance-aws-cloud-ai-boom/"
     },
     {
       "title": "Google öffnet Gemini für geheime US-Militäroperationen",
-      "source_url": "https://techcrunch.com/2026/04/28/google-expands-pentagons-access-to-its-ai-after-anthropics-refusal/",
-      "edition_date": "2026-04-29"
+      "source_url": "https://techcrunch.com/2026/04/28/google-expands-pentagons-access-to-its-ai-after-anthropics-refusal/"
     },
     {
       "title": "Mag-7 Earnings-Tag: Vier Tech-Riesen berichten heute",
-      "source_url": "https://wallstreethorizon.com/blog/Mag-7-Earnings-on-Deck-Q1-2026",
-      "edition_date": "2026-04-29"
+      "source_url": "https://wallstreethorizon.com/blog/Mag-7-Earnings-on-Deck-Q1-2026"
     },
     {
       "title": "AlphaGo-Schöpfer gründet KI-Lab ohne menschliche Daten",
-      "source_url": "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/",
-      "edition_date": "2026-04-29"
+      "source_url": "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/"
     },
     {
       "title": "The Reasoning Trap: Klügere Agenten halluzinieren mehr Tools",
-      "source_url": "https://openreview.net/forum?id=vHKUXkrpVs",
-      "edition_date": "2026-04-29"
+      "source_url": "https://openreview.net/forum?id=vHKUXkrpVs"
     },
     {
       "title": "Citigroup hebt KI-Marktprognose auf 4,2 Billionen Dollar",
-      "source_url": "https://finance.yahoo.com/sectors/technology/articles/citigroup-lifts-ai-market-view-093520700.html",
-      "edition_date": "2026-04-29"
+      "source_url": "https://finance.yahoo.com/sectors/technology/articles/citigroup-lifts-ai-market-view-093520700.html"
     },
     {
       "title": "LeRobot-Lücke: Kritische RCE in Hugging-Face-Robotikplattform",
-      "source_url": "https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html",
-      "edition_date": "2026-04-29"
+      "source_url": "https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html"
     },
     {
       "title": "600 Google-Mitarbeiter warnen vor Pentagon-KI-Deal",
-      "source_url": "https://gizmodo.com/google-signs-pentagon-ai-deal-despite-employee-backlash-2000751724",
-      "edition_date": "2026-04-29"
+      "source_url": "https://gizmodo.com/google-signs-pentagon-ai-deal-despite-employee-backlash-2000751724"
     },
     {
       "title": "OpenAI und Microsoft beerdigen die AGI-Klausel",
-      "source_url": "https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/",
-      "edition_date": "2026-04-28"
-    },
-    {
-      "title": "EU zwingt Google, Android für KI-Rivalen zu öffnen",
-      "source_url": "https://thenextweb.com/news/google-eu-android-gemini-rivals-dma",
-      "edition_date": "2026-04-28"
-    },
-    {
-      "title": "Google DeepMind eröffnet ersten KI-Campus außerhalb UK in Seoul",
-      "source_url": "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/",
-      "edition_date": "2026-04-28"
-    },
-    {
-      "title": "Anthropic eröffnet Sydney-Büro, benennt ANZ-Chef",
-      "source_url": "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand",
-      "edition_date": "2026-04-28"
-    },
-    {
-      "title": "Morgen: Mag-7-Zahlen testen die KI-Investitionsthese",
-      "source_url": "https://stockpil.com/mag-7-earnings-cloud-ai-spending",
-      "edition_date": "2026-04-28"
-    },
-    {
-      "title": "DeepSeeks mHC löst Millionen-Dollar-Trainingsproblem",
-      "source_url": "https://www.theneurondaily.com/p/deepseek-just-fixed-what-breaks-100m-ai-training-runs",
-      "edition_date": "2026-04-28"
+      "source_url": "https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/"
     },
     {
       "title": "Simon Willison: Zehn Jahre AGI-Klausel in einem Nebensatz",
-      "source_url": "https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/",
-      "edition_date": "2026-04-28"
+      "source_url": "https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/"
     },
     {
-      "title": "Meta setzt auf AWS-Graviton-Chips für agentische KI",
-      "source_url": "https://about.fb.com/news/2026/04/meta-partners-with-aws-on-graviton-chips-to-power-agentic-ai/",
-      "edition_date": "2026-04-27"
+      "title": "DeepSeeks mHC löst Millionen-Dollar-Trainingsproblem",
+      "source_url": "https://www.theneurondaily.com/p/deepseek-just-fixed-what-breaks-100m-ai-training-runs"
+    },
+    {
+      "title": "Morgen: Mag-7-Zahlen testen die KI-Investitionsthese",
+      "source_url": "https://stockpil.com/mag-7-earnings-cloud-ai-spending"
+    },
+    {
+      "title": "Anthropic eröffnet Sydney-Büro, benennt ANZ-Chef",
+      "source_url": "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand"
+    },
+    {
+      "title": "Google DeepMind eröffnet ersten KI-Campus außerhalb UK in Seoul",
+      "source_url": "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/"
+    },
+    {
+      "title": "EU zwingt Google, Android für KI-Rivalen zu öffnen",
+      "source_url": "https://thenextweb.com/news/google-eu-android-gemini-rivals-dma"
     },
     {
       "title": "Anthropic erklärt Claude-Code-Probleme: Drei Bugs, ein Postmortem",
-      "source_url": "https://www.anthropic.com/engineering/april-23-postmortem",
-      "edition_date": "2026-04-27"
-    },
-    {
-      "title": "Sergey Brin ruft Google-Strike-Team gegen Claude auf",
-      "source_url": "https://sherwood.news/tech/google-deepmind-builds-strike-team-to-catch-up-to-anthropic-models/",
-      "edition_date": "2026-04-27"
-    },
-    {
-      "title": "Hugging Face ml-intern automatisiert LLM-Post-Training",
-      "source_url": "https://www.marktechpost.com/2026/04/21/hugging-face-releases-ml-intern-an-open-source-ai-agent-that-automates-the-llm-post-training-workflow/",
-      "edition_date": "2026-04-27"
-    },
-    {
-      "title": "Siemens droht EU: KI-Regulierung kostet Investitionen",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-04-20/siemens-threatens-to-skip-europe-for-ai-spending-due-to-rules",
-      "edition_date": "2026-04-27"
-    },
-    {
-      "title": "Warum die breite Öffentlichkeit KI ablehnt",
-      "source_url": "https://simonwillison.net/2026/Apr/24/the-people-do-not-yearn-for-automation/",
-      "edition_date": "2026-04-27"
+      "source_url": "https://www.anthropic.com/engineering/april-23-postmortem"
     },
     {
       "title": "Magnificent Seven: KI-Capex im Fokus der Q1-Zahlen",
-      "source_url": "https://www.cnbc.com/2026/04/26/stock-market-today-live-updates.html",
-      "edition_date": "2026-04-27"
+      "source_url": "https://www.cnbc.com/2026/04/26/stock-market-today-live-updates.html"
     },
     {
-      "title": "Cohere und Aleph Alpha fusionieren zur transatlantischen KI-Alternative",
-      "source_url": "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/",
-      "edition_date": "2026-04-26"
+      "title": "Warum die breite Öffentlichkeit KI ablehnt",
+      "source_url": "https://simonwillison.net/2026/Apr/24/the-people-do-not-yearn-for-automation/"
     },
     {
-      "title": "Glasswing: KI findet Jahrzehnte-alte Bugs — doch wer patcht sie?",
-      "source_url": "https://thehackernews.com/2026/04/project-glasswing-proved-ai-can-find.html",
-      "edition_date": "2026-04-26"
+      "title": "Siemens droht EU: KI-Regulierung kostet Investitionen",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-04-20/siemens-threatens-to-skip-europe-for-ai-spending-due-to-rules"
     },
     {
-      "title": "Google Deep Research Max: 160 Suchen — Report wartet morgens auf dem Schreibtisch",
-      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/",
-      "edition_date": "2026-04-26"
+      "title": "Hugging Face ml-intern automatisiert LLM-Post-Training",
+      "source_url": "https://www.marktechpost.com/2026/04/21/hugging-face-releases-ml-intern-an-open-source-ai-agent-that-automates-the-llm-post-training-workflow/"
     },
     {
-      "title": "OpenAI Privacy Filter: Quelloffenes PII-Modell läuft lokal auf dem Laptop",
-      "source_url": "https://openai.com/index/introducing-openai-privacy-filter/",
-      "edition_date": "2026-04-26"
+      "title": "Sergey Brin ruft Google-Strike-Team gegen Claude auf",
+      "source_url": "https://sherwood.news/tech/google-deepmind-builds-strike-team-to-catch-up-to-anthropic-models/"
     },
     {
-      "title": "App Store wächst 104 %: KI-Entwicklerwerkzeuge treiben historischen Boom",
-      "source_url": "https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/",
-      "edition_date": "2026-04-26"
-    },
-    {
-      "title": "Vercel-Datenleck: KI-Tool als Einfallstor, Daten für 2 Mio. Dollar feilgeboten",
-      "source_url": "https://thehackernews.com/2026/04/vercel-breach-tied-to-context-ai-hack.html",
-      "edition_date": "2026-04-26"
-    },
-    {
-      "title": "MCP-Designfehler ermöglicht Codeausführung auf 200.000 KI-Servern",
-      "source_url": "https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html",
-      "edition_date": "2026-04-26"
+      "title": "Meta setzt auf AWS-Graviton-Chips für agentische KI",
+      "source_url": "https://about.fb.com/news/2026/04/meta-partners-with-aws-on-graviton-chips-to-power-agentic-ai/"
     },
     {
       "title": "Claude Design fordert Figma heraus — Aktie bricht 7 % ein",
-      "source_url": "https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/",
-      "edition_date": "2026-04-26"
+      "source_url": "https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/"
     },
     {
-      "title": "OpenAI startet GPT-5.5: Erstes neu trainiertes Modell seit GPT-4",
-      "source_url": "https://openai.com/index/introducing-gpt-5-5/",
-      "edition_date": "2026-04-25"
+      "title": "MCP-Designfehler ermöglicht Codeausführung auf 200.000 KI-Servern",
+      "source_url": "https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html"
     },
     {
-      "title": "78 KI-Gesetze in 27 US-Bundesstaaten: Regulierungswelle rollt an",
-      "source_url": "https://www.transparencycoalition.ai/news/ai-legislative-update-april24-2026",
-      "edition_date": "2026-04-25"
+      "title": "Vercel-Datenleck: KI-Tool als Einfallstor, Daten für 2 Mio. Dollar feilgeboten",
+      "source_url": "https://thehackernews.com/2026/04/vercel-breach-tied-to-context-ai-hack.html"
     },
     {
-      "title": "DeepSeek V4: Größtes Open-Weight-Modell fordert Frontier-KIs heraus",
-      "source_url": "https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/",
-      "edition_date": "2026-04-25"
+      "title": "App Store wächst 104 %: KI-Entwicklerwerkzeuge treiben historischen Boom",
+      "source_url": "https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/"
     },
     {
-      "title": "Google investiert bis zu 40 Mrd. Dollar in Anthropic",
-      "source_url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
-      "edition_date": "2026-04-25"
+      "title": "OpenAI Privacy Filter: Quelloffenes PII-Modell läuft lokal auf dem Laptop",
+      "source_url": "https://openai.com/index/introducing-openai-privacy-filter/"
     },
     {
-      "title": "Google Cloud Next '26: Gemini-Agenten-Plattform und Siri-Partnerschaft",
-      "source_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/next-2026/",
-      "edition_date": "2026-04-25"
+      "title": "Google Deep Research Max: 160 Suchen — Report wartet morgens auf dem Schreibtisch",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/"
     },
     {
-      "title": "Sony-Roboter Ace besiegt Elite-Tischtennisspieler – Nature-Cover",
-      "source_url": "https://www.nature.com/articles/s41586-026-10338-5",
-      "edition_date": "2026-04-25"
+      "title": "Glasswing: KI findet Jahrzehnte-alte Bugs — doch wer patcht sie?",
+      "source_url": "https://thehackernews.com/2026/04/project-glasswing-proved-ai-can-find.html"
     },
     {
-      "title": "Gemini April-Drop: Mac-App, Lyria-3-Musik-KI und 3D-Modelle",
-      "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-drop-april-2026/",
-      "edition_date": "2026-04-25"
+      "title": "Cohere und Aleph Alpha fusionieren zur transatlantischen KI-Alternative",
+      "source_url": "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/"
     },
     {
       "title": "Meta und Microsoft streichen je ~10% der Stellen für KI-Ausgaben",
-      "source_url": "https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html",
-      "edition_date": "2026-04-25"
+      "source_url": "https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html"
+    },
+    {
+      "title": "78 KI-Gesetze in 27 US-Bundesstaaten: Regulierungswelle rollt an",
+      "source_url": "https://www.transparencycoalition.ai/news/ai-legislative-update-april24-2026"
+    },
+    {
+      "title": "OpenAI startet GPT-5.5: Erstes neu trainiertes Modell seit GPT-4",
+      "source_url": "https://openai.com/index/introducing-gpt-5-5/"
     },
     {
       "title": "SpaceX sichert sich 60-Mrd.-Dollar-Kaufoption für Coding-KI Cursor",
-      "source_url": "https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60-billion/",
-      "edition_date": "2026-04-25"
+      "source_url": "https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60-billion/"
+    },
+    {
+      "title": "DeepSeek V4: Größtes Open-Weight-Modell fordert Frontier-KIs heraus",
+      "source_url": "https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/"
+    },
+    {
+      "title": "Google investiert bis zu 40 Mrd. Dollar in Anthropic",
+      "source_url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/"
+    },
+    {
+      "title": "Google Cloud Next ’26: Gemini-Agenten-Plattform und Siri-Partnerschaft",
+      "source_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/next-2026/"
+    },
+    {
+      "title": "Sony-Roboter Ace besiegt Elite-Tischtennisspieler – Nature-Cover",
+      "source_url": "https://www.nature.com/articles/s41586-026-10338-5"
+    },
+    {
+      "title": "Gemini April-Drop: Mac-App, Lyria-3-Musik-KI und 3D-Modelle",
+      "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-drop-april-2026/"
     }
   ]
 }
