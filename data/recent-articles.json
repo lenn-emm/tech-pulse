@@ -1,6 +1,45 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "Pentagon unterschreibt KI-Deals mit 8 Firmen — Anthropic verbannt",
+      "source_url": "https://www.defensenews.com/news/pentagon-congress/2026/05/01/pentagon-freezes-out-anthropic-as-it-signs-deals-with-ai-rivals/",
+      "edition_date": "2026-05-02"
+    },
+    {
+      "title": "Anthropic holt Ex-Pentagon-Strategiechef Baker — mitten im Militärstreit",
+      "source_url": "https://www.defenseone.com/technology/2026/05/former-head-pentagons-think-tank-joins-anthropic/413256/",
+      "edition_date": "2026-05-02"
+    },
+    {
+      "title": "Huawei zielt auf 12 Mrd. Dollar KI-Chip-Umsatz — Ascend dominiert China",
+      "source_url": "https://www.androidheadlines.com/2026/05/huawei-china-ai-market-share-nvidia-exit-ascend-950.html",
+      "edition_date": "2026-05-02"
+    },
+    {
+      "title": "Hangzhou-Gericht: KI-Automatisierung ist kein Kündigungsgrund",
+      "source_url": "https://www.caixinglobal.com/2026-04-30/chinese-courts-rule-companies-cannot-fire-workers-simply-to-replace-them-with-ai-102439602.html",
+      "edition_date": "2026-05-02"
+    },
+    {
+      "title": "Nature-Bericht: Menschen schlagen KI-Agenten bei komplexer Forschungsarbeit",
+      "source_url": "https://www.nature.com/articles/d41586-026-01199-z",
+      "edition_date": "2026-05-02"
+    },
+    {
+      "title": "Pentagon-CTO: Anthropic-Blacklist bleibt — Mythos als Sicherheits-Sonderfall",
+      "source_url": "https://www.cnbc.com/2026/05/01/pentagon-anthropic-blacklist-mythos-michael.html",
+      "edition_date": "2026-05-02"
+    },
+    {
+      "title": "Weißes Haus nimmt Gespräche mit Anthropic nach Mythos-Ankündigung wieder auf",
+      "source_url": "https://www.axios.com/2026/05/01/washington-new-anthropic-problem",
+      "edition_date": "2026-05-02"
+    },
+    {
+      "title": "Zitat des Tages: James Baker über KI und die Zukunft der Institutionen",
+      "source_url": "https://www.defenseone.com/technology/2026/05/former-head-pentagons-think-tank-joins-anthropic/413256/",
+      "edition_date": "2026-05-02"
+    },
     {
       "title": "Pentagon unterschreibt KI-Deals mit 8 Firmen — Anthropic verbannt",
       "source_url": "https://www.defensenews.com/news/pentagon-congress/2026/05/01/pentagon-freezes-out-anthropic-as-it-signs-deals-with-ai-rivals/"
