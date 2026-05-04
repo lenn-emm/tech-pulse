@@ -1,6 +1,46 @@
 {
   "articles": [
     {
+      "title": "Anthropic peilt Bewertung von 900 Milliarden Dollar an",
+      "source_url": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/",
+      "edition_date": "2026-05-04"
+    },
+    {
+      "title": "Musk v. Altman Woche 1: xAI trainierte Grok auf OpenAI-Modellen",
+      "source_url": "https://www.technologyreview.com/2026/05/01/1136800/musk-v-altman-week-1-musk-says-he-was-duped-warns-ai-could-kill-us-all-and-admits-that-xai-distills-openais-models/",
+      "edition_date": "2026-05-04"
+    },
+    {
+      "title": "Kimi K2.6 übertrifft GPT-5.4 und Claude auf SWE-Bench Pro",
+      "source_url": "https://www.kimi.com/blog/kimi-k2-6",
+      "edition_date": "2026-05-04"
+    },
+    {
+      "title": "KI-Agenten buchen Cloud-Dienste ohne menschliche Freigabe",
+      "source_url": "https://blog.cloudflare.com/agents-stripe-projects/",
+      "edition_date": "2026-05-04"
+    },
+    {
+      "title": "Gemini übernimmt Google Assistant in vier Millionen Autos",
+      "source_url": "https://techcrunch.com/2026/04/30/googles-gemini-ai-assistant-is-hitting-the-road-in-millions-of-vehicles/",
+      "edition_date": "2026-05-04"
+    },
+    {
+      "title": "OpenAI plant KI-Smartphone — Apps durch Agenten ersetzt",
+      "source_url": "https://techcrunch.com/2026/04/27/openai-could-be-making-a-phone-with-ai-agents-replacing-apps/",
+      "edition_date": "2026-05-04"
+    },
+    {
+      "title": "Meta Business AI: 10 Millionen Gespräche pro Woche",
+      "source_url": "https://techcrunch.com/2026/04/30/meta-says-its-business-ai-now-facilitates-10-million-conversations-a-week/",
+      "edition_date": "2026-05-04"
+    },
+    {
+      "title": "\"This is fine\"-Schöpfer: KI-Startup Artisan stahl mein Werk",
+      "source_url": "https://techcrunch.com/2026/05/03/this-is-fine-creator-says-ai-startup-stole-his-art/",
+      "edition_date": "2026-05-04"
+    },
+    {
       "title": "DeepMind KI-Co-Clinician übertrifft GPT-5.4 — aber nicht Ärzte",
       "source_url": "https://deepmind.google/blog/ai-co-clinician/",
       "edition_date": "2026-05-03"
@@ -302,26 +342,6 @@
     {
       "title": "SpaceX sichert sich 60-Mrd.-Dollar-Kaufoption für Coding-KI Cursor",
       "source_url": "https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60-billion/"
-    },
-    {
-      "title": "DeepSeek V4: Größtes Open-Weight-Modell fordert Frontier-KIs heraus",
-      "source_url": "https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/"
-    },
-    {
-      "title": "Google investiert bis zu 40 Mrd. Dollar in Anthropic",
-      "source_url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/"
-    },
-    {
-      "title": "Google Cloud Next ’26: Gemini-Agenten-Plattform und Siri-Partnerschaft",
-      "source_url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/next-2026/"
-    },
-    {
-      "title": "Sony-Roboter Ace besiegt Elite-Tischtennisspieler – Nature-Cover",
-      "source_url": "https://www.nature.com/articles/s41586-026-10338-5"
-    },
-    {
-      "title": "Gemini April-Drop: Mac-App, Lyria-3-Musik-KI und 3D-Modelle",
-      "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-drop-april-2026/"
     }
   ]
 }
