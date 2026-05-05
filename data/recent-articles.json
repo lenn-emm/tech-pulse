@@ -1,6 +1,41 @@
 {
   "articles": [
     {
+      "title": "Anthropic gründet 1,5-Mrd.-Dollar-Venture mit Goldman und Blackstone",
+      "source_url": "https://www.cnbc.com/2026/05/04/anthropic-goldman-sachs-blackstone-ai-venture.html",
+      "edition_date": "2026-05-05"
+    },
+    {
+      "title": "OpenAI Workspace Agents: Codex-Agenten für Unternehmens-Workflows",
+      "source_url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+      "edition_date": "2026-05-05"
+    },
+    {
+      "title": "Harvard-Studie: KI schlägt Notaufnahme-Ärzte bei Diagnosen",
+      "source_url": "https://www.science.org/content/article/ai-starting-beat-doctors-making-correct-diagnoses",
+      "edition_date": "2026-05-05"
+    },
+    {
+      "title": "Pentagon schließt KI-Deals — Anthropic bleibt außen vor",
+      "source_url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
+      "edition_date": "2026-05-05"
+    },
+    {
+      "title": "Bericht: 2026 ist das Jahr der KI-gestützten Cyberangriffe",
+      "source_url": "https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html",
+      "edition_date": "2026-05-05"
+    },
+    {
+      "title": "GPT-5.5 und GPT-5.4 kommen auf Amazon Bedrock",
+      "source_url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-whats-next-with-aws-2026-amazon-quick-openai-partnership-and-more-may-4-2026/",
+      "edition_date": "2026-05-05"
+    },
+    {
+      "title": "Meta kauft Robotik-Startup für Humanoid-KI-Ambitionen",
+      "source_url": "https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/",
+      "edition_date": "2026-05-05"
+    },
+    {
       "title": "Anthropic peilt Bewertung von 900 Milliarden Dollar an",
       "source_url": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/",
       "edition_date": "2026-05-04"
@@ -314,34 +349,6 @@
     {
       "title": "OpenAI Privacy Filter: Quelloffenes PII-Modell läuft lokal auf dem Laptop",
       "source_url": "https://openai.com/index/introducing-openai-privacy-filter/"
-    },
-    {
-      "title": "Google Deep Research Max: 160 Suchen — Report wartet morgens auf dem Schreibtisch",
-      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/next-generation-gemini-deep-research/"
-    },
-    {
-      "title": "Glasswing: KI findet Jahrzehnte-alte Bugs — doch wer patcht sie?",
-      "source_url": "https://thehackernews.com/2026/04/project-glasswing-proved-ai-can-find.html"
-    },
-    {
-      "title": "Cohere und Aleph Alpha fusionieren zur transatlantischen KI-Alternative",
-      "source_url": "https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/"
-    },
-    {
-      "title": "Meta und Microsoft streichen je ~10% der Stellen für KI-Ausgaben",
-      "source_url": "https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html"
-    },
-    {
-      "title": "78 KI-Gesetze in 27 US-Bundesstaaten: Regulierungswelle rollt an",
-      "source_url": "https://www.transparencycoalition.ai/news/ai-legislative-update-april24-2026"
-    },
-    {
-      "title": "OpenAI startet GPT-5.5: Erstes neu trainiertes Modell seit GPT-4",
-      "source_url": "https://openai.com/index/introducing-gpt-5-5/"
-    },
-    {
-      "title": "SpaceX sichert sich 60-Mrd.-Dollar-Kaufoption für Coding-KI Cursor",
-      "source_url": "https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60-billion/"
     }
   ]
 }
