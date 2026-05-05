@@ -1,97 +1,86 @@
 {
   "edition": {
-    "title": "Tech Pulse — Montag, 04. Mai 2026",
-    "edition_date": "2026-05-04",
-    "summary": "Anthropic könnte noch diese Woche mit einer 900-Milliarden-Dollar-Finanzierung Geschichte schreiben — gleichzeitig enthüllt der Musk-Altman-Prozess, wie tief die Verflechtungen zwischen KI-Labs reichen, und Open-Weight-Modell Kimi K2.6 stellt US-Frontier-Systeme erstmals auf dem SWE-Bench Pro in den Schatten."
+    "title": "Tech Pulse — Dienstag, 05. Mai 2026",
+    "edition_date": "2026-05-05",
+    "summary": "Heute dominieren Megadeals die Schlagzeilen: Anthropic und OpenAI schmieden parallel Milliarden-schwere Enterprise-Ventures mit Wall-Street-Schwergewichten — während eine Harvard-Studie belegt, dass KI Notaufnahme-Ärzte bei Diagnosen übertrifft."
   },
   "articles": [
     {
-      "title": "Anthropic peilt Bewertung von 900 Milliarden Dollar an",
-      "summary": "Anthropic erwägt eine neue Finanzierungsrunde von rund 50 Milliarden Dollar, die das Unternehmen mit über 900 Milliarden Dollar bewerten würde — und OpenAI damit erstmals als wertvollstes KI-Startup ablösen würde. Das Board soll noch in dieser Woche entscheiden; zuvor hatten Amazon (25 Mrd. Dollar) und Google (bis zu 40 Mrd. Dollar) bereits Investitionen zugesagt. Rückenwind liefert ein Jahresumsatz von 30 Milliarden Dollar, der Anthropic in Q1 2026 erstmals über OpenAIs Erlöse gehoben hatte.",
-      "source_url": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/",
-      "source_name": "TechCrunch",
+      "title": "Anthropic gründet 1,5-Mrd.-Dollar-Venture mit Goldman und Blackstone",
+      "summary": "Anthropic startet zusammen mit Goldman Sachs, Blackstone und Hellman & Friedman ein 1,5 Milliarden Dollar schweres Unternehmen, das Claude direkt in Portfoliofirmen der Investoren einbetten soll. Statt klassischer Beratung werden Ingenieure in Unternehmen entsandt, um Arbeitsabläufe mit KI neu zu gestalten. Zeitgleich kündigte OpenAI ein ähnliches, rund 10 Milliarden Dollar schweres Joint Venture mit TPG und Bain Capital an — ein Signal, dass die KI-Labs nun aggressiv in die Unternehmensberatung vordringen.",
+      "source_url": "https://www.cnbc.com/2026/05/04/anthropic-goldman-sachs-blackstone-ai-venture.html",
+      "source_name": "CNBC",
       "category": "company_news",
       "format": "hero",
       "zone": "core",
-      "read_time_min": 4,
-      "position": 1
+      "position": 1,
+      "read_time_min": 4
     },
     {
-      "title": "Musk v. Altman Woche 1: xAI trainierte Grok auf OpenAI-Modellen",
-      "summary": "Elon Musk räumte vor einem California-Bundesgericht ein, dass xAI Distillationstechniken auf OpenAI-Modellen eingesetzt habe, um Grok zu trainieren — eine Methode, die milliardenschwere Investitionsvorteile der Branchenführer unterläuft. Musk warnte zudem vor KI-Szenarien mit existenziellen Risiken und sagte aus, sich bei der Mitgründung von OpenAI über das gemeinnützige Modell getäuscht gefühlt zu haben. MIT Technology Review fasst die explosivsten Aussagen der ersten Prozesswoche zusammen.",
-      "source_url": "https://www.technologyreview.com/2026/05/01/1136800/musk-v-altman-week-1-musk-says-he-was-duped-warns-ai-could-kill-us-all-and-admits-that-xai-distills-openais-models/",
-      "source_name": "MIT Technology Review",
-      "category": "company_news",
+      "title": "OpenAI Workspace Agents: Codex-Agenten für Unternehmens-Workflows",
+      "summary": "OpenAI hat Workspace Agents eingeführt — Codex-betriebene Agenten, die komplexe Team-Workflows in ChatGPT Business, Enterprise und Edu automatisieren und sich in Tools wie Slack und Salesforce integrieren. Die Agenten laufen in der Cloud und erledigen Aufgaben eigenständig, auch wenn Nutzer offline sind. Ab dem 6. Mai 2026 endet die kostenlose Research-Preview-Phase; danach gilt ein Credit-Modell — womit OpenAI seine Agentenplattform erstmals monetarisiert.",
+      "source_url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
+      "source_name": "OpenAI",
+      "category": "product",
       "format": "feature",
-      "zone": "outside",
-      "read_time_min": 5,
-      "position": 2
+      "zone": "core",
+      "position": 2,
+      "read_time_min": 3
     },
     {
-      "title": "Kimi K2.6 übertrifft GPT-5.4 und Claude auf SWE-Bench Pro",
-      "summary": "Moonshot AIs Open-Weight-Modell Kimi K2.6 erzielt 58,6 Punkte auf dem SWE-Bench-Pro-Coding-Benchmark und übertrifft damit GPT-5.4 (57,7) und Claude Opus 4.6 (53,4). Das chinesische Modell unterstützt Agent-Swarms mit bis zu 300 Sub-Agenten und 4.000 koordinierten Schritten — und markiert als Open-Weight-Modell einen seltenen Frontier-Treffer außerhalb der großen US-Labs.",
-      "source_url": "https://www.kimi.com/blog/kimi-k2-6",
-      "source_name": "Kimi / Moonshot AI",
-      "category": "model_release",
+      "title": "Harvard-Studie: KI schlägt Notaufnahme-Ärzte bei Diagnosen",
+      "summary": "Eine in Science veröffentlichte Studie der Harvard Medical School zeigt, dass OpenAIs o1-Modell bei realen ER-Triage-Fällen in 67 % der Fälle die richtige Diagnose stellte — gegenüber 55 % bzw. 50 % bei zwei erfahrenen Ärzten. Bei seltenen Krankheiten und komplexen Fällen war der Vorsprung besonders groß: Das Modell erzielte in 98 % der Fälle perfekte klinische Begründungen, Ärzte nur in 35 %. Die Autoren warnen jedoch: Im realen Einsatz sind Bildgebung, Gestik und Kontext unverzichtbar — reine Textdiagnostik bleibt unvollständig.",
+      "source_url": "https://www.science.org/content/article/ai-starting-beat-doctors-making-correct-diagnoses",
+      "source_name": "Science / AAAS",
+      "category": "research",
       "format": "visual",
-      "zone": "core",
-      "read_time_min": 4,
-      "position": 3
-    },
-    {
-      "title": "KI-Agenten buchen Cloud-Dienste ohne menschliche Freigabe",
-      "summary": "Cloudflare und Stripe haben ein offenes Protokoll veröffentlicht, das KI-Agenten erlaubt, eigenständig Cloud-Konten zu eröffnen, Domains zu kaufen, Abonnements zu starten und Apps zu deployen — mit einem Standard-Ausgabelimit von 100 Dollar pro Monat. Das Protokoll kombiniert REST-basierte Service-Discovery, OAuth-Identitätsnachweis und tokenisierte Stripe-Zahlungen, ohne dass Kartendaten je den Agenten erreichen. Vercel, Supabase, Sentry und weitere Services sind ab sofort integriert.",
-      "source_url": "https://blog.cloudflare.com/agents-stripe-projects/",
-      "source_name": "Cloudflare Blog",
-      "category": "product",
-      "format": "feature",
       "zone": "adjacent",
-      "read_time_min": 4,
-      "position": 4
+      "position": 3,
+      "read_time_min": 5
     },
     {
-      "title": "Gemini übernimmt Google Assistant in vier Millionen Autos",
-      "summary": "Google startet das Rollout von Gemini für Fahrzeuge mit Google Built-in und löst damit Google Assistant in Millionen Bestandsfahrzeugen ab — darunter Cadillac-, Chevrolet-, Buick- und GMC-Modelle ab Baujahr 2022 sowie 16 Volvo-Modelle ab 2020. Gemini nutzt das Fahrzeughandbuch für fahrzeugspezifische Antworten und ermöglicht natürlichere Konversation am Steuer. Das Rollout ist einer der bislang größten Consumer-Deployments von Gemini.",
-      "source_url": "https://techcrunch.com/2026/04/30/googles-gemini-ai-assistant-is-hitting-the-road-in-millions-of-vehicles/",
-      "source_name": "TechCrunch",
-      "category": "product",
-      "format": "feature",
-      "zone": "adjacent",
-      "read_time_min": 3,
-      "position": 5
-    },
-    {
-      "title": "OpenAI plant KI-Smartphone — Apps durch Agenten ersetzt",
-      "summary": "Laut Supply-Chain-Analyst Ming-Chi Kuo plant OpenAI gemeinsam mit Qualcomm, MediaTek und Luxshare ein Smartphone, das klassische Apps durch KI-Agenten ersetzt: Das Gerät würde permanent Kontext erfassen und Aufgaben autonom über Cloud- und On-Device-Modelle ausführen. Komponentenspezifikationen sollen bis Ende 2026 feststehen, Massenproduktion ist für 2028 geplant. Parallel entwickelt das Jony-Ive-Studio io Products ein separates KI-Gerät zur Vorstellung in der zweiten Jahreshälfte 2026.",
-      "source_url": "https://techcrunch.com/2026/04/27/openai-could-be-making-a-phone-with-ai-agents-replacing-apps/",
-      "source_name": "TechCrunch",
-      "category": "product",
-      "format": "feature",
-      "zone": "core",
-      "read_time_min": 3,
-      "position": 6
-    },
-    {
-      "title": "Meta Business AI: 10 Millionen Gespräche pro Woche",
-      "summary": "Metas KI-Tool für Unternehmenskunden erreicht zehn Millionen Wochengespräche — ein Zehnfaches mehr als zu Jahresbeginn 2026. Der Sprung markiert eine der schnellsten Adoptionskurven im Enterprise-KI-Segment und unterstreicht Metas Strategie, WhatsApp und Facebook als KI-Plattformen umzubauen.",
-      "source_url": "https://techcrunch.com/2026/04/30/meta-says-its-business-ai-now-facilitates-10-million-conversations-a-week/",
-      "source_name": "TechCrunch",
-      "category": "company_news",
-      "format": "quick",
-      "zone": "adjacent",
-      "read_time_min": 2,
-      "position": 7
-    },
-    {
-      "title": "\"This is fine\"-Schöpfer: KI-Startup Artisan stahl mein Werk",
-      "summary": "KC Green, Urheber des allgegenwärtigen \"This is fine\"-Memes, beschuldigt das KI-Startup Artisan, sein Comic-Bild ohne Erlaubnis in einer Werbekampagne verwendet zu haben — der Hund im brennenden Zimmer trägt nun den Slogan \"My pipeline is on fire\". Green prüft rechtliche Schritte; der Fall verschärft die Debatte über Urheberrecht im Zeitalter generativer KI.",
-      "source_url": "https://techcrunch.com/2026/05/03/this-is-fine-creator-says-ai-startup-stole-his-art/",
+      "title": "Pentagon schließt KI-Deals — Anthropic bleibt außen vor",
+      "summary": "Das US-Verteidigungsministerium hat Verträge mit Nvidia, Microsoft, AWS und Reflection AI unterzeichnet, die den Einsatz ihrer KI auf geheimen Netzwerken erlauben. Anthropic wurde explizit ausgeschlossen, nachdem die Trump-Administration das Unternehmen wegen Nutzungsbedingungsstreitigkeiten auf eine informelle schwarze Liste gesetzt hatte. Jüngste Berichte deuten jedoch darauf hin, dass das Weiße Haus die Gespräche mit Anthropic nach neuen technischen Durchbrüchen des Unternehmens wieder aufgenommen hat.",
+      "source_url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
       "source_name": "TechCrunch",
       "category": "regulation",
-      "format": "quick",
+      "format": "feature",
+      "zone": "adjacent",
+      "position": 4,
+      "read_time_min": 3
+    },
+    {
+      "title": "Bericht: 2026 ist das Jahr der KI-gestützten Cyberangriffe",
+      "summary": "Laut einem aktuellen Bericht von The Hacker News sind KI-gestützte Angriffe 2025 um 89 % gegenüber dem Vorjahr gestiegen. Autonome KI-Agenten können heute in Minuten Active-Directory-Strukturen kartieren und Domain-Admin-Rechte übernehmen — Angriffe, die früher spezialisierte Teams erforderten. Die Demokratisierung ausgefeilter Angriffstechniken gilt als die größte strukturelle Bedrohung für Unternehmens-IT in diesem Jahrzehnt.",
+      "source_url": "https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html",
+      "source_name": "The Hacker News",
+      "category": "research",
+      "format": "feature",
       "zone": "wildcard",
-      "read_time_min": 2,
-      "position": 8
+      "position": 5,
+      "read_time_min": 4
+    },
+    {
+      "title": "GPT-5.5 und GPT-5.4 kommen auf Amazon Bedrock",
+      "summary": "OpenAIs neueste Modelle GPT-5.5 und GPT-5.4 sind jetzt über Amazon Bedrock verfügbar — inklusive Bedrock Managed Agents und Codex-Integration für AWS-Kunden. Der Deal markiert OpenAIs Schritt zu einer Multi-Cloud-Strategie und stellt Azure erstmals direkt mit einem Wettbewerber auf eine Stufe.",
+      "source_url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-whats-next-with-aws-2026-amazon-quick-openai-partnership-and-more-may-4-2026/",
+      "source_name": "AWS Blog",
+      "category": "product",
+      "format": "quick",
+      "zone": "core",
+      "position": 6,
+      "read_time_min": 2
+    },
+    {
+      "title": "Meta kauft Robotik-Startup für Humanoid-KI-Ambitionen",
+      "summary": "Meta hat das Startup Assured Robot Intelligence übernommen, um seine KI-Modelle für humanoide Roboter weiterzuentwickeln. Der Schritt zeigt, dass Meta neben AR/VR und sozialen Medien nun gezielt in verkörperte KI investiert — ein Bereich, in dem auch Google DeepMind, Amazon und Apple aktiv werden.",
+      "source_url": "https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/",
+      "source_name": "TechCrunch",
+      "category": "company_news",
+      "format": "quick",
+      "zone": "adjacent",
+      "position": 7,
+      "read_time_min": 2
     }
   ]
 }
