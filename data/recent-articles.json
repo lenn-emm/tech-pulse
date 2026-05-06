@@ -1,6 +1,46 @@
 {
   "articles": [
     {
+      "title": "DeepMind UK gründet erste Gewerkschaft in einem KI-Labor",
+      "source_url": "https://fortune.com/2026/05/05/google-deepmind-unionize-vote-military-ai-contracts-internal-backlash-pentagon-deal-israeli-defense-forces/",
+      "edition_date": "2026-05-06"
+    },
+    {
+      "title": "Anthropic veröffentlicht zehn KI-Agenten für die Finanzbranche",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-05/anthropic-unveils-ai-agents-to-field-financial-services-tasks",
+      "edition_date": "2026-05-06"
+    },
+    {
+      "title": "GPT-5.5 Instant wird neues Standard-Modell in ChatGPT",
+      "source_url": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+      "edition_date": "2026-05-06"
+    },
+    {
+      "title": "Anthropic verpflichtet sich zu 200 Milliarden Dollar bei Google Cloud",
+      "source_url": "https://www.usnews.com/news/top-news/articles/2026-05-05/anthropic-commits-to-spending-200-billion-on-googles-cloud-and-chips-the-information-reports",
+      "edition_date": "2026-05-06"
+    },
+    {
+      "title": "USA testen Frontier-Modelle von DeepMind, Microsoft und xAI",
+      "source_url": "https://www.nist.gov/news-events/news/2026/05/caisi-signs-agreements-regarding-frontier-ai-national-security-testing",
+      "edition_date": "2026-05-06"
+    },
+    {
+      "title": "OpenAI investiert 2026 über 50 Milliarden Dollar in Rechenleistung",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-05/openai-to-spend-50-billion-on-computing-in-2026-brockman-says",
+      "edition_date": "2026-05-06"
+    },
+    {
+      "title": "Jensen Huang: KI schafft massenhaft neue Jobs",
+      "source_url": "https://techcrunch.com/2026/05/04/as-workers-worry-about-ai-nvidias-jensen-huang-says-ai-is-creating-an-enormous-number-of-jobs/",
+      "edition_date": "2026-05-06"
+    },
+    {
+      "title": "Colorado schwächt wegweisendes KI-Gesetz von 2024 deutlich ab",
+      "source_url": "https://coloradonewsline.com/2026/05/04/narrow-scope-colorado-ai-law/",
+      "edition_date": "2026-05-06"
+    },
+    {
       "title": "Anthropic gründet 1,5-Mrd.-Dollar-Venture mit Goldman und Blackstone",
       "source_url": "https://www.cnbc.com/2026/05/04/anthropic-goldman-sachs-blackstone-ai-venture.html",
       "edition_date": "2026-05-05"
@@ -317,38 +357,6 @@
     {
       "title": "Siemens droht EU: KI-Regulierung kostet Investitionen",
       "source_url": "https://www.bloomberg.com/news/articles/2026-04-20/siemens-threatens-to-skip-europe-for-ai-spending-due-to-rules"
-    },
-    {
-      "title": "Hugging Face ml-intern automatisiert LLM-Post-Training",
-      "source_url": "https://www.marktechpost.com/2026/04/21/hugging-face-releases-ml-intern-an-open-source-ai-agent-that-automates-the-llm-post-training-workflow/"
-    },
-    {
-      "title": "Sergey Brin ruft Google-Strike-Team gegen Claude auf",
-      "source_url": "https://sherwood.news/tech/google-deepmind-builds-strike-team-to-catch-up-to-anthropic-models/"
-    },
-    {
-      "title": "Meta setzt auf AWS-Graviton-Chips für agentische KI",
-      "source_url": "https://about.fb.com/news/2026/04/meta-partners-with-aws-on-graviton-chips-to-power-agentic-ai/"
-    },
-    {
-      "title": "Claude Design fordert Figma heraus — Aktie bricht 7 % ein",
-      "source_url": "https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/"
-    },
-    {
-      "title": "MCP-Designfehler ermöglicht Codeausführung auf 200.000 KI-Servern",
-      "source_url": "https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html"
-    },
-    {
-      "title": "Vercel-Datenleck: KI-Tool als Einfallstor, Daten für 2 Mio. Dollar feilgeboten",
-      "source_url": "https://thehackernews.com/2026/04/vercel-breach-tied-to-context-ai-hack.html"
-    },
-    {
-      "title": "App Store wächst 104 %: KI-Entwicklerwerkzeuge treiben historischen Boom",
-      "source_url": "https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/"
-    },
-    {
-      "title": "OpenAI Privacy Filter: Quelloffenes PII-Modell läuft lokal auf dem Laptop",
-      "source_url": "https://openai.com/index/introducing-openai-privacy-filter/"
     }
   ]
 }
