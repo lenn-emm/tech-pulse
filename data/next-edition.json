@@ -1,86 +1,97 @@
 {
   "edition": {
-    "title": "Tech Pulse — Dienstag, 05. Mai 2026",
-    "edition_date": "2026-05-05",
-    "summary": "Heute dominieren Megadeals die Schlagzeilen: Anthropic und OpenAI schmieden parallel Milliarden-schwere Enterprise-Ventures mit Wall-Street-Schwergewichten — während eine Harvard-Studie belegt, dass KI Notaufnahme-Ärzte bei Diagnosen übertrifft."
+    "title": "Tech Pulse — Mittwoch, 06. Mai 2026",
+    "edition_date": "2026-05-06",
+    "summary": "Historischer Tag für KI-Ethik: DeepMinds britische Belegschaft bildet die erste Gewerkschaft an einem Frontier-KI-Labor, während Anthropic mit 200-Milliarden-Cloud-Commitment und neuen Finanz-Agenten in den Unternehmensmarkt drängt — und GPT-5.5 Instant zum neuen Standard für Millionen von ChatGPT-Nutzern wird."
   },
   "articles": [
     {
-      "title": "Anthropic gründet 1,5-Mrd.-Dollar-Venture mit Goldman und Blackstone",
-      "summary": "Anthropic startet zusammen mit Goldman Sachs, Blackstone und Hellman & Friedman ein 1,5 Milliarden Dollar schweres Unternehmen, das Claude direkt in Portfoliofirmen der Investoren einbetten soll. Statt klassischer Beratung werden Ingenieure in Unternehmen entsandt, um Arbeitsabläufe mit KI neu zu gestalten. Zeitgleich kündigte OpenAI ein ähnliches, rund 10 Milliarden Dollar schweres Joint Venture mit TPG und Bain Capital an — ein Signal, dass die KI-Labs nun aggressiv in die Unternehmensberatung vordringen.",
-      "source_url": "https://www.cnbc.com/2026/05/04/anthropic-goldman-sachs-blackstone-ai-venture.html",
-      "source_name": "CNBC",
+      "title": "DeepMind UK gründet erste Gewerkschaft in einem KI-Labor",
+      "summary": "98 % der CWU-Mitglieder bei Google DeepMind in Großbritannien stimmten für eine Gewerkschaft — ausgelöst durch Googles Pentagon-Deal, der Gemini für 'jeden rechtmäßigen Zweck' in klassifizierten Militärnetzwerken freigibt. Die Beschäftigten fordern ein Verbot autonomer Waffensysteme, stärkeren Whistleblower-Schutz und das Recht, ethisch problematische Aufgaben abzulehnen. Sollte das Management dem Antrag stattgeben, wäre es die erste Gewerkschaft an einem Frontier-KI-Labor weltweit.",
+      "source_url": "https://fortune.com/2026/05/05/google-deepmind-unionize-vote-military-ai-contracts-internal-backlash-pentagon-deal-israeli-defense-forces/",
+      "source_name": "Fortune",
       "category": "company_news",
       "format": "hero",
       "zone": "core",
-      "position": 1,
-      "read_time_min": 4
+      "read_time_min": 5,
+      "position": 1
     },
     {
-      "title": "OpenAI Workspace Agents: Codex-Agenten für Unternehmens-Workflows",
-      "summary": "OpenAI hat Workspace Agents eingeführt — Codex-betriebene Agenten, die komplexe Team-Workflows in ChatGPT Business, Enterprise und Edu automatisieren und sich in Tools wie Slack und Salesforce integrieren. Die Agenten laufen in der Cloud und erledigen Aufgaben eigenständig, auch wenn Nutzer offline sind. Ab dem 6. Mai 2026 endet die kostenlose Research-Preview-Phase; danach gilt ein Credit-Modell — womit OpenAI seine Agentenplattform erstmals monetarisiert.",
-      "source_url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
-      "source_name": "OpenAI",
+      "title": "Anthropic veröffentlicht zehn KI-Agenten für die Finanzbranche",
+      "summary": "Anthropic stellt zehn spezialisierte Claude-Agenten für Banking, Versicherung und Asset Management vor: Sie erstellen Pitch-Decks, prüfen Bilanzen automatisch und eskalieren Compliance-Fälle. Der Launch baut auf dem jüngst angekündigten 1,5-Milliarden-Dollar-Venture mit Goldman Sachs und Blackstone auf und markiert Anthropics stärksten Enterprise-Push bisher. Damit positioniert sich Claude direkt als Alternative zu spezialisierten Fintech-Lösungen.",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-05/anthropic-unveils-ai-agents-to-field-financial-services-tasks",
+      "source_name": "Bloomberg",
       "category": "product",
       "format": "feature",
       "zone": "core",
-      "position": 2,
-      "read_time_min": 3
+      "read_time_min": 4,
+      "position": 2
     },
     {
-      "title": "Harvard-Studie: KI schlägt Notaufnahme-Ärzte bei Diagnosen",
-      "summary": "Eine in Science veröffentlichte Studie der Harvard Medical School zeigt, dass OpenAIs o1-Modell bei realen ER-Triage-Fällen in 67 % der Fälle die richtige Diagnose stellte — gegenüber 55 % bzw. 50 % bei zwei erfahrenen Ärzten. Bei seltenen Krankheiten und komplexen Fällen war der Vorsprung besonders groß: Das Modell erzielte in 98 % der Fälle perfekte klinische Begründungen, Ärzte nur in 35 %. Die Autoren warnen jedoch: Im realen Einsatz sind Bildgebung, Gestik und Kontext unverzichtbar — reine Textdiagnostik bleibt unvollständig.",
-      "source_url": "https://www.science.org/content/article/ai-starting-beat-doctors-making-correct-diagnoses",
-      "source_name": "Science / AAAS",
-      "category": "research",
-      "format": "visual",
-      "zone": "adjacent",
-      "position": 3,
-      "read_time_min": 5
-    },
-    {
-      "title": "Pentagon schließt KI-Deals — Anthropic bleibt außen vor",
-      "summary": "Das US-Verteidigungsministerium hat Verträge mit Nvidia, Microsoft, AWS und Reflection AI unterzeichnet, die den Einsatz ihrer KI auf geheimen Netzwerken erlauben. Anthropic wurde explizit ausgeschlossen, nachdem die Trump-Administration das Unternehmen wegen Nutzungsbedingungsstreitigkeiten auf eine informelle schwarze Liste gesetzt hatte. Jüngste Berichte deuten jedoch darauf hin, dass das Weiße Haus die Gespräche mit Anthropic nach neuen technischen Durchbrüchen des Unternehmens wieder aufgenommen hat.",
-      "source_url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
+      "title": "GPT-5.5 Instant wird neues Standard-Modell in ChatGPT",
+      "summary": "OpenAI macht GPT-5.5 Instant zum neuen Default-Modell für alle ChatGPT-Nutzer und gibt damit hunderten Millionen Menschen automatisch Zugang zu verbessertem Coding, Research und agentenähnlichen Workflows. Neu: Das Modell kann auf frühere Gespräche, hochgeladene Dateien und Gmail zurückgreifen. Der Rollout startete am 5. Mai für Plus- und Pro-Nutzer im Web.",
+      "source_url": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
       "source_name": "TechCrunch",
+      "category": "model_release",
+      "format": "feature",
+      "zone": "core",
+      "read_time_min": 3,
+      "position": 3
+    },
+    {
+      "title": "Anthropic verpflichtet sich zu 200 Milliarden Dollar bei Google Cloud",
+      "summary": "Laut The Information hat Anthropic zugesagt, über fünf Jahre 200 Milliarden Dollar in Googles Cloud-Infrastruktur und KI-Chips zu investieren — ein Betrag, der Anthropics eigene Bewertung um ein Vielfaches übersteigt. Das Commitment zeigt, wie massiv die Abhängigkeit von Rechenleistung im KI-Wettbewerb geworden ist, und festigt Googles Stellung als zentraler Infrastrukturpartner für das führende Sicherheits-KI-Labor.",
+      "source_url": "https://www.usnews.com/news/top-news/articles/2026-05-05/anthropic-commits-to-spending-200-billion-on-googles-cloud-and-chips-the-information-reports",
+      "source_name": "U.S. News / The Information",
+      "category": "company_news",
+      "format": "visual",
+      "zone": "core",
+      "read_time_min": 3,
+      "position": 4
+    },
+    {
+      "title": "USA testen Frontier-Modelle von DeepMind, Microsoft und xAI",
+      "summary": "Das US-Commerce-Ministerium gibt bekannt, dass sein CAISI-Zentrum formelle Sicherheitsabkommen mit Google DeepMind, Microsoft und xAI unterzeichnet hat. Ziel ist die Vorab-Evaluierung von Frontier-Modellen auf Schwachstellen vor sensiblen Einsatzkontexten. Das Abkommen ist ein konkreter Schritt hin zu institutioneller KI-Prüfung auf Bundesebene — genau während die EU-KI-Act-Umsetzung ins Stocken gerät.",
+      "source_url": "https://www.nist.gov/news-events/news/2026/05/caisi-signs-agreements-regarding-frontier-ai-national-security-testing",
+      "source_name": "NIST",
       "category": "regulation",
       "format": "feature",
       "zone": "adjacent",
-      "position": 4,
-      "read_time_min": 3
+      "read_time_min": 3,
+      "position": 5
     },
     {
-      "title": "Bericht: 2026 ist das Jahr der KI-gestützten Cyberangriffe",
-      "summary": "Laut einem aktuellen Bericht von The Hacker News sind KI-gestützte Angriffe 2025 um 89 % gegenüber dem Vorjahr gestiegen. Autonome KI-Agenten können heute in Minuten Active-Directory-Strukturen kartieren und Domain-Admin-Rechte übernehmen — Angriffe, die früher spezialisierte Teams erforderten. Die Demokratisierung ausgefeilter Angriffstechniken gilt als die größte strukturelle Bedrohung für Unternehmens-IT in diesem Jahrzehnt.",
-      "source_url": "https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html",
-      "source_name": "The Hacker News",
-      "category": "research",
-      "format": "feature",
-      "zone": "wildcard",
-      "position": 5,
-      "read_time_min": 4
-    },
-    {
-      "title": "GPT-5.5 und GPT-5.4 kommen auf Amazon Bedrock",
-      "summary": "OpenAIs neueste Modelle GPT-5.5 und GPT-5.4 sind jetzt über Amazon Bedrock verfügbar — inklusive Bedrock Managed Agents und Codex-Integration für AWS-Kunden. Der Deal markiert OpenAIs Schritt zu einer Multi-Cloud-Strategie und stellt Azure erstmals direkt mit einem Wettbewerber auf eine Stufe.",
-      "source_url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-whats-next-with-aws-2026-amazon-quick-openai-partnership-and-more-may-4-2026/",
-      "source_name": "AWS Blog",
-      "category": "product",
-      "format": "quick",
-      "zone": "core",
-      "position": 6,
-      "read_time_min": 2
-    },
-    {
-      "title": "Meta kauft Robotik-Startup für Humanoid-KI-Ambitionen",
-      "summary": "Meta hat das Startup Assured Robot Intelligence übernommen, um seine KI-Modelle für humanoide Roboter weiterzuentwickeln. Der Schritt zeigt, dass Meta neben AR/VR und sozialen Medien nun gezielt in verkörperte KI investiert — ein Bereich, in dem auch Google DeepMind, Amazon und Apple aktiv werden.",
-      "source_url": "https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/",
-      "source_name": "TechCrunch",
+      "title": "OpenAI investiert 2026 über 50 Milliarden Dollar in Rechenleistung",
+      "summary": "Präsident Greg Brockman bestätigte gegenüber Bloomberg, dass OpenAI in diesem Jahr mehr als 50 Milliarden Dollar in Computing ausgeben wird — mehr als das Dreifache der 2024er-Ausgaben. Das Wettrüsten um GPU-Kapazitäten unter den großen KI-Laboren verschärft sich weiter.",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-05/openai-to-spend-50-billion-on-computing-in-2026-brockman-says",
+      "source_name": "Bloomberg",
       "category": "company_news",
       "format": "quick",
       "zone": "adjacent",
-      "position": 7,
-      "read_time_min": 2
+      "read_time_min": 2,
+      "position": 6
+    },
+    {
+      "title": "Jensen Huang: KI schafft massenhaft neue Jobs",
+      "summary": "Nvidia-CEO Jensen Huang erklärte in einem MSNBC-Interview, KI sei ein industrieller Jobgenerator und Amerikas beste Chance auf Re-Industrialisierung — direkt konträr zur öffentlichen Sorge vor Massenarbeitslosigkeit und dem Bericht über 40.000 Tech-Entlassungen im April.",
+      "source_url": "https://techcrunch.com/2026/05/04/as-workers-worry-about-ai-nvidias-jensen-huang-says-ai-is-creating-an-enormous-number-of-jobs/",
+      "source_name": "TechCrunch",
+      "category": "company_news",
+      "format": "quick",
+      "zone": "outside",
+      "read_time_min": 2,
+      "position": 7
+    },
+    {
+      "title": "Colorado schwächt wegweisendes KI-Gesetz von 2024 deutlich ab",
+      "summary": "SB 189 würde Colorados KI-Act nahezu komplett ersetzen: Unternehmen müssen künftig nur noch mitteilen, dass Automatisierungs-Technologie eingesetzt wird — detaillierte Offenlegung entfällt. Das Inkrafttreten wird auf Januar 2027 verschoben. Das Gesetz, das als Blaupause für US-Bundesstaaten galt, wird zum Symbolfall für den Rückzug ambitionierter KI-Regulierung.",
+      "source_url": "https://coloradonewsline.com/2026/05/04/narrow-scope-colorado-ai-law/",
+      "source_name": "Colorado Newsline",
+      "category": "regulation",
+      "format": "quick",
+      "zone": "outside",
+      "read_time_min": 2,
+      "position": 8
     }
   ]
 }
