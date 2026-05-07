@@ -1,6 +1,41 @@
 {
   "articles": [
     {
+      "title": "Anthropic sichert SpaceX-Rechenzentrum, verdoppelt Claude-Limits",
+      "source_url": "https://www.anthropic.com/news/higher-limits-spacex",
+      "edition_date": "2026-05-07"
+    },
+    {
+      "title": "DeepMind kauft Stake am EVE-Online-Studio Fenris Creations",
+      "source_url": "https://www.ccpgames.com/news/2026/studio-behind-eve-online-goes-independent-rebrands-as-fenris-creations-enters-research-partnership-with-google-deepmind",
+      "edition_date": "2026-05-07"
+    },
+    {
+      "title": "Amodei: Anthropic wuchs 80-fach – Compute war der Flaschenhals",
+      "source_url": "https://www.cnbc.com/2026/05/06/anthropic-ceo-dario-amodei-says-company-crew-80-fold-in-first-quarter.html",
+      "edition_date": "2026-05-07"
+    },
+    {
+      "title": "OpenAI prämiert 26 Studierende: ChatGPT Futures Class of 2026",
+      "source_url": "https://openai.com/index/introducing-chatgpt-futures-class-of-2026/",
+      "edition_date": "2026-05-07"
+    },
+    {
+      "title": "Simon Willison: 'Agent' hat endlich eine konsensfähige Definition",
+      "source_url": "https://simonw.substack.com/p/i-think-agent-may-finally-have-a",
+      "edition_date": "2026-05-07"
+    },
+    {
+      "title": "Nature zieht ChatGPT-Bildungsstudie mit 500 Zitierungen zurück",
+      "source_url": "https://www.404media.co/nature-retracts-paper-on-the-benefits-of-chatgpt-in-education/",
+      "edition_date": "2026-05-07"
+    },
+    {
+      "title": "EU AI Act Omnibus: Zweiter Trilog scheitert ohne Einigung",
+      "source_url": "https://www.mofo.com/resources/insights/260501-european-digital-compliance-key-digital-regulation",
+      "edition_date": "2026-05-07"
+    },
+    {
       "title": "DeepMind UK gründet erste Gewerkschaft in einem KI-Labor",
       "source_url": "https://fortune.com/2026/05/05/google-deepmind-unionize-vote-military-ai-contracts-internal-backlash-pentagon-deal-israeli-defense-forces/",
       "edition_date": "2026-05-06"
@@ -329,34 +364,6 @@
     {
       "title": "Morgen: Mag-7-Zahlen testen die KI-Investitionsthese",
       "source_url": "https://stockpil.com/mag-7-earnings-cloud-ai-spending"
-    },
-    {
-      "title": "Anthropic eröffnet Sydney-Büro, benennt ANZ-Chef",
-      "source_url": "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand"
-    },
-    {
-      "title": "Google DeepMind eröffnet ersten KI-Campus außerhalb UK in Seoul",
-      "source_url": "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/"
-    },
-    {
-      "title": "EU zwingt Google, Android für KI-Rivalen zu öffnen",
-      "source_url": "https://thenextweb.com/news/google-eu-android-gemini-rivals-dma"
-    },
-    {
-      "title": "Anthropic erklärt Claude-Code-Probleme: Drei Bugs, ein Postmortem",
-      "source_url": "https://www.anthropic.com/engineering/april-23-postmortem"
-    },
-    {
-      "title": "Magnificent Seven: KI-Capex im Fokus der Q1-Zahlen",
-      "source_url": "https://www.cnbc.com/2026/04/26/stock-market-today-live-updates.html"
-    },
-    {
-      "title": "Warum die breite Öffentlichkeit KI ablehnt",
-      "source_url": "https://simonwillison.net/2026/Apr/24/the-people-do-not-yearn-for-automation/"
-    },
-    {
-      "title": "Siemens droht EU: KI-Regulierung kostet Investitionen",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-04-20/siemens-threatens-to-skip-europe-for-ai-spending-due-to-rules"
     }
   ]
 }
