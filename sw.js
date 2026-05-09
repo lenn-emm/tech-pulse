@@ -12,7 +12,7 @@
  * activate() automatisch entsorgt.
  */
 
-const CACHE_VERSION = 'v1.1.0';
+const CACHE_VERSION = 'v1.2.0';
 const CORE_CACHE    = `tp-core-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `tp-runtime-${CACHE_VERSION}`;
 
@@ -21,6 +21,7 @@ const CORE_ASSETS = [
   './index.html',
   './archive.html',
   './app.js',
+  './env.js',
   './styles.css',
   './manifest.webmanifest',
   './icons/icon-192.png',

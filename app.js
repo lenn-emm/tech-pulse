@@ -32,6 +32,29 @@ function safeUrl(url) {
   } catch { return ''; }
 }
 
+// Pro-Browser Geheimnis, das mutierende Push-Operationen autorisiert. Liegt
+// nur lokal — Verlust = verwaister DB-Eintrag, der vom 410-Cleanup im
+// Edition-Workflow weggeräumt wird. Siehe register_push/unregister_push RPC.
+const PUSH_SECRET_KEY = 'tp.push.secret';
+
+function getOrCreateClientSecret() {
+  try {
+    let s = localStorage.getItem(PUSH_SECRET_KEY);
+    if (!s) {
+      s = (crypto && crypto.randomUUID)
+        ? crypto.randomUUID()
+        // Fallback für sehr alte Browser
+        : `${Date.now()}-${Math.random().toString(36).slice(2)}-${Math.random().toString(36).slice(2)}`;
+      localStorage.setItem(PUSH_SECRET_KEY, s);
+    }
+    return s;
+  } catch {
+    // localStorage gesperrt (Private-Mode etc.) — Subscription scheitert dann
+    // bewusst, weil ohne Secret keine sichere Re-Auth möglich.
+    return null;
+  }
+}
+
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 function formatDate(iso) {
@@ -670,21 +693,28 @@ async function getCurrentSubscription(reg) {
 
 async function savePushSubscription(sub) {
   const json = sub.toJSON();
-  const payload = {
-    endpoint: json.endpoint,
-    p256dh: json.keys.p256dh,
-    auth: json.keys.auth,
-    user_agent: navigator.userAgent,
-  };
-  const { error } = await sb
-    .from('push_subscriptions')
-    .upsert(payload, { onConflict: 'endpoint' });
+  const secret = getOrCreateClientSecret();
+  if (!secret) {
+    throw new Error('localStorage nicht verfügbar — Push kann nicht sicher registriert werden.');
+  }
+  const { error } = await sb.rpc('register_push', {
+    p_endpoint:      json.endpoint,
+    p_p256dh:        json.keys.p256dh,
+    p_auth:          json.keys.auth,
+    p_user_agent:    navigator.userAgent,
+    p_client_secret: secret,
+  });
   if (error) throw error;
 }
 
 async function deletePushSubscription(endpoint) {
   // Nicht kritisch wenn das fehlschlägt: Workflow räumt 410-er ohnehin später auf.
-  await sb.from('push_subscriptions').delete().eq('endpoint', endpoint);
+  const secret = getOrCreateClientSecret();
+  if (!secret) return;
+  await sb.rpc('unregister_push', {
+    p_endpoint:      endpoint,
+    p_client_secret: secret,
+  });
 }
 
 function renderPushUI(state) {
