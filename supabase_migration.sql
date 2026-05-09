@@ -97,3 +97,84 @@ CREATE POLICY videos_anon_select
   FOR SELECT
   TO anon
   USING (true);
+
+-- ── Push Subscriptions Hardening — Migration v6 ─────────────────────────────
+-- Vorherige Policies erlaubten anon clients beliebige UPDATE/DELETE auf alle
+-- Subscriptions (Push-Hijack-Risiko). Neuer Ansatz:
+--   1. Direkter DML-Zugriff (INSERT/UPDATE/DELETE) für anon wird widerrufen.
+--   2. Zwei SECURITY DEFINER RPCs kapseln Subscribe/Unsubscribe und prüfen ein
+--      Client-Secret, das nur der jeweilige Browser im localStorage hält.
+--   3. Service-Role-Key (Workflows) umgeht RLS weiterhin und kann Subscriptions
+--      lesen/löschen (z.B. 410-Cleanup).
+--
+-- Bestehende Subscriptions werden verworfen — User abonnieren beim nächsten
+-- Visit neu (akzeptiertes Migrations-Verhalten).
+
+DROP POLICY IF EXISTS push_subscriptions_anon_insert ON push_subscriptions;
+DROP POLICY IF EXISTS push_subscriptions_anon_update ON push_subscriptions;
+DROP POLICY IF EXISTS push_subscriptions_anon_delete ON push_subscriptions;
+
+DELETE FROM push_subscriptions;
+
+ALTER TABLE push_subscriptions
+  ADD COLUMN IF NOT EXISTS client_secret TEXT NOT NULL;
+
+-- register_push: Subscribe oder Re-Subscribe (idempotent).
+-- Bei Conflict auf endpoint wird nur aktualisiert, wenn das mitgesendete
+-- client_secret zum bereits gespeicherten passt — verhindert Hijack durch
+-- fremde Clients, die einen Endpoint kennen aber kein Secret haben.
+CREATE OR REPLACE FUNCTION register_push(
+  p_endpoint     TEXT,
+  p_p256dh       TEXT,
+  p_auth         TEXT,
+  p_user_agent   TEXT,
+  p_client_secret TEXT
+) RETURNS void
+LANGUAGE plpgsql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+BEGIN
+  IF p_endpoint IS NULL OR p_p256dh IS NULL OR p_auth IS NULL OR p_client_secret IS NULL THEN
+    RAISE EXCEPTION 'register_push: required field missing';
+  END IF;
+
+  INSERT INTO push_subscriptions (endpoint, p256dh, auth, user_agent, client_secret)
+  VALUES (p_endpoint, p_p256dh, p_auth, p_user_agent, p_client_secret)
+  ON CONFLICT (endpoint) DO UPDATE
+    SET p256dh        = EXCLUDED.p256dh,
+        auth          = EXCLUDED.auth,
+        user_agent    = EXCLUDED.user_agent,
+        last_seen     = now()
+    WHERE push_subscriptions.client_secret = EXCLUDED.client_secret;
+END;
+$$;
+
+REVOKE ALL ON FUNCTION register_push(TEXT, TEXT, TEXT, TEXT, TEXT) FROM PUBLIC;
+GRANT EXECUTE ON FUNCTION register_push(TEXT, TEXT, TEXT, TEXT, TEXT) TO anon;
+
+-- unregister_push: Löscht nur, wenn das client_secret matched.
+CREATE OR REPLACE FUNCTION unregister_push(
+  p_endpoint      TEXT,
+  p_client_secret TEXT
+) RETURNS void
+LANGUAGE plpgsql
+SECURITY DEFINER
+SET search_path = public
+AS $$
+BEGIN
+  IF p_endpoint IS NULL OR p_client_secret IS NULL THEN
+    RAISE EXCEPTION 'unregister_push: required field missing';
+  END IF;
+
+  DELETE FROM push_subscriptions
+   WHERE endpoint = p_endpoint
+     AND client_secret = p_client_secret;
+END;
+$$;
+
+REVOKE ALL ON FUNCTION unregister_push(TEXT, TEXT) FROM PUBLIC;
+GRANT EXECUTE ON FUNCTION unregister_push(TEXT, TEXT) TO anon;
+
+-- Bewusst KEINE neuen INSERT/UPDATE/DELETE-Policies für anon — Tabellen-DML
+-- ist für anon damit komplett gesperrt, alles läuft über die zwei RPCs.

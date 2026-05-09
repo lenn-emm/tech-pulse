@@ -15,8 +15,29 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: pywebpush installieren
-        run: python3 -m pip install --quiet pywebpush
+      - name: Python-Dependencies installieren
+        run: python3 -m pip install --quiet pywebpush jsonschema
+
+      - name: next-edition.json gegen Schema validieren
+        run: |
+          python3 << 'PYEOF'
+          import json, sys
+          import jsonschema
+
+          with open('data/next-edition.schema.json', 'r', encoding='utf-8') as f:
+            schema = json.load(f)
+          with open('data/next-edition.json', 'r', encoding='utf-8') as f:
+            payload = json.load(f)
+
+          try:
+            jsonschema.validate(instance=payload, schema=schema)
+          except jsonschema.exceptions.ValidationError as e:
+            print('::error::next-edition.json verletzt das Schema:')
+            print(f'  Pfad: {list(e.absolute_path)}')
+            print(f'  Meldung: {e.message}')
+            sys.exit(1)
+          print('Schema-Validierung OK.')
+          PYEOF
 
       - name: Edition + Artikel in Supabase schreiben + Push senden
         env:
