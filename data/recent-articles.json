@@ -1,6 +1,46 @@
 {
   "articles": [
     {
+      "title": "Anthropic wächst 80-fach: 30 Mrd. Dollar Jahresumsatz",
+      "source_url": "https://fortune.com/2026/05/08/anthropic-80fold-growth-quarter-renting-elon-musk-data-center/",
+      "edition_date": "2026-05-09"
+    },
+    {
+      "title": "Anthropic sichert 1,8-Mrd.-Deal mit Akamai für Claude-Compute",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-08/anthropic-inks-1-8-billion-computing-deal-with-akamai",
+      "edition_date": "2026-05-09"
+    },
+    {
+      "title": "Google startet Gemini-Gesundheitscoach für 9,99 Dollar monatlich",
+      "source_url": "https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/",
+      "edition_date": "2026-05-09"
+    },
+    {
+      "title": "Weißes Haus plant FDA-ähnliches Prüfsystem für Frontier-KI",
+      "source_url": "https://www.dailysignal.com/2026/05/07/trump-mulls-ai-regulation-orders/",
+      "edition_date": "2026-05-09"
+    },
+    {
+      "title": "AlphaEvolve: Googles Coding-Agent löst Mathematik-Probleme und optimiert Quantenchips",
+      "source_url": "https://deepmind.google/blog/alphaevolve-impact/",
+      "edition_date": "2026-05-09"
+    },
+    {
+      "title": "Anthropic-Bewertung nähert sich 1 Billion Dollar",
+      "source_url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-valuation-could-eclipse-openai-50-billion-dollar-funding-round/",
+      "edition_date": "2026-05-09"
+    },
+    {
+      "title": "Akamai-Aktie springt 27 % — stärkstes Tageshoch seit 22 Jahren",
+      "source_url": "https://www.bostonglobe.com/2026/05/08/business/akamai-stock-price-anthropic-ai/",
+      "edition_date": "2026-05-09"
+    },
+    {
+      "title": "DeepMind-Londoner Belegschaft stellt Gewerkschafts-Ultimatum",
+      "source_url": "https://www.engadget.com/2164765/google-us-military-deepmind-union/",
+      "edition_date": "2026-05-09"
+    },
+    {
       "title": "Anthropics Mythos-KI findet Zehntausende Schwachstellen — sechs Monate Zeitfenster",
       "source_url": "https://www.cnbc.com/2026/05/05/anthropic-ceo-cyber-moment-of-danger-mythos-vulnerabilities.html",
       "edition_date": "2026-05-08"
@@ -340,38 +380,6 @@
     {
       "title": "Studie: Ein Drittel aller neuen Websites ist KI-generiert",
       "source_url": "https://www.404media.co/study-finds-a-third-of-new-websites-are-ai-generated/"
-    },
-    {
-      "title": "OpenAI-Codex und GPT-5.5 jetzt auf Amazon Bedrock verfügbar",
-      "source_url": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/"
-    },
-    {
-      "title": "Recursive Language Models: PrimeIntellect skizziert das Paradigma 2026",
-      "source_url": "https://www.primeintellect.ai/blog/rlm"
-    },
-    {
-      "title": "Anthropic öffnet Managed Agents Memory für alle Entwickler",
-      "source_url": "https://www.anthropic.com/news/claude-opus-4-7"
-    },
-    {
-      "title": "AWS knackt 15-Milliarden-KI-Runrate im stärksten Quartal seit Jahren",
-      "source_url": "https://www.cnbc.com/2026/04/29/aws-earnings-q1-2026.html"
-    },
-    {
-      "title": "Mag-7-Quartalszahlen: KI-Investitionen zahlen sich endlich aus",
-      "source_url": "https://sherwood.news/markets/amazon-q1-2026-earnings-report-guidance-aws-cloud-ai-boom/"
-    },
-    {
-      "title": "Google öffnet Gemini für geheime US-Militäroperationen",
-      "source_url": "https://techcrunch.com/2026/04/28/google-expands-pentagons-access-to-its-ai-after-anthropics-refusal/"
-    },
-    {
-      "title": "Mag-7 Earnings-Tag: Vier Tech-Riesen berichten heute",
-      "source_url": "https://wallstreethorizon.com/blog/Mag-7-Earnings-on-Deck-Q1-2026"
-    },
-    {
-      "title": "AlphaGo-Schöpfer gründet KI-Lab ohne menschliche Daten",
-      "source_url": "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/"
     }
   ]
 }
