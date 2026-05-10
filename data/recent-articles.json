@@ -1,6 +1,41 @@
 {
   "articles": [
     {
+      "title": "Chrome lädt 4-GB-KI-Modell still auf eine Milliarde Geräte",
+      "source_url": "https://www.tomshardware.com/tech-industry/cyber-security/google-chrome-silently-downloads-4gb-ai-model-to-your-device-without-permission-report-claims-researcher-says-practice-may-violate-eu-law-waste-thousands-of-kilowatts-of-energy",
+      "edition_date": "2026-05-10"
+    },
+    {
+      "title": "SpaceX plant Terafab: Bis zu 119 Mrd. Dollar für Chip-Fabrik in Texas",
+      "source_url": "https://techcrunch.com/2026/05/06/spacex-may-spend-up-to-119-billion-on-terafab-chip-factory-in-texas/",
+      "edition_date": "2026-05-10"
+    },
+    {
+      "title": "Hugging Face öffnet Robot-App-Store für 10.000 Reachy Mini",
+      "source_url": "https://www.axios.com/2026/05/06/hugging-face-consumer-robot-app-store",
+      "edition_date": "2026-05-10"
+    },
+    {
+      "title": "US-Energieministerium: 24 KI-Konzerne stärken Genesis-Mission",
+      "source_url": "https://www.energy.gov/articles/energy-department-announces-collaboration-agreements-24-organizations-advance-genesis",
+      "edition_date": "2026-05-10"
+    },
+    {
+      "title": "State of AI Mai 2026: Vier chinesische Modelle in 12 Tagen",
+      "source_url": "https://nathanbenaich.substack.com/p/state-of-ai-may-2026",
+      "edition_date": "2026-05-10"
+    },
+    {
+      "title": "Claude kommt in Autodesk Fusion — KI für 3D-CAD-Konstruktion",
+      "source_url": "https://all3dp.com/4/claude-comes-to-cad-anthropics-ai-can-now-help-build-3d-models-in-autodesk-fusion/",
+      "edition_date": "2026-05-10"
+    },
+    {
+      "title": "OpenAI weitet DOE-Kooperation für KI-getriebene Wissenschaft aus",
+      "source_url": "https://openai.com/index/us-department-of-energy-collaboration/",
+      "edition_date": "2026-05-10"
+    },
+    {
       "title": "Anthropic wächst 80-fach: 30 Mrd. Dollar Jahresumsatz",
       "source_url": "https://fortune.com/2026/05/08/anthropic-80fold-growth-quarter-renting-elon-musk-data-center/",
       "edition_date": "2026-05-09"
@@ -352,34 +387,6 @@
     {
       "title": "Meta hebt KI-CapEx auf bis zu 145 Milliarden Dollar an",
       "source_url": "https://www.cnbc.com/2026/04/29/meta-q1-earnings-report-2026.html"
-    },
-    {
-      "title": "EU AI Act: Trilog-Verhandlungen erneut gescheitert",
-      "source_url": "https://thenextweb.com/news/eu-ai-act-omnibus-deal-fails-april-2026-talks"
-    },
-    {
-      "title": "SoftBank baut Roze AI: Roboter für Rechenzentren, 100-Mrd.-IPO",
-      "source_url": "https://techcrunch.com/2026/04/29/softbank-is-creating-a-robotics-company-that-builds-data-centers-and-already-eyeing-a-100b-ipo/"
-    },
-    {
-      "title": "Claude Security in öffentlicher Beta für Enterprise-Kunden",
-      "source_url": "https://claude.com/product/claude-security"
-    },
-    {
-      "title": "Google Cloud wächst 63 Prozent: KI löst Werbung als Treiber ab",
-      "source_url": "https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html"
-    },
-    {
-      "title": "Sundar Pichai: KI ist erstmals primärer Cloud-Wachstumstreiber",
-      "source_url": "https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html"
-    },
-    {
-      "title": "Zig-Projekt erklärt, warum es KI-Beiträge grundsätzlich ablehnt",
-      "source_url": "https://simonwillison.net/2026/Apr/30/zig-anti-ai/"
-    },
-    {
-      "title": "Studie: Ein Drittel aller neuen Websites ist KI-generiert",
-      "source_url": "https://www.404media.co/study-finds-a-third-of-new-websites-are-ai-generated/"
     }
   ]
 }
