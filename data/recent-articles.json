@@ -1,6 +1,46 @@
 {
   "articles": [
     {
+      "title": "Cloudflare streicht 1.100 Stellen wegen KI-Effizienz",
+      "source_url": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/",
+      "edition_date": "2026-05-11"
+    },
+    {
+      "title": "EU einigt sich auf KI-Omnibus nach Nacht-Verhandlungen",
+      "source_url": "https://www.techpolicy.press/what-the-eu-ai-omnibus-deal-changes-for-the-ai-act-and-what-lies-ahead/",
+      "edition_date": "2026-05-11"
+    },
+    {
+      "title": "Anthropics Mythos: Zwischen Hysterie und echter Bedrohung",
+      "source_url": "https://www.cnbc.com/2026/05/08/anthropic-mythos-ai-cybersecurity-banks.html",
+      "edition_date": "2026-05-11"
+    },
+    {
+      "title": "Qualcomm-CEO: Das Smartphone-Zeitalter ist vorbei",
+      "source_url": "https://fortune.com/2026/05/09/qualcomm-smartphone-ai-secret-device-openai-meta-wearables-agents/",
+      "edition_date": "2026-05-11"
+    },
+    {
+      "title": "Nvidia übertrifft 40 Milliarden Dollar in KI-Beteiligungen",
+      "source_url": "https://www.cnbc.com/2026/05/09/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.html",
+      "edition_date": "2026-05-11"
+    },
+    {
+      "title": "KI vernichtet keine Jobs – sie verändert sie grundlegend",
+      "source_url": "https://www.cnn.com/2026/05/10/tech/ai-taking-jobs",
+      "edition_date": "2026-05-11"
+    },
+    {
+      "title": "Trump-Regierung erwägt erstmals KI-Regulierungsmaßnahmen",
+      "source_url": "https://fortune.com/2026/05/06/trump-administration-embraces-ai-oversight-policies-it-once-rejected-anthropic-mythos-caisi/",
+      "edition_date": "2026-05-11"
+    },
+    {
+      "title": "KI-Umbau: Stellenabbau beschleunigt sich im Mai 2026",
+      "source_url": "https://finance.yahoo.com/sectors/technology/articles/layoffs-accelerate-may-2026-firms-040430218.html",
+      "edition_date": "2026-05-11"
+    },
+    {
       "title": "Chrome lädt 4-GB-KI-Modell still auf eine Milliarde Geräte",
       "source_url": "https://www.tomshardware.com/tech-industry/cyber-security/google-chrome-silently-downloads-4gb-ai-model-to-your-device-without-permission-report-claims-researcher-says-practice-may-violate-eu-law-waste-thousands-of-kilowatts-of-energy",
       "edition_date": "2026-05-10"
@@ -355,38 +395,6 @@
     {
       "title": "Pentagon-CTO: Anthropic-Blacklist bleibt — Mythos als Sicherheits-Sonderfall",
       "source_url": "https://www.cnbc.com/2026/05/01/pentagon-anthropic-blacklist-mythos-michael.html"
-    },
-    {
-      "title": "Nature-Bericht: Menschen schlagen KI-Agenten bei komplexer Forschungsarbeit",
-      "source_url": "https://www.nature.com/articles/d41586-026-01199-z"
-    },
-    {
-      "title": "Hangzhou-Gericht: KI-Automatisierung ist kein Kündigungsgrund",
-      "source_url": "https://www.caixinglobal.com/2026-04-30/chinese-courts-rule-companies-cannot-fire-workers-simply-to-replace-them-with-ai-102439602.html"
-    },
-    {
-      "title": "Huawei zielt auf 12 Mrd. Dollar KI-Chip-Umsatz — Ascend dominiert China",
-      "source_url": "https://www.androidheadlines.com/2026/05/huawei-china-ai-market-share-nvidia-exit-ascend-950.html"
-    },
-    {
-      "title": "Anthropic holt Ex-Pentagon-Strategiechef Baker — mitten im Militärstreit",
-      "source_url": "https://www.defenseone.com/technology/2026/05/former-head-pentagons-think-tank-joins-anthropic/413256/"
-    },
-    {
-      "title": "Hyperscaler investieren 2026 über 700 Milliarden Dollar in KI",
-      "source_url": "https://fortune.com/2026/04/30/big-tech-hyperscalers-will-spend-700-billion-on-ai-infrastructure-this-year-with-no-clear-end-in-sight-eye-on-ai/"
-    },
-    {
-      "title": "KI-Ausgaben könnten 2027 Billion-Dollar-Marke übersteigen",
-      "source_url": "https://www.cnbc.com/2026/04/30/ai-boom-big-tech-capital-expenditures-now-seen-topping-1-trillion-in-2027-.html"
-    },
-    {
-      "title": "40.000 Tech-Jobs in April durch KI-Priorisierung gestrichen",
-      "source_url": "https://www.businesstoday.in/technology/story/tech-layoffs-2026-nearly-40000-jobs-lost-in-april-amid-changing-ai-priorities-528282-2026-04-30"
-    },
-    {
-      "title": "Meta hebt KI-CapEx auf bis zu 145 Milliarden Dollar an",
-      "source_url": "https://www.cnbc.com/2026/04/29/meta-q1-earnings-report-2026.html"
     }
   ]
 }
