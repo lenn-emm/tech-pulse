@@ -1,6 +1,46 @@
 {
   "articles": [
     {
+      "title": "Google bestätigt: Kriminelle bauen erstmals KI-Zero-Day-Exploit",
+      "source_url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html",
+      "edition_date": "2026-05-12"
+    },
+    {
+      "title": "OpenAI gründet 4-Mrd.-Deployment-Company mit 19 Investoren",
+      "source_url": "https://openai.com/index/openai-launches-the-deployment-company/",
+      "edition_date": "2026-05-12"
+    },
+    {
+      "title": "DeepMind AI Co-Mathematician setzt neuen FrontierMath-Weltrekord",
+      "source_url": "https://arxiv.org/html/2605.06651v1",
+      "edition_date": "2026-05-12"
+    },
+    {
+      "title": "Anthropic lässt Claude-Agenten zwischen Sitzungen träumen",
+      "source_url": "https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes",
+      "edition_date": "2026-05-12"
+    },
+    {
+      "title": "Google Fitbit Air: 99-Dollar-KI-Band tritt gegen Whoop an",
+      "source_url": "https://www.engadget.com/2166645/the-google-fitbit-air-is-an-ai-infused-take-on-whoop-wearables/",
+      "edition_date": "2026-05-12"
+    },
+    {
+      "title": "GitLab streicht Jobs — Handbücher verraten Wandel zur Agentic Era",
+      "source_url": "https://simonwillison.net/2026/May/11/gitlab-act-2/",
+      "edition_date": "2026-05-12"
+    },
+    {
+      "title": "Shopify River: Coding-Agent arbeitet live auf dem Firmen-Slack",
+      "source_url": "https://simonwillison.net/2026/May/11/learning-on-the-shop-floor/",
+      "edition_date": "2026-05-12"
+    },
+    {
+      "title": "Zitat: Erster KI-gebauter Zero-Day-Exploit in freier Wildbahn",
+      "source_url": "https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access",
+      "edition_date": "2026-05-12"
+    },
+    {
       "title": "Cloudflare streicht 1.100 Stellen wegen KI-Effizienz",
       "source_url": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/",
       "edition_date": "2026-05-11"
@@ -359,42 +399,6 @@
       "title": "Hangzhou-Gericht: KI-Automatisierung ist kein Kündigungsgrund",
       "source_url": "https://www.caixinglobal.com/2026-04-30/chinese-courts-rule-companies-cannot-fire-workers-simply-to-replace-them-with-ai-102439602.html",
       "edition_date": "2026-05-02"
-    },
-    {
-      "title": "Nature-Bericht: Menschen schlagen KI-Agenten bei komplexer Forschungsarbeit",
-      "source_url": "https://www.nature.com/articles/d41586-026-01199-z",
-      "edition_date": "2026-05-02"
-    },
-    {
-      "title": "Pentagon-CTO: Anthropic-Blacklist bleibt — Mythos als Sicherheits-Sonderfall",
-      "source_url": "https://www.cnbc.com/2026/05/01/pentagon-anthropic-blacklist-mythos-michael.html",
-      "edition_date": "2026-05-02"
-    },
-    {
-      "title": "Weißes Haus nimmt Gespräche mit Anthropic nach Mythos-Ankündigung wieder auf",
-      "source_url": "https://www.axios.com/2026/05/01/washington-new-anthropic-problem",
-      "edition_date": "2026-05-02"
-    },
-    {
-      "title": "Zitat des Tages: James Baker über KI und die Zukunft der Institutionen",
-      "source_url": "https://www.defenseone.com/technology/2026/05/former-head-pentagons-think-tank-joins-anthropic/413256/",
-      "edition_date": "2026-05-02"
-    },
-    {
-      "title": "Pentagon unterschreibt KI-Deals mit 8 Firmen — Anthropic verbannt",
-      "source_url": "https://www.defensenews.com/news/pentagon-congress/2026/05/01/pentagon-freezes-out-anthropic-as-it-signs-deals-with-ai-rivals/"
-    },
-    {
-      "title": "Zitat des Tages: James Baker über KI und die Zukunft der Institutionen",
-      "source_url": "https://www.defenseone.com/technology/2026/05/former-head-pentagons-think-tank-joins-anthropic/413256/"
-    },
-    {
-      "title": "Weißes Haus nimmt Gespräche mit Anthropic nach Mythos-Ankündigung wieder auf",
-      "source_url": "https://www.axios.com/2026/05/01/washington-new-anthropic-problem"
-    },
-    {
-      "title": "Pentagon-CTO: Anthropic-Blacklist bleibt — Mythos als Sicherheits-Sonderfall",
-      "source_url": "https://www.cnbc.com/2026/05/01/pentagon-anthropic-blacklist-mythos-michael.html"
     }
   ]
 }
