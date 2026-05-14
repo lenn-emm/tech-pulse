@@ -1,6 +1,41 @@
 {
   "articles": [
     {
+      "title": "Anthropic strebt 900-Mrd.-Bewertung mit neuer 30-Mrd.-Runde an",
+      "source_url": "https://finance.yahoo.com/news/anthropic-talks-raise-30-billion-210804604.html",
+      "edition_date": "2026-05-14"
+    },
+    {
+      "title": "Isomorphic Labs sichert 2,1 Mrd. Dollar für KI-Medikamentenentwicklung",
+      "source_url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round",
+      "edition_date": "2026-05-14"
+    },
+    {
+      "title": "Nvidia und Ineffable Intelligence: Superintelligenz durch Reinforcement Learning",
+      "source_url": "https://www.cnbc.com/2026/05/13/google-deepmind-alumni-startup-partners-nvidia-superintelligence.html",
+      "edition_date": "2026-05-14"
+    },
+    {
+      "title": "OpenAI Daybreak: GPT-5.5 scannt und patcht Sicherheitslücken automatisch",
+      "source_url": "https://openai.com/daybreak/",
+      "edition_date": "2026-05-14"
+    },
+    {
+      "title": "Notion wird KI-Agenten-Drehscheibe für Teams und externe Systeme",
+      "source_url": "https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/",
+      "edition_date": "2026-05-14"
+    },
+    {
+      "title": "Anthropic bringt Claude-KI-Paket für kleine Unternehmen",
+      "source_url": "https://9to5mac.com/2026/05/13/anthropics-latest-claude-release-turns-your-mac-into-a-small-business-powerhouse/",
+      "edition_date": "2026-05-14"
+    },
+    {
+      "title": "Anthropic VP: KI soll Bedürfnisse antizipieren, bevor Nutzer sie kennen",
+      "source_url": "https://techcrunch.com/2026/05/13/anthropics-cat-wu-says-that-in-the-future-ai-will-anticipate-your-needs-before-you-know-what-they-are/",
+      "edition_date": "2026-05-14"
+    },
+    {
       "title": "Google lanciert Googlebook: KI-Laptop mit Gemini-Cursor",
       "source_url": "https://blog.google/products-and-platforms/platforms/android/meet-googlebook/",
       "edition_date": "2026-05-13"
@@ -364,41 +399,6 @@
       "title": "Gemini übernimmt Google Assistant in vier Millionen Autos",
       "source_url": "https://techcrunch.com/2026/04/30/googles-gemini-ai-assistant-is-hitting-the-road-in-millions-of-vehicles/",
       "edition_date": "2026-05-04"
-    },
-    {
-      "title": "OpenAI plant KI-Smartphone — Apps durch Agenten ersetzt",
-      "source_url": "https://techcrunch.com/2026/04/27/openai-could-be-making-a-phone-with-ai-agents-replacing-apps/",
-      "edition_date": "2026-05-04"
-    },
-    {
-      "title": "Meta Business AI: 10 Millionen Gespräche pro Woche",
-      "source_url": "https://techcrunch.com/2026/04/30/meta-says-its-business-ai-now-facilitates-10-million-conversations-a-week/",
-      "edition_date": "2026-05-04"
-    },
-    {
-      "title": "\"This is fine\"-Schöpfer: KI-Startup Artisan stahl mein Werk",
-      "source_url": "https://techcrunch.com/2026/05/03/this-is-fine-creator-says-ai-startup-stole-his-art/",
-      "edition_date": "2026-05-04"
-    },
-    {
-      "title": "DeepMind KI-Co-Clinician übertrifft GPT-5.4 — aber nicht Ärzte",
-      "source_url": "https://deepmind.google/blog/ai-co-clinician/",
-      "edition_date": "2026-05-03"
-    },
-    {
-      "title": "Meta kauft Robotik-KI-Startup für Humanoid-Ambitionen",
-      "source_url": "https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/",
-      "edition_date": "2026-05-03"
-    },
-    {
-      "title": "Anthropic überholt OpenAI beim globalen LLM-Umsatz",
-      "source_url": "https://www.theregister.com/2026/04/30/openai_anthropic_top_lines_research_counterpoint/",
-      "edition_date": "2026-05-03"
-    },
-    {
-      "title": "NIST: DeepSeek V4 Pro liegt 8 Monate hinter US-Modellen",
-      "source_url": "https://www.nist.gov/news-events/news/2026/05/caisi-evaluation-deepseek-v4-pro",
-      "edition_date": "2026-05-03"
     }
   ]
 }
