@@ -1,6 +1,46 @@
 {
   "articles": [
     {
+      "title": "Anthropic und Gates Foundation: $200 Mio. für globale Gesundheits-KI",
+      "source_url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "edition_date": "2026-05-15"
+    },
+    {
+      "title": "OpenAI schlägt IAEA-ähnliche globale KI-Aufsicht vor",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-13/openai-floats-idea-of-global-ai-governance-body-with-us-china",
+      "edition_date": "2026-05-15"
+    },
+    {
+      "title": "Microsofts MDASH: 100 KI-Agenten finden 16 Windows-Lücken",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-finds-16-new-vulnerabilities/",
+      "edition_date": "2026-05-15"
+    },
+    {
+      "title": "Cisco streicht 4.000 Stellen trotz Rekordumsatz",
+      "source_url": "https://techcrunch.com/2026/05/14/cisco-cuts-nearly-4000-jobs-to-spend-more-on-ai-reports-record-quarterly-revenue/",
+      "edition_date": "2026-05-15"
+    },
+    {
+      "title": "DeepMinds Magic Pointer: Gemini versteht den Bildschirminhalt",
+      "source_url": "https://9to5google.com/2026/05/12/deepmind-googlebook-magic-pointer/",
+      "edition_date": "2026-05-15"
+    },
+    {
+      "title": "Connecticut plant Unterzeichnung des strengsten KI-Gesetzes der USA",
+      "source_url": "https://www.dlapiper.com/en-us/insights/publications/2026/05/unpacking-connecticuts-new-ai-law",
+      "edition_date": "2026-05-15"
+    },
+    {
+      "title": "Accenture und OpenAI bringen ChatGPT in US-Bundesbehörden",
+      "source_url": "https://newsroom.accenture.com/news/2026/accenture-federal-services-and-openai-partner-to-accelerate-secure-ai-adoption-across-the-federal-government",
+      "edition_date": "2026-05-15"
+    },
+    {
+      "title": "Zitat: OpenAI zu globaler KI-Governance",
+      "source_url": "https://www.japantimes.co.jp/business/2026/05/14/tech/openai-global-governance-us-china/",
+      "edition_date": "2026-05-15"
+    },
+    {
       "title": "Anthropic strebt 900-Mrd.-Bewertung mit neuer 30-Mrd.-Runde an",
       "source_url": "https://finance.yahoo.com/news/anthropic-talks-raise-30-billion-210804604.html",
       "edition_date": "2026-05-14"
@@ -359,46 +399,6 @@
       "title": "Pentagon schließt KI-Deals — Anthropic bleibt außen vor",
       "source_url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
       "edition_date": "2026-05-05"
-    },
-    {
-      "title": "Bericht: 2026 ist das Jahr der KI-gestützten Cyberangriffe",
-      "source_url": "https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html",
-      "edition_date": "2026-05-05"
-    },
-    {
-      "title": "GPT-5.5 und GPT-5.4 kommen auf Amazon Bedrock",
-      "source_url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-whats-next-with-aws-2026-amazon-quick-openai-partnership-and-more-may-4-2026/",
-      "edition_date": "2026-05-05"
-    },
-    {
-      "title": "Meta kauft Robotik-Startup für Humanoid-KI-Ambitionen",
-      "source_url": "https://techcrunch.com/2026/05/01/meta-buys-robotics-startup-to-bolster-its-humanoid-ai-ambitions/",
-      "edition_date": "2026-05-05"
-    },
-    {
-      "title": "Anthropic peilt Bewertung von 900 Milliarden Dollar an",
-      "source_url": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/",
-      "edition_date": "2026-05-04"
-    },
-    {
-      "title": "Musk v. Altman Woche 1: xAI trainierte Grok auf OpenAI-Modellen",
-      "source_url": "https://www.technologyreview.com/2026/05/01/1136800/musk-v-altman-week-1-musk-says-he-was-duped-warns-ai-could-kill-us-all-and-admits-that-xai-distills-openais-models/",
-      "edition_date": "2026-05-04"
-    },
-    {
-      "title": "Kimi K2.6 übertrifft GPT-5.4 und Claude auf SWE-Bench Pro",
-      "source_url": "https://www.kimi.com/blog/kimi-k2-6",
-      "edition_date": "2026-05-04"
-    },
-    {
-      "title": "KI-Agenten buchen Cloud-Dienste ohne menschliche Freigabe",
-      "source_url": "https://blog.cloudflare.com/agents-stripe-projects/",
-      "edition_date": "2026-05-04"
-    },
-    {
-      "title": "Gemini übernimmt Google Assistant in vier Millionen Autos",
-      "source_url": "https://techcrunch.com/2026/04/30/googles-gemini-ai-assistant-is-hitting-the-road-in-millions-of-vehicles/",
-      "edition_date": "2026-05-04"
     }
   ]
 }
