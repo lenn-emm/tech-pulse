@@ -1,6 +1,46 @@
 {
   "articles": [
     {
+      "title": "ChatGPT verbindet Bankkonten: OpenAI startet Finanz-Feature",
+      "source_url": "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/",
+      "edition_date": "2026-05-16"
+    },
+    {
+      "title": "Google I/O am 19. Mai: Gemini 4.0 soll GPT-5.5 schlagen",
+      "source_url": "https://www.androidauthority.com/what-to-expect-from-google-io-2026-3664979/",
+      "edition_date": "2026-05-16"
+    },
+    {
+      "title": "SpaceXAI verliert 50+ Forscher an Meta und Thinking Machines",
+      "source_url": "https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/",
+      "edition_date": "2026-05-16"
+    },
+    {
+      "title": "Android Show: Gemini Intelligence proaktiv auf allen Geräten",
+      "source_url": "https://www.engadget.com/2171038/everything-announced-at-android-show-google-io-2026/",
+      "edition_date": "2026-05-16"
+    },
+    {
+      "title": "Runway: Von KI-Video zu World Models — Angriff auf DeepMind",
+      "source_url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/",
+      "edition_date": "2026-05-16"
+    },
+    {
+      "title": "Datenschutz-Aufschrei: Wer gibt OpenAI wirklich Bankzugang?",
+      "source_url": "https://www.tomsguide.com/ai/chatgpt/what-sane-individual-feels-comfortable-giving-this-level-of-access-to-openai-chatgpt-can-now-be-your-financial-advisor-but-the-reactions-are-pretty-telling",
+      "edition_date": "2026-05-16"
+    },
+    {
+      "title": "SpaceXAI: Talentabgang trifft auf Gas-Turbinen-Umweltklage",
+      "source_url": "https://theaiinsider.tech/2026/05/15/spacexai-faces-twin-crises-as-brain-drain-accelerates-and-gas-turbine-pollution-lawsuit-looms/",
+      "edition_date": "2026-05-16"
+    },
+    {
+      "title": "Zitat: Runway-CEO über die Zukunft der KI-Intelligenz",
+      "source_url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/",
+      "edition_date": "2026-05-16"
+    },
+    {
       "title": "Anthropic und Gates Foundation: $200 Mio. für globale Gesundheits-KI",
       "source_url": "https://www.anthropic.com/news/gates-foundation-partnership",
       "edition_date": "2026-05-15"
@@ -359,46 +399,6 @@
       "title": "Anthropic verpflichtet sich zu 200 Milliarden Dollar bei Google Cloud",
       "source_url": "https://www.usnews.com/news/top-news/articles/2026-05-05/anthropic-commits-to-spending-200-billion-on-googles-cloud-and-chips-the-information-reports",
       "edition_date": "2026-05-06"
-    },
-    {
-      "title": "USA testen Frontier-Modelle von DeepMind, Microsoft und xAI",
-      "source_url": "https://www.nist.gov/news-events/news/2026/05/caisi-signs-agreements-regarding-frontier-ai-national-security-testing",
-      "edition_date": "2026-05-06"
-    },
-    {
-      "title": "OpenAI investiert 2026 über 50 Milliarden Dollar in Rechenleistung",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-05-05/openai-to-spend-50-billion-on-computing-in-2026-brockman-says",
-      "edition_date": "2026-05-06"
-    },
-    {
-      "title": "Jensen Huang: KI schafft massenhaft neue Jobs",
-      "source_url": "https://techcrunch.com/2026/05/04/as-workers-worry-about-ai-nvidias-jensen-huang-says-ai-is-creating-an-enormous-number-of-jobs/",
-      "edition_date": "2026-05-06"
-    },
-    {
-      "title": "Colorado schwächt wegweisendes KI-Gesetz von 2024 deutlich ab",
-      "source_url": "https://coloradonewsline.com/2026/05/04/narrow-scope-colorado-ai-law/",
-      "edition_date": "2026-05-06"
-    },
-    {
-      "title": "Anthropic gründet 1,5-Mrd.-Dollar-Venture mit Goldman und Blackstone",
-      "source_url": "https://www.cnbc.com/2026/05/04/anthropic-goldman-sachs-blackstone-ai-venture.html",
-      "edition_date": "2026-05-05"
-    },
-    {
-      "title": "OpenAI Workspace Agents: Codex-Agenten für Unternehmens-Workflows",
-      "source_url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
-      "edition_date": "2026-05-05"
-    },
-    {
-      "title": "Harvard-Studie: KI schlägt Notaufnahme-Ärzte bei Diagnosen",
-      "source_url": "https://www.science.org/content/article/ai-starting-beat-doctors-making-correct-diagnoses",
-      "edition_date": "2026-05-05"
-    },
-    {
-      "title": "Pentagon schließt KI-Deals — Anthropic bleibt außen vor",
-      "source_url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
-      "edition_date": "2026-05-05"
     }
   ]
 }
