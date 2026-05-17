@@ -1,6 +1,41 @@
 {
   "articles": [
     {
+      "title": "Google I/O 2026: Gemini 4, Android 17 und XR-Brille kommen Dienstag",
+      "source_url": "https://tech.yahoo.com/general/article/google-io-2026-what-to-expect-next-week-including-android-17-ai-announcements-and-more-131200995.html",
+      "edition_date": "2026-05-17"
+    },
+    {
+      "title": "KI-Goldrausch spaltet Tech: 10.000 Millionäre, alle anderen kämpfen",
+      "source_url": "https://techcrunch.com/2026/05/16/the-haves-and-have-nots-of-the-ai-gold-rush/",
+      "edition_date": "2026-05-17"
+    },
+    {
+      "title": "ArXiv: Ein-Jahres-Bann für KI-generierten Forschungsschrott",
+      "source_url": "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/",
+      "edition_date": "2026-05-17"
+    },
+    {
+      "title": "Entwickler alarmiert: KI-Tools lassen kritisches Denken verkümmern",
+      "source_url": "https://www.404media.co/software-developers-say-ai-is-rotting-their-brains/",
+      "edition_date": "2026-05-17"
+    },
+    {
+      "title": "Studie: Ein Drittel aller neuen Websites 2026 ist KI-generiert",
+      "source_url": "https://www.404media.co/study-finds-a-third-of-new-websites-are-ai-generated/",
+      "edition_date": "2026-05-17"
+    },
+    {
+      "title": "Simon Willison: Muster für agentisches Engineering jetzt formbar",
+      "source_url": "https://simonw.substack.com/p/agentic-engineering-patterns",
+      "edition_date": "2026-05-17"
+    },
+    {
+      "title": "Zitat: KI-Abhängigkeit und der schleichende Verlust des Denkens",
+      "source_url": "https://www.404media.co/software-developers-say-ai-is-rotting-their-brains/",
+      "edition_date": "2026-05-17"
+    },
+    {
       "title": "ChatGPT verbindet Bankkonten: OpenAI startet Finanz-Feature",
       "source_url": "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/",
       "edition_date": "2026-05-16"
@@ -364,41 +399,6 @@
       "title": "OpenAI prämiert 26 Studierende: ChatGPT Futures Class of 2026",
       "source_url": "https://openai.com/index/introducing-chatgpt-futures-class-of-2026/",
       "edition_date": "2026-05-07"
-    },
-    {
-      "title": "Simon Willison: 'Agent' hat endlich eine konsensfähige Definition",
-      "source_url": "https://simonw.substack.com/p/i-think-agent-may-finally-have-a",
-      "edition_date": "2026-05-07"
-    },
-    {
-      "title": "Nature zieht ChatGPT-Bildungsstudie mit 500 Zitierungen zurück",
-      "source_url": "https://www.404media.co/nature-retracts-paper-on-the-benefits-of-chatgpt-in-education/",
-      "edition_date": "2026-05-07"
-    },
-    {
-      "title": "EU AI Act Omnibus: Zweiter Trilog scheitert ohne Einigung",
-      "source_url": "https://www.mofo.com/resources/insights/260501-european-digital-compliance-key-digital-regulation",
-      "edition_date": "2026-05-07"
-    },
-    {
-      "title": "DeepMind UK gründet erste Gewerkschaft in einem KI-Labor",
-      "source_url": "https://fortune.com/2026/05/05/google-deepmind-unionize-vote-military-ai-contracts-internal-backlash-pentagon-deal-israeli-defense-forces/",
-      "edition_date": "2026-05-06"
-    },
-    {
-      "title": "Anthropic veröffentlicht zehn KI-Agenten für die Finanzbranche",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-05-05/anthropic-unveils-ai-agents-to-field-financial-services-tasks",
-      "edition_date": "2026-05-06"
-    },
-    {
-      "title": "GPT-5.5 Instant wird neues Standard-Modell in ChatGPT",
-      "source_url": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
-      "edition_date": "2026-05-06"
-    },
-    {
-      "title": "Anthropic verpflichtet sich zu 200 Milliarden Dollar bei Google Cloud",
-      "source_url": "https://www.usnews.com/news/top-news/articles/2026-05-05/anthropic-commits-to-spending-200-billion-on-googles-cloud-and-chips-the-information-reports",
-      "edition_date": "2026-05-06"
     }
   ]
 }
