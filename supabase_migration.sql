@@ -35,55 +35,6 @@ CREATE TABLE IF NOT EXISTS videos (
 
 CREATE INDEX IF NOT EXISTS videos_published_idx ON videos (published_at DESC);
 
--- ── Push Subscriptions — Migration v4 ───────────────────────────────────────
--- Speichert Web-Push-Subscriptions (PWA). Endpoint ist eindeutig pro Gerät;
--- bei Re-Subscription (z.B. nach Browser-Reset) per ON CONFLICT aktualisiert.
-
-CREATE TABLE IF NOT EXISTS push_subscriptions (
-  id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  endpoint    TEXT NOT NULL UNIQUE,
-  p256dh      TEXT NOT NULL,
-  auth        TEXT NOT NULL,
-  user_agent  TEXT,
-  topics      TEXT[] NOT NULL DEFAULT ARRAY['edition','video']::TEXT[],
-  created_at  TIMESTAMPTZ NOT NULL DEFAULT now(),
-  last_seen   TIMESTAMPTZ NOT NULL DEFAULT now()
-);
-
-CREATE INDEX IF NOT EXISTS push_subscriptions_topics_idx
-  ON push_subscriptions USING GIN (topics);
-
--- RLS: Anonyme Clients dürfen sich subscriben/unsubscriben (nur eigener Endpoint),
--- aber NIEMALS andere Subscriptions lesen. Workflow nutzt service-role-key (umgeht RLS).
-
-ALTER TABLE push_subscriptions ENABLE ROW LEVEL SECURITY;
-
-DROP POLICY IF EXISTS push_subscriptions_anon_insert ON push_subscriptions;
-CREATE POLICY push_subscriptions_anon_insert
-  ON push_subscriptions
-  FOR INSERT
-  TO anon
-  WITH CHECK (true);
-
--- Update erlaubt für upsert (ON CONFLICT … DO UPDATE),
--- aber nur am eigenen Endpoint — der Endpoint selbst darf nicht geändert werden.
-DROP POLICY IF EXISTS push_subscriptions_anon_update ON push_subscriptions;
-CREATE POLICY push_subscriptions_anon_update
-  ON push_subscriptions
-  FOR UPDATE
-  TO anon
-  USING (true)
-  WITH CHECK (true);
-
-DROP POLICY IF EXISTS push_subscriptions_anon_delete ON push_subscriptions;
-CREATE POLICY push_subscriptions_anon_delete
-  ON push_subscriptions
-  FOR DELETE
-  TO anon
-  USING (true);
-
--- Bewusst KEIN SELECT für anon — Subscriptions bleiben privat.
-
 -- ── Videos RLS — Migration v5 ───────────────────────────────────────────────
 -- Frontend liest Videos anonym (Video-Pulse-Sektion); Workflow nutzt
 -- service-role-key (umgeht RLS). Bisher war RLS deaktiviert → Supabase-Advisor
@@ -98,83 +49,10 @@ CREATE POLICY videos_anon_select
   TO anon
   USING (true);
 
--- ── Push Subscriptions Hardening — Migration v6 ─────────────────────────────
--- Vorherige Policies erlaubten anon clients beliebige UPDATE/DELETE auf alle
--- Subscriptions (Push-Hijack-Risiko). Neuer Ansatz:
---   1. Direkter DML-Zugriff (INSERT/UPDATE/DELETE) für anon wird widerrufen.
---   2. Zwei SECURITY DEFINER RPCs kapseln Subscribe/Unsubscribe und prüfen ein
---      Client-Secret, das nur der jeweilige Browser im localStorage hält.
---   3. Service-Role-Key (Workflows) umgeht RLS weiterhin und kann Subscriptions
---      lesen/löschen (z.B. 410-Cleanup).
---
--- Bestehende Subscriptions werden verworfen — User abonnieren beim nächsten
--- Visit neu (akzeptiertes Migrations-Verhalten).
+-- ── Migration v7: Push-Funktionalität entfernen ────────────────────────────
+-- Einmal im Supabase SQL-Editor ausführen, um die alten Push-Artefakte
+-- aus dem Schema zu entfernen. Idempotent.
 
-DROP POLICY IF EXISTS push_subscriptions_anon_insert ON push_subscriptions;
-DROP POLICY IF EXISTS push_subscriptions_anon_update ON push_subscriptions;
-DROP POLICY IF EXISTS push_subscriptions_anon_delete ON push_subscriptions;
-
-DELETE FROM push_subscriptions;
-
-ALTER TABLE push_subscriptions
-  ADD COLUMN IF NOT EXISTS client_secret TEXT NOT NULL;
-
--- register_push: Subscribe oder Re-Subscribe (idempotent).
--- Bei Conflict auf endpoint wird nur aktualisiert, wenn das mitgesendete
--- client_secret zum bereits gespeicherten passt — verhindert Hijack durch
--- fremde Clients, die einen Endpoint kennen aber kein Secret haben.
-CREATE OR REPLACE FUNCTION register_push(
-  p_endpoint     TEXT,
-  p_p256dh       TEXT,
-  p_auth         TEXT,
-  p_user_agent   TEXT,
-  p_client_secret TEXT
-) RETURNS void
-LANGUAGE plpgsql
-SECURITY DEFINER
-SET search_path = public
-AS $$
-BEGIN
-  IF p_endpoint IS NULL OR p_p256dh IS NULL OR p_auth IS NULL OR p_client_secret IS NULL THEN
-    RAISE EXCEPTION 'register_push: required field missing';
-  END IF;
-
-  INSERT INTO push_subscriptions (endpoint, p256dh, auth, user_agent, client_secret)
-  VALUES (p_endpoint, p_p256dh, p_auth, p_user_agent, p_client_secret)
-  ON CONFLICT (endpoint) DO UPDATE
-    SET p256dh        = EXCLUDED.p256dh,
-        auth          = EXCLUDED.auth,
-        user_agent    = EXCLUDED.user_agent,
-        last_seen     = now()
-    WHERE push_subscriptions.client_secret = EXCLUDED.client_secret;
-END;
-$$;
-
-REVOKE ALL ON FUNCTION register_push(TEXT, TEXT, TEXT, TEXT, TEXT) FROM PUBLIC;
-GRANT EXECUTE ON FUNCTION register_push(TEXT, TEXT, TEXT, TEXT, TEXT) TO anon;
-
--- unregister_push: Löscht nur, wenn das client_secret matched.
-CREATE OR REPLACE FUNCTION unregister_push(
-  p_endpoint      TEXT,
-  p_client_secret TEXT
-) RETURNS void
-LANGUAGE plpgsql
-SECURITY DEFINER
-SET search_path = public
-AS $$
-BEGIN
-  IF p_endpoint IS NULL OR p_client_secret IS NULL THEN
-    RAISE EXCEPTION 'unregister_push: required field missing';
-  END IF;
-
-  DELETE FROM push_subscriptions
-   WHERE endpoint = p_endpoint
-     AND client_secret = p_client_secret;
-END;
-$$;
-
-REVOKE ALL ON FUNCTION unregister_push(TEXT, TEXT) FROM PUBLIC;
-GRANT EXECUTE ON FUNCTION unregister_push(TEXT, TEXT) TO anon;
-
--- Bewusst KEINE neuen INSERT/UPDATE/DELETE-Policies für anon — Tabellen-DML
--- ist für anon damit komplett gesperrt, alles läuft über die zwei RPCs.
+DROP FUNCTION IF EXISTS public.register_push(text, text, text, text, text);
+DROP FUNCTION IF EXISTS public.unregister_push(text, text);
+DROP TABLE IF EXISTS public.push_subscriptions;
