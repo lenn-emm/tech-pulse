@@ -12,7 +12,7 @@
  * activate() automatisch entsorgt.
  */
 
-const CACHE_VERSION = 'v1.2.0';
+const CACHE_VERSION = 'v1.3.0';
 const CORE_CACHE    = `tp-core-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `tp-runtime-${CACHE_VERSION}`;
 
@@ -156,65 +156,3 @@ async function staleWhileRevalidate(req) {
   return cached || (await network) || new Response('Offline', { status: 503 });
 }
 
-// ─── Push Notifications ────────────────────────────────────────────────────
-//
-// Erwartetes Payload-Format (JSON):
-//   {
-//     "title": "Tech Pulse · Neu",
-//     "body":  "KI bricht Rekorde",
-//     "url":   "/index.html",
-//     "tag":   "edition-2026-04-26"
-//   }
-//
-// Falls kein JSON-Payload: sinnvoller Default.
-
-self.addEventListener('push', (event) => {
-  let data = {};
-  try {
-    if (event.data) data = event.data.json();
-  } catch {
-    data = { title: 'Tech Pulse', body: event.data ? event.data.text() : '' };
-  }
-
-  const title = data.title || 'Tech Pulse';
-  const options = {
-    body: data.body || '',
-    icon: data.icon || './icons/icon-192.png',
-    badge: data.badge || './icons/icon-96.png',
-    tag: data.tag || 'tech-pulse',
-    renotify: true,
-    data: { url: data.url || './index.html' },
-  };
-
-  event.waitUntil(self.registration.showNotification(title, options));
-});
-
-self.addEventListener('notificationclick', (event) => {
-  event.notification.close();
-  const target = (event.notification.data && event.notification.data.url) || './index.html';
-
-  event.waitUntil((async () => {
-    const all = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
-    for (const client of all) {
-      const clientUrl = new URL(client.url);
-      const targetUrl = new URL(target, self.location.origin);
-      if (clientUrl.origin === targetUrl.origin) {
-        await client.focus();
-        if ('navigate' in client) await client.navigate(targetUrl.href);
-        return;
-      }
-    }
-    await self.clients.openWindow(target);
-  })());
-});
-
-// Subscription-Reset: vom Browser ausgelöst, wenn die alte Subscription
-// abläuft. Wir benachrichtigen den (offenen) Client, damit der sich neu
-// registrieren kann; ohne offenen Client wird beim nächsten App-Start neu
-// subscribed.
-self.addEventListener('pushsubscriptionchange', (event) => {
-  event.waitUntil((async () => {
-    const all = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
-    all.forEach((client) => client.postMessage({ type: 'pushsubscriptionchange' }));
-  })());
-});
