@@ -200,19 +200,25 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/recent-articles.json
+
           if git diff --staged --quiet; then
             echo "Keine Änderungen an recent-articles.json — übersprungen."
             exit 0
           fi
+
           git commit -m "auto: recent-articles.json (Dedup-Fenster aktualisiert)"
-          for attempt in 1 2 3; do
-            git pull --rebase --autostash origin main
+
+          # Retry: bei Race mit Cloud-Routine 'theirs' (= unser frisch generierter
+          # Commit) gewinnt. Datei ist deterministisch aus Supabase abgeleitet,
+          # unsere Version ist die zuletzt gequeryte und damit autoritativ.
+          for attempt in 1 2 3 4 5; do
             if git push; then
               echo "Push erfolgreich (Versuch $attempt)."
               exit 0
             fi
-            echo "Push abgelehnt (Versuch $attempt) — warte und versuche erneut."
-            sleep $((attempt * 3))
+            echo "Push abgelehnt (Versuch $attempt) — rebase mit Strategie 'theirs'…"
+            git pull --rebase -X theirs origin main
           done
-          echo "Push nach 3 Versuchen fehlgeschlagen."
+
+          echo "Push nach 5 Versuchen fehlgeschlagen."
           exit 1
