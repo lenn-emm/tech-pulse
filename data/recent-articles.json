@@ -2,6 +2,46 @@
   "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
     {
+      "title": "OpenAI bündelt ChatGPT, Codex und API unter Brockman",
+      "source_url": "https://thenextweb.com/news/openai-brockman-chatgpt-codex-unified-agentic-platform",
+      "edition_date": "2026-05-18"
+    },
+    {
+      "title": "Google I/O morgen: Gemini kämpft um Anschluss an GPT-5.5 und Mythos",
+      "source_url": "https://www.techtimes.com/articles/316755/20260517/google-i-o-2026-keynote-opens-tuesday-new-gemini-lands-behind-mythos-gpt-55.htm",
+      "edition_date": "2026-05-18"
+    },
+    {
+      "title": "Anthropic spaltet Abrechnung: Agent SDK bekommt eigenen Kredit-Pool",
+      "source_url": "https://the-decoder.com/claude-subscriptions-get-separate-budgets-for-programmatic-use-billed-at-full-api-prices/",
+      "edition_date": "2026-05-18"
+    },
+    {
+      "title": "KI-Talentkrieg in der Autobranche: 20.000 Jobs werden umgetauscht",
+      "source_url": "https://techcrunch.com/2026/05/17/techcrunch-mobility-the-ai-skills-arms-race-is-coming-for-automotive/",
+      "edition_date": "2026-05-18"
+    },
+    {
+      "title": "Claude Platform auf AWS: Native KI-Infrastruktur allgemein verfügbar",
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/05/claude-platform-aws/",
+      "edition_date": "2026-05-18"
+    },
+    {
+      "title": "Anthropic überholt OpenAI bei Business-Kunden — Marktanteil mal vier",
+      "source_url": "https://www.axios.com/2026/05/14/anthropic-claude-price-openai-tokens",
+      "edition_date": "2026-05-18"
+    },
+    {
+      "title": "2026: Das Jahr KI-gestützter Cyberangriffe nimmt Fahrt auf",
+      "source_url": "https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html",
+      "edition_date": "2026-05-18"
+    },
+    {
+      "title": "Osaurus: Open-Source-LLM-Server bringt lokale KI auf den Mac",
+      "source_url": "https://techcrunch.com/2026/05/15/osaurus-brings-both-local-and-cloud-ai-models-to-your-mac/",
+      "edition_date": "2026-05-18"
+    },
+    {
       "title": "Simon Willison: Muster für agentisches Engineering jetzt formbar",
       "source_url": "https://simonw.substack.com/p/agentic-engineering-patterns"
     },
@@ -288,38 +328,6 @@
     {
       "title": "OpenAI öffnet ChatGPT Ads Manager für selbstbuchende US-Werbetreibende",
       "source_url": "https://openai.com/index/new-ways-to-buy-chatgpt-ads/"
-    },
-    {
-      "title": "Connecticut verabschiedet umfassendstes KI-Gesetz der USA",
-      "source_url": "https://ctmirror.org/2026/05/01/artificial-intelligence-house-regulation-passage-ct/"
-    },
-    {
-      "title": "Microsoft-Bericht: 17,8 % der Erwerbsbevölkerung weltweit nutzen KI",
-      "source_url": "https://blogs.microsoft.com/on-the-issues/2026/05/07/the-state-of-global-ai-diffusion-in-2026/"
-    },
-    {
-      "title": "Anthropics Mythos-KI findet Zehntausende Schwachstellen — sechs Monate Zeitfenster",
-      "source_url": "https://www.cnbc.com/2026/05/05/anthropic-ceo-cyber-moment-of-danger-mythos-vulnerabilities.html"
-    },
-    {
-      "title": "OpenAI: GPT-Realtime-2 bringt GPT-5-Reasoning in Live-Gespräche",
-      "source_url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/"
-    },
-    {
-      "title": "Anthropic sichert SpaceX-Rechenzentrum, verdoppelt Claude-Limits",
-      "source_url": "https://www.anthropic.com/news/higher-limits-spacex"
-    },
-    {
-      "title": "DeepMind kauft Stake am EVE-Online-Studio Fenris Creations",
-      "source_url": "https://www.ccpgames.com/news/2026/studio-behind-eve-online-goes-independent-rebrands-as-fenris-creations-enters-research-partnership-with-google-deepmind"
-    },
-    {
-      "title": "Amodei: Anthropic wuchs 80-fach – Compute war der Flaschenhals",
-      "source_url": "https://www.cnbc.com/2026/05/06/anthropic-ceo-dario-amodei-says-company-crew-80-fold-in-first-quarter.html"
-    },
-    {
-      "title": "Nature zieht ChatGPT-Bildungsstudie mit 500 Zitierungen zurück",
-      "source_url": "https://www.404media.co/nature-retracts-paper-on-the-benefits-of-chatgpt-in-education/"
     }
   ]
 }
