@@ -1,46 +1,32 @@
 {
   "articles": [
     {
+      "title": "Recursive Superintelligence: 650 Mio. $ für selbstverbessernde KI",
+      "source_url": "https://the-decoder.com/ai-startup-recursive-emerges-from-stealth-with-650-million-to-build-self-improving-ai/"
+    },
+    {
       "title": "Google I/O 2026: Gemini Intelligence wird Android-Betriebssystem",
-      "source_url": "https://www.androidcentral.com/phones/live/google-i-o-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news",
-      "edition_date": "2026-05-19"
+      "source_url": "https://www.androidcentral.com/phones/live/google-i-o-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news"
     },
     {
       "title": "Gemini 3.2 Flash: Milliarden Nutzer erhalten das neue Standardmodell",
-      "source_url": "https://letsdatascience.com/news/google-debuts-gemini-focused-updates-at-io-2026-4be4fde6",
-      "edition_date": "2026-05-19"
-    },
-    {
-      "title": "Google Health startet: Fitbit-App erhält Gemini-KI-Coach",
-      "source_url": "https://blog.google/products-and-platforms/products/google-health/google-health-coach/",
-      "edition_date": "2026-05-19"
+      "source_url": "https://letsdatascience.com/news/google-debuts-gemini-focused-updates-at-io-2026-4be4fde6"
     },
     {
       "title": "Meta Avocado erneut verzögert – intern hinter GPT und Claude",
-      "source_url": "https://qz.com/meta-avocado-delay-mark-zuckerberg-google-gemini",
-      "edition_date": "2026-05-19"
+      "source_url": "https://qz.com/meta-avocado-delay-mark-zuckerberg-google-gemini"
     },
     {
-      "title": "Recursive Superintelligence: 650 Mio. $ für selbstverbessernde KI",
-      "source_url": "https://the-decoder.com/ai-startup-recursive-emerges-from-stealth-with-650-million-to-build-self-improving-ai/",
-      "edition_date": "2026-05-19"
+      "title": "Google Health startet: Fitbit-App erhält Gemini-KI-Coach",
+      "source_url": "https://blog.google/products-and-platforms/products/google-health/google-health-coach/"
     },
     {
       "title": "Wall Street unter Strom: Alphabet-Aktie am I/O-Wendepunkt",
-      "source_url": "https://www.cnbc.com/2026/05/18/google-i-o-alphabet-ai-wall-street.html",
-      "edition_date": "2026-05-19"
+      "source_url": "https://www.cnbc.com/2026/05/18/google-i-o-alphabet-ai-wall-street.html"
     },
     {
       "title": "Anthropic spaltet Abrechnung: Agent SDK bekommt eigenen Kredit-Pool",
       "source_url": "https://the-decoder.com/claude-subscriptions-get-separate-budgets-for-programmatic-use-billed-at-full-api-prices/"
-    },
-    {
-      "title": "Claude Platform auf AWS: Native KI-Infrastruktur allgemein verfügbar",
-      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/05/claude-platform-aws/"
-    },
-    {
-      "title": "Google I/O morgen: Gemini kämpft um Anschluss an GPT-5.5 und Mythos",
-      "source_url": "https://www.techtimes.com/articles/316755/20260517/google-i-o-2026-keynote-opens-tuesday-new-gemini-lands-behind-mythos-gpt-55.htm"
     },
     {
       "title": "OpenAI bündelt ChatGPT, Codex und API unter Brockman",
@@ -51,19 +37,39 @@
       "source_url": "https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html"
     },
     {
-      "title": "Anthropic überholt OpenAI bei Business-Kunden — Marktanteil mal vier",
-      "source_url": "https://www.axios.com/2026/05/14/anthropic-claude-price-openai-tokens"
-    },
-    {
       "title": "Osaurus: Open-Source-LLM-Server bringt lokale KI auf den Mac",
       "source_url": "https://techcrunch.com/2026/05/15/osaurus-brings-both-local-and-cloud-ai-models-to-your-mac/"
+    },
+    {
+      "title": "Claude Platform auf AWS: Native KI-Infrastruktur allgemein verfügbar",
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/05/claude-platform-aws/"
     },
     {
       "title": "KI-Talentkrieg in der Autobranche: 20.000 Jobs werden umgetauscht",
       "source_url": "https://techcrunch.com/2026/05/17/techcrunch-mobility-the-ai-skills-arms-race-is-coming-for-automotive/"
     },
     {
+      "title": "Anthropic überholt OpenAI bei Business-Kunden — Marktanteil mal vier",
+      "source_url": "https://www.axios.com/2026/05/14/anthropic-claude-price-openai-tokens"
+    },
+    {
+      "title": "Google I/O morgen: Gemini kämpft um Anschluss an GPT-5.5 und Mythos",
+      "source_url": "https://www.techtimes.com/articles/316755/20260517/google-i-o-2026-keynote-opens-tuesday-new-gemini-lands-behind-mythos-gpt-55.htm"
+    },
+    {
+      "title": "KI-Goldrausch spaltet Tech: 10.000 Millionäre, alle anderen kämpfen",
+      "source_url": "https://techcrunch.com/2026/05/16/the-haves-and-have-nots-of-the-ai-gold-rush/"
+    },
+    {
+      "title": "Google I/O 2026: Gemini 4, Android 17 und XR-Brille kommen Dienstag",
+      "source_url": "https://tech.yahoo.com/general/article/google-io-2026-what-to-expect-next-week-including-android-17-ai-announcements-and-more-131200995.html"
+    },
+    {
       "title": "Entwickler alarmiert: KI-Tools lassen kritisches Denken verkümmern",
+      "source_url": "https://www.404media.co/software-developers-say-ai-is-rotting-their-brains/"
+    },
+    {
+      "title": "Zitat: KI-Abhängigkeit und der schleichende Verlust des Denkens",
       "source_url": "https://www.404media.co/software-developers-say-ai-is-rotting-their-brains/"
     },
     {
@@ -71,56 +77,48 @@
       "source_url": "https://simonw.substack.com/p/agentic-engineering-patterns"
     },
     {
-      "title": "KI-Goldrausch spaltet Tech: 10.000 Millionäre, alle anderen kämpfen",
-      "source_url": "https://techcrunch.com/2026/05/16/the-haves-and-have-nots-of-the-ai-gold-rush/"
+      "title": "ArXiv: Ein-Jahres-Bann für KI-generierten Forschungsschrott",
+      "source_url": "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/"
     },
     {
       "title": "Studie: Ein Drittel aller neuen Websites 2026 ist KI-generiert",
       "source_url": "https://www.404media.co/study-finds-a-third-of-new-websites-are-ai-generated/"
     },
     {
-      "title": "Google I/O 2026: Gemini 4, Android 17 und XR-Brille kommen Dienstag",
-      "source_url": "https://tech.yahoo.com/general/article/google-io-2026-what-to-expect-next-week-including-android-17-ai-announcements-and-more-131200995.html"
-    },
-    {
-      "title": "ArXiv: Ein-Jahres-Bann für KI-generierten Forschungsschrott",
-      "source_url": "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/"
-    },
-    {
-      "title": "Zitat: KI-Abhängigkeit und der schleichende Verlust des Denkens",
-      "source_url": "https://www.404media.co/software-developers-say-ai-is-rotting-their-brains/"
-    },
-    {
       "title": "SpaceXAI: Talentabgang trifft auf Gas-Turbinen-Umweltklage",
       "source_url": "https://theaiinsider.tech/2026/05/15/spacexai-faces-twin-crises-as-brain-drain-accelerates-and-gas-turbine-pollution-lawsuit-looms/"
-    },
-    {
-      "title": "Zitat: Runway-CEO über die Zukunft der KI-Intelligenz",
-      "source_url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/"
-    },
-    {
-      "title": "Google I/O am 19. Mai: Gemini 4.0 soll GPT-5.5 schlagen",
-      "source_url": "https://www.androidauthority.com/what-to-expect-from-google-io-2026-3664979/"
-    },
-    {
-      "title": "Android Show: Gemini Intelligence proaktiv auf allen Geräten",
-      "source_url": "https://www.engadget.com/2171038/everything-announced-at-android-show-google-io-2026/"
-    },
-    {
-      "title": "SpaceXAI verliert 50+ Forscher an Meta und Thinking Machines",
-      "source_url": "https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/"
-    },
-    {
-      "title": "Runway: Von KI-Video zu World Models — Angriff auf DeepMind",
-      "source_url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/"
     },
     {
       "title": "Datenschutz-Aufschrei: Wer gibt OpenAI wirklich Bankzugang?",
       "source_url": "https://www.tomsguide.com/ai/chatgpt/what-sane-individual-feels-comfortable-giving-this-level-of-access-to-openai-chatgpt-can-now-be-your-financial-advisor-but-the-reactions-are-pretty-telling"
     },
     {
+      "title": "Google I/O am 19. Mai: Gemini 4.0 soll GPT-5.5 schlagen",
+      "source_url": "https://www.androidauthority.com/what-to-expect-from-google-io-2026-3664979/"
+    },
+    {
       "title": "ChatGPT verbindet Bankkonten: OpenAI startet Finanz-Feature",
       "source_url": "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/"
+    },
+    {
+      "title": "Android Show: Gemini Intelligence proaktiv auf allen Geräten",
+      "source_url": "https://www.engadget.com/2171038/everything-announced-at-android-show-google-io-2026/"
+    },
+    {
+      "title": "Zitat: Runway-CEO über die Zukunft der KI-Intelligenz",
+      "source_url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/"
+    },
+    {
+      "title": "Runway: Von KI-Video zu World Models — Angriff auf DeepMind",
+      "source_url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/"
+    },
+    {
+      "title": "SpaceXAI verliert 50+ Forscher an Meta und Thinking Machines",
+      "source_url": "https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/"
+    },
+    {
+      "title": "Anthropic und Gates Foundation: $200 Mio. für globale Gesundheits-KI",
+      "source_url": "https://www.anthropic.com/news/gates-foundation-partnership"
     },
     {
       "title": "Cisco streicht 4.000 Stellen trotz Rekordumsatz",
@@ -135,28 +133,20 @@
       "source_url": "https://www.japantimes.co.jp/business/2026/05/14/tech/openai-global-governance-us-china/"
     },
     {
-      "title": "Microsofts MDASH: 100 KI-Agenten finden 16 Windows-Lücken",
-      "source_url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-finds-16-new-vulnerabilities/"
+      "title": "OpenAI schlägt IAEA-ähnliche globale KI-Aufsicht vor",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-13/openai-floats-idea-of-global-ai-governance-body-with-us-china"
     },
     {
       "title": "Connecticut plant Unterzeichnung des strengsten KI-Gesetzes der USA",
       "source_url": "https://www.dlapiper.com/en-us/insights/publications/2026/05/unpacking-connecticuts-new-ai-law"
     },
     {
-      "title": "Anthropic und Gates Foundation: $200 Mio. für globale Gesundheits-KI",
-      "source_url": "https://www.anthropic.com/news/gates-foundation-partnership"
-    },
-    {
-      "title": "OpenAI schlägt IAEA-ähnliche globale KI-Aufsicht vor",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-05-13/openai-floats-idea-of-global-ai-governance-body-with-us-china"
-    },
-    {
       "title": "DeepMinds Magic Pointer: Gemini versteht den Bildschirminhalt",
       "source_url": "https://9to5google.com/2026/05/12/deepmind-googlebook-magic-pointer/"
     },
     {
-      "title": "Anthropic bringt Claude-KI-Paket für kleine Unternehmen",
-      "source_url": "https://9to5mac.com/2026/05/13/anthropics-latest-claude-release-turns-your-mac-into-a-small-business-powerhouse/"
+      "title": "Microsofts MDASH: 100 KI-Agenten finden 16 Windows-Lücken",
+      "source_url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-finds-16-new-vulnerabilities/"
     },
     {
       "title": "Anthropic VP: KI soll Bedürfnisse antizipieren, bevor Nutzer sie kennen",
@@ -183,8 +173,8 @@
       "source_url": "https://finance.yahoo.com/news/anthropic-talks-raise-30-billion-210804604.html"
     },
     {
-      "title": "Woher Claudes Erpressungsverhalten kam – und wie es behoben wurde",
-      "source_url": "https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts/"
+      "title": "Anthropic bringt Claude-KI-Paket für kleine Unternehmen",
+      "source_url": "https://9to5mac.com/2026/05/13/anthropics-latest-claude-release-turns-your-mac-into-a-small-business-powerhouse/"
     },
     {
       "title": "Google lanciert Googlebook: KI-Laptop mit Gemini-Cursor",
@@ -193,6 +183,10 @@
     {
       "title": "Digg kehrt zurück – als KI-Nachrichtenaggregator",
       "source_url": "https://techcrunch.com/2026/05/11/digg-tries-again-this-time-as-an-ai-news-aggregator/"
+    },
+    {
+      "title": "Woher Claudes Erpressungsverhalten kam – und wie es behoben wurde",
+      "source_url": "https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts/"
     },
     {
       "title": "Claude in Angriff auf mexikanischen Wasserversorger eingesetzt",
@@ -223,6 +217,10 @@
       "source_url": "https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes"
     },
     {
+      "title": "Google bestätigt: Kriminelle bauen erstmals KI-Zero-Day-Exploit",
+      "source_url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html"
+    },
+    {
       "title": "OpenAI gründet 4-Mrd.-Deployment-Company mit 19 Investoren",
       "source_url": "https://openai.com/index/openai-launches-the-deployment-company/"
     },
@@ -233,10 +231,6 @@
     {
       "title": "DeepMind AI Co-Mathematician setzt neuen FrontierMath-Weltrekord",
       "source_url": "https://arxiv.org/html/2605.06651v1"
-    },
-    {
-      "title": "Google bestätigt: Kriminelle bauen erstmals KI-Zero-Day-Exploit",
-      "source_url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html"
     },
     {
       "title": "Google Fitbit Air: 99-Dollar-KI-Band tritt gegen Whoop an",
