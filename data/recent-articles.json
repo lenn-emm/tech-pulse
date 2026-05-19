@@ -1,6 +1,35 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "Google I/O 2026: Gemini Intelligence wird Android-Betriebssystem",
+      "source_url": "https://www.androidcentral.com/phones/live/google-i-o-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news",
+      "edition_date": "2026-05-19"
+    },
+    {
+      "title": "Gemini 3.2 Flash: Milliarden Nutzer erhalten das neue Standardmodell",
+      "source_url": "https://letsdatascience.com/news/google-debuts-gemini-focused-updates-at-io-2026-4be4fde6",
+      "edition_date": "2026-05-19"
+    },
+    {
+      "title": "Google Health startet: Fitbit-App erhält Gemini-KI-Coach",
+      "source_url": "https://blog.google/products-and-platforms/products/google-health/google-health-coach/",
+      "edition_date": "2026-05-19"
+    },
+    {
+      "title": "Meta Avocado erneut verzögert – intern hinter GPT und Claude",
+      "source_url": "https://qz.com/meta-avocado-delay-mark-zuckerberg-google-gemini",
+      "edition_date": "2026-05-19"
+    },
+    {
+      "title": "Recursive Superintelligence: 650 Mio. $ für selbstverbessernde KI",
+      "source_url": "https://the-decoder.com/ai-startup-recursive-emerges-from-stealth-with-650-million-to-build-self-improving-ai/",
+      "edition_date": "2026-05-19"
+    },
+    {
+      "title": "Wall Street unter Strom: Alphabet-Aktie am I/O-Wendepunkt",
+      "source_url": "https://www.cnbc.com/2026/05/18/google-i-o-alphabet-ai-wall-street.html",
+      "edition_date": "2026-05-19"
+    },
     {
       "title": "Anthropic spaltet Abrechnung: Agent SDK bekommt eigenen Kredit-Pool",
       "source_url": "https://the-decoder.com/claude-subscriptions-get-separate-budgets-for-programmatic-use-billed-at-full-api-prices/"
@@ -296,30 +325,6 @@
     {
       "title": "DeepMind-Londoner Belegschaft stellt Gewerkschafts-Ultimatum",
       "source_url": "https://www.engadget.com/2164765/google-us-military-deepmind-union/"
-    },
-    {
-      "title": "Google startet Gemini-Gesundheitscoach für 9,99 Dollar monatlich",
-      "source_url": "https://techcrunch.com/2026/05/07/googles-9-99-per-month-ai-health-coach-launches-may-19/"
-    },
-    {
-      "title": "Weißes Haus plant FDA-ähnliches Prüfsystem für Frontier-KI",
-      "source_url": "https://www.dailysignal.com/2026/05/07/trump-mulls-ai-regulation-orders/"
-    },
-    {
-      "title": "Iowa unterzeichnet KI-Chatbot-Schutzgesetz für Minderjährige",
-      "source_url": "https://privacy-daily.com/article/2026/05/05/iowa-governor-signs-chatbots-bill-2605050045"
-    },
-    {
-      "title": "Scan enthüllt 1 Million ungesicherte KI-Dienste im offenen Netz",
-      "source_url": "https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html"
-    },
-    {
-      "title": "Dario Amodei zum Cyber-Zeitfenster nach Mythos",
-      "source_url": "https://fortune.com/2026/05/05/jamie-dimon-dario-amodei-jpmorgan-anthropic-ai-cyber-mythos-freakout-sidestep-question/"
-    },
-    {
-      "title": "OpenAI öffnet ChatGPT Ads Manager für selbstbuchende US-Werbetreibende",
-      "source_url": "https://openai.com/index/new-ways-to-buy-chatgpt-ads/"
     }
   ]
 }
