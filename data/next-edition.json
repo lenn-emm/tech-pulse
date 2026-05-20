@@ -1,26 +1,26 @@
 {
   "edition": {
-    "title": "Tech Pulse — Dienstag, 19. Mai 2026",
-    "edition_date": "2026-05-19",
-    "summary": "Google I/O 2026 dominiert den Dienstag: Gemini Intelligence als neue Android-Grundlage, Gemini 3.2 Flash für Milliarden Nutzer, Googlebooks und XR-Brillen setzen die Agenda. Dazu: Metas Avocado-Misere, ein 650-Mio.-Dollar-Stealth-Startup für selbstverbessernde KI und Googles neuer KI-Gesundheitscoach legen los."
+    "title": "Tech Pulse — Mittwoch, 20. Mai 2026",
+    "edition_date": "2026-05-20",
+    "summary": "Google I/O 2026 dominiert diese Edition: Gemini Spark, Omni und 3.5 Flash definieren Googles KI-Ambitionen neu. Dazu eröffnet OpenAI sein erstes internationales Applied-AI-Lab in Singapur — ein Mittwoch voller Superlative."
   },
   "articles": [
     {
-      "title": "Google I/O 2026: Gemini Intelligence wird Android-Betriebssystem",
-      "summary": "Auf der heutigen Keynote machte Google klar, dass Gemini keine App mehr ist, sondern die systemweite Intelligenzschicht von Android 17 – eine KI-Schicht direkt unter der Oberfläche. Gleichzeitig präsentierte das Unternehmen mit Googlebooks eine komplett neue KI-Laptop-Kategorie sowie die erste öffentliche Preview von Android XR-Brillen in Kooperation mit Samsung und Warby Parker. Der Paradigmenwechsel: KI ist nicht länger ein Feature auf Android – sie ist das Fundament.",
-      "source_url": "https://www.androidcentral.com/phones/live/google-i-o-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news",
-      "source_name": "Android Central",
-      "category": "product",
+      "title": "Google I/O 2026: Gemini Spark wird Googles persönlicher KI-Agent",
+      "summary": "Google stellte auf dem I/O-Keynote Gemini Spark vor — einen persönlichen Agenten, der eigenständig in Gmail, Docs und Drittanbieter-Apps agiert und ab nächster Woche für AI Ultra-Nutzer (100 USD/Monat) in den USA startet. Daneben debütierte Gemini Omni als multimodales Video-Generierungsmodell sowie Gemini 3.5 Flash mit Frontier-Performance auf Flash-Preisniveau. Die I/O-Ankündigungen sind Googles deutlichstes Bekenntnis zu KI-Agenten als nächster Computing-Plattform.",
+      "source_url": "https://9to5google.com/2026/05/19/google-io-2026-news/",
+      "source_name": "9to5Google",
+      "category": "model_release",
       "format": "hero",
       "zone": "core",
-      "read_time_min": 6,
+      "read_time_min": 5,
       "position": 1
     },
     {
-      "title": "Gemini 3.2 Flash: Milliarden Nutzer erhalten das neue Standardmodell",
-      "summary": "Google rollt Gemini 3.2 Flash ab heute als Standardmodell in Search, Maps, YouTube, Docs, Gmail und Chrome aus – einer der flächendeckendsten KI-Deployments der Geschichte. Das Modell kostet 0,25 $ pro Million Input-Token, übertrifft Gemini 3.1 Pro in Coding- und Kreativaufgaben und wird über Android AI Core nahtlos mit Geräte-Inference verzahnt.",
-      "source_url": "https://letsdatascience.com/news/google-debuts-gemini-focused-updates-at-io-2026-4be4fde6",
-      "source_name": "Let's Data Science",
+      "title": "Gemini Omni: Video-Generierung nativ aus Text, Bild und Audio",
+      "summary": "Googles neues Gemini Omni akzeptiert Text, Audio, Bilder und Videos als Input und gibt editierbare, in Echtzeit-Wissen geerdete Videos aus — ohne separates Editing-Tool. Die I/O-Demo zeigte, wie hochgeladene Clips per Prompt neu geframet und mit neuen Elementen erweitert werden. Omni ist Googles direkte Antwort auf OpenAI Sora und Runway Gen-4.5 im rasant wachsenden KI-Video-Markt.",
+      "source_url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
+      "source_name": "CNBC",
       "category": "model_release",
       "format": "visual",
       "zone": "core",
@@ -28,21 +28,21 @@
       "position": 2
     },
     {
-      "title": "Google Health startet: Fitbit-App erhält Gemini-KI-Coach",
-      "summary": "Ab heute heißt die Fitbit-App offiziell Google Health und bringt einen Gemini-gestützten persönlichen Gesundheitscoach mit. Für 9,99 $/Monat analysiert der Coach Schlaf, Fitness und Vitaldaten und gibt proaktive, auf jeden Nutzer zugeschnittene Empfehlungen rund um die Uhr. Der Launch fällt zeitgleich mit dem Verkaufsstart der neuen Fitbit Air zusammen.",
-      "source_url": "https://blog.google/products-and-platforms/products/google-health/google-health-coach/",
-      "source_name": "Google Blog",
-      "category": "product",
+      "title": "OpenAI eröffnet erstes Applied AI Lab außerhalb der USA in Singapur",
+      "summary": "OpenAI investiert 234 Mio. USD in ein mehrjähriges Partnerschaftsprogramm mit der singaporeanischen Regierung — das erste Applied AI Lab außerhalb der USA. Schwerpunkte sind Bildung, Gesundheit, Finanzwesen und öffentliche Dienste; das lokale Team soll auf über 200 Stellen ausgebaut werden. Der Schritt markiert OpenAIs strategische Verankerung in Asien als wichtigstem Wachstumsmarkt für KI.",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-20/openai-commits-234-million-for-new-ai-lab-in-singapore",
+      "source_name": "Bloomberg",
+      "category": "company_news",
       "format": "feature",
-      "zone": "adjacent",
+      "zone": "core",
       "read_time_min": 3,
       "position": 3
     },
     {
-      "title": "Meta Avocado erneut verzögert – intern hinter GPT und Claude",
-      "summary": "Metas nächstes Flaggschiff-KI-Modell mit Codenamen Avocado wurde erneut auf Juni 2026 verschoben, nachdem interne Tests ergaben, dass es bei Reasoning, Coding und Schreiben hinter GPT-5.5 und Claude Opus 4.7 zurückbleibt. Berichten zufolge diskutiert die Meta-Führung sogar, vorübergehend Gemini von Google zu lizenzieren, um kritische Produktlücken zu überbrücken – ein ungewöhnlicher Schritt für das sonst selbstbewusste KI-Team.",
-      "source_url": "https://qz.com/meta-avocado-delay-mark-zuckerberg-google-gemini",
-      "source_name": "Quartz",
+      "title": "DeepMind übernimmt 20 Contextual-AI-Forscher für bis zu 90 Mio. Dollar",
+      "summary": "Google DeepMind integriert mehr als 20 Forscher des Enterprise-KI-Startups Contextual AI im Rahmen eines Lizenz-Deals von bis zu 90 Millionen USD. Contextual AI war spezialisiert auf zuverlässige, quellenbasierte Unternehmens-KI (RAG) und galt als Qualitätsführer in diesem Segment. Die Übernahme stärkt DeepMinds Position im von Microsoft und Anthropic hart umkämpften Workplace-KI-Markt.",
+      "source_url": "https://www.tomsguide.com/news/live/google-io-2026-live-news-updates",
+      "source_name": "Tom's Guide",
       "category": "company_news",
       "format": "feature",
       "zone": "core",
@@ -50,26 +50,37 @@
       "position": 4
     },
     {
-      "title": "Recursive Superintelligence: 650 Mio. $ für selbstverbessernde KI",
-      "summary": "Das von Ex-Salesforce-KI-Forscher Richard Socher gegründete Startup Recursive Superintelligence ist mit 650 Millionen Dollar aus dem Stealth-Modus getreten – bewertet mit 4,65 Milliarden Dollar. Angeführt von GV (Alphabet) und Greycroft, mit Nvidia und AMD als Co-Investoren, will das Unternehmen ein System entwickeln, das seine eigenen Schwächen autonom identifiziert, Verbesserungen entwirft und umsetzt – ohne menschliche Intervention.",
-      "source_url": "https://the-decoder.com/ai-startup-recursive-emerges-from-stealth-with-650-million-to-build-self-improving-ai/",
-      "source_name": "The Decoder",
-      "category": "company_news",
-      "format": "feature",
-      "zone": "outside",
-      "read_time_min": 4,
-      "position": 5
-    },
-    {
-      "title": "Wall Street unter Strom: Alphabet-Aktie am I/O-Wendepunkt",
-      "summary": "Analyst*innen und Investoren beobachteten die heutige Google I/O mit ungewöhnlich hoher Spannung: Nach dem Kursrückgang durch GPT-5.5 und Claude Opus 4.7 gelten die Keynote-Ankündigungen als entscheidender Test, ob Googles Milliarden-Investitionen in KI in messbare Produktführerschaft münden.",
-      "source_url": "https://www.cnbc.com/2026/05/18/google-i-o-alphabet-ai-wall-street.html",
-      "source_name": "CNBC",
-      "category": "company_news",
+      "title": "Gemini 3.5 Flash: Frontier-Level, 4× schneller als Vorgänger",
+      "summary": "Googles Gemini 3.5 Flash übertrifft Gemini 3.1 Pro in Coding-, Agenten- und Multimodal-Benchmarks — bei viermal höherer Geschwindigkeit und 1,50 USD/1M Input-Token. Das 1-Millionen-Token-Kontextfenster bleibt erhalten.",
+      "source_url": "https://www.axios.com/2026/05/19/google-ai-youtube-gemini",
+      "source_name": "Axios",
+      "category": "model_release",
       "format": "quick",
-      "zone": "adjacent",
+      "zone": "core",
       "read_time_min": 2,
       "position": 6
+    },
+    {
+      "title": "Code w/ Claude: Anthropics Developer-Roadshow startet heute in London",
+      "summary": "Anthropics praxisnahe Entwickler-Veranstaltungsreihe «Code w/ Claude» gastiert heute und morgen (20.–21. Mai) in London mit Workshops rund um die Claude-API. Nach Chicago im Mai folgt im Juni Tokyo — kostenfreie Teilnahme für Entwickler.",
+      "source_url": "https://www.anthropic.com/news",
+      "source_name": "Anthropic",
+      "category": "product",
+      "format": "quick",
+      "zone": "core",
+      "read_time_min": 1,
+      "position": 7
+    },
+    {
+      "title": "Essay: KI-Abos sind versteckte VC-Subventionen, kein echtes Produkt",
+      "summary": "Ein vielbeachteter Essay auf Medium argumentiert, Nutzer kauften keine KI-Dienste, sondern subventionierten VC-finanzierte Verluste — da ChatGPT, Claude & Co. weit unter Selbstkosten angeboten werden. Der Beitrag trendete auf Hacker News und löste intensive Debatten über die langfristige Nachhaltigkeit aktueller KI-Preisstrategien aus.",
+      "source_url": "https://medium.com/@jose.i.ruacho/youre-not-paying-for-ai-you-re-paying-for-a-subsidy-40ee4aa3c48d",
+      "source_name": "Medium",
+      "category": "company_news",
+      "format": "quick",
+      "zone": "wildcard",
+      "read_time_min": 3,
+      "position": 8
     }
   ]
 }
