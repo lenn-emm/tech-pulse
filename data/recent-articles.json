@@ -1,6 +1,41 @@
 {
   "articles": [
     {
+      "title": "Google I/O 2026: Gemini Spark wird Googles persönlicher KI-Agent",
+      "source_url": "https://9to5google.com/2026/05/19/google-io-2026-news/",
+      "edition_date": "2026-05-20"
+    },
+    {
+      "title": "Gemini Omni: Video-Generierung nativ aus Text, Bild und Audio",
+      "source_url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
+      "edition_date": "2026-05-20"
+    },
+    {
+      "title": "OpenAI eröffnet erstes Applied AI Lab außerhalb der USA in Singapur",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-20/openai-commits-234-million-for-new-ai-lab-in-singapore",
+      "edition_date": "2026-05-20"
+    },
+    {
+      "title": "DeepMind übernimmt 20 Contextual-AI-Forscher für bis zu 90 Mio. Dollar",
+      "source_url": "https://www.tomsguide.com/news/live/google-io-2026-live-news-updates",
+      "edition_date": "2026-05-20"
+    },
+    {
+      "title": "Gemini 3.5 Flash: Frontier-Level, 4× schneller als Vorgänger",
+      "source_url": "https://www.axios.com/2026/05/19/google-ai-youtube-gemini",
+      "edition_date": "2026-05-20"
+    },
+    {
+      "title": "Code w/ Claude: Anthropics Developer-Roadshow startet heute in London",
+      "source_url": "https://www.anthropic.com/news",
+      "edition_date": "2026-05-20"
+    },
+    {
+      "title": "Essay: KI-Abos sind versteckte VC-Subventionen, kein echtes Produkt",
+      "source_url": "https://medium.com/@jose.i.ruacho/youre-not-paying-for-ai-you-re-paying-for-a-subsidy-40ee4aa3c48d",
+      "edition_date": "2026-05-20"
+    },
+    {
       "title": "Recursive Superintelligence: 650 Mio. $ für selbstverbessernde KI",
       "source_url": "https://the-decoder.com/ai-startup-recursive-emerges-from-stealth-with-650-million-to-build-self-improving-ai/"
     },
@@ -291,34 +326,6 @@
     {
       "title": "US-Energieministerium: 24 KI-Konzerne stärken Genesis-Mission",
       "source_url": "https://www.energy.gov/articles/energy-department-announces-collaboration-agreements-24-organizations-advance-genesis"
-    },
-    {
-      "title": "Chrome lädt 4-GB-KI-Modell still auf eine Milliarde Geräte",
-      "source_url": "https://www.tomshardware.com/tech-industry/cyber-security/google-chrome-silently-downloads-4gb-ai-model-to-your-device-without-permission-report-claims-researcher-says-practice-may-violate-eu-law-waste-thousands-of-kilowatts-of-energy"
-    },
-    {
-      "title": "Anthropic wächst 80-fach: 30 Mrd. Dollar Jahresumsatz",
-      "source_url": "https://fortune.com/2026/05/08/anthropic-80fold-growth-quarter-renting-elon-musk-data-center/"
-    },
-    {
-      "title": "Anthropic sichert 1,8-Mrd.-Deal mit Akamai für Claude-Compute",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-05-08/anthropic-inks-1-8-billion-computing-deal-with-akamai"
-    },
-    {
-      "title": "Anthropic-Bewertung nähert sich 1 Billion Dollar",
-      "source_url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-valuation-could-eclipse-openai-50-billion-dollar-funding-round/"
-    },
-    {
-      "title": "Akamai-Aktie springt 27 % — stärkstes Tageshoch seit 22 Jahren",
-      "source_url": "https://www.bostonglobe.com/2026/05/08/business/akamai-stock-price-anthropic-ai/"
-    },
-    {
-      "title": "AlphaEvolve: Googles Coding-Agent löst Mathematik-Probleme und optimiert Quantenchips",
-      "source_url": "https://deepmind.google/blog/alphaevolve-impact/"
-    },
-    {
-      "title": "DeepMind-Londoner Belegschaft stellt Gewerkschafts-Ultimatum",
-      "source_url": "https://www.engadget.com/2164765/google-us-military-deepmind-union/"
     }
   ]
 }
