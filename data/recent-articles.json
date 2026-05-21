@@ -1,6 +1,40 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "Meta streicht 8.000 Stellen für KI-Offensive",
+      "source_url": "https://www.npr.org/2026/05/20/nx-s1-5826917/meta-layoffs-ai-jobs",
+      "edition_date": "2026-05-21"
+    },
+    {
+      "title": "KPMG bringt Claude zu 276.000 Mitarbeitern weltweit",
+      "source_url": "https://www.anthropic.com/news/anthropic-kpmg",
+      "edition_date": "2026-05-21"
+    },
+    {
+      "title": "OpenAI öffnet ChatGPT-Werbeplattform für alle US-Unternehmen",
+      "source_url": "https://openai.com/index/new-ways-to-buy-chatgpt-ads/",
+      "edition_date": "2026-05-21"
+    },
+    {
+      "title": "Anthropic steht vor erstem Quartalsbetriebsgewinn",
+      "source_url": "https://gulfbusiness.com/en/2026/tech/anthropic-nears-profitability-claude-ai-revenue-surge-spacex-compute-deal/",
+      "edition_date": "2026-05-21"
+    },
+    {
+      "title": "Googles KI-Suche mit Agenten startet global",
+      "source_url": "https://letsdatascience.com/news/google-updates-search-with-ai-agents-and-intelligent-box-451a33ce",
+      "edition_date": "2026-05-21"
+    },
+    {
+      "title": "Intuit streicht 17 % der Belegschaft für KI-Investitionen",
+      "source_url": "https://www.heygotrade.com/en/news/tech-layoffs-meta-intuit-ai-restructuring/",
+      "edition_date": "2026-05-21"
+    },
+    {
+      "title": "Zuckerberg: „Erfolg ist keine Selbstverständlichkeit“",
+      "source_url": "https://www.cnbc.com/2026/05/20/meta-layoffs-zuckerberg-says-success-isnt-a-given-in-memo.html",
+      "edition_date": "2026-05-21"
+    },
     {
       "title": "DeepMind übernimmt 20 Contextual-AI-Forscher für bis zu 90 Mio. Dollar",
       "source_url": "https://www.tomsguide.com/news/live/google-io-2026-live-news-updates"
@@ -292,34 +326,6 @@
     {
       "title": "Cloudflare streicht 1.100 Stellen wegen KI-Effizienz",
       "source_url": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/"
-    },
-    {
-      "title": "EU einigt sich auf KI-Omnibus nach Nacht-Verhandlungen",
-      "source_url": "https://www.techpolicy.press/what-the-eu-ai-omnibus-deal-changes-for-the-ai-act-and-what-lies-ahead/"
-    },
-    {
-      "title": "Claude kommt in Autodesk Fusion — KI für 3D-CAD-Konstruktion",
-      "source_url": "https://all3dp.com/4/claude-comes-to-cad-anthropics-ai-can-now-help-build-3d-models-in-autodesk-fusion/"
-    },
-    {
-      "title": "OpenAI weitet DOE-Kooperation für KI-getriebene Wissenschaft aus",
-      "source_url": "https://openai.com/index/us-department-of-energy-collaboration/"
-    },
-    {
-      "title": "State of AI Mai 2026: Vier chinesische Modelle in 12 Tagen",
-      "source_url": "https://nathanbenaich.substack.com/p/state-of-ai-may-2026"
-    },
-    {
-      "title": "SpaceX plant Terafab: Bis zu 119 Mrd. Dollar für Chip-Fabrik in Texas",
-      "source_url": "https://techcrunch.com/2026/05/06/spacex-may-spend-up-to-119-billion-on-terafab-chip-factory-in-texas/"
-    },
-    {
-      "title": "Hugging Face öffnet Robot-App-Store für 10.000 Reachy Mini",
-      "source_url": "https://www.axios.com/2026/05/06/hugging-face-consumer-robot-app-store"
-    },
-    {
-      "title": "US-Energieministerium: 24 KI-Konzerne stärken Genesis-Mission",
-      "source_url": "https://www.energy.gov/articles/energy-department-announces-collaboration-agreements-24-organizations-advance-genesis"
     }
   ]
 }
