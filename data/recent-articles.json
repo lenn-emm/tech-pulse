@@ -1,61 +1,61 @@
 {
+  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
     {
-      "title": "OpenAI reicht heute vertraulich IPO-Antrag beim SEC ein",
-      "source_url": "https://techcrunch.com/2026/05/20/openai-barrels-toward-ipo-that-may-happen-in-september/",
-      "edition_date": "2026-05-22"
-    },
-    {
-      "title": "Andrej Karpathy verlässt Startup-Projekt und wechselt zu Anthropic",
-      "source_url": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
-      "edition_date": "2026-05-22"
-    },
-    {
-      "title": "Anthropic steuert auf ersten Quartalsgewinn der Geschichte zu",
-      "source_url": "https://www.cnbc.com/2026/05/20/anthropic-revenue-explosive-growth-ipo-profitable-quarter.html",
-      "edition_date": "2026-05-22"
-    },
-    {
-      "title": "Google setzt mit Gemini 3.5 Flash auf autonome KI-Agenten",
-      "source_url": "https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/",
-      "edition_date": "2026-05-22"
-    },
-    {
-      "title": "Gemini Spark: Googles persönlicher KI-Agent für Gmail und Drive",
-      "source_url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
-      "edition_date": "2026-05-22"
-    },
-    {
-      "title": "Simon Willison veröffentlicht Datasette Agent",
-      "source_url": "https://simonwillison.net/2026/May/21/datasette-agent/",
-      "edition_date": "2026-05-22"
-    },
-    {
       "title": "Exa Labs sammelt 250 Mio. Dollar für KI-Suche",
-      "source_url": "https://techcrunch.com/2026/05/20/ai-search-startups-are-blowing-up/",
-      "edition_date": "2026-05-22"
-    },
-    {
-      "title": "Claude Code London: Agenten bekommen eigene Sandbox-Infrastruktur",
-      "source_url": "https://fortune.com/2026/05/21/claude-code-london-anthropic-ai-software-engineering/",
-      "edition_date": "2026-05-22"
+      "source_url": "https://techcrunch.com/2026/05/20/ai-search-startups-are-blowing-up/"
     },
     {
       "title": "Karpathy über seinen Wechsel: Frontier der nächsten Jahre",
-      "source_url": "https://x.com/karpathy/status/2056753169888334312",
-      "edition_date": "2026-05-22"
+      "source_url": "https://x.com/karpathy/status/2056753169888334312"
     },
     {
-      "title": "Anthropic steht vor erstem Quartalsbetriebsgewinn",
-      "source_url": "https://gulfbusiness.com/en/2026/tech/anthropic-nears-profitability-claude-ai-revenue-surge-spacex-compute-deal/"
+      "title": "OpenAI reicht heute vertraulich IPO-Antrag beim SEC ein",
+      "source_url": "https://techcrunch.com/2026/05/20/openai-barrels-toward-ipo-that-may-happen-in-september/"
+    },
+    {
+      "title": "Simon Willison veröffentlicht Datasette Agent",
+      "source_url": "https://simonwillison.net/2026/May/21/datasette-agent/"
+    },
+    {
+      "title": "Andrej Karpathy verlässt Startup-Projekt und wechselt zu Anthropic",
+      "source_url": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/"
+    },
+    {
+      "title": "Claude Code London: Agenten bekommen eigene Sandbox-Infrastruktur",
+      "source_url": "https://fortune.com/2026/05/21/claude-code-london-anthropic-ai-software-engineering/"
+    },
+    {
+      "title": "Anthropic steuert auf ersten Quartalsgewinn der Geschichte zu",
+      "source_url": "https://www.cnbc.com/2026/05/20/anthropic-revenue-explosive-growth-ipo-profitable-quarter.html"
+    },
+    {
+      "title": "Gemini Spark: Googles persönlicher KI-Agent für Gmail und Drive",
+      "source_url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html"
+    },
+    {
+      "title": "Google setzt mit Gemini 3.5 Flash auf autonome KI-Agenten",
+      "source_url": "https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/"
+    },
+    {
+      "title": "OpenAI öffnet ChatGPT-Werbeplattform für alle US-Unternehmen",
+      "source_url": "https://openai.com/index/new-ways-to-buy-chatgpt-ads/"
     },
     {
       "title": "Googles KI-Suche mit Agenten startet global",
       "source_url": "https://letsdatascience.com/news/google-updates-search-with-ai-agents-and-intelligent-box-451a33ce"
     },
     {
+      "title": "Meta streicht 8.000 Stellen für KI-Offensive",
+      "source_url": "https://www.npr.org/2026/05/20/nx-s1-5826917/meta-layoffs-ai-jobs"
+    },
+    {
       "title": "KPMG bringt Claude zu 276.000 Mitarbeitern weltweit",
       "source_url": "https://www.anthropic.com/news/anthropic-kpmg"
+    },
+    {
+      "title": "Anthropic steht vor erstem Quartalsbetriebsgewinn",
+      "source_url": "https://gulfbusiness.com/en/2026/tech/anthropic-nears-profitability-claude-ai-revenue-surge-spacex-compute-deal/"
     },
     {
       "title": "Zuckerberg: „Erfolg ist keine Selbstverständlichkeit“",
@@ -66,26 +66,6 @@
       "source_url": "https://www.heygotrade.com/en/news/tech-layoffs-meta-intuit-ai-restructuring/"
     },
     {
-      "title": "OpenAI öffnet ChatGPT-Werbeplattform für alle US-Unternehmen",
-      "source_url": "https://openai.com/index/new-ways-to-buy-chatgpt-ads/"
-    },
-    {
-      "title": "Meta streicht 8.000 Stellen für KI-Offensive",
-      "source_url": "https://www.npr.org/2026/05/20/nx-s1-5826917/meta-layoffs-ai-jobs"
-    },
-    {
-      "title": "Essay: KI-Abos sind versteckte VC-Subventionen, kein echtes Produkt",
-      "source_url": "https://medium.com/@jose.i.ruacho/youre-not-paying-for-ai-you-re-paying-for-a-subsidy-40ee4aa3c48d"
-    },
-    {
-      "title": "Google I/O 2026: Gemini Spark wird Googles persönlicher KI-Agent",
-      "source_url": "https://9to5google.com/2026/05/19/google-io-2026-news/"
-    },
-    {
-      "title": "OpenAI eröffnet erstes Applied AI Lab außerhalb der USA in Singapur",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-05-20/openai-commits-234-million-for-new-ai-lab-in-singapore"
-    },
-    {
       "title": "DeepMind übernimmt 20 Contextual-AI-Forscher für bis zu 90 Mio. Dollar",
       "source_url": "https://www.tomsguide.com/news/live/google-io-2026-live-news-updates"
     },
@@ -94,24 +74,28 @@
       "source_url": "https://www.axios.com/2026/05/19/google-ai-youtube-gemini"
     },
     {
-      "title": "Gemini Omni: Video-Generierung nativ aus Text, Bild und Audio",
-      "source_url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html"
-    },
-    {
       "title": "Code w/ Claude: Anthropics Developer-Roadshow startet heute in London",
       "source_url": "https://www.anthropic.com/news"
     },
     {
-      "title": "Meta Avocado erneut verzögert – intern hinter GPT und Claude",
-      "source_url": "https://qz.com/meta-avocado-delay-mark-zuckerberg-google-gemini"
+      "title": "Essay: KI-Abos sind versteckte VC-Subventionen, kein echtes Produkt",
+      "source_url": "https://medium.com/@jose.i.ruacho/youre-not-paying-for-ai-you-re-paying-for-a-subsidy-40ee4aa3c48d"
     },
     {
-      "title": "Google I/O 2026: Gemini Intelligence wird Android-Betriebssystem",
-      "source_url": "https://www.androidcentral.com/phones/live/google-i-o-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news"
+      "title": "OpenAI eröffnet erstes Applied AI Lab außerhalb der USA in Singapur",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-20/openai-commits-234-million-for-new-ai-lab-in-singapore"
     },
     {
-      "title": "Wall Street unter Strom: Alphabet-Aktie am I/O-Wendepunkt",
-      "source_url": "https://www.cnbc.com/2026/05/18/google-i-o-alphabet-ai-wall-street.html"
+      "title": "Google I/O 2026: Gemini Spark wird Googles persönlicher KI-Agent",
+      "source_url": "https://9to5google.com/2026/05/19/google-io-2026-news/"
+    },
+    {
+      "title": "Gemini Omni: Video-Generierung nativ aus Text, Bild und Audio",
+      "source_url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html"
+    },
+    {
+      "title": "Recursive Superintelligence: 650 Mio. $ für selbstverbessernde KI",
+      "source_url": "https://the-decoder.com/ai-startup-recursive-emerges-from-stealth-with-650-million-to-build-self-improving-ai/"
     },
     {
       "title": "Google Health startet: Fitbit-App erhält Gemini-KI-Coach",
@@ -122,20 +106,36 @@
       "source_url": "https://letsdatascience.com/news/google-debuts-gemini-focused-updates-at-io-2026-4be4fde6"
     },
     {
-      "title": "Recursive Superintelligence: 650 Mio. $ für selbstverbessernde KI",
-      "source_url": "https://the-decoder.com/ai-startup-recursive-emerges-from-stealth-with-650-million-to-build-self-improving-ai/"
+      "title": "Meta Avocado erneut verzögert – intern hinter GPT und Claude",
+      "source_url": "https://qz.com/meta-avocado-delay-mark-zuckerberg-google-gemini"
+    },
+    {
+      "title": "Wall Street unter Strom: Alphabet-Aktie am I/O-Wendepunkt",
+      "source_url": "https://www.cnbc.com/2026/05/18/google-i-o-alphabet-ai-wall-street.html"
+    },
+    {
+      "title": "Google I/O 2026: Gemini Intelligence wird Android-Betriebssystem",
+      "source_url": "https://www.androidcentral.com/phones/live/google-i-o-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news"
+    },
+    {
+      "title": "Osaurus: Open-Source-LLM-Server bringt lokale KI auf den Mac",
+      "source_url": "https://techcrunch.com/2026/05/15/osaurus-brings-both-local-and-cloud-ai-models-to-your-mac/"
+    },
+    {
+      "title": "OpenAI bündelt ChatGPT, Codex und API unter Brockman",
+      "source_url": "https://thenextweb.com/news/openai-brockman-chatgpt-codex-unified-agentic-platform"
     },
     {
       "title": "Google I/O morgen: Gemini kämpft um Anschluss an GPT-5.5 und Mythos",
       "source_url": "https://www.techtimes.com/articles/316755/20260517/google-i-o-2026-keynote-opens-tuesday-new-gemini-lands-behind-mythos-gpt-55.htm"
     },
     {
-      "title": "Claude Platform auf AWS: Native KI-Infrastruktur allgemein verfügbar",
-      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/05/claude-platform-aws/"
+      "title": "Anthropic spaltet Abrechnung: Agent SDK bekommt eigenen Kredit-Pool",
+      "source_url": "https://the-decoder.com/claude-subscriptions-get-separate-budgets-for-programmatic-use-billed-at-full-api-prices/"
     },
     {
-      "title": "OpenAI bündelt ChatGPT, Codex und API unter Brockman",
-      "source_url": "https://thenextweb.com/news/openai-brockman-chatgpt-codex-unified-agentic-platform"
+      "title": "Anthropic überholt OpenAI bei Business-Kunden — Marktanteil mal vier",
+      "source_url": "https://www.axios.com/2026/05/14/anthropic-claude-price-openai-tokens"
     },
     {
       "title": "2026: Das Jahr KI-gestützter Cyberangriffe nimmt Fahrt auf",
@@ -146,16 +146,8 @@
       "source_url": "https://techcrunch.com/2026/05/17/techcrunch-mobility-the-ai-skills-arms-race-is-coming-for-automotive/"
     },
     {
-      "title": "Osaurus: Open-Source-LLM-Server bringt lokale KI auf den Mac",
-      "source_url": "https://techcrunch.com/2026/05/15/osaurus-brings-both-local-and-cloud-ai-models-to-your-mac/"
-    },
-    {
-      "title": "Anthropic überholt OpenAI bei Business-Kunden — Marktanteil mal vier",
-      "source_url": "https://www.axios.com/2026/05/14/anthropic-claude-price-openai-tokens"
-    },
-    {
-      "title": "Anthropic spaltet Abrechnung: Agent SDK bekommt eigenen Kredit-Pool",
-      "source_url": "https://the-decoder.com/claude-subscriptions-get-separate-budgets-for-programmatic-use-billed-at-full-api-prices/"
+      "title": "Claude Platform auf AWS: Native KI-Infrastruktur allgemein verfügbar",
+      "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/05/claude-platform-aws/"
     },
     {
       "title": "Zitat: KI-Abhängigkeit und der schleichende Verlust des Denkens",
@@ -186,14 +178,6 @@
       "source_url": "https://simonw.substack.com/p/agentic-engineering-patterns"
     },
     {
-      "title": "Zitat: Runway-CEO über die Zukunft der KI-Intelligenz",
-      "source_url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/"
-    },
-    {
-      "title": "ChatGPT verbindet Bankkonten: OpenAI startet Finanz-Feature",
-      "source_url": "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/"
-    },
-    {
       "title": "SpaceXAI: Talentabgang trifft auf Gas-Turbinen-Umweltklage",
       "source_url": "https://theaiinsider.tech/2026/05/15/spacexai-faces-twin-crises-as-brain-drain-accelerates-and-gas-turbine-pollution-lawsuit-looms/"
     },
@@ -210,6 +194,10 @@
       "source_url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/"
     },
     {
+      "title": "Zitat: Runway-CEO über die Zukunft der KI-Intelligenz",
+      "source_url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/"
+    },
+    {
       "title": "SpaceXAI verliert 50+ Forscher an Meta und Thinking Machines",
       "source_url": "https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/"
     },
@@ -218,8 +206,8 @@
       "source_url": "https://www.tomsguide.com/ai/chatgpt/what-sane-individual-feels-comfortable-giving-this-level-of-access-to-openai-chatgpt-can-now-be-your-financial-advisor-but-the-reactions-are-pretty-telling"
     },
     {
-      "title": "OpenAI schlägt IAEA-ähnliche globale KI-Aufsicht vor",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-05-13/openai-floats-idea-of-global-ai-governance-body-with-us-china"
+      "title": "ChatGPT verbindet Bankkonten: OpenAI startet Finanz-Feature",
+      "source_url": "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/"
     },
     {
       "title": "Anthropic und Gates Foundation: $200 Mio. für globale Gesundheits-KI",
@@ -240,6 +228,10 @@
     {
       "title": "DeepMinds Magic Pointer: Gemini versteht den Bildschirminhalt",
       "source_url": "https://9to5google.com/2026/05/12/deepmind-googlebook-magic-pointer/"
+    },
+    {
+      "title": "OpenAI schlägt IAEA-ähnliche globale KI-Aufsicht vor",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-13/openai-floats-idea-of-global-ai-governance-body-with-us-china"
     },
     {
       "title": "Cisco streicht 4.000 Stellen trotz Rekordumsatz",
