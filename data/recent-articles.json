@@ -1,6 +1,51 @@
 {
   "articles": [
     {
+      "title": "OpenAI reicht heute vertraulich IPO-Antrag beim SEC ein",
+      "source_url": "https://techcrunch.com/2026/05/20/openai-barrels-toward-ipo-that-may-happen-in-september/",
+      "edition_date": "2026-05-22"
+    },
+    {
+      "title": "Andrej Karpathy verlässt Startup-Projekt und wechselt zu Anthropic",
+      "source_url": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/",
+      "edition_date": "2026-05-22"
+    },
+    {
+      "title": "Anthropic steuert auf ersten Quartalsgewinn der Geschichte zu",
+      "source_url": "https://www.cnbc.com/2026/05/20/anthropic-revenue-explosive-growth-ipo-profitable-quarter.html",
+      "edition_date": "2026-05-22"
+    },
+    {
+      "title": "Google setzt mit Gemini 3.5 Flash auf autonome KI-Agenten",
+      "source_url": "https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/",
+      "edition_date": "2026-05-22"
+    },
+    {
+      "title": "Gemini Spark: Googles persönlicher KI-Agent für Gmail und Drive",
+      "source_url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html",
+      "edition_date": "2026-05-22"
+    },
+    {
+      "title": "Simon Willison veröffentlicht Datasette Agent",
+      "source_url": "https://simonwillison.net/2026/May/21/datasette-agent/",
+      "edition_date": "2026-05-22"
+    },
+    {
+      "title": "Exa Labs sammelt 250 Mio. Dollar für KI-Suche",
+      "source_url": "https://techcrunch.com/2026/05/20/ai-search-startups-are-blowing-up/",
+      "edition_date": "2026-05-22"
+    },
+    {
+      "title": "Claude Code London: Agenten bekommen eigene Sandbox-Infrastruktur",
+      "source_url": "https://fortune.com/2026/05/21/claude-code-london-anthropic-ai-software-engineering/",
+      "edition_date": "2026-05-22"
+    },
+    {
+      "title": "Karpathy über seinen Wechsel: Frontier der nächsten Jahre",
+      "source_url": "https://x.com/karpathy/status/2056753169888334312",
+      "edition_date": "2026-05-22"
+    },
+    {
       "title": "Anthropic steht vor erstem Quartalsbetriebsgewinn",
       "source_url": "https://gulfbusiness.com/en/2026/tech/anthropic-nears-profitability-claude-ai-revenue-surge-spacex-compute-deal/"
     },
@@ -283,42 +328,6 @@
     {
       "title": "OpenAI gründet 4-Mrd.-Deployment-Company mit 19 Investoren",
       "source_url": "https://openai.com/index/openai-launches-the-deployment-company/"
-    },
-    {
-      "title": "Zitat: Erster KI-gebauter Zero-Day-Exploit in freier Wildbahn",
-      "source_url": "https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access"
-    },
-    {
-      "title": "DeepMind AI Co-Mathematician setzt neuen FrontierMath-Weltrekord",
-      "source_url": "https://arxiv.org/html/2605.06651v1"
-    },
-    {
-      "title": "Nvidia übertrifft 40 Milliarden Dollar in KI-Beteiligungen",
-      "source_url": "https://www.cnbc.com/2026/05/09/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.html"
-    },
-    {
-      "title": "KI vernichtet keine Jobs – sie verändert sie grundlegend",
-      "source_url": "https://www.cnn.com/2026/05/10/tech/ai-taking-jobs"
-    },
-    {
-      "title": "Trump-Regierung erwägt erstmals KI-Regulierungsmaßnahmen",
-      "source_url": "https://fortune.com/2026/05/06/trump-administration-embraces-ai-oversight-policies-it-once-rejected-anthropic-mythos-caisi/"
-    },
-    {
-      "title": "Qualcomm-CEO: Das Smartphone-Zeitalter ist vorbei",
-      "source_url": "https://fortune.com/2026/05/09/qualcomm-smartphone-ai-secret-device-openai-meta-wearables-agents/"
-    },
-    {
-      "title": "KI-Umbau: Stellenabbau beschleunigt sich im Mai 2026",
-      "source_url": "https://finance.yahoo.com/sectors/technology/articles/layoffs-accelerate-may-2026-firms-040430218.html"
-    },
-    {
-      "title": "Anthropics Mythos: Zwischen Hysterie und echter Bedrohung",
-      "source_url": "https://www.cnbc.com/2026/05/08/anthropic-mythos-ai-cybersecurity-banks.html"
-    },
-    {
-      "title": "Cloudflare streicht 1.100 Stellen wegen KI-Effizienz",
-      "source_url": "https://techcrunch.com/2026/05/08/cloudflare-says-ai-made-1100-jobs-obsolete-even-as-revenue-hit-a-record-high/"
     }
   ]
 }
