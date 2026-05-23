@@ -1,6 +1,50 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "Trump stoppt KI-Exekutivorder in letzter Minute",
+      "source_url": "https://thehill.com/policy/technology/5870495-white-house-ai-policy-shift/",
+      "edition_date": "2026-05-23"
+    },
+    {
+      "title": "DeepMind Co-Scientist erscheint im Nature-Fachjournal",
+      "source_url": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/",
+      "edition_date": "2026-05-23"
+    },
+    {
+      "title": "Anthropic peilt 30-Mrd-Runde bei 900-Mrd-Bewertung an",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-12/anthropic-in-talks-to-raise-30-billion-at-900-billion-valuation",
+      "edition_date": "2026-05-23"
+    },
+    {
+      "title": "OpenAI und Google markieren Bilder gemeinsam mit SynthID",
+      "source_url": "https://openai.com/research/index/release/",
+      "edition_date": "2026-05-23"
+    },
+    {
+      "title": "EU-Omnibus VII entlastet KI-Firmen von Bürokratie",
+      "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
+      "edition_date": "2026-05-23"
+    },
+    {
+      "title": "MOSS: KI-Agent schreibt seinen eigenen Quellcode neu",
+      "source_url": "https://arxiv.org/abs/2505.16333",
+      "edition_date": "2026-05-23"
+    },
+    {
+      "title": "OpenAI bringt Codex auf iOS und Android",
+      "source_url": "https://openai.com/news/product-releases/",
+      "edition_date": "2026-05-23"
+    },
+    {
+      "title": "AMD Venice: Erste 2nm-Hochleistungs-CPUs in Produktion",
+      "source_url": "https://www.tomshardware.com/pc-components/cpus/amd-epyc-venice-2nm",
+      "edition_date": "2026-05-23"
+    },
+    {
+      "title": "Trump über seinen gestoppten KI-Erlass",
+      "source_url": "https://thehill.com/policy/technology/5870495-white-house-ai-policy-shift/",
+      "edition_date": "2026-05-23"
+    },
     {
       "title": "Exa Labs sammelt 250 Mio. Dollar für KI-Suche",
       "source_url": "https://techcrunch.com/2026/05/20/ai-search-startups-are-blowing-up/"
@@ -284,42 +328,6 @@
     {
       "title": "Claude in Angriff auf mexikanischen Wasserversorger eingesetzt",
       "source_url": "https://www.cybersecuritydive.com/news/anthropics-claude-compromise-mexican-water-utility/819710/"
-    },
-    {
-      "title": "SAP Sapphire: Claude wird Kern der autonomen Enterprise-Plattform",
-      "source_url": "https://news.sap.com/2026/05/sap-anthropic-to-bring-claude-sap-business-ai-platform/"
-    },
-    {
-      "title": "Mira Muratis KI hört zu – während sie spricht",
-      "source_url": "https://techcrunch.com/2026/05/11/thinking-machines-wants-to-build-an-ai-that-actually-listens-while-it-talks/"
-    },
-    {
-      "title": "Anthropic bringt Claude gezielt in die Anwaltskanzlei",
-      "source_url": "https://techcrunch.com/2026/05/12/the-ai-legal-services-industry-is-heating-up-anthropic-is-getting-in-on-the-action/"
-    },
-    {
-      "title": "Google Fitbit Air: 99-Dollar-KI-Band tritt gegen Whoop an",
-      "source_url": "https://www.engadget.com/2166645/the-google-fitbit-air-is-an-ai-infused-take-on-whoop-wearables/"
-    },
-    {
-      "title": "GitLab streicht Jobs — Handbücher verraten Wandel zur Agentic Era",
-      "source_url": "https://simonwillison.net/2026/May/11/gitlab-act-2/"
-    },
-    {
-      "title": "Shopify River: Coding-Agent arbeitet live auf dem Firmen-Slack",
-      "source_url": "https://simonwillison.net/2026/May/11/learning-on-the-shop-floor/"
-    },
-    {
-      "title": "Anthropic lässt Claude-Agenten zwischen Sitzungen träumen",
-      "source_url": "https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes"
-    },
-    {
-      "title": "Google bestätigt: Kriminelle bauen erstmals KI-Zero-Day-Exploit",
-      "source_url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html"
-    },
-    {
-      "title": "OpenAI gründet 4-Mrd.-Deployment-Company mit 19 Investoren",
-      "source_url": "https://openai.com/index/openai-launches-the-deployment-company/"
     }
   ]
 }
