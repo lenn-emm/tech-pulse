@@ -1,110 +1,99 @@
 {
   "edition": {
-    "title": "Tech Pulse — Samstag, 23. Mai 2026",
-    "edition_date": "2026-05-23",
-    "summary": "Trumps KI-Exekutivorder scheitert in letzter Sekunde, während Google DeepMind seinen Co-Scientist in Nature veröffentlicht und Anthropic eine Megafinanzierung bei fast einer Billion Dollar Bewertung anpeilt."
+    "title": "Tech Pulse — Sonntag, 24. Mai 2026",
+    "edition_date": "2026-05-24",
+    "summary": "OpenAIs KI widerlegt erstmals eigenständig ein 80 Jahre altes Mathematikproblem — von Fields-Medaillen-Trägern bestätigt. Dazu öffnet Microsoft visuelle Computer-Use-Agenten für alle Enterprise-Kunden, Anthropic startet Claude Security als öffentliche Beta, und kritische Akademiker-Stimmen fragen: Ist arXivs KI-Papierbann wirklich durchsetzbar?"
   },
   "articles": [
     {
-      "position": 1,
+      "title": "KI löst erstmals eigenständig ein 80 Jahre altes Mathe-Problem",
+      "summary": "Ein internes OpenAI-Modell widerlegte die Erdős-Vermutung zum planaren Einheitsabstand-Problem — das erste Mal, dass eine KI ein zentrales offenes Mathematikproblem ohne menschliche Führung gelöst hat. Neun renommierte Mathematiker, darunter Fields-Medaillist Tim Gowers, verifizierten den Beweis unabhängig voneinander und bescheinigten ihm Annals-of-Mathematics-Niveau. Der Durchbruch nutzt tiefe algebraische Zahlentheorie und übertrifft die seit 1946 gültige Square-Grid-Schranke polynomial.",
+      "source_url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+      "source_name": "OpenAI",
+      "category": "research",
       "format": "hero",
       "zone": "core",
+      "read_time_min": 6,
+      "position": 1
+    },
+    {
+      "title": "Microsoft: KI-Agenten bedienen jetzt jede Enterprise-Software visuell",
+      "summary": "Computer-Using Agents in Microsofts Copilot Studio sind ab sofort allgemein verfügbar — für alle kommerziellen Regionen im Power-Platform-Ökosystem. Die Agenten navigieren UIs per Vision und Reasoning statt fragiler Selektoren und adaptieren sich dynamisch, wenn Layouts wechseln. Für IT-Teams bedeutet das erstmals zentral verwaltbare, sicherheitskonforme Browserautomatisierung ohne proprietäre RPA-Skripte.",
+      "source_url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/computer-using-agents-in-microsoft-copilot-studio-are-now-generally-available/4519427",
+      "source_name": "Microsoft Tech Community",
+      "category": "product",
+      "format": "feature",
+      "zone": "adjacent",
+      "read_time_min": 4,
+      "position": 2
+    },
+    {
+      "title": "Anthropic öffnet Claude Security als öffentliche Beta",
+      "summary": "Im Rahmen von Project Glasswing startet Anthropic Claude Security in der öffentlichen Beta: Das System hilft qualifizierten Sicherheitsteams bei KI-gestützter Bedrohungserkennung und Schwachstellenanalyse. Parallel kommen neue Cyber-Verifizierungstools und über 20 Legal-MCP-Konnektoren — Anthropic baut seinen Sicherheits- und Enterprise-Stack in rascher Folge aus.",
+      "source_url": "https://www.anthropic.com/news/claude-security",
+      "source_name": "Anthropic",
+      "category": "product",
+      "format": "feature",
+      "zone": "core",
+      "read_time_min": 4,
+      "position": 3
+    },
+    {
+      "title": "EU-KI-Akt: Was die Vereinfachung wirklich für Unternehmen ändert",
+      "summary": "Der Omnibus-Deal vom 7. Mai streckt High-Risk-Fristen um bis zu 16 Monate — doch neue Verbote für KI-generiertes nicht-konsensual intimes Material gelten bereits ab Dezember 2026. Eine Euronews-Analyse zeigt, welche Branchen (Medizin, Bildung, Biometrie) am stärksten betroffen sind und warum Unternehmen die Fristverlängerung nicht als Pause missverstehen sollten.",
+      "source_url": "https://www.euronews.com/my-europe/2026/05/21/the-eu-simplified-its-toughest-ai-law-what-changed-and-why-it-matters",
+      "source_name": "Euronews",
       "category": "regulation",
-      "title": "Trump stoppt KI-Exekutivorder in letzter Minute",
-      "summary": "US-Präsident Trump hat die Unterzeichnung einer lang erwarteten Exekutivorder zur KI-Aufsicht wenige Stunden vor der geplanten Zeremonie abgesagt — er sei nicht zufrieden mit dem Entwurf gewesen. Die Order hätte KI-Entwickler verpflichtet, neue Modelle 90 Tage vor Veröffentlichung an die Regierung zu übergeben. Der Rückzieher ist bemerkenswert, weil der Druck aus Trumps eigenem politischen Lager — ausgelöst durch Anthropics Mythos-Modell und dessen Fähigkeit, Sicherheitslücken zu finden — die Kehrtwende überhaupt erst ins Rollen gebracht hatte.",
-      "source_url": "https://thehill.com/policy/technology/5870495-white-house-ai-policy-shift/",
-      "source_name": "The Hill",
-      "read_time_min": 4
-    },
-    {
-      "position": 2,
-      "format": "feature",
-      "zone": "core",
-      "category": "research",
-      "title": "DeepMind Co-Scientist erscheint im Nature-Fachjournal",
-      "summary": "Google DeepMind hat sein Co-Scientist-System nun in Nature veröffentlicht — ein Multi-Agenten-Framework, das auf Gemini aufbaut und wissenschaftliche Hypothesen autonom generiert, in simulierten Peer-Review-Debatten verfeinert und Elo-artig rankt. Erste Erfolge wurden in der Wirkstoffforschung gegen akute myeloische Leukämie und Leberfibrose erzielt. Ab den kommenden Wochen öffnet DeepMind den Zugang für externe Forscher über das Tool Hypothesis Generation.",
-      "source_url": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/",
-      "source_name": "Google DeepMind",
-      "read_time_min": 6
-    },
-    {
-      "position": 3,
-      "format": "feature",
-      "zone": "core",
-      "category": "company_news",
-      "title": "Anthropic peilt 30-Mrd-Runde bei 900-Mrd-Bewertung an",
-      "summary": "Anthropic befindet sich laut Bloomberg in frühen Gesprächen mit Investoren über eine Finanzierungsrunde von mindestens 30 Milliarden Dollar — bei einer Bewertung von über 900 Milliarden Dollar. Das würde Anthropic zu einem der teuersten privat gehaltenen Unternehmen aller Zeiten machen. Die Runde käme kurz nach der angekündigten 200-Millionen-Dollar-Partnerschaft mit der Gates Foundation und inmitten wachsender Nachfrage nach Claude-Diensten.",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-05-12/anthropic-in-talks-to-raise-30-billion-at-900-billion-valuation",
-      "source_name": "Bloomberg",
-      "read_time_min": 3
-    },
-    {
-      "position": 4,
       "format": "visual",
       "zone": "adjacent",
-      "category": "product",
-      "title": "OpenAI und Google markieren Bilder gemeinsam mit SynthID",
-      "summary": "OpenAI und Google haben eine Partnerschaft für Cross-Platform-Content-Provenance vereinbart: ChatGPT-generierte Bilder werden künftig mit Googles SynthID-Wasserzeichen versehen, das auch nach Bearbeitung maschinenlesbar erhalten bleibt. Die Initiative folgt dem C2PA-Standard und umfasst auch ein neues OpenAI-Tool zur Verifikation, ob Bilder aus ChatGPT stammen. Es ist das erste Mal, dass zwei rivalisierende KI-Labs direkt in Sachen Transparenz kooperieren.",
-      "source_url": "https://openai.com/research/index/release/",
-      "source_name": "OpenAI",
-      "read_time_min": 3
+      "read_time_min": 5,
+      "position": 4
     },
     {
-      "position": 5,
-      "format": "feature",
-      "zone": "adjacent",
-      "category": "regulation",
-      "title": "EU-Omnibus VII entlastet KI-Firmen von Bürokratie",
-      "summary": "Das EU-Parlament und der Rat haben sich auf eine weitreichende Vereinfachung des KI-Acts im Rahmen des Omnibus-VII-Pakets geeinigt. Besonders kleine Anbieter und bestimmte Anwendungskategorien werden von Berichts- und Registrierungspflichten befreit. Befürworter sehen darin Innovationsförderung, Kritiker sprechen von einer Aufweichung der weltweit ersten umfassenden KI-Regulierung.",
-      "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
-      "source_name": "Europäischer Rat",
-      "read_time_min": 4
-    },
-    {
-      "position": 6,
+      "title": "Air Street: KI-Forschungslandschaft 2026 hat Wendepunkt überschritten",
+      "summary": "Der Mai-Bericht von Air Street Press zeichnet ein ungewöhnlich klares Bild: Fähigkeitszuwächse bei Frontier-Modellen verlangsamen sich nicht — die Einsatzgebiete dehnen sich exponentiell aus. Als wichtigste Treiber identifiziert der Report Inferenz-Effizienz, Multiagenten-Koordination und spezialisierte Branchenmodelle, während die Bewertungsschere zwischen wenigen Top-Labs und dem Rest der Branche weiter aufgeht.",
+      "source_url": "https://press.airstreet.com/p/state-of-ai-may-2026",
+      "source_name": "Air Street Press",
+      "category": "research",
       "format": "feature",
       "zone": "outside",
-      "category": "research",
-      "title": "MOSS: KI-Agent schreibt seinen eigenen Quellcode neu",
-      "summary": "Forscher haben MOSS vorgestellt, ein KI-Agenten-Framework, das sich durch Source-Level-Rewriting evolutionär selbst verbessert — ähnlich biologischer Adaption. Das System adressiert eine zentrale Schwäche heutiger Agenten: die Unfähigkeit, sich strukturell anzupassen, wenn sich ihre Umgebung verändert. Die Arbeit wurde am 22. Mai 2026 auf arXiv eingereicht und gilt als früher Schritt hin zu echter KI-Selbstoptimierung.",
-      "source_url": "https://arxiv.org/abs/2505.16333",
-      "source_name": "arXiv",
-      "read_time_min": 7
+      "read_time_min": 8,
+      "position": 5
     },
     {
-      "position": 7,
-      "format": "quick",
-      "zone": "core",
-      "category": "product",
-      "title": "OpenAI bringt Codex auf iOS und Android",
-      "summary": "OpenAI hat seinen autonomen Coding-Agenten Codex als Vorschau in die ChatGPT-Mobile-App integriert. Nutzer können damit aktive Coding-Threads reviewen, Terminalbefehle genehmigen und laufende Aufgaben von unterwegs steuern.",
-      "source_url": "https://openai.com/news/product-releases/",
+      "title": "Zitat: Tim Gowers über KIs Sprung in die Hochmathematik",
+      "quote_text": "This is a milestone in AI mathematics. I would have accepted this proof for the Annals of Mathematics without hesitation.",
+      "quote_author": "Tim Gowers, Fields-Medaillist & Professor, Cambridge",
+      "summary": "Fields-Medaillist Tim Gowers kommentiert das OpenAI-Ergebnis zur Einheitsabstand-Vermutung und macht klar: KI produziert erstmals echte Hochmathematik auf Spitzenniveau — kein Hilfswerkzeug mehr, sondern eigenständiger Entdecker.",
+      "source_url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
       "source_name": "OpenAI",
-      "read_time_min": 2
-    },
-    {
-      "position": 8,
-      "format": "quick",
-      "zone": "wildcard",
-      "category": "product",
-      "title": "AMD Venice: Erste 2nm-Hochleistungs-CPUs in Produktion",
-      "summary": "AMD hat mit der Serienproduktion seiner 6. EPYC-Generation (Codename Venice) begonnen — die ersten HPC-Prozessoren überhaupt auf TSMCs 2nm-Knoten. Das setzt die Messlatte für Server-CPU-Dichte und Energieeffizienz neu.",
-      "source_url": "https://www.tomshardware.com/pc-components/cpus/amd-epyc-venice-2nm",
-      "source_name": "Tom's Hardware",
-      "read_time_min": 2
-    },
-    {
-      "position": 9,
+      "category": "research",
       "format": "quote",
       "zone": "core",
-      "category": "regulation",
-      "title": "Trump über seinen gestoppten KI-Erlass",
-      "summary": "US-Präsident Donald Trump begründete den Last-Minute-Stopp seiner KI-Exekutivorder am Donnerstag mit einem knappen Kommentar gegenüber Reportern. Der Satz fasst eine bemerkenswerte Wende zusammen: Der Präsident, der KI-Regulierung als Innovationsbremse abgelehnt hatte, stand kurz davor, die strengste US-Aufsichtsregel für Frontier-Modelle zu unterzeichnen.",
-      "quote_text": "I didn't like what I was seeing.",
-      "quote_author": "Donald Trump, US-Präsident",
-      "source_url": "https://thehill.com/policy/technology/5870495-white-house-ai-policy-shift/",
-      "source_name": "The Hill",
-      "read_time_min": 1
+      "read_time_min": 1,
+      "position": 6
+    },
+    {
+      "title": "arXiv-KI-Bann: Begrüßt, aber schwer durchsetzbar",
+      "summary": "Inside Higher Ed analysiert arXivs neue Ein-Jahres-Sperrpolitik für Einreichungen mit KI-generiertem Inhalt: Die meisten Wissenschaftler unterstützen den Schritt, zweifeln aber an der Praktikabilität — denn die Grenze zwischen erlaubter KI-Assistenz und unerlaubtem KI-Text bleibt diffus. Der Artikel zeigt, vor welchen Moderationsproblemen arXiv steht.",
+      "source_url": "https://www.insidehighered.com/news/faculty/books-publishing/2026/05/22/ban-authors-who-submit-ai-content-welcome-unenforceable",
+      "source_name": "Inside Higher Ed",
+      "category": "research",
+      "format": "quick",
+      "zone": "outside",
+      "read_time_min": 3,
+      "position": 7
+    },
+    {
+      "title": "OpenAI startet öffentliches Verifikationstool für KI-generierte Bilder",
+      "summary": "OpenAI veröffentlicht ein öffentlich zugängliches Tool, mit dem Nutzer prüfen können, ob Bilder aus OpenAI-Modellen stammen — ergänzt durch C2PA-Konformität und eine SynthID-Partnerschaft mit Google. Die Initiative stärkt das Herkunfts-Ökosystem, dessen Transparenz-Signale jetzt auch von Drittplattformen leichter erkennbar sind.",
+      "source_url": "https://openai.com/index/advancing-content-provenance/",
+      "source_name": "OpenAI",
+      "category": "product",
+      "format": "quick",
+      "zone": "core",
+      "read_time_min": 2,
+      "position": 8
     }
   ]
 }
