@@ -1,13 +1,6 @@
 {
+  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
-    {
-      "title": "KI löst erstmals eigenständig ein 80 Jahre altes Mathe-Problem",
-      "source_url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
-    },
-    {
-      "title": "Microsoft: KI-Agenten bedienen jetzt jede Enterprise-Software visuell",
-      "source_url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/computer-using-agents-in-microsoft-copilot-studio-are-now-generally-available/4519427"
-    },
     {
       "title": "Anthropic öffnet Claude Security als öffentliche Beta",
       "source_url": "https://www.anthropic.com/news/claude-security"
@@ -17,120 +10,128 @@
       "source_url": "https://www.euronews.com/my-europe/2026/05/21/the-eu-simplified-its-toughest-ai-law-what-changed-and-why-it-matters"
     },
     {
-      "title": "Air Street: KI-Forschungslandschaft 2026 hat Wendepunkt überschritten",
-      "source_url": "https://press.airstreet.com/p/state-of-ai-may-2026"
-    },
-    {
-      "title": "Zitat: Tim Gowers über KIs Sprung in die Hochmathematik",
+      "title": "KI löst erstmals eigenständig ein 80 Jahre altes Mathe-Problem",
       "source_url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
-    },
-    {
-      "title": "arXiv-KI-Bann: Begrüßt, aber schwer durchsetzbar",
-      "source_url": "https://www.insidehighered.com/news/faculty/books-publishing/2026/05/22/ban-authors-who-submit-ai-content-welcome-unenforceable"
     },
     {
       "title": "OpenAI startet öffentliches Verifikationstool für KI-generierte Bilder",
       "source_url": "https://openai.com/index/advancing-content-provenance/"
     },
     {
-      "title": "DeepMind Co-Scientist erscheint im Nature-Fachjournal",
-      "source_url": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/"
+      "title": "arXiv-KI-Bann: Begrüßt, aber schwer durchsetzbar",
+      "source_url": "https://www.insidehighered.com/news/faculty/books-publishing/2026/05/22/ban-authors-who-submit-ai-content-welcome-unenforceable"
+    },
+    {
+      "title": "Microsoft: KI-Agenten bedienen jetzt jede Enterprise-Software visuell",
+      "source_url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/computer-using-agents-in-microsoft-copilot-studio-are-now-generally-available/4519427"
+    },
+    {
+      "title": "Zitat: Tim Gowers über KIs Sprung in die Hochmathematik",
+      "source_url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+    },
+    {
+      "title": "Air Street: KI-Forschungslandschaft 2026 hat Wendepunkt überschritten",
+      "source_url": "https://press.airstreet.com/p/state-of-ai-may-2026"
     },
     {
       "title": "Anthropic peilt 30-Mrd-Runde bei 900-Mrd-Bewertung an",
       "source_url": "https://www.bloomberg.com/news/articles/2026-05-12/anthropic-in-talks-to-raise-30-billion-at-900-billion-valuation"
     },
     {
-      "title": "OpenAI bringt Codex auf iOS und Android",
-      "source_url": "https://openai.com/news/product-releases/"
-    },
-    {
-      "title": "Trump über seinen gestoppten KI-Erlass",
-      "source_url": "https://thehill.com/policy/technology/5870495-white-house-ai-policy-shift/"
-    },
-    {
-      "title": "OpenAI und Google markieren Bilder gemeinsam mit SynthID",
-      "source_url": "https://openai.com/research/index/release/"
-    },
-    {
       "title": "Trump stoppt KI-Exekutivorder in letzter Minute",
       "source_url": "https://thehill.com/policy/technology/5870495-white-house-ai-policy-shift/"
-    },
-    {
-      "title": "EU-Omnibus VII entlastet KI-Firmen von Bürokratie",
-      "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
     },
     {
       "title": "AMD Venice: Erste 2nm-Hochleistungs-CPUs in Produktion",
       "source_url": "https://www.tomshardware.com/pc-components/cpus/amd-epyc-venice-2nm"
     },
     {
+      "title": "OpenAI und Google markieren Bilder gemeinsam mit SynthID",
+      "source_url": "https://openai.com/research/index/release/"
+    },
+    {
+      "title": "EU-Omnibus VII entlastet KI-Firmen von Bürokratie",
+      "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+    },
+    {
+      "title": "OpenAI bringt Codex auf iOS und Android",
+      "source_url": "https://openai.com/news/product-releases/"
+    },
+    {
       "title": "MOSS: KI-Agent schreibt seinen eigenen Quellcode neu",
       "source_url": "https://arxiv.org/abs/2505.16333"
+    },
+    {
+      "title": "Trump über seinen gestoppten KI-Erlass",
+      "source_url": "https://thehill.com/policy/technology/5870495-white-house-ai-policy-shift/"
+    },
+    {
+      "title": "DeepMind Co-Scientist erscheint im Nature-Fachjournal",
+      "source_url": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/"
     },
     {
       "title": "Gemini Spark: Googles persönlicher KI-Agent für Gmail und Drive",
       "source_url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html"
     },
     {
-      "title": "Google setzt mit Gemini 3.5 Flash auf autonome KI-Agenten",
-      "source_url": "https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/"
-    },
-    {
-      "title": "Simon Willison veröffentlicht Datasette Agent",
-      "source_url": "https://simonwillison.net/2026/May/21/datasette-agent/"
-    },
-    {
-      "title": "Andrej Karpathy verlässt Startup-Projekt und wechselt zu Anthropic",
-      "source_url": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/"
+      "title": "Claude Code London: Agenten bekommen eigene Sandbox-Infrastruktur",
+      "source_url": "https://fortune.com/2026/05/21/claude-code-london-anthropic-ai-software-engineering/"
     },
     {
       "title": "OpenAI reicht heute vertraulich IPO-Antrag beim SEC ein",
       "source_url": "https://techcrunch.com/2026/05/20/openai-barrels-toward-ipo-that-may-happen-in-september/"
     },
     {
+      "title": "Google setzt mit Gemini 3.5 Flash auf autonome KI-Agenten",
+      "source_url": "https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/"
+    },
+    {
       "title": "Exa Labs sammelt 250 Mio. Dollar für KI-Suche",
       "source_url": "https://techcrunch.com/2026/05/20/ai-search-startups-are-blowing-up/"
     },
     {
-      "title": "Anthropic steuert auf ersten Quartalsgewinn der Geschichte zu",
-      "source_url": "https://www.cnbc.com/2026/05/20/anthropic-revenue-explosive-growth-ipo-profitable-quarter.html"
+      "title": "Andrej Karpathy verlässt Startup-Projekt und wechselt zu Anthropic",
+      "source_url": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/"
     },
     {
       "title": "Karpathy über seinen Wechsel: Frontier der nächsten Jahre",
       "source_url": "https://x.com/karpathy/status/2056753169888334312"
     },
     {
-      "title": "Claude Code London: Agenten bekommen eigene Sandbox-Infrastruktur",
-      "source_url": "https://fortune.com/2026/05/21/claude-code-london-anthropic-ai-software-engineering/"
+      "title": "Simon Willison veröffentlicht Datasette Agent",
+      "source_url": "https://simonwillison.net/2026/May/21/datasette-agent/"
     },
     {
-      "title": "Anthropic steht vor erstem Quartalsbetriebsgewinn",
-      "source_url": "https://gulfbusiness.com/en/2026/tech/anthropic-nears-profitability-claude-ai-revenue-surge-spacex-compute-deal/"
+      "title": "Anthropic steuert auf ersten Quartalsgewinn der Geschichte zu",
+      "source_url": "https://www.cnbc.com/2026/05/20/anthropic-revenue-explosive-growth-ipo-profitable-quarter.html"
     },
     {
       "title": "KPMG bringt Claude zu 276.000 Mitarbeitern weltweit",
       "source_url": "https://www.anthropic.com/news/anthropic-kpmg"
     },
     {
-      "title": "Intuit streicht 17 % der Belegschaft für KI-Investitionen",
-      "source_url": "https://www.heygotrade.com/en/news/tech-layoffs-meta-intuit-ai-restructuring/"
-    },
-    {
       "title": "OpenAI öffnet ChatGPT-Werbeplattform für alle US-Unternehmen",
       "source_url": "https://openai.com/index/new-ways-to-buy-chatgpt-ads/"
+    },
+    {
+      "title": "Anthropic steht vor erstem Quartalsbetriebsgewinn",
+      "source_url": "https://gulfbusiness.com/en/2026/tech/anthropic-nears-profitability-claude-ai-revenue-surge-spacex-compute-deal/"
     },
     {
       "title": "Meta streicht 8.000 Stellen für KI-Offensive",
       "source_url": "https://www.npr.org/2026/05/20/nx-s1-5826917/meta-layoffs-ai-jobs"
     },
     {
+      "title": "Zuckerberg: „Erfolg ist keine Selbstverständlichkeit“",
+      "source_url": "https://www.cnbc.com/2026/05/20/meta-layoffs-zuckerberg-says-success-isnt-a-given-in-memo.html"
+    },
+    {
       "title": "Googles KI-Suche mit Agenten startet global",
       "source_url": "https://letsdatascience.com/news/google-updates-search-with-ai-agents-and-intelligent-box-451a33ce"
     },
     {
-      "title": "Zuckerberg: „Erfolg ist keine Selbstverständlichkeit“",
-      "source_url": "https://www.cnbc.com/2026/05/20/meta-layoffs-zuckerberg-says-success-isnt-a-given-in-memo.html"
+      "title": "Intuit streicht 17 % der Belegschaft für KI-Investitionen",
+      "source_url": "https://www.heygotrade.com/en/news/tech-layoffs-meta-intuit-ai-restructuring/"
     },
     {
       "title": "DeepMind übernimmt 20 Contextual-AI-Forscher für bis zu 90 Mio. Dollar",
@@ -169,20 +170,20 @@
       "source_url": "https://letsdatascience.com/news/google-debuts-gemini-focused-updates-at-io-2026-4be4fde6"
     },
     {
-      "title": "Recursive Superintelligence: 650 Mio. $ für selbstverbessernde KI",
-      "source_url": "https://the-decoder.com/ai-startup-recursive-emerges-from-stealth-with-650-million-to-build-self-improving-ai/"
-    },
-    {
       "title": "Google Health startet: Fitbit-App erhält Gemini-KI-Coach",
       "source_url": "https://blog.google/products-and-platforms/products/google-health/google-health-coach/"
     },
     {
-      "title": "Meta Avocado erneut verzögert – intern hinter GPT und Claude",
-      "source_url": "https://qz.com/meta-avocado-delay-mark-zuckerberg-google-gemini"
+      "title": "Recursive Superintelligence: 650 Mio. $ für selbstverbessernde KI",
+      "source_url": "https://the-decoder.com/ai-startup-recursive-emerges-from-stealth-with-650-million-to-build-self-improving-ai/"
     },
     {
       "title": "Wall Street unter Strom: Alphabet-Aktie am I/O-Wendepunkt",
       "source_url": "https://www.cnbc.com/2026/05/18/google-i-o-alphabet-ai-wall-street.html"
+    },
+    {
+      "title": "Meta Avocado erneut verzögert – intern hinter GPT und Claude",
+      "source_url": "https://qz.com/meta-avocado-delay-mark-zuckerberg-google-gemini"
     },
     {
       "title": "Osaurus: Open-Source-LLM-Server bringt lokale KI auf den Mac",
@@ -285,16 +286,16 @@
       "source_url": "https://www.japantimes.co.jp/business/2026/05/14/tech/openai-global-governance-us-china/"
     },
     {
+      "title": "Anthropic und Gates Foundation: $200 Mio. für globale Gesundheits-KI",
+      "source_url": "https://www.anthropic.com/news/gates-foundation-partnership"
+    },
+    {
       "title": "Connecticut plant Unterzeichnung des strengsten KI-Gesetzes der USA",
       "source_url": "https://www.dlapiper.com/en-us/insights/publications/2026/05/unpacking-connecticuts-new-ai-law"
     },
     {
       "title": "OpenAI schlägt IAEA-ähnliche globale KI-Aufsicht vor",
       "source_url": "https://www.bloomberg.com/news/articles/2026-05-13/openai-floats-idea-of-global-ai-governance-body-with-us-china"
-    },
-    {
-      "title": "Anthropic und Gates Foundation: $200 Mio. für globale Gesundheits-KI",
-      "source_url": "https://www.anthropic.com/news/gates-foundation-partnership"
     },
     {
       "title": "DeepMinds Magic Pointer: Gemini versteht den Bildschirminhalt",
@@ -309,16 +310,16 @@
       "source_url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-finds-16-new-vulnerabilities/"
     },
     {
+      "title": "Anthropic bringt Claude-KI-Paket für kleine Unternehmen",
+      "source_url": "https://9to5mac.com/2026/05/13/anthropics-latest-claude-release-turns-your-mac-into-a-small-business-powerhouse/"
+    },
+    {
       "title": "Anthropic VP: KI soll Bedürfnisse antizipieren, bevor Nutzer sie kennen",
       "source_url": "https://techcrunch.com/2026/05/13/anthropics-cat-wu-says-that-in-the-future-ai-will-anticipate-your-needs-before-you-know-what-they-are/"
     },
     {
       "title": "Notion wird KI-Agenten-Drehscheibe für Teams und externe Systeme",
       "source_url": "https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/"
-    },
-    {
-      "title": "Isomorphic Labs sichert 2,1 Mrd. Dollar für KI-Medikamentenentwicklung",
-      "source_url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round"
     }
   ]
 }
