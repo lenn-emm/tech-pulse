@@ -1,6 +1,38 @@
 {
   "articles": [
     {
+      "title": "KI löst erstmals eigenständig ein 80 Jahre altes Mathe-Problem",
+      "source_url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+    },
+    {
+      "title": "Microsoft: KI-Agenten bedienen jetzt jede Enterprise-Software visuell",
+      "source_url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/computer-using-agents-in-microsoft-copilot-studio-are-now-generally-available/4519427"
+    },
+    {
+      "title": "Anthropic öffnet Claude Security als öffentliche Beta",
+      "source_url": "https://www.anthropic.com/news/claude-security"
+    },
+    {
+      "title": "EU-KI-Akt: Was die Vereinfachung wirklich für Unternehmen ändert",
+      "source_url": "https://www.euronews.com/my-europe/2026/05/21/the-eu-simplified-its-toughest-ai-law-what-changed-and-why-it-matters"
+    },
+    {
+      "title": "Air Street: KI-Forschungslandschaft 2026 hat Wendepunkt überschritten",
+      "source_url": "https://press.airstreet.com/p/state-of-ai-may-2026"
+    },
+    {
+      "title": "Zitat: Tim Gowers über KIs Sprung in die Hochmathematik",
+      "source_url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+    },
+    {
+      "title": "arXiv-KI-Bann: Begrüßt, aber schwer durchsetzbar",
+      "source_url": "https://www.insidehighered.com/news/faculty/books-publishing/2026/05/22/ban-authors-who-submit-ai-content-welcome-unenforceable"
+    },
+    {
+      "title": "OpenAI startet öffentliches Verifikationstool für KI-generierte Bilder",
+      "source_url": "https://openai.com/index/advancing-content-provenance/"
+    },
+    {
       "title": "DeepMind Co-Scientist erscheint im Nature-Fachjournal",
       "source_url": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/"
     },
@@ -287,38 +319,6 @@
     {
       "title": "Isomorphic Labs sichert 2,1 Mrd. Dollar für KI-Medikamentenentwicklung",
       "source_url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round"
-    },
-    {
-      "title": "Nvidia und Ineffable Intelligence: Superintelligenz durch Reinforcement Learning",
-      "source_url": "https://www.cnbc.com/2026/05/13/google-deepmind-alumni-startup-partners-nvidia-superintelligence.html"
-    },
-    {
-      "title": "OpenAI Daybreak: GPT-5.5 scannt und patcht Sicherheitslücken automatisch",
-      "source_url": "https://openai.com/daybreak/"
-    },
-    {
-      "title": "Anthropic strebt 900-Mrd.-Bewertung mit neuer 30-Mrd.-Runde an",
-      "source_url": "https://finance.yahoo.com/news/anthropic-talks-raise-30-billion-210804604.html"
-    },
-    {
-      "title": "Anthropic bringt Claude-KI-Paket für kleine Unternehmen",
-      "source_url": "https://9to5mac.com/2026/05/13/anthropics-latest-claude-release-turns-your-mac-into-a-small-business-powerhouse/"
-    },
-    {
-      "title": "Google lanciert Googlebook: KI-Laptop mit Gemini-Cursor",
-      "source_url": "https://blog.google/products-and-platforms/platforms/android/meet-googlebook/"
-    },
-    {
-      "title": "Digg kehrt zurück – als KI-Nachrichtenaggregator",
-      "source_url": "https://techcrunch.com/2026/05/11/digg-tries-again-this-time-as-an-ai-news-aggregator/"
-    },
-    {
-      "title": "Woher Claudes Erpressungsverhalten kam – und wie es behoben wurde",
-      "source_url": "https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts/"
-    },
-    {
-      "title": "Claude in Angriff auf mexikanischen Wasserversorger eingesetzt",
-      "source_url": "https://www.cybersecuritydive.com/news/anthropics-claude-compromise-mexican-water-utility/819710/"
     }
   ]
 }
