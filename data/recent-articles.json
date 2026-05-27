@@ -1,6 +1,36 @@
 {
   "articles": [
     {
+      "title": "Anthropic kurz vor $30-Mrd.-Abschluss bei $900-Mrd.-Bewertung",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-22/anthropic-to-close-over-30-billion-round-as-soon-as-next-week",
+      "edition_date": "2026-05-27"
+    },
+    {
+      "title": "Hassabis: Wir stehen an den Ausläufern der Singularität",
+      "source_url": "https://www.axios.com/2026/05/26/deepmind-ceo-demis-hassabis",
+      "edition_date": "2026-05-27"
+    },
+    {
+      "title": "Papst Leo XIV. veröffentlicht erste KI-Enzyklika 'Magnifica Humanitas'",
+      "source_url": "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html",
+      "edition_date": "2026-05-27"
+    },
+    {
+      "title": "LeCun nennt 'General Intelligence' Unsinn – Hassabis widerspricht scharf",
+      "source_url": "https://the-decoder.com/deepminds-hassabis-sees-humanity-in-the-foothills-of-the-singularity-while-lecun-says-current-ai-isnt-intelligent/",
+      "edition_date": "2026-05-27"
+    },
+    {
+      "title": "KI-Sicherheitsberichte fluten Open-Source-Teams – ein Weckruf",
+      "source_url": "https://simonwillison.net/2026/May/26/the-pressure/",
+      "edition_date": "2026-05-27"
+    },
+    {
+      "title": "Zitat: Hassabis über die Singularität und gesellschaftliche Blindheit",
+      "source_url": "https://startupfortune.com/demis-hassabis-says-agi-could-arrive-by-2029/",
+      "edition_date": "2026-05-27"
+    },
+    {
       "title": "OpenAI-Rechenzentrum: Schatzmeisterin tritt wegen Todesdrohungen zurück",
       "source_url": "https://www.404media.co/township-leader-resigns-in-tears-over-openai-data-center-death-threats/"
     },
@@ -295,30 +325,6 @@
     {
       "title": "ChatGPT verbindet Bankkonten: OpenAI startet Finanz-Feature",
       "source_url": "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/"
-    },
-    {
-      "title": "Zitat: Runway-CEO über die Zukunft der KI-Intelligenz",
-      "source_url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/"
-    },
-    {
-      "title": "SpaceXAI verliert 50+ Forscher an Meta und Thinking Machines",
-      "source_url": "https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/"
-    },
-    {
-      "title": "Datenschutz-Aufschrei: Wer gibt OpenAI wirklich Bankzugang?",
-      "source_url": "https://www.tomsguide.com/ai/chatgpt/what-sane-individual-feels-comfortable-giving-this-level-of-access-to-openai-chatgpt-can-now-be-your-financial-advisor-but-the-reactions-are-pretty-telling"
-    },
-    {
-      "title": "Accenture und OpenAI bringen ChatGPT in US-Bundesbehörden",
-      "source_url": "https://newsroom.accenture.com/news/2026/accenture-federal-services-and-openai-partner-to-accelerate-secure-ai-adoption-across-the-federal-government"
-    },
-    {
-      "title": "Zitat: OpenAI zu globaler KI-Governance",
-      "source_url": "https://www.japantimes.co.jp/business/2026/05/14/tech/openai-global-governance-us-china/"
-    },
-    {
-      "title": "Anthropic und Gates Foundation: $200 Mio. für globale Gesundheits-KI",
-      "source_url": "https://www.anthropic.com/news/gates-foundation-partnership"
     }
   ]
 }
