@@ -1,25 +1,14 @@
 {
   "edition": {
-    "title": "Tech Pulse — Mittwoch, 27. Mai 2026",
-    "edition_date": "2026-05-27",
-    "summary": "Anthropic steht kurz vor dem größten privaten KI-Funding aller Zeiten bei knapp einer Billion Dollar Bewertung, während DeepMinds CEO Demis Hassabis die Menschheit an den Ausläufern der Singularität verortet – und Papst Leo XIV. mit einer historischen Enzyklika die KI-Ethik-Debatte in neue Kreise trägt."
+    "title": "Tech Pulse — Donnerstag, 28. Mai 2026",
+    "edition_date": "2026-05-28",
+    "summary": "DeepMind-Chef Hassabis erklärt AGI bis 2029 für realistisch, während der Vatikan mit seiner ersten KI-Enzyklika eine moralische Gegenkraft formiert – dazwischen streiten OpenAI und Anthropic über die Zukunft menschlicher Arbeit."
   },
   "articles": [
     {
-      "title": "Anthropic kurz vor $30-Mrd.-Abschluss bei $900-Mrd.-Bewertung",
-      "summary": "Bloomberg berichtet, dass Anthropic noch diese Woche eine Finanzierungsrunde von über 30 Milliarden Dollar abschließen könnte – bei einer Pre-Money-Bewertung von mehr als 900 Milliarden Dollar. Das würde das Unternehmen zum wertvollsten privaten KI-Startup der Welt machen und OpenAIs Bewertung von 852 Milliarden Dollar übertreffen. Co-Lead-Investoren sind Sequoia, Dragoneer, Altimeter und Greenoaks, die jeweils rund zwei Milliarden Dollar beisteuern.",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-05-22/anthropic-to-close-over-30-billion-round-as-soon-as-next-week",
-      "source_name": "Bloomberg",
-      "category": "company_news",
-      "format": "hero",
-      "zone": "core",
-      "read_time_min": 4,
-      "position": 1
-    },
-    {
-      "title": "Hassabis: Wir stehen an den Ausläufern der Singularität",
-      "summary": "Google-DeepMind-CEO Demis Hassabis sagte gegenüber Axios, die Menschheit stehe an den 'Ausläufern der Singularität' – AGI hält er bis 2030, möglicherweise bereits 2029, für realistisch. Er warnt, die gesellschaftlichen Konsequenzen seien wie 'zehnmal die industrielle Revolution, in zehnmal der Geschwindigkeit'. Hassabis zeigt sich besorgt, dass Ökonomen und politische Entscheider die Dringlichkeit noch nicht begriffen haben.",
-      "source_url": "https://www.axios.com/2026/05/26/deepmind-ceo-demis-hassabis",
+      "title": "Altman vs. Amodei: KI-Jobs – wer hat Recht?",
+      "summary": "OpenAI und Anthropic liegen bei der KI-Jobkrise diametral auseinander. Sam Altman räumte ein, mit früheren Prognosen zum Wegfall weißer Kragen-Jobs falsch gelegen zu haben – während Anthropic-Mitgründer Chris Olah beim Vatikan-KI-Kongress massiven Stellenabbau als reale Möglichkeit bezeichnete. Das Aufeinandertreffen beider Narrative offenbart tiefe ideologische Gräben im Silicon Valley.",
+      "source_url": "https://www.axios.com/2026/05/27/ai-hype-doom-openai-anthropic",
       "source_name": "Axios",
       "category": "company_news",
       "format": "feature",
@@ -28,50 +17,50 @@
       "position": 2
     },
     {
-      "title": "Papst Leo XIV. veröffentlicht erste KI-Enzyklika 'Magnifica Humanitas'",
-      "summary": "Papst Leo XIV. hat am 25. Mai seine Enzyklika zum Schutz der menschlichen Person im KI-Zeitalter veröffentlicht – genau 135 Jahre nach Rerum Novarum, dem Grundtext zu Arbeiterrechten. Anthropic-Mitgründer und Interpretability-Forscher Chris Olah sprach bei der Vorstellung im Vatikan und betonte die Bedeutung von Stimmen außerhalb der KI-Labs. Das Dokument trägt die KI-Sicherheitsdebatte erstmals in religiöse und breite zivilgesellschaftliche Kreise.",
-      "source_url": "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html",
-      "source_name": "Vatican News",
+      "title": "Papst Leo XIV: KI muss entwaffnet werden",
+      "summary": "Mit der 42.300 Wörter langen Enzyklika 'Magnifica Humanitas' veröffentlichte der Vatikan das bisher umfassendste religiöse Moraldokument zum Thema KI. Papst Leo XIV. warnte vor 'neuen digitalen Sklavereien' und verlangte schärfere Regulierung zum Schutz menschlicher Würde. Anthropic-Mitgründer Chris Olah präsentierte das Dokument gemeinsam mit dem Papst – ein Zeichen für den Schulterschäluss zwischen Tech-Industrie und Kirche.",
+      "source_url": "https://www.washingtonpost.com/world/2026/05/25/pope-elevates-ai-ethics-religious-imperative-with-first-encyclical/",
+      "source_name": "Washington Post",
       "category": "regulation",
-      "format": "visual",
-      "zone": "wildcard",
+      "format": "feature",
+      "zone": "outside",
       "read_time_min": 5,
       "position": 3
     },
     {
-      "title": "LeCun nennt 'General Intelligence' Unsinn – Hassabis widerspricht scharf",
-      "summary": "Meta-KI-Chefforscher Yann LeCun bezeichnete das Konzept der allgemeinen Intelligenz als 'complete BS' und argumentiert, menschliche Intelligenz sei hochspezialisiert, nicht allgemein. DeepMind-CEO Demis Hassabis antwortete öffentlich auf X, LeCun verwechsle 'general' mit 'universal intelligence'. Der Schlagabtausch offenbart eine fundamentale Spaltung in der KI-Forschung über den Weg zu AGI.",
-      "source_url": "https://the-decoder.com/deepminds-hassabis-sees-humanity-in-the-foothills-of-the-singularity-while-lecun-says-current-ai-isnt-intelligent/",
-      "source_name": "The Decoder",
-      "category": "research",
-      "format": "feature",
-      "zone": "outside",
-      "read_time_min": 4,
-      "position": 4
-    },
-    {
-      "title": "KI-Sicherheitsberichte fluten Open-Source-Teams – ein Weckruf",
-      "summary": "Simon Willison kommentiert Daniel Stenbergs Warnung: Das curl-Team wird mit einem 'nie dagewesenen Druck' durch KI-generierte Sicherheitsberichte überschwemmt – die meisten inhaltlich falsch, aber alle aufwändig zu prüfen. Das kostet echte Ressourcen realer Maintainer und ist ein seltenes Gegengewicht zur Euphorie über KI-gestützte Security-Tools.",
-      "source_url": "https://simonwillison.net/2026/May/26/the-pressure/",
-      "source_name": "Simon Willison's Weblog",
-      "category": "research",
+      "title": "Anthropic und Microsoft verhandeln über KI-Chips",
+      "summary": "Anthropic führt Gespräche mit Microsoft über die Nutzung des Maia-200-Chips zur KI-Inferenz – ein Schritt, der Abhängigkeit von Google und AWS reduzieren würde. Der Deal käme kurz nach Microsofts 5-Milliarden-Dollar-Investment in Anthropic.",
+      "source_url": "https://www.cnbc.com/2026/05/21/anthropic-microsoft-maia-200-ai-chip.html",
+      "source_name": "CNBC",
+      "category": "company_news",
       "format": "quick",
-      "zone": "outside",
+      "zone": "core",
       "read_time_min": 2,
-      "position": 5
+      "position": 6
     },
     {
-      "title": "Zitat: Hassabis über die Singularität und gesellschaftliche Blindheit",
-      "summary": "Demis Hassabis' prägnanteste Einschätzung dieser Woche zur Dringlichkeit der KI-Vorbereitung – und warum er besorgt ist, dass die Gesellschaft noch nicht zuhört.",
-      "quote_text": "Wir stehen an den Ausläufern der Singularität. Die Gesellschaft hat nur noch wenige Jahre, um sich vorzubereiten – und die meisten meiner Ökonomen-Freunde nehmen das noch nicht ernst genug.",
-      "quote_author": "Demis Hassabis, CEO Google DeepMind",
-      "source_url": "https://startupfortune.com/demis-hassabis-says-agi-could-arrive-by-2029/",
-      "source_name": "Startup Fortune",
+      "title": "Sam Altman: Kein KI-Jobpocalypse bisher eingetreten",
+      "summary": "OpenAI-CEO Altman korrigierte sich öffentlich: Die erwartete Vernichtung von Einsteigerjobs im Bürobereich ist bisher ausgeblieben. 'Ich freue mich darüber, falsch gelegen zu haben', sagte er bei einem Auftritt in Australien.",
+      "source_url": "https://www.euronews.com/next/2026/05/26/no-ai-jobs-apocalypse-so-far-says-openais-sam-altman",
+      "source_name": "Euronews",
+      "category": "company_news",
+      "format": "quick",
+      "zone": "adjacent",
+      "read_time_min": 2,
+      "position": 7
+    },
+    {
+      "title": "Zitat: Olah beim Vatikan über KI und Arbeit",
+      "summary": "Anthropic-Mitgründer Chris Olah sprach beim Vatikan-KI-Kongress über reale Gefahren von KI für den Arbeitsmarkt – eine ungewöhnliche Kulisse für einen der einflussreichsten KI-Forscher.",
+      "source_url": "https://religionnews.com/2026/05/22/why-anthropic-is-helping-unveil-the-popes-new-encyclical-on-ai/",
+      "source_name": "Religion News Service",
       "category": "company_news",
       "format": "quote",
-      "zone": "core",
+      "zone": "outside",
       "read_time_min": 1,
-      "position": 6
+      "position": 8,
+      "quote_text": "There is a real possibility that AI will displace human labor at very large scale.",
+      "quote_author": "Chris Olah, Anthropic-Mitgründer"
     }
   ]
 }
