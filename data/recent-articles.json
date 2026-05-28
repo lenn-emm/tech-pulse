@@ -1,6 +1,30 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "Altman vs. Amodei: KI-Jobs – wer hat Recht?",
+      "source_url": "https://www.axios.com/2026/05/27/ai-hype-doom-openai-anthropic",
+      "edition_date": "2026-05-28"
+    },
+    {
+      "title": "Papst Leo XIV: KI muss entwaffnet werden",
+      "source_url": "https://www.washingtonpost.com/world/2026/05/25/pope-elevates-ai-ethics-religious-imperative-with-first-encyclical/",
+      "edition_date": "2026-05-28"
+    },
+    {
+      "title": "Anthropic und Microsoft verhandeln über KI-Chips",
+      "source_url": "https://www.cnbc.com/2026/05/21/anthropic-microsoft-maia-200-ai-chip.html",
+      "edition_date": "2026-05-28"
+    },
+    {
+      "title": "Sam Altman: Kein KI-Jobpocalypse bisher eingetreten",
+      "source_url": "https://www.euronews.com/next/2026/05/26/no-ai-jobs-apocalypse-so-far-says-openais-sam-altman",
+      "edition_date": "2026-05-28"
+    },
+    {
+      "title": "Zitat: Olah beim Vatikan über KI und Arbeit",
+      "source_url": "https://religionnews.com/2026/05/22/why-anthropic-is-helping-unveil-the-popes-new-encyclical-on-ai/",
+      "edition_date": "2026-05-28"
+    },
     {
       "title": "Papst Leo XIV. veröffentlicht erste KI-Enzyklika 'Magnifica Humanitas'",
       "source_url": "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html"
@@ -300,26 +324,6 @@
     {
       "title": "Zitat: KI-Abhängigkeit und der schleichende Verlust des Denkens",
       "source_url": "https://www.404media.co/software-developers-say-ai-is-rotting-their-brains/"
-    },
-    {
-      "title": "SpaceXAI: Talentabgang trifft auf Gas-Turbinen-Umweltklage",
-      "source_url": "https://theaiinsider.tech/2026/05/15/spacexai-faces-twin-crises-as-brain-drain-accelerates-and-gas-turbine-pollution-lawsuit-looms/"
-    },
-    {
-      "title": "Google I/O am 19. Mai: Gemini 4.0 soll GPT-5.5 schlagen",
-      "source_url": "https://www.androidauthority.com/what-to-expect-from-google-io-2026-3664979/"
-    },
-    {
-      "title": "Android Show: Gemini Intelligence proaktiv auf allen Geräten",
-      "source_url": "https://www.engadget.com/2171038/everything-announced-at-android-show-google-io-2026/"
-    },
-    {
-      "title": "Runway: Von KI-Video zu World Models — Angriff auf DeepMind",
-      "source_url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/"
-    },
-    {
-      "title": "ChatGPT verbindet Bankkonten: OpenAI startet Finanz-Feature",
-      "source_url": "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/"
     }
   ]
 }
