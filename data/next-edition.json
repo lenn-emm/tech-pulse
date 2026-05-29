@@ -1,48 +1,83 @@
 {
   "edition": {
-    "title": "Tech Pulse — Donnerstag, 28. Mai 2026",
-    "edition_date": "2026-05-28",
-    "summary": "DeepMind-Chef Hassabis erklärt AGI bis 2029 für realistisch, während der Vatikan mit seiner ersten KI-Enzyklika eine moralische Gegenkraft formiert – dazwischen streiten OpenAI und Anthropic über die Zukunft menschlicher Arbeit."
+    "title": "Tech Pulse — Freitag, 29. Mai 2026",
+    "edition_date": "2026-05-29",
+    "summary": "Mistral drängt mit Airbus und BMW in die Schwerindustrie, während Anthropic 200 Millionen Dollar für globale Gesundheit mobilisiert – und eine MIT-Analyse die KI-Jobdebatte neu bewertet."
   },
   "articles": [
     {
-      "title": "Altman vs. Amodei: KI-Jobs – wer hat Recht?",
-      "summary": "OpenAI und Anthropic liegen bei der KI-Jobkrise diametral auseinander. Sam Altman räumte ein, mit früheren Prognosen zum Wegfall weißer Kragen-Jobs falsch gelegen zu haben – während Anthropic-Mitgründer Chris Olah beim Vatikan-KI-Kongress massiven Stellenabbau als reale Möglichkeit bezeichnete. Das Aufeinandertreffen beider Narrative offenbart tiefe ideologische Gräben im Silicon Valley.",
-      "source_url": "https://www.axios.com/2026/05/27/ai-hype-doom-openai-anthropic",
-      "source_name": "Axios",
+      "title": "Mistral gewinnt Airbus und BMW als erste Industriekunden",
+      "summary": "Mistral AI hat Airbus SE und BMW AG als Kunden gewonnen und bringt seine LLMs erstmals in die Schwer- und Automobilindustrie. Die Partnerschaften gelten als Beweis, dass europäische KI-Startups jenseits von Tech-Büros skalieren können. Mistral setzt auf sogenannte 'Physical AI' als Kernsäule seiner Wachstumsstrategie und peilt 2026 eine Milliarde Euro Jahresumsatz an.",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-28/mistral-signs-airbus-and-bmw-as-it-brings-ai-to-manufacturing",
+      "source_name": "Bloomberg",
+      "category": "company_news",
+      "format": "hero",
+      "zone": "adjacent",
+      "read_time_min": 5,
+      "position": 1
+    },
+    {
+      "title": "Anthropic und Gates Foundation: 200 Mio. Dollar für globale Gesundheit",
+      "summary": "Anthropic hat eine vierjährige Partnerschaft mit der Bill & Melinda Gates Foundation abgeschlossen: 200 Millionen US-Dollar in Fördermitteln, Claude-Nutzungskontingenten und technischem Support fließen in Programme für globale Gesundheit, Bildung und wirtschaftliche Mobilität. Es ist Anthropics bisher größtes philanthropisches Engagement und unterstreicht den gesellschaftlichen Anspruch des Unternehmens.",
+      "source_url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "source_name": "Anthropic",
       "category": "company_news",
       "format": "feature",
       "zone": "core",
-      "read_time_min": 3,
+      "read_time_min": 4,
       "position": 2
     },
     {
-      "title": "Papst Leo XIV: KI muss entwaffnet werden",
-      "summary": "Mit der 42.300 Wörter langen Enzyklika 'Magnifica Humanitas' veröffentlichte der Vatikan das bisher umfassendste religiöse Moraldokument zum Thema KI. Papst Leo XIV. warnte vor 'neuen digitalen Sklavereien' und verlangte schärfere Regulierung zum Schutz menschlicher Würde. Anthropic-Mitgründer Chris Olah präsentierte das Dokument gemeinsam mit dem Papst – ein Zeichen für den Schulterschäluss zwischen Tech-Industrie und Kirche.",
-      "source_url": "https://www.washingtonpost.com/world/2026/05/25/pope-elevates-ai-ethics-religious-imperative-with-first-encyclical/",
-      "source_name": "Washington Post",
-      "category": "regulation",
-      "format": "feature",
-      "zone": "outside",
-      "read_time_min": 5,
+      "title": "AlphaEvolve optimiert Googles Strom und Quantencomputer",
+      "summary": "DeepMind legt neue Zahlen vor: AlphaEvolve steuert aktiv Googles globale Rechenzentrumsinfrastruktur, spart messbar Energie und hat molekulare Simulationen auf dem Willow-Quantenprozessor erst möglich gemacht. Die Bandbreite der Einsatzbereiche – von Stromnetzen bis Quantenphysik – ist einzigartig für ein einzelnes KI-System und markiert den Übergang von Labor zu Betrieb.",
+      "source_url": "https://deepmind.google/blog/alphaevolve-impact/",
+      "source_name": "Google DeepMind",
+      "category": "research",
+      "format": "visual",
+      "zone": "core",
+      "read_time_min": 6,
       "position": 3
     },
     {
-      "title": "Anthropic und Microsoft verhandeln über KI-Chips",
-      "summary": "Anthropic führt Gespräche mit Microsoft über die Nutzung des Maia-200-Chips zur KI-Inferenz – ein Schritt, der Abhängigkeit von Google und AWS reduzieren würde. Der Deal käme kurz nach Microsofts 5-Milliarden-Dollar-Investment in Anthropic.",
-      "source_url": "https://www.cnbc.com/2026/05/21/anthropic-microsoft-maia-200-ai-chip.html",
-      "source_name": "CNBC",
+      "title": "Meta One: KI-Abos für Instagram, Facebook und WhatsApp live",
+      "summary": "Meta rollt kostenpflichtige Abonnements für seine drei Kernplattformen aus: Meta One Plus (7,99 $/Monat) und Meta One Premium (19,99 $/Monat) unterscheiden sich primär durch tieferes KI-Reasoning für komplexe Anfragen. Das Modell bringt Meta direkt in Konkurrenz zu ChatGPT Plus im Massenmarkt – mit einer Nutzerbasis von über drei Milliarden Menschen.",
+      "source_url": "https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/",
+      "source_name": "TechCrunch",
+      "category": "product",
+      "format": "feature",
+      "zone": "adjacent",
+      "read_time_min": 4,
+      "position": 4
+    },
+    {
+      "title": "MIT Technology Review: KI-Jobpocalypse ausgeblieben – bislang",
+      "summary": "MIT Technology Review analysiert aktuelle US-Beschäftigungsdaten und findet keinen messbaren, KI-bedingten Netto-Jobverlust – trotz enormer Automatisierungsversprechen. Die Studie mahnt zur Unterscheidung zwischen Aufgaben-Automatisierung und echtem Stellenabbau. Dennoch warnen die Autoren: Die strukturellen Verschiebungen, die sich anbahnen, könnten verzögert eintreten und dann schnell.",
+      "source_url": "https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/",
+      "source_name": "MIT Technology Review",
+      "category": "research",
+      "format": "feature",
+      "zone": "outside",
+      "read_time_min": 7,
+      "position": 5
+    },
+    {
+      "title": "Suleyman: KI automatisiert Wissensarbeit in 18 Monaten",
+      "summary": "Prognose des Microsoft-KI-Chefs",
+      "quote_text": "Within 18 months, the majority of white-collar work could be automated by AI agents — that's not a risk, that's the plan.",
+      "quote_author": "Mustafa Suleyman, CEO Microsoft AI",
+      "source_url": "https://fortune.com/article/why-microsoft-ai-chief-mustafa-suleyman-predicts-ai-automation-18-months/",
+      "source_name": "Fortune",
       "category": "company_news",
-      "format": "quick",
-      "zone": "core",
+      "format": "quote",
+      "zone": "adjacent",
       "read_time_min": 2,
       "position": 6
     },
     {
-      "title": "Sam Altman: Kein KI-Jobpocalypse bisher eingetreten",
-      "summary": "OpenAI-CEO Altman korrigierte sich öffentlich: Die erwartete Vernichtung von Einsteigerjobs im Bürobereich ist bisher ausgeblieben. 'Ich freue mich darüber, falsch gelegen zu haben', sagte er bei einem Auftritt in Australien.",
-      "source_url": "https://www.euronews.com/next/2026/05/26/no-ai-jobs-apocalypse-so-far-says-openais-sam-altman",
-      "source_name": "Euronews",
+      "title": "Mistral plant eigene KI-Chips und neues Rechenzentrum",
+      "summary": "CEO Arthur Mensch bestätigt: Mistral erkundet eigenes Chip-Design, um Inferenz-Kosten erheblich zu senken. Gleichzeitig öffnet das neue 10-MW-Rechenzentrum in Les Ulis (Frankreich) im dritten Quartal 2026.",
+      "source_url": "https://www.cnbc.com/2026/05/28/mistral-arthur-mensch-design-chips-ai-data-centers.html",
+      "source_name": "CNBC",
       "category": "company_news",
       "format": "quick",
       "zone": "adjacent",
@@ -50,17 +85,26 @@
       "position": 7
     },
     {
-      "title": "Zitat: Olah beim Vatikan über KI und Arbeit",
-      "summary": "Anthropic-Mitgründer Chris Olah sprach beim Vatikan-KI-Kongress über reale Gefahren von KI für den Arbeitsmarkt – eine ungewöhnliche Kulisse für einen der einflussreichsten KI-Forscher.",
-      "source_url": "https://religionnews.com/2026/05/22/why-anthropic-is-helping-unveil-the-popes-new-encyclical-on-ai/",
-      "source_name": "Religion News Service",
-      "category": "company_news",
-      "format": "quote",
-      "zone": "outside",
-      "read_time_min": 1,
-      "position": 8,
-      "quote_text": "There is a real possibility that AI will displace human labor at very large scale.",
-      "quote_author": "Chris Olah, Anthropic-Mitgründer"
+      "title": "Hugging Face Transformers 5.8 bringt sechs neue Modelle",
+      "summary": "Das Update ergänzt Support für DeepSeek V4, Gemma 4 Assistant, Granite Speech Plus, Granite 4.1 Vision, EXAONE 4.5 und PP-FormulaNet. Jedes Gradio Space liefert jetzt automatisch ein /agents.md-Endpoint – eine maschinenlesbare API-Beschreibung für autonome KI-Agenten.",
+      "source_url": "https://github.com/huggingface/transformers/releases",
+      "source_name": "Hugging Face",
+      "category": "model_release",
+      "format": "quick",
+      "zone": "wildcard",
+      "read_time_min": 2,
+      "position": 8
+    },
+    {
+      "title": "OpenAI, Google, Microsoft fördern KI-Alphabetisierung an Schulen",
+      "summary": "Ein überparteilicher US-Gesetzentwurf (Senators Schiff & Rounds) würde Bundesmittel für KI-Literacy-Programme in Schulen freischalten. Alle drei Tech-Giganten haben ihre Unterstützung erklärt – ein seltener Konsens in der sonst wettbewerbsintensiven Branche.",
+      "source_url": "https://www.404media.co/literacy-in-future-technologies-artificial-intelligence-act-adam-schiff-mike-rounds/",
+      "source_name": "404 Media",
+      "category": "regulation",
+      "format": "quick",
+      "zone": "wildcard",
+      "read_time_min": 2,
+      "position": 9
     }
   ]
 }
