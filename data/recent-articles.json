@@ -1,6 +1,31 @@
 {
   "articles": [
     {
+      "title": "Anthropic startet Claude Opus 4.8 mit Dynamic Workflows",
+      "source_url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "edition_date": "2026-05-31"
+    },
+    {
+      "title": "OpenAI gibt GPT-Rosalind für Bioabwehr frei",
+      "source_url": "https://openai.com/index/introducing-gpt-rosalind/",
+      "edition_date": "2026-05-31"
+    },
+    {
+      "title": "Anthropic überholt OpenAI mit 965-Mrd.-Dollar-Bewertung",
+      "source_url": "https://www.thestreet.com/technology/anthropic-drops-new-claude-model-as-openai-ipo-race-heats-up",
+      "edition_date": "2026-05-31"
+    },
+    {
+      "title": "DuckDuckGo wächst 30 % nach Googles KI-Pflichtumstellung",
+      "source_url": "https://www.macrumors.com/2026/05/29/duckduckgo-no-ai-search/",
+      "edition_date": "2026-05-31"
+    },
+    {
+      "title": "Meta entwickelt KI-Anhänger als Wearables-Kernstück",
+      "source_url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/",
+      "edition_date": "2026-05-31"
+    },
+    {
       "title": "Anthropic deutet Mythos-Modell als Opus-4.8-Nachfolger an",
       "source_url": "https://qz.com/anthropic-claude-opus-4-8-mythos-release-052826"
     },
@@ -299,26 +324,6 @@
     {
       "title": "Google I/O 2026: Gemini Spark wird Googles persönlicher KI-Agent",
       "source_url": "https://9to5google.com/2026/05/19/google-io-2026-news/"
-    },
-    {
-      "title": "Google I/O 2026: Gemini Intelligence wird Android-Betriebssystem",
-      "source_url": "https://www.androidcentral.com/phones/live/google-i-o-2026-live-blog-android-17-android-xr-glasses-and-all-the-gemini-ai-news"
-    },
-    {
-      "title": "Gemini 3.2 Flash: Milliarden Nutzer erhalten das neue Standardmodell",
-      "source_url": "https://letsdatascience.com/news/google-debuts-gemini-focused-updates-at-io-2026-4be4fde6"
-    },
-    {
-      "title": "Meta Avocado erneut verzögert – intern hinter GPT und Claude",
-      "source_url": "https://qz.com/meta-avocado-delay-mark-zuckerberg-google-gemini"
-    },
-    {
-      "title": "Recursive Superintelligence: 650 Mio. $ für selbstverbessernde KI",
-      "source_url": "https://the-decoder.com/ai-startup-recursive-emerges-from-stealth-with-650-million-to-build-self-improving-ai/"
-    },
-    {
-      "title": "Google Health startet: Fitbit-App erhält Gemini-KI-Coach",
-      "source_url": "https://blog.google/products-and-platforms/products/google-health/google-health-coach/"
     }
   ]
 }
