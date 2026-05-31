@@ -1,33 +1,41 @@
 {
+  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
     {
-      "title": "Anthropic startet Claude Opus 4.8 mit Dynamic Workflows",
-      "source_url": "https://www.anthropic.com/news/claude-opus-4-8",
-      "edition_date": "2026-05-31"
-    },
-    {
-      "title": "OpenAI gibt GPT-Rosalind für Bioabwehr frei",
-      "source_url": "https://openai.com/index/introducing-gpt-rosalind/",
-      "edition_date": "2026-05-31"
+      "title": "Meta entwickelt KI-Anhänger als Wearables-Kernstück",
+      "source_url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/"
     },
     {
       "title": "Anthropic überholt OpenAI mit 965-Mrd.-Dollar-Bewertung",
-      "source_url": "https://www.thestreet.com/technology/anthropic-drops-new-claude-model-as-openai-ipo-race-heats-up",
-      "edition_date": "2026-05-31"
+      "source_url": "https://www.thestreet.com/technology/anthropic-drops-new-claude-model-as-openai-ipo-race-heats-up"
     },
     {
       "title": "DuckDuckGo wächst 30 % nach Googles KI-Pflichtumstellung",
-      "source_url": "https://www.macrumors.com/2026/05/29/duckduckgo-no-ai-search/",
-      "edition_date": "2026-05-31"
+      "source_url": "https://www.macrumors.com/2026/05/29/duckduckgo-no-ai-search/"
     },
     {
-      "title": "Meta entwickelt KI-Anhänger als Wearables-Kernstück",
-      "source_url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/",
-      "edition_date": "2026-05-31"
+      "title": "Anthropic startet Claude Opus 4.8 mit Dynamic Workflows",
+      "source_url": "https://www.anthropic.com/news/claude-opus-4-8"
     },
     {
-      "title": "Anthropic deutet Mythos-Modell als Opus-4.8-Nachfolger an",
-      "source_url": "https://qz.com/anthropic-claude-opus-4-8-mythos-release-052826"
+      "title": "OpenAI gibt GPT-Rosalind für Bioabwehr frei",
+      "source_url": "https://openai.com/index/introducing-gpt-rosalind/"
+    },
+    {
+      "title": "AGI ist drei bis vier Jahre entfernt",
+      "source_url": "https://sherwood.news/tech/google-deepminds-hassabis-agi-is-3-to-4-years-away/"
+    },
+    {
+      "title": "Anthropic: $900-Mrd.-Runde macht KI-Startup wertvoller als OpenAI",
+      "source_url": "https://www.shacknews.com/article/149157/anthropic-900-billion-valuation"
+    },
+    {
+      "title": "Claude Opus 4.8: Dynamic Workflows und Fast Mode ab sofort live",
+      "source_url": "https://www.anthropic.com/claude/opus"
+    },
+    {
+      "title": "ClickUp entlässt 22% der Belegschaft und setzt 3.000 KI-Agenten ein",
+      "source_url": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/"
     },
     {
       "title": "OpenAI Rosalind: KI-Bioabwehr-Modell für Pandemieschutz geöffnet",
@@ -38,60 +46,48 @@
       "source_url": "https://stanforddaily.com/2026/05/29/deepmind-ceo-warns-about-ai/"
     },
     {
-      "title": "ClickUp entlässt 22% der Belegschaft und setzt 3.000 KI-Agenten ein",
-      "source_url": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/"
-    },
-    {
-      "title": "Claude Opus 4.8: Dynamic Workflows und Fast Mode ab sofort live",
-      "source_url": "https://www.anthropic.com/claude/opus"
-    },
-    {
-      "title": "Anthropic: $900-Mrd.-Runde macht KI-Startup wertvoller als OpenAI",
-      "source_url": "https://www.shacknews.com/article/149157/anthropic-900-billion-valuation"
-    },
-    {
-      "title": "AGI ist drei bis vier Jahre entfernt",
-      "source_url": "https://sherwood.news/tech/google-deepminds-hassabis-agi-is-3-to-4-years-away/"
-    },
-    {
-      "title": "Meta One: KI-Abos für Instagram, Facebook und WhatsApp live",
-      "source_url": "https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/"
-    },
-    {
-      "title": "Mistral gewinnt Airbus und BMW als erste Industriekunden",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-05-28/mistral-signs-airbus-and-bmw-as-it-brings-ai-to-manufacturing"
+      "title": "Anthropic deutet Mythos-Modell als Opus-4.8-Nachfolger an",
+      "source_url": "https://qz.com/anthropic-claude-opus-4-8-mythos-release-052826"
     },
     {
       "title": "Mistral plant eigene KI-Chips und neues Rechenzentrum",
       "source_url": "https://www.cnbc.com/2026/05/28/mistral-arthur-mensch-design-chips-ai-data-centers.html"
     },
     {
-      "title": "Suleyman: KI automatisiert Wissensarbeit in 18 Monaten",
-      "source_url": "https://fortune.com/article/why-microsoft-ai-chief-mustafa-suleyman-predicts-ai-automation-18-months/"
-    },
-    {
-      "title": "Anthropic und Gates Foundation: 200 Mio. Dollar für globale Gesundheit",
-      "source_url": "https://www.anthropic.com/news/gates-foundation-partnership"
-    },
-    {
-      "title": "MIT Technology Review: KI-Jobpocalypse ausgeblieben – bislang",
-      "source_url": "https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/"
-    },
-    {
-      "title": "AlphaEvolve optimiert Googles Strom und Quantencomputer",
-      "source_url": "https://deepmind.google/blog/alphaevolve-impact/"
-    },
-    {
-      "title": "OpenAI, Google, Microsoft fördern KI-Alphabetisierung an Schulen",
-      "source_url": "https://www.404media.co/literacy-in-future-technologies-artificial-intelligence-act-adam-schiff-mike-rounds/"
+      "title": "Meta One: KI-Abos für Instagram, Facebook und WhatsApp live",
+      "source_url": "https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/"
     },
     {
       "title": "Hugging Face Transformers 5.8 bringt sechs neue Modelle",
       "source_url": "https://github.com/huggingface/transformers/releases"
     },
     {
-      "title": "Zitat: Olah beim Vatikan über KI und Arbeit",
-      "source_url": "https://religionnews.com/2026/05/22/why-anthropic-is-helping-unveil-the-popes-new-encyclical-on-ai/"
+      "title": "OpenAI, Google, Microsoft fördern KI-Alphabetisierung an Schulen",
+      "source_url": "https://www.404media.co/literacy-in-future-technologies-artificial-intelligence-act-adam-schiff-mike-rounds/"
+    },
+    {
+      "title": "Mistral gewinnt Airbus und BMW als erste Industriekunden",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-28/mistral-signs-airbus-and-bmw-as-it-brings-ai-to-manufacturing"
+    },
+    {
+      "title": "MIT Technology Review: KI-Jobpocalypse ausgeblieben – bislang",
+      "source_url": "https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/"
+    },
+    {
+      "title": "Anthropic und Gates Foundation: 200 Mio. Dollar für globale Gesundheit",
+      "source_url": "https://www.anthropic.com/news/gates-foundation-partnership"
+    },
+    {
+      "title": "AlphaEvolve optimiert Googles Strom und Quantencomputer",
+      "source_url": "https://deepmind.google/blog/alphaevolve-impact/"
+    },
+    {
+      "title": "Suleyman: KI automatisiert Wissensarbeit in 18 Monaten",
+      "source_url": "https://fortune.com/article/why-microsoft-ai-chief-mustafa-suleyman-predicts-ai-automation-18-months/"
+    },
+    {
+      "title": "Altman vs. Amodei: KI-Jobs – wer hat Recht?",
+      "source_url": "https://www.axios.com/2026/05/27/ai-hype-doom-openai-anthropic"
     },
     {
       "title": "Papst Leo XIV: KI muss entwaffnet werden",
@@ -102,36 +98,36 @@
       "source_url": "https://www.euronews.com/next/2026/05/26/no-ai-jobs-apocalypse-so-far-says-openais-sam-altman"
     },
     {
-      "title": "Altman vs. Amodei: KI-Jobs – wer hat Recht?",
-      "source_url": "https://www.axios.com/2026/05/27/ai-hype-doom-openai-anthropic"
-    },
-    {
       "title": "Anthropic und Microsoft verhandeln über KI-Chips",
       "source_url": "https://www.cnbc.com/2026/05/21/anthropic-microsoft-maia-200-ai-chip.html"
     },
     {
-      "title": "Zitat: Hassabis über die Singularität und gesellschaftliche Blindheit",
-      "source_url": "https://startupfortune.com/demis-hassabis-says-agi-could-arrive-by-2029/"
-    },
-    {
-      "title": "Anthropic kurz vor $30-Mrd.-Abschluss bei $900-Mrd.-Bewertung",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-05-22/anthropic-to-close-over-30-billion-round-as-soon-as-next-week"
+      "title": "Zitat: Olah beim Vatikan über KI und Arbeit",
+      "source_url": "https://religionnews.com/2026/05/22/why-anthropic-is-helping-unveil-the-popes-new-encyclical-on-ai/"
     },
     {
       "title": "Papst Leo XIV. veröffentlicht erste KI-Enzyklika 'Magnifica Humanitas'",
       "source_url": "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html"
     },
     {
-      "title": "Hassabis: Wir stehen an den Ausläufern der Singularität",
-      "source_url": "https://www.axios.com/2026/05/26/deepmind-ceo-demis-hassabis"
-    },
-    {
       "title": "LeCun nennt 'General Intelligence' Unsinn – Hassabis widerspricht scharf",
       "source_url": "https://the-decoder.com/deepminds-hassabis-sees-humanity-in-the-foothills-of-the-singularity-while-lecun-says-current-ai-isnt-intelligent/"
     },
     {
+      "title": "Anthropic kurz vor $30-Mrd.-Abschluss bei $900-Mrd.-Bewertung",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-05-22/anthropic-to-close-over-30-billion-round-as-soon-as-next-week"
+    },
+    {
+      "title": "Hassabis: Wir stehen an den Ausläufern der Singularität",
+      "source_url": "https://www.axios.com/2026/05/26/deepmind-ceo-demis-hassabis"
+    },
+    {
       "title": "KI-Sicherheitsberichte fluten Open-Source-Teams – ein Weckruf",
       "source_url": "https://simonwillison.net/2026/May/26/the-pressure/"
+    },
+    {
+      "title": "Zitat: Hassabis über die Singularität und gesellschaftliche Blindheit",
+      "source_url": "https://startupfortune.com/demis-hassabis-says-agi-could-arrive-by-2029/"
     },
     {
       "title": "OpenAI-Rechenzentrum: Schatzmeisterin tritt wegen Todesdrohungen zurück",
@@ -140,10 +136,6 @@
     {
       "title": "KI und Krieg lassen Glasfaserpreise explodieren",
       "source_url": "https://www.404media.co/war-and-data-centers-are-driving-up-the-cost-of-fiber-optic-cable/"
-    },
-    {
-      "title": "Claude Mythos findet 10.000 kritische Lücken in einem Monat",
-      "source_url": "https://thenextweb.com/news/anthropic-glasswing-claude-mythos-10000-vulnerabilities"
     },
     {
       "title": "Willison: 'Agent' hat endlich eine konsensfähige Definition",
@@ -158,6 +150,10 @@
       "source_url": "https://www.cnn.com/2026/05/23/tech/ai-internet-search"
     },
     {
+      "title": "Claude Mythos findet 10.000 kritische Lücken in einem Monat",
+      "source_url": "https://thenextweb.com/news/anthropic-glasswing-claude-mythos-10000-vulnerabilities"
+    },
+    {
       "title": "Japan erhält diplomatisch bevorzugten Claude-Mythos-Zugang",
       "source_url": "https://www.nippon.com/en/news/yjj2026052200532/"
     },
@@ -166,12 +162,16 @@
       "source_url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html"
     },
     {
-      "title": "Zitat: Tim Gowers über KIs Sprung in die Hochmathematik",
-      "source_url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
-    },
-    {
       "title": "OpenAI startet öffentliches Verifikationstool für KI-generierte Bilder",
       "source_url": "https://openai.com/index/advancing-content-provenance/"
+    },
+    {
+      "title": "EU-KI-Akt: Was die Vereinfachung wirklich für Unternehmen ändert",
+      "source_url": "https://www.euronews.com/my-europe/2026/05/21/the-eu-simplified-its-toughest-ai-law-what-changed-and-why-it-matters"
+    },
+    {
+      "title": "Zitat: Tim Gowers über KIs Sprung in die Hochmathematik",
+      "source_url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
     },
     {
       "title": "Air Street: KI-Forschungslandschaft 2026 hat Wendepunkt überschritten",
@@ -194,20 +194,20 @@
       "source_url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/computer-using-agents-in-microsoft-copilot-studio-are-now-generally-available/4519427"
     },
     {
-      "title": "EU-KI-Akt: Was die Vereinfachung wirklich für Unternehmen ändert",
-      "source_url": "https://www.euronews.com/my-europe/2026/05/21/the-eu-simplified-its-toughest-ai-law-what-changed-and-why-it-matters"
+      "title": "Trump stoppt KI-Exekutivorder in letzter Minute",
+      "source_url": "https://thehill.com/policy/technology/5870495-white-house-ai-policy-shift/"
     },
     {
       "title": "Anthropic peilt 30-Mrd-Runde bei 900-Mrd-Bewertung an",
       "source_url": "https://www.bloomberg.com/news/articles/2026-05-12/anthropic-in-talks-to-raise-30-billion-at-900-billion-valuation"
     },
     {
-      "title": "OpenAI und Google markieren Bilder gemeinsam mit SynthID",
-      "source_url": "https://openai.com/research/index/release/"
-    },
-    {
       "title": "DeepMind Co-Scientist erscheint im Nature-Fachjournal",
       "source_url": "https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/"
+    },
+    {
+      "title": "OpenAI und Google markieren Bilder gemeinsam mit SynthID",
+      "source_url": "https://openai.com/research/index/release/"
     },
     {
       "title": "Trump über seinen gestoppten KI-Erlass",
@@ -228,10 +228,6 @@
     {
       "title": "EU-Omnibus VII entlastet KI-Firmen von Bürokratie",
       "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
-    },
-    {
-      "title": "Trump stoppt KI-Exekutivorder in letzter Minute",
-      "source_url": "https://thehill.com/policy/technology/5870495-white-house-ai-policy-shift/"
     },
     {
       "title": "Karpathy über seinen Wechsel: Frontier der nächsten Jahre",
