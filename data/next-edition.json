@@ -1,64 +1,99 @@
 {
   "edition": {
-    "title": "Tech Pulse — Sonntag, 31. Mai 2026",
-    "edition_date": "2026-05-31",
-    "summary": "Anthropic startet Claude Opus 4.8 mit dynamischen Workflows und erklimmt mit 965 Milliarden Dollar Bewertung die Spitze der KI-Startups. Dazu: OpenAI öffnet GPT-Rosalind für Bioabwehr, Metas KI-Anhänger-Pläne, der DuckDuckGo-Boom gegen Google AI — und Demis Hassabis warnt Stanford vor einer 'Transition auf Spezies-Niveau'."
+    "title": "Tech Pulse — Montag, 01. Juni 2026",
+    "edition_date": "2026-06-01",
+    "summary": "Computex 2026 dominiert den Montag: Jensen Huang bringt Nvidias Vera Rubin NVL72 in Serienproduktion und benennt Anthropic und OpenAI als Hauptabnehmer. Parallel dazu reformiert die EU ihren KI-Act, Apple wärmt sich für eine KI-schwere WWDC-Woche auf – und die Forschung zeigt, dass KI nun auch wissenschaftlichen Geschmack erlernen kann."
   },
   "articles": [
     {
-      "title": "Anthropic startet Claude Opus 4.8 mit Dynamic Workflows",
-      "summary": "Anthropic hat Claude Opus 4.8 veröffentlicht — das bisher stärkste Claude-Modell mit einer Coding-Benchmark-Steigerung von 64,3 auf 69,2 Prozent. Neu sind 'Dynamic Workflows' in Claude Code für großmaßstäbliche Aufgaben, Effort Control auf claude.ai sowie ein Fast Mode, der dreimal günstiger ist als bei Vorgängermodellen. Das Modell steht zum gleichen Preis wie sein Vorgänger zur Verfügung und ist auf AWS, Azure und Google Cloud verfügbar.",
-      "source_url": "https://www.anthropic.com/news/claude-opus-4-8",
-      "source_name": "Anthropic",
-      "category": "model_release",
+      "title": "Nvidia Vera Rubin NVL72 geht auf Computex in Serie",
+      "summary": "Jensen Huang eröffnete die Computex 2026 in Taipeh mit der Ankündigung, dass der Vera Rubin NVL72-Rack-Supercomputer in Serienproduktion geht. Die Plattform kombiniert 36 Vera-CPUs und 72 Rubin-GPUs, übertrifft x86-Chips von Intel und AMD um bis zu 1,5× und kommt aus einem Lieferkettennetz von 350+ Fabriken in 30 Ländern. Es ist Nvidias bisher größte Hardware-Ankündigung für die KI-Infrastruktur.",
+      "source_url": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/",
+      "source_name": "NVIDIA Blog",
+      "category": "product",
       "format": "hero",
       "zone": "core",
-      "read_time_min": 4,
+      "read_time_min": 5,
       "position": 1
     },
     {
-      "title": "OpenAI gibt GPT-Rosalind für Bioabwehr frei",
-      "summary": "OpenAI startet 'Rosalind Biodefense' und öffnet damit GPT-Rosalind für Regierungsbehörden und Forschungseinrichtungen im Bereich Pandemie-Vorsorge. Frühe Partner sind Lawrence Livermore National Laboratory, Johns Hopkins APL und die Impfinitiative CEPI; das Weiße Haus wurde vorab informiert. Das Programm bietet zwei Spuren: Entwickler weltweit können sich für gesponserten Zugang bewerben, US-Bundesbehörden erhalten direkten Modellzugang.",
-      "source_url": "https://openai.com/index/introducing-gpt-rosalind/",
-      "source_name": "OpenAI",
-      "category": "product",
-      "format": "feature",
-      "zone": "core",
-      "read_time_min": 3,
-      "position": 2
-    },
-    {
-      "title": "Anthropic überholt OpenAI mit 965-Mrd.-Dollar-Bewertung",
-      "summary": "Anthropic hat eine Finanzierungsrunde über 65 Milliarden Dollar abgeschlossen und ist damit bei einer Bewertung von rund 965 Milliarden Dollar angelangt — dem höchsten Wert aller KI-Startups weltweit. Der annualisierte Umsatz stieg im Mai auf 47 Milliarden Dollar, verglichen mit rund zehn Milliarden vor einem Jahr. Das frische Kapital soll in Modellentwicklung, Recheninfrastruktur und internationale Expansion investiert werden.",
-      "source_url": "https://www.thestreet.com/technology/anthropic-drops-new-claude-model-as-openai-ipo-race-heats-up",
-      "source_name": "TheStreet",
+      "title": "Google DeepMind holt Contextual-AI-Gründerteam an Bord",
+      "summary": "Google DeepMind sicherte sich in einem 80 bis 90 Millionen Dollar schweren Lizenz-Deal mehr als 20 Forscher von Contextual AI, darunter Co-Gründer und CEO Douwe Kiela. Das Team gilt als führend bei enterprise-tauglichen Retrieval-Augmented-Generation-Architekturen. Der Schritt ist Alphabets dritte große KI-Talentakquisition innerhalb von sechs Monaten und zeigt, wie aggressiv DeepMind sein Forschungspersonal ausbaut.",
+      "source_url": "https://www.heygotrade.com/en/news/google-io-2026-gemini-deepmind-contextual-ai/",
+      "source_name": "HeyGoTrade",
       "category": "company_news",
       "format": "feature",
       "zone": "core",
-      "read_time_min": 3,
+      "read_time_min": 4,
+      "position": 2
+    },
+    {
+      "title": "EU-KI-Verordnung bekommt neue Fristen und ein Nudification-Verbot",
+      "summary": "Rat und Parlament der EU haben sich auf eine Vereinfachung des AI Act geeinigt: Compliance-Pflichten für Hochrisiko-Systeme werden um 16 Monate auf Dezember 2027 verschoben, um Unternehmen Luft zu geben. Neu ist ein explizites Verbot KI-generierter nicht-konsentierter Intimmaterialien, das ab Dezember 2026 gilt. Im Juni erscheint zudem der Code of Practice zur Kennzeichnung KI-generierter Inhalte.",
+      "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
+      "source_name": "Rat der EU",
+      "category": "regulation",
+      "format": "feature",
+      "zone": "adjacent",
+      "read_time_min": 5,
       "position": 3
     },
     {
-      "title": "DuckDuckGo wächst 30 % nach Googles KI-Pflichtumstellung",
-      "summary": "Nachdem Google bei I/O 2026 klassische Suchergebnisse flächendeckend durch KI-Agenten ersetzte, schossen DuckDuckGo-Installationen in den USA um bis zu 30,5 Prozent pro Woche hoch — iOS-Peak lag bei 70 Prozent. CEO Gabriel Weinberg kommentierte: 'Google füttert Nutzer zwangsweise mit KI, ohne Opt-out-Möglichkeit.' Das neue KI-freie Angebot noai.duckduckgo.com verzeichnet dabei selbst 23 Prozent wöchentliches Wachstum.",
-      "source_url": "https://www.macrumors.com/2026/05/29/duckduckgo-no-ai-search/",
-      "source_name": "MacRumors",
-      "category": "product",
-      "format": "visual",
-      "zone": "adjacent",
-      "read_time_min": 3,
+      "title": "KI lernt wissenschaftlichen Geschmack per Community-Feedback",
+      "summary": "Ein neues arXiv-Paper zeigt, dass ein per RLCF (Reinforcement Learning from Community Feedback) trainiertes Modell namens Scientific Judge starke LLM-Baselines wie GPT-5.2 und Gemini 3 Pro bei der Bewertung wissenschaftlicher Relevanz übertrifft. Für das Training wurden 700.000 zitationsbasierte Paper-Paare genutzt. Die Forschung ebnet den Weg zu KI-Systemen, die nicht nur Ideen generieren, sondern ihre wissenschaftliche Güte eigenständig einschätzen.",
+      "source_url": "https://arxiv.org/abs/2603.14473",
+      "source_name": "arXiv",
+      "category": "research",
+      "format": "feature",
+      "zone": "outside",
+      "read_time_min": 7,
       "position": 4
     },
     {
-      "title": "Meta entwickelt KI-Anhänger als Wearables-Kernstück",
-      "summary": "Ein internes Meta-Memo enthüllt Pläne für ein KI-gestütztes Pendant, das Gespräche aufzeichnet, zusammenfasst und durchsuchbar macht — aufbauend auf der Technologie von Limitless, das Ende 2025 akquiriert wurde. Das Gerät ist Teil eines Wearables-Fahrplans unter VP Alex Himel, der für das zweite Halbjahr 2026 zehn Millionen Wearable-Verkäufe anpeilt. Zusätzlich sind neue Business-Smartglasses unter dem internen Label 'Wearables for Work' geplant.",
-      "source_url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/",
-      "source_name": "TechCrunch",
-      "category": "product",
+      "title": "Apple WWDC 2026: Siri 2.0 und systemweite KI für iOS 27",
+      "summary": "Ab 8. Juni öffnet Apple die WWDC 2026 mit einem Schwerpunkt auf KI-Fortschritten, der lange erwarteten Siri-Neuauflage und iOS 27. Laut Berichten nähert sich der überarbeitete Assistent erstmals chatbot-ähnlichen Fähigkeiten mit On-Screen-Awareness und persönlichem Kontext. Für Entwickler soll es neue KI-APIs geben, die eine tiefere Integration in Third-Party-Apps ermöglichen.",
+      "source_url": "https://developer.apple.com/wwdc26/",
+      "source_name": "Apple Developer",
+      "category": "company_news",
       "format": "feature",
       "zone": "adjacent",
       "read_time_min": 3,
       "position": 5
+    },
+    {
+      "title": "Anthropic und OpenAI sind Nvidias erste Vera-Großkunden",
+      "summary": "Bloomberg berichtet heute, dass Anthropic und OpenAI zu den wichtigsten Erstabnehmern von Nvidias neuem Vera-Chip gehören. Jensen Huang bestätigte die Partnerschaften im Computex-Keynote; die Chips gehen im dritten Quartal in volle Produktion.",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-06-01/nvidia-says-anthropic-openai-among-big-users-of-new-vera-chip",
+      "source_name": "Bloomberg",
+      "category": "company_news",
+      "format": "quick",
+      "zone": "core",
+      "read_time_min": 2,
+      "position": 6
+    },
+    {
+      "title": "Hacker nutzen LLM-Agenten für ersten skalierten 2FA-Bypass",
+      "summary": "Sicherheitsforscher dokumentierten einen Zero-Day-Angriff, bei dem ein LLM-Agent die Zwei-Faktor-Authentifizierung systematisch umgeht — der erste bekannte Fall KI-gesteuerter 2FA-Bypass-Entwicklung für Massenexploitation.",
+      "source_url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html",
+      "source_name": "The Hacker News",
+      "category": "research",
+      "format": "quick",
+      "zone": "wildcard",
+      "read_time_min": 3,
+      "position": 7
+    },
+    {
+      "title": "Simon Willison über die KI-Polarisierung",
+      "quote_text": "My take on AI is, essentially, everybody who's against it is too against it and everybody who's for it is too for it.",
+      "quote_author": "Simon Willison, Django-Mitgründer und KI-Blogger",
+      "summary": "Simon Willison — bekannt für das Prägen der Begriffe Prompt Injection und Agentic Engineering — bringt die aktuelle KI-Debatte auf den Punkt.",
+      "source_url": "https://simonwillison.net/",
+      "source_name": "Simon Willison's Weblog",
+      "category": "research",
+      "format": "quote",
+      "zone": "outside",
+      "read_time_min": 1,
+      "position": 8
     }
   ]
 }
