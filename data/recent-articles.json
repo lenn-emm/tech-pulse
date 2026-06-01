@@ -1,6 +1,45 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "Nvidia Vera Rubin NVL72 geht auf Computex in Serie",
+      "source_url": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/",
+      "edition_date": "2026-06-01"
+    },
+    {
+      "title": "Google DeepMind holt Contextual-AI-Gründerteam an Bord",
+      "source_url": "https://www.heygotrade.com/en/news/google-io-2026-gemini-deepmind-contextual-ai/",
+      "edition_date": "2026-06-01"
+    },
+    {
+      "title": "EU-KI-Verordnung bekommt neue Fristen und ein Nudification-Verbot",
+      "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
+      "edition_date": "2026-06-01"
+    },
+    {
+      "title": "KI lernt wissenschaftlichen Geschmack per Community-Feedback",
+      "source_url": "https://arxiv.org/abs/2603.14473",
+      "edition_date": "2026-06-01"
+    },
+    {
+      "title": "Apple WWDC 2026: Siri 2.0 und systemweite KI für iOS 27",
+      "source_url": "https://developer.apple.com/wwdc26/",
+      "edition_date": "2026-06-01"
+    },
+    {
+      "title": "Anthropic und OpenAI sind Nvidias erste Vera-Großkunden",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-06-01/nvidia-says-anthropic-openai-among-big-users-of-new-vera-chip",
+      "edition_date": "2026-06-01"
+    },
+    {
+      "title": "Hacker nutzen LLM-Agenten für ersten skalierten 2FA-Bypass",
+      "source_url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html",
+      "edition_date": "2026-06-01"
+    },
+    {
+      "title": "Simon Willison über die KI-Polarisierung",
+      "source_url": "https://simonwillison.net/",
+      "edition_date": "2026-06-01"
+    },
     {
       "title": "Meta entwickelt KI-Anhänger als Wearables-Kernstück",
       "source_url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/"
@@ -288,38 +327,6 @@
     {
       "title": "OpenAI öffnet ChatGPT-Werbeplattform für alle US-Unternehmen",
       "source_url": "https://openai.com/index/new-ways-to-buy-chatgpt-ads/"
-    },
-    {
-      "title": "Anthropic steht vor erstem Quartalsbetriebsgewinn",
-      "source_url": "https://gulfbusiness.com/en/2026/tech/anthropic-nears-profitability-claude-ai-revenue-surge-spacex-compute-deal/"
-    },
-    {
-      "title": "DeepMind übernimmt 20 Contextual-AI-Forscher für bis zu 90 Mio. Dollar",
-      "source_url": "https://www.tomsguide.com/news/live/google-io-2026-live-news-updates"
-    },
-    {
-      "title": "Essay: KI-Abos sind versteckte VC-Subventionen, kein echtes Produkt",
-      "source_url": "https://medium.com/@jose.i.ruacho/youre-not-paying-for-ai-you-re-paying-for-a-subsidy-40ee4aa3c48d"
-    },
-    {
-      "title": "Code w/ Claude: Anthropics Developer-Roadshow startet heute in London",
-      "source_url": "https://www.anthropic.com/news"
-    },
-    {
-      "title": "OpenAI eröffnet erstes Applied AI Lab außerhalb der USA in Singapur",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-05-20/openai-commits-234-million-for-new-ai-lab-in-singapore"
-    },
-    {
-      "title": "Gemini Omni: Video-Generierung nativ aus Text, Bild und Audio",
-      "source_url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html"
-    },
-    {
-      "title": "Gemini 3.5 Flash: Frontier-Level, 4× schneller als Vorgänger",
-      "source_url": "https://www.axios.com/2026/05/19/google-ai-youtube-gemini"
-    },
-    {
-      "title": "Google I/O 2026: Gemini Spark wird Googles persönlicher KI-Agent",
-      "source_url": "https://9to5google.com/2026/05/19/google-io-2026-news/"
     }
   ]
 }
