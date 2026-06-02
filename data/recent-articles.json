@@ -1,6 +1,46 @@
 {
   "articles": [
     {
+      "title": "Anthropic stellt vertraulichen IPO-Antrag beim SEC",
+      "source_url": "https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html",
+      "edition_date": "2026-06-02"
+    },
+    {
+      "title": "Microsoft Build 2026: Copilot avanciert zum Peer Programmer",
+      "source_url": "https://www.notebookcheck.net/Microsoft-Build-2026-What-to-expect-from-the-June-2-keynote.1311546.0.html",
+      "edition_date": "2026-06-02"
+    },
+    {
+      "title": "OpenAI und Disney: Sora darf Mickey bis Star Wars zeigen",
+      "source_url": "https://openai.com/index/disney-sora-agreement/",
+      "edition_date": "2026-06-02"
+    },
+    {
+      "title": "GitHub Copilot: Abo fällt, Token-Tarif tritt in Kraft",
+      "source_url": "https://dataconomy.com/2026/06/01/github-copilot-token-pricing-backlash/",
+      "edition_date": "2026-06-02"
+    },
+    {
+      "title": "DOE Genesis Mission: KI-Allianz für alle 17 nationalen Labore",
+      "source_url": "https://openai.com/index/us-department-of-energy-collaboration/",
+      "edition_date": "2026-06-02"
+    },
+    {
+      "title": "Salesforces Anthropic-Stake ist jetzt 5 Milliarden wert",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-06-01/salesforce-investment-in-anthropic-is-valued-at-about-5-billion",
+      "edition_date": "2026-06-02"
+    },
+    {
+      "title": "Willison: Neun Muster für robuste KI-Agentensysteme",
+      "source_url": "https://simonw.substack.com/p/agentic-engineering-patterns",
+      "edition_date": "2026-06-02"
+    },
+    {
+      "title": "Colorados KI-Gesetz: Noch 28 Tage bis zum Inkrafttreten",
+      "source_url": "https://www.gunder.com/en/news-insights/insights/2026-ai-laws-update-key-regulations-and-practical-guidance",
+      "edition_date": "2026-06-02"
+    },
+    {
       "title": "Nvidia Vera Rubin NVL72 geht auf Computex in Serie",
       "source_url": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/"
     },
@@ -287,38 +327,6 @@
     {
       "title": "Gemini Spark: Googles persönlicher KI-Agent für Gmail und Drive",
       "source_url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html"
-    },
-    {
-      "title": "Andrej Karpathy verlässt Startup-Projekt und wechselt zu Anthropic",
-      "source_url": "https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/"
-    },
-    {
-      "title": "Simon Willison veröffentlicht Datasette Agent",
-      "source_url": "https://simonwillison.net/2026/May/21/datasette-agent/"
-    },
-    {
-      "title": "Intuit streicht 17 % der Belegschaft für KI-Investitionen",
-      "source_url": "https://www.heygotrade.com/en/news/tech-layoffs-meta-intuit-ai-restructuring/"
-    },
-    {
-      "title": "Zuckerberg: „Erfolg ist keine Selbstverständlichkeit“",
-      "source_url": "https://www.cnbc.com/2026/05/20/meta-layoffs-zuckerberg-says-success-isnt-a-given-in-memo.html"
-    },
-    {
-      "title": "Googles KI-Suche mit Agenten startet global",
-      "source_url": "https://letsdatascience.com/news/google-updates-search-with-ai-agents-and-intelligent-box-451a33ce"
-    },
-    {
-      "title": "Meta streicht 8.000 Stellen für KI-Offensive",
-      "source_url": "https://www.npr.org/2026/05/20/nx-s1-5826917/meta-layoffs-ai-jobs"
-    },
-    {
-      "title": "KPMG bringt Claude zu 276.000 Mitarbeitern weltweit",
-      "source_url": "https://www.anthropic.com/news/anthropic-kpmg"
-    },
-    {
-      "title": "OpenAI öffnet ChatGPT-Werbeplattform für alle US-Unternehmen",
-      "source_url": "https://openai.com/index/new-ways-to-buy-chatgpt-ads/"
     }
   ]
 }
