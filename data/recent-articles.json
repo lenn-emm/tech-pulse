@@ -1,6 +1,41 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "Anthropic reicht vertraulichen IPO-Antrag bei SEC ein",
+      "source_url": "https://www.anthropic.com/news/confidential-draft-s1-sec"
+    },
+    {
+      "title": "Claude Opus 4.8: Dynamische Workflows und 1M-Token-Kontext",
+      "source_url": "https://www.artificialintelligence-news.com/news/anthropic-releases-claude-opus-4-8-news/"
+    },
+    {
+      "title": "Project Glasswing: 150 neue Orgs, 10.000+ kritische Lücken",
+      "source_url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/"
+    },
+    {
+      "title": "GPT-5.5 und Codex jetzt allgemein auf Amazon Bedrock verfügbar",
+      "source_url": "https://aws.amazon.com/blogs/aws/get-started-with-openai-gpt-5-5-gpt-5-4-models-and-codex-on-amazon-bedrock/"
+    },
+    {
+      "title": "ClickUp tauscht 290 Stellen gegen 3.000 KI-Agenten",
+      "source_url": "https://thenextweb.com/news/clickup-layoffs-22-percent-ai-100x-org-million-salary"
+    },
+    {
+      "title": "Erster autonomer LLM-Agent erbeutet AWS-Datenbank in einer Stunde",
+      "source_url": "https://cybernews.com/ai-news/ai-agent-conducts-cyberattacks-one-hour/"
+    },
+    {
+      "title": "Willison: KI hat den Wendepunkt überschritten, dunkle Fabriken kommen",
+      "source_url": "https://www.lennysnewsletter.com/p/an-ai-state-of-the-union"
+    },
+    {
+      "title": "Colorado AI Act: Erstes US-KI-Gesetz tritt am 30. Juni in Kraft",
+      "source_url": "https://www.cooley.com/news/insight/2026/2026-04-24-state-ai-laws-where-are-they-now"
+    },
+    {
+      "title": "Zeb Evans, CEO ClickUp",
+      "source_url": "https://www.businesstoday.in/technology/news/story/people-who-automate-jobs-with-ai-will-always-have-a-job-productivity-startup-clickup-cuts-22-of-workforce-532801-2026-05-22"
+    },
     {
       "title": "OpenAI und Disney: Sora darf Mickey bis Star Wars zeigen",
       "source_url": "https://openai.com/index/disney-sora-agreement/"
@@ -284,42 +319,6 @@
     {
       "title": "MOSS: KI-Agent schreibt seinen eigenen Quellcode neu",
       "source_url": "https://arxiv.org/abs/2505.16333"
-    },
-    {
-      "title": "OpenAI bringt Codex auf iOS und Android",
-      "source_url": "https://openai.com/news/product-releases/"
-    },
-    {
-      "title": "AMD Venice: Erste 2nm-Hochleistungs-CPUs in Produktion",
-      "source_url": "https://www.tomshardware.com/pc-components/cpus/amd-epyc-venice-2nm"
-    },
-    {
-      "title": "Karpathy über seinen Wechsel: Frontier der nächsten Jahre",
-      "source_url": "https://x.com/karpathy/status/2056753169888334312"
-    },
-    {
-      "title": "Claude Code London: Agenten bekommen eigene Sandbox-Infrastruktur",
-      "source_url": "https://fortune.com/2026/05/21/claude-code-london-anthropic-ai-software-engineering/"
-    },
-    {
-      "title": "Google setzt mit Gemini 3.5 Flash auf autonome KI-Agenten",
-      "source_url": "https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/"
-    },
-    {
-      "title": "Anthropic steuert auf ersten Quartalsgewinn der Geschichte zu",
-      "source_url": "https://www.cnbc.com/2026/05/20/anthropic-revenue-explosive-growth-ipo-profitable-quarter.html"
-    },
-    {
-      "title": "Exa Labs sammelt 250 Mio. Dollar für KI-Suche",
-      "source_url": "https://techcrunch.com/2026/05/20/ai-search-startups-are-blowing-up/"
-    },
-    {
-      "title": "OpenAI reicht heute vertraulich IPO-Antrag beim SEC ein",
-      "source_url": "https://techcrunch.com/2026/05/20/openai-barrels-toward-ipo-that-may-happen-in-september/"
-    },
-    {
-      "title": "Gemini Spark: Googles persönlicher KI-Agent für Gmail und Drive",
-      "source_url": "https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html"
     }
   ]
 }
