@@ -1,72 +1,37 @@
 {
+  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
     {
-      "title": "Microsoft Scout: KI-Autopilot übernimmt Microsoft 365 dauerhaft",
-      "source_url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
-      "edition_date": "2026-06-04"
-    },
-    {
-      "title": "EU schlägt Cloud and AI Development Act zur digitalen Souveränität vor",
-      "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1024",
-      "edition_date": "2026-06-04"
-    },
-    {
-      "title": "Anthropic öffnet Claude Mythos nach EU-Verhandlungen",
-      "source_url": "https://www.cnbc.com/2026/06/01/anthropic-eu-ai-mythos-access-advanced-model.html",
-      "edition_date": "2026-06-04"
-    },
-    {
-      "title": "Microsoft baut eigene KI-Modelle, um OpenAI-Abhängigkeit zu senken",
-      "source_url": "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html",
-      "edition_date": "2026-06-04"
-    },
-    {
       "title": "Google Gemini Spark: 24/7-KI-Assistent für Ultra-Abonnenten live",
-      "source_url": "https://aiweekly.co/ai-news-today/google-ai-news",
-      "edition_date": "2026-06-04"
+      "source_url": "https://aiweekly.co/ai-news-today/google-ai-news"
     },
     {
-      "title": "OpenAI legt Abschaltdaten für o3 und GPT-4.5 fest",
-      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-      "edition_date": "2026-06-04"
-    },
-    {
-      "title": "VivaTech 2026: Europas KI-Strategie auf der Weltbühne",
-      "source_url": "https://techcrunch.com/2026/06/02/why-vivatech-2026-is-the-place-to-see-europes-ai-strategy-take-shape/",
-      "edition_date": "2026-06-04"
+      "title": "Microsoft Scout: KI-Autopilot übernimmt Microsoft 365 dauerhaft",
+      "source_url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/"
     },
     {
       "title": "Hassabis: Google verarbeitete fast eine Billiarde Tokens im Mai",
-      "source_url": "https://www.datacenterdynamics.com/en/news/google-processed-nearly-one-quadrillion-tokens-in-june-deepminds-demis-hassabis-says/",
-      "edition_date": "2026-06-04"
+      "source_url": "https://www.datacenterdynamics.com/en/news/google-processed-nearly-one-quadrillion-tokens-in-june-deepminds-demis-hassabis-says/"
     },
     {
-      "title": "Zeb Evans, CEO ClickUp",
-      "source_url": "https://www.businesstoday.in/technology/news/story/people-who-automate-jobs-with-ai-will-always-have-a-job-productivity-startup-clickup-cuts-22-of-workforce-532801-2026-05-22"
+      "title": "Anthropic öffnet Claude Mythos nach EU-Verhandlungen",
+      "source_url": "https://www.cnbc.com/2026/06/01/anthropic-eu-ai-mythos-access-advanced-model.html"
     },
     {
-      "title": "GPT-5.5 und Codex jetzt allgemein auf Amazon Bedrock verfügbar",
-      "source_url": "https://aws.amazon.com/blogs/aws/get-started-with-openai-gpt-5-5-gpt-5-4-models-and-codex-on-amazon-bedrock/"
+      "title": "VivaTech 2026: Europas KI-Strategie auf der Weltbühne",
+      "source_url": "https://techcrunch.com/2026/06/02/why-vivatech-2026-is-the-place-to-see-europes-ai-strategy-take-shape/"
     },
     {
-      "title": "ClickUp tauscht 290 Stellen gegen 3.000 KI-Agenten",
-      "source_url": "https://thenextweb.com/news/clickup-layoffs-22-percent-ai-100x-org-million-salary"
+      "title": "EU schlägt Cloud and AI Development Act zur digitalen Souveränität vor",
+      "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1024"
     },
     {
-      "title": "Project Glasswing: 150 neue Orgs, 10.000+ kritische Lücken",
-      "source_url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/"
+      "title": "OpenAI legt Abschaltdaten für o3 und GPT-4.5 fest",
+      "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
     },
     {
-      "title": "Erster autonomer LLM-Agent erbeutet AWS-Datenbank in einer Stunde",
-      "source_url": "https://cybernews.com/ai-news/ai-agent-conducts-cyberattacks-one-hour/"
-    },
-    {
-      "title": "Willison: KI hat den Wendepunkt überschritten, dunkle Fabriken kommen",
-      "source_url": "https://www.lennysnewsletter.com/p/an-ai-state-of-the-union"
-    },
-    {
-      "title": "Colorado AI Act: Erstes US-KI-Gesetz tritt am 30. Juni in Kraft",
-      "source_url": "https://www.cooley.com/news/insight/2026/2026-04-24-state-ai-laws-where-are-they-now"
+      "title": "Microsoft baut eigene KI-Modelle, um OpenAI-Abhängigkeit zu senken",
+      "source_url": "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html"
     },
     {
       "title": "Anthropic reicht vertraulichen IPO-Antrag bei SEC ein",
@@ -77,24 +42,56 @@
       "source_url": "https://www.artificialintelligence-news.com/news/anthropic-releases-claude-opus-4-8-news/"
     },
     {
-      "title": "Anthropic stellt vertraulichen IPO-Antrag beim SEC",
-      "source_url": "https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html"
+      "title": "Erster autonomer LLM-Agent erbeutet AWS-Datenbank in einer Stunde",
+      "source_url": "https://cybernews.com/ai-news/ai-agent-conducts-cyberattacks-one-hour/"
+    },
+    {
+      "title": "GPT-5.5 und Codex jetzt allgemein auf Amazon Bedrock verfügbar",
+      "source_url": "https://aws.amazon.com/blogs/aws/get-started-with-openai-gpt-5-5-gpt-5-4-models-and-codex-on-amazon-bedrock/"
+    },
+    {
+      "title": "ClickUp tauscht 290 Stellen gegen 3.000 KI-Agenten",
+      "source_url": "https://thenextweb.com/news/clickup-layoffs-22-percent-ai-100x-org-million-salary"
+    },
+    {
+      "title": "Willison: KI hat den Wendepunkt überschritten, dunkle Fabriken kommen",
+      "source_url": "https://www.lennysnewsletter.com/p/an-ai-state-of-the-union"
+    },
+    {
+      "title": "Project Glasswing: 150 neue Orgs, 10.000+ kritische Lücken",
+      "source_url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/"
+    },
+    {
+      "title": "Colorado AI Act: Erstes US-KI-Gesetz tritt am 30. Juni in Kraft",
+      "source_url": "https://www.cooley.com/news/insight/2026/2026-04-24-state-ai-laws-where-are-they-now"
+    },
+    {
+      "title": "Zeb Evans, CEO ClickUp",
+      "source_url": "https://www.businesstoday.in/technology/news/story/people-who-automate-jobs-with-ai-will-always-have-a-job-productivity-startup-clickup-cuts-22-of-workforce-532801-2026-05-22"
+    },
+    {
+      "title": "OpenAI und Disney: Sora darf Mickey bis Star Wars zeigen",
+      "source_url": "https://openai.com/index/disney-sora-agreement/"
     },
     {
       "title": "GitHub Copilot: Abo fällt, Token-Tarif tritt in Kraft",
       "source_url": "https://dataconomy.com/2026/06/01/github-copilot-token-pricing-backlash/"
     },
     {
-      "title": "Willison: Neun Muster für robuste KI-Agentensysteme",
-      "source_url": "https://simonw.substack.com/p/agentic-engineering-patterns"
-    },
-    {
       "title": "Colorados KI-Gesetz: Noch 28 Tage bis zum Inkrafttreten",
       "source_url": "https://www.gunder.com/en/news-insights/insights/2026-ai-laws-update-key-regulations-and-practical-guidance"
     },
     {
-      "title": "OpenAI und Disney: Sora darf Mickey bis Star Wars zeigen",
-      "source_url": "https://openai.com/index/disney-sora-agreement/"
+      "title": "DOE Genesis Mission: KI-Allianz für alle 17 nationalen Labore",
+      "source_url": "https://openai.com/index/us-department-of-energy-collaboration/"
+    },
+    {
+      "title": "Willison: Neun Muster für robuste KI-Agentensysteme",
+      "source_url": "https://simonw.substack.com/p/agentic-engineering-patterns"
+    },
+    {
+      "title": "Anthropic stellt vertraulichen IPO-Antrag beim SEC",
+      "source_url": "https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html"
     },
     {
       "title": "Microsoft Build 2026: Copilot avanciert zum Peer Programmer",
@@ -105,64 +102,60 @@
       "source_url": "https://www.bloomberg.com/news/articles/2026-06-01/salesforce-investment-in-anthropic-is-valued-at-about-5-billion"
     },
     {
-      "title": "DOE Genesis Mission: KI-Allianz für alle 17 nationalen Labore",
-      "source_url": "https://openai.com/index/us-department-of-energy-collaboration/"
-    },
-    {
-      "title": "KI lernt wissenschaftlichen Geschmack per Community-Feedback",
-      "source_url": "https://arxiv.org/abs/2603.14473"
-    },
-    {
-      "title": "EU-KI-Verordnung bekommt neue Fristen und ein Nudification-Verbot",
-      "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+      "title": "Hacker nutzen LLM-Agenten für ersten skalierten 2FA-Bypass",
+      "source_url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html"
     },
     {
       "title": "Google DeepMind holt Contextual-AI-Gründerteam an Bord",
       "source_url": "https://www.heygotrade.com/en/news/google-io-2026-gemini-deepmind-contextual-ai/"
     },
     {
-      "title": "Anthropic und OpenAI sind Nvidias erste Vera-Großkunden",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-06-01/nvidia-says-anthropic-openai-among-big-users-of-new-vera-chip"
+      "title": "EU-KI-Verordnung bekommt neue Fristen und ein Nudification-Verbot",
+      "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
     },
     {
-      "title": "Hacker nutzen LLM-Agenten für ersten skalierten 2FA-Bypass",
-      "source_url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html"
+      "title": "Anthropic und OpenAI sind Nvidias erste Vera-Großkunden",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-06-01/nvidia-says-anthropic-openai-among-big-users-of-new-vera-chip"
     },
     {
       "title": "Nvidia Vera Rubin NVL72 geht auf Computex in Serie",
       "source_url": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/"
     },
     {
-      "title": "Simon Willison über die KI-Polarisierung",
-      "source_url": "https://simonwillison.net/"
+      "title": "KI lernt wissenschaftlichen Geschmack per Community-Feedback",
+      "source_url": "https://arxiv.org/abs/2603.14473"
     },
     {
       "title": "Apple WWDC 2026: Siri 2.0 und systemweite KI für iOS 27",
       "source_url": "https://developer.apple.com/wwdc26/"
     },
     {
-      "title": "Anthropic startet Claude Opus 4.8 mit Dynamic Workflows",
-      "source_url": "https://www.anthropic.com/news/claude-opus-4-8"
-    },
-    {
-      "title": "Meta entwickelt KI-Anhänger als Wearables-Kernstück",
-      "source_url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/"
-    },
-    {
-      "title": "DuckDuckGo wächst 30 % nach Googles KI-Pflichtumstellung",
-      "source_url": "https://www.macrumors.com/2026/05/29/duckduckgo-no-ai-search/"
+      "title": "Simon Willison über die KI-Polarisierung",
+      "source_url": "https://simonwillison.net/"
     },
     {
       "title": "Anthropic überholt OpenAI mit 965-Mrd.-Dollar-Bewertung",
       "source_url": "https://www.thestreet.com/technology/anthropic-drops-new-claude-model-as-openai-ipo-race-heats-up"
     },
     {
+      "title": "Meta entwickelt KI-Anhänger als Wearables-Kernstück",
+      "source_url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/"
+    },
+    {
       "title": "OpenAI gibt GPT-Rosalind für Bioabwehr frei",
       "source_url": "https://openai.com/index/introducing-gpt-rosalind/"
     },
     {
-      "title": "ClickUp entlässt 22% der Belegschaft und setzt 3.000 KI-Agenten ein",
-      "source_url": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/"
+      "title": "Anthropic startet Claude Opus 4.8 mit Dynamic Workflows",
+      "source_url": "https://www.anthropic.com/news/claude-opus-4-8"
+    },
+    {
+      "title": "DuckDuckGo wächst 30 % nach Googles KI-Pflichtumstellung",
+      "source_url": "https://www.macrumors.com/2026/05/29/duckduckgo-no-ai-search/"
+    },
+    {
+      "title": "Anthropic: $900-Mrd.-Runde macht KI-Startup wertvoller als OpenAI",
+      "source_url": "https://www.shacknews.com/article/149157/anthropic-900-billion-valuation"
     },
     {
       "title": "Claude Opus 4.8: Dynamic Workflows und Fast Mode ab sofort live",
@@ -177,20 +170,16 @@
       "source_url": "https://stanforddaily.com/2026/05/29/deepmind-ceo-warns-about-ai/"
     },
     {
+      "title": "ClickUp entlässt 22% der Belegschaft und setzt 3.000 KI-Agenten ein",
+      "source_url": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/"
+    },
+    {
       "title": "Anthropic deutet Mythos-Modell als Opus-4.8-Nachfolger an",
       "source_url": "https://qz.com/anthropic-claude-opus-4-8-mythos-release-052826"
     },
     {
       "title": "AGI ist drei bis vier Jahre entfernt",
       "source_url": "https://sherwood.news/tech/google-deepminds-hassabis-agi-is-3-to-4-years-away/"
-    },
-    {
-      "title": "Anthropic: $900-Mrd.-Runde macht KI-Startup wertvoller als OpenAI",
-      "source_url": "https://www.shacknews.com/article/149157/anthropic-900-billion-valuation"
-    },
-    {
-      "title": "Suleyman: KI automatisiert Wissensarbeit in 18 Monaten",
-      "source_url": "https://fortune.com/article/why-microsoft-ai-chief-mustafa-suleyman-predicts-ai-automation-18-months/"
     },
     {
       "title": "OpenAI, Google, Microsoft fördern KI-Alphabetisierung an Schulen",
@@ -219,6 +208,10 @@
     {
       "title": "Anthropic und Gates Foundation: 200 Mio. Dollar für globale Gesundheit",
       "source_url": "https://www.anthropic.com/news/gates-foundation-partnership"
+    },
+    {
+      "title": "Suleyman: KI automatisiert Wissensarbeit in 18 Monaten",
+      "source_url": "https://fortune.com/article/why-microsoft-ai-chief-mustafa-suleyman-predicts-ai-automation-18-months/"
     },
     {
       "title": "AlphaEvolve optimiert Googles Strom und Quantencomputer",
@@ -301,12 +294,16 @@
       "source_url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html"
     },
     {
-      "title": "Zitat: Tim Gowers über KIs Sprung in die Hochmathematik",
-      "source_url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+      "title": "EU-KI-Akt: Was die Vereinfachung wirklich für Unternehmen ändert",
+      "source_url": "https://www.euronews.com/my-europe/2026/05/21/the-eu-simplified-its-toughest-ai-law-what-changed-and-why-it-matters"
     },
     {
       "title": "Air Street: KI-Forschungslandschaft 2026 hat Wendepunkt überschritten",
       "source_url": "https://press.airstreet.com/p/state-of-ai-may-2026"
+    },
+    {
+      "title": "Zitat: Tim Gowers über KIs Sprung in die Hochmathematik",
+      "source_url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
     },
     {
       "title": "Anthropic öffnet Claude Security als öffentliche Beta",
@@ -323,10 +320,6 @@
     {
       "title": "Microsoft: KI-Agenten bedienen jetzt jede Enterprise-Software visuell",
       "source_url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/computer-using-agents-in-microsoft-copilot-studio-are-now-generally-available/4519427"
-    },
-    {
-      "title": "OpenAI startet öffentliches Verifikationstool für KI-generierte Bilder",
-      "source_url": "https://openai.com/index/advancing-content-provenance/"
     }
   ]
 }
