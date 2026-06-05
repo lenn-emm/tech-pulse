@@ -1,6 +1,40 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "Gemma 4 12B: Googles Multimodal-KI läuft auf dem Standard-Laptop",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/",
+      "edition_date": "2026-06-05"
+    },
+    {
+      "title": "Trump unterzeichnet KI-Executive-Order für freiwillige Frontier-Prüfung",
+      "source_url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+      "edition_date": "2026-06-05"
+    },
+    {
+      "title": "MiniMax M3: Chinas Open-Weight-Riese mit 1-Mio.-Token-Kontext",
+      "source_url": "https://pandaily.com/minimax-m3-model-2026",
+      "edition_date": "2026-06-05"
+    },
+    {
+      "title": "Willison: KI-Enthusiasten und Skeptiker sitzen im selben Team",
+      "source_url": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/",
+      "edition_date": "2026-06-05"
+    },
+    {
+      "title": "EU ernennt Jim Hagemann Snabe zum ersten KI-Sondergesandten",
+      "source_url": "https://www.globalpolicywatch.com/2026/06/eu-tech-sovereignty-package/",
+      "edition_date": "2026-06-05"
+    },
+    {
+      "title": "OpenAI Codex erhält Plugins, Annotationen und geteilte Web-Apps",
+      "source_url": "https://openai.com/news/",
+      "edition_date": "2026-06-05"
+    },
+    {
+      "title": "Zitat: Charity Majors über Zeit, Entropie und KI im Team",
+      "source_url": "https://charity.wtf/2026/06/02/ai-enthusiasts-are-in-a-race-against-time-ai-skeptics-are-in-a-race-against-entropy-xpost/",
+      "edition_date": "2026-06-05"
+    },
     {
       "title": "Google Gemini Spark: 24/7-KI-Assistent für Ultra-Abonnenten live",
       "source_url": "https://aiweekly.co/ai-news-today/google-ai-news"
@@ -292,34 +326,6 @@
     {
       "title": "Zitat: KI beschleunigt Sicherheitslücken-Entdeckung radikal",
       "source_url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html"
-    },
-    {
-      "title": "EU-KI-Akt: Was die Vereinfachung wirklich für Unternehmen ändert",
-      "source_url": "https://www.euronews.com/my-europe/2026/05/21/the-eu-simplified-its-toughest-ai-law-what-changed-and-why-it-matters"
-    },
-    {
-      "title": "Air Street: KI-Forschungslandschaft 2026 hat Wendepunkt überschritten",
-      "source_url": "https://press.airstreet.com/p/state-of-ai-may-2026"
-    },
-    {
-      "title": "Zitat: Tim Gowers über KIs Sprung in die Hochmathematik",
-      "source_url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
-    },
-    {
-      "title": "Anthropic öffnet Claude Security als öffentliche Beta",
-      "source_url": "https://www.anthropic.com/news/claude-security"
-    },
-    {
-      "title": "arXiv-KI-Bann: Begrüßt, aber schwer durchsetzbar",
-      "source_url": "https://www.insidehighered.com/news/faculty/books-publishing/2026/05/22/ban-authors-who-submit-ai-content-welcome-unenforceable"
-    },
-    {
-      "title": "KI löst erstmals eigenständig ein 80 Jahre altes Mathe-Problem",
-      "source_url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
-    },
-    {
-      "title": "Microsoft: KI-Agenten bedienen jetzt jede Enterprise-Software visuell",
-      "source_url": "https://techcommunity.microsoft.com/blog/copilot-studio-blog/computer-using-agents-in-microsoft-copilot-studio-are-now-generally-available/4519427"
     }
   ]
 }
