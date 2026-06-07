@@ -1,56 +1,56 @@
 {
   "articles": [
     {
-      "title": "KI-Token-Kosten fressen Unternehmensbudgets auf",
-      "source_url": "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/",
-      "edition_date": "2026-06-07"
-    },
-    {
-      "title": "OpenAI Codex: Plugins, Sites und Enterprise-Workspaces",
-      "source_url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
-      "edition_date": "2026-06-07"
+      "title": "BYD enthuellt geheimes Humanoid-Roboter-Projekt",
+      "source_url": "https://carnewschina.com/2026/06/04/byd-confirms-humanoid-robot-development-says-future-sales-could-use-dealer-network/"
     },
     {
       "title": "ChatGPT erreicht eine Milliarde monatliche Nutzer",
-      "source_url": "https://www.indexbox.io/blog/chatgpt-reaches-1-billion-monthly-active-users-fastest-app-ever/",
-      "edition_date": "2026-06-07"
+      "source_url": "https://www.indexbox.io/blog/chatgpt-reaches-1-billion-monthly-active-users-fastest-app-ever/"
     },
     {
-      "title": "NYT-Verleger Sulzberger: KI-Firmen begehen dreisten Diebstahl",
-      "source_url": "https://wan-ifra.org/2026/06/nyts-sulzberger-condemns-ai-giants-for-brazen-theft-of-intellectual-property/",
-      "edition_date": "2026-06-07"
+      "title": "KI-Token-Kosten fressen Unternehmensbudgets auf",
+      "source_url": "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/"
     },
     {
-      "title": "BYD enthuellt geheimes Humanoid-Roboter-Projekt",
-      "source_url": "https://carnewschina.com/2026/06/04/byd-confirms-humanoid-robot-development-says-future-sales-could-use-dealer-network/",
-      "edition_date": "2026-06-07"
-    },
-    {
-      "title": "Linux Foundation gruendet Tokenomics Foundation",
-      "source_url": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-intent-to-launch-the-tokenomics-foundation-to-establish-open-standards-for-ai-cost-management",
-      "edition_date": "2026-06-07"
-    },
-    {
-      "title": "Hugging Face veroeffentlicht Transformers v5",
-      "source_url": "https://huggingface.co/blog/transformers-v5",
-      "edition_date": "2026-06-07"
+      "title": "OpenAI Codex: Plugins, Sites und Enterprise-Workspaces",
+      "source_url": "https://openai.com/index/codex-for-every-role-tool-workflow/"
     },
     {
       "title": "Arxiv: KI-Agenten beenden klassisches Software-Engineering",
-      "source_url": "https://arxiv.org/abs/2606.05608",
-      "edition_date": "2026-06-07"
+      "source_url": "https://arxiv.org/abs/2606.05608"
+    },
+    {
+      "title": "NYT-Verleger Sulzberger: KI-Firmen begehen dreisten Diebstahl",
+      "source_url": "https://wan-ifra.org/2026/06/nyts-sulzberger-condemns-ai-giants-for-brazen-theft-of-intellectual-property/"
+    },
+    {
+      "title": "Linux Foundation gruendet Tokenomics Foundation",
+      "source_url": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-intent-to-launch-the-tokenomics-foundation-to-establish-open-standards-for-ai-cost-management"
+    },
+    {
+      "title": "Hugging Face veroeffentlicht Transformers v5",
+      "source_url": "https://huggingface.co/blog/transformers-v5"
     },
     {
       "title": "SpaceX startet Roadshow für $75-Mrd.-Rekord-IPO",
       "source_url": "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html"
     },
     {
-      "title": "Zitat: Anthropic über rekursive KI-Selbstverbesserung",
+      "title": "NVIDIA RTX Spark: KI-Superchip für Consumer-Laptops",
+      "source_url": "https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark"
+    },
+    {
+      "title": "Anthropic fordert globalen KI-Pause-Mechanismus",
       "source_url": "https://www.anthropic.com/institute/recursive-self-improvement"
     },
     {
       "title": "Microsoft MAI-Thinking-1: Reasoning ohne OpenAI-Daten",
       "source_url": "https://www.indexbox.io/blog/microsoft-unveils-seven-in-house-ai-models-at-build-2026-reducing-reliance-on-openai/"
+    },
+    {
+      "title": "OpenAI Dreaming V3: ChatGPT-Gedächtnis komplett neugebaut",
+      "source_url": "https://openai.com/index/chatgpt-memory-dreaming/"
     },
     {
       "title": "Great American AI Act: 269-seitiger Kongress-Entwurf",
@@ -61,24 +61,28 @@
       "source_url": "https://huggingface.co/blog/Hcompany/holo31"
     },
     {
-      "title": "Anthropic fordert globalen KI-Pause-Mechanismus",
+      "title": "Zitat: Anthropic über rekursive KI-Selbstverbesserung",
       "source_url": "https://www.anthropic.com/institute/recursive-self-improvement"
     },
     {
-      "title": "NVIDIA RTX Spark: KI-Superchip für Consumer-Laptops",
-      "source_url": "https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark"
+      "title": "MiniMax M3: Chinas Open-Weight-Riese mit 1-Mio.-Token-Kontext",
+      "source_url": "https://pandaily.com/minimax-m3-model-2026"
     },
     {
-      "title": "OpenAI Dreaming V3: ChatGPT-Gedächtnis komplett neugebaut",
-      "source_url": "https://openai.com/index/chatgpt-memory-dreaming/"
+      "title": "Willison: KI-Enthusiasten und Skeptiker sitzen im selben Team",
+      "source_url": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/"
     },
     {
       "title": "EU ernennt Jim Hagemann Snabe zum ersten KI-Sondergesandten",
       "source_url": "https://www.globalpolicywatch.com/2026/06/eu-tech-sovereignty-package/"
     },
     {
-      "title": "MiniMax M3: Chinas Open-Weight-Riese mit 1-Mio.-Token-Kontext",
-      "source_url": "https://pandaily.com/minimax-m3-model-2026"
+      "title": "Zitat: Charity Majors über Zeit, Entropie und KI im Team",
+      "source_url": "https://charity.wtf/2026/06/02/ai-enthusiasts-are-in-a-race-against-time-ai-skeptics-are-in-a-race-against-entropy-xpost/"
+    },
+    {
+      "title": "OpenAI Codex erhält Plugins, Annotationen und geteilte Web-Apps",
+      "source_url": "https://openai.com/news/"
     },
     {
       "title": "Gemma 4 12B: Googles Multimodal-KI läuft auf dem Standard-Laptop",
@@ -89,36 +93,24 @@
       "source_url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/"
     },
     {
-      "title": "OpenAI Codex erhält Plugins, Annotationen und geteilte Web-Apps",
-      "source_url": "https://openai.com/news/"
-    },
-    {
-      "title": "Willison: KI-Enthusiasten und Skeptiker sitzen im selben Team",
-      "source_url": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/"
-    },
-    {
-      "title": "Zitat: Charity Majors über Zeit, Entropie und KI im Team",
-      "source_url": "https://charity.wtf/2026/06/02/ai-enthusiasts-are-in-a-race-against-time-ai-skeptics-are-in-a-race-against-entropy-xpost/"
-    },
-    {
       "title": "OpenAI legt Abschaltdaten für o3 und GPT-4.5 fest",
       "source_url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
-    },
-    {
-      "title": "EU schlägt Cloud and AI Development Act zur digitalen Souveränität vor",
-      "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1024"
     },
     {
       "title": "VivaTech 2026: Europas KI-Strategie auf der Weltbühne",
       "source_url": "https://techcrunch.com/2026/06/02/why-vivatech-2026-is-the-place-to-see-europes-ai-strategy-take-shape/"
     },
     {
+      "title": "Anthropic öffnet Claude Mythos nach EU-Verhandlungen",
+      "source_url": "https://www.cnbc.com/2026/06/01/anthropic-eu-ai-mythos-access-advanced-model.html"
+    },
+    {
       "title": "Hassabis: Google verarbeitete fast eine Billiarde Tokens im Mai",
       "source_url": "https://www.datacenterdynamics.com/en/news/google-processed-nearly-one-quadrillion-tokens-in-june-deepminds-demis-hassabis-says/"
     },
     {
-      "title": "Google Gemini Spark: 24/7-KI-Assistent für Ultra-Abonnenten live",
-      "source_url": "https://aiweekly.co/ai-news-today/google-ai-news"
+      "title": "EU schlägt Cloud and AI Development Act zur digitalen Souveränität vor",
+      "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1024"
     },
     {
       "title": "Microsoft baut eigene KI-Modelle, um OpenAI-Abhängigkeit zu senken",
@@ -129,8 +121,16 @@
       "source_url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/"
     },
     {
-      "title": "Anthropic öffnet Claude Mythos nach EU-Verhandlungen",
-      "source_url": "https://www.cnbc.com/2026/06/01/anthropic-eu-ai-mythos-access-advanced-model.html"
+      "title": "Google Gemini Spark: 24/7-KI-Assistent für Ultra-Abonnenten live",
+      "source_url": "https://aiweekly.co/ai-news-today/google-ai-news"
+    },
+    {
+      "title": "Project Glasswing: 150 neue Orgs, 10.000+ kritische Lücken",
+      "source_url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/"
+    },
+    {
+      "title": "GPT-5.5 und Codex jetzt allgemein auf Amazon Bedrock verfügbar",
+      "source_url": "https://aws.amazon.com/blogs/aws/get-started-with-openai-gpt-5-5-gpt-5-4-models-and-codex-on-amazon-bedrock/"
     },
     {
       "title": "Erster autonomer LLM-Agent erbeutet AWS-Datenbank in einer Stunde",
@@ -145,32 +145,20 @@
       "source_url": "https://www.artificialintelligence-news.com/news/anthropic-releases-claude-opus-4-8-news/"
     },
     {
-      "title": "Project Glasswing: 150 neue Orgs, 10.000+ kritische Lücken",
-      "source_url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/"
-    },
-    {
-      "title": "Zeb Evans, CEO ClickUp",
-      "source_url": "https://www.businesstoday.in/technology/news/story/people-who-automate-jobs-with-ai-will-always-have-a-job-productivity-startup-clickup-cuts-22-of-workforce-532801-2026-05-22"
-    },
-    {
-      "title": "GPT-5.5 und Codex jetzt allgemein auf Amazon Bedrock verfügbar",
-      "source_url": "https://aws.amazon.com/blogs/aws/get-started-with-openai-gpt-5-5-gpt-5-4-models-and-codex-on-amazon-bedrock/"
-    },
-    {
-      "title": "Colorado AI Act: Erstes US-KI-Gesetz tritt am 30. Juni in Kraft",
-      "source_url": "https://www.cooley.com/news/insight/2026/2026-04-24-state-ai-laws-where-are-they-now"
+      "title": "ClickUp tauscht 290 Stellen gegen 3.000 KI-Agenten",
+      "source_url": "https://thenextweb.com/news/clickup-layoffs-22-percent-ai-100x-org-million-salary"
     },
     {
       "title": "Willison: KI hat den Wendepunkt überschritten, dunkle Fabriken kommen",
       "source_url": "https://www.lennysnewsletter.com/p/an-ai-state-of-the-union"
     },
     {
-      "title": "ClickUp tauscht 290 Stellen gegen 3.000 KI-Agenten",
-      "source_url": "https://thenextweb.com/news/clickup-layoffs-22-percent-ai-100x-org-million-salary"
+      "title": "Zeb Evans, CEO ClickUp",
+      "source_url": "https://www.businesstoday.in/technology/news/story/people-who-automate-jobs-with-ai-will-always-have-a-job-productivity-startup-clickup-cuts-22-of-workforce-532801-2026-05-22"
     },
     {
-      "title": "DOE Genesis Mission: KI-Allianz für alle 17 nationalen Labore",
-      "source_url": "https://openai.com/index/us-department-of-energy-collaboration/"
+      "title": "Colorado AI Act: Erstes US-KI-Gesetz tritt am 30. Juni in Kraft",
+      "source_url": "https://www.cooley.com/news/insight/2026/2026-04-24-state-ai-laws-where-are-they-now"
     },
     {
       "title": "Microsoft Build 2026: Copilot avanciert zum Peer Programmer",
@@ -183,6 +171,10 @@
     {
       "title": "OpenAI und Disney: Sora darf Mickey bis Star Wars zeigen",
       "source_url": "https://openai.com/index/disney-sora-agreement/"
+    },
+    {
+      "title": "DOE Genesis Mission: KI-Allianz für alle 17 nationalen Labore",
+      "source_url": "https://openai.com/index/us-department-of-energy-collaboration/"
     },
     {
       "title": "GitHub Copilot: Abo fällt, Token-Tarif tritt in Kraft",
@@ -205,6 +197,10 @@
       "source_url": "https://www.bloomberg.com/news/articles/2026-06-01/nvidia-says-anthropic-openai-among-big-users-of-new-vera-chip"
     },
     {
+      "title": "Hacker nutzen LLM-Agenten für ersten skalierten 2FA-Bypass",
+      "source_url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html"
+    },
+    {
       "title": "Google DeepMind holt Contextual-AI-Gründerteam an Bord",
       "source_url": "https://www.heygotrade.com/en/news/google-io-2026-gemini-deepmind-contextual-ai/"
     },
@@ -219,10 +215,6 @@
     {
       "title": "Nvidia Vera Rubin NVL72 geht auf Computex in Serie",
       "source_url": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/"
-    },
-    {
-      "title": "Hacker nutzen LLM-Agenten für ersten skalierten 2FA-Bypass",
-      "source_url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html"
     },
     {
       "title": "KI lernt wissenschaftlichen Geschmack per Community-Feedback",
