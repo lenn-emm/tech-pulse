@@ -1,6 +1,45 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "KI-Token-Kosten fressen Unternehmensbudgets auf",
+      "source_url": "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/",
+      "edition_date": "2026-06-07"
+    },
+    {
+      "title": "OpenAI Codex: Plugins, Sites und Enterprise-Workspaces",
+      "source_url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "edition_date": "2026-06-07"
+    },
+    {
+      "title": "ChatGPT erreicht eine Milliarde monatliche Nutzer",
+      "source_url": "https://www.indexbox.io/blog/chatgpt-reaches-1-billion-monthly-active-users-fastest-app-ever/",
+      "edition_date": "2026-06-07"
+    },
+    {
+      "title": "NYT-Verleger Sulzberger: KI-Firmen begehen dreisten Diebstahl",
+      "source_url": "https://wan-ifra.org/2026/06/nyts-sulzberger-condemns-ai-giants-for-brazen-theft-of-intellectual-property/",
+      "edition_date": "2026-06-07"
+    },
+    {
+      "title": "BYD enthuellt geheimes Humanoid-Roboter-Projekt",
+      "source_url": "https://carnewschina.com/2026/06/04/byd-confirms-humanoid-robot-development-says-future-sales-could-use-dealer-network/",
+      "edition_date": "2026-06-07"
+    },
+    {
+      "title": "Linux Foundation gruendet Tokenomics Foundation",
+      "source_url": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-intent-to-launch-the-tokenomics-foundation-to-establish-open-standards-for-ai-cost-management",
+      "edition_date": "2026-06-07"
+    },
+    {
+      "title": "Hugging Face veroeffentlicht Transformers v5",
+      "source_url": "https://huggingface.co/blog/transformers-v5",
+      "edition_date": "2026-06-07"
+    },
+    {
+      "title": "Arxiv: KI-Agenten beenden klassisches Software-Engineering",
+      "source_url": "https://arxiv.org/abs/2606.05608",
+      "edition_date": "2026-06-07"
+    },
     {
       "title": "SpaceX startet Roadshow für $75-Mrd.-Rekord-IPO",
       "source_url": "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html"
@@ -288,38 +327,6 @@
     {
       "title": "Papst Leo XIV: KI muss entwaffnet werden",
       "source_url": "https://www.washingtonpost.com/world/2026/05/25/pope-elevates-ai-ethics-religious-imperative-with-first-encyclical/"
-    },
-    {
-      "title": "Zitat: Olah beim Vatikan über KI und Arbeit",
-      "source_url": "https://religionnews.com/2026/05/22/why-anthropic-is-helping-unveil-the-popes-new-encyclical-on-ai/"
-    },
-    {
-      "title": "Sam Altman: Kein KI-Jobpocalypse bisher eingetreten",
-      "source_url": "https://www.euronews.com/next/2026/05/26/no-ai-jobs-apocalypse-so-far-says-openais-sam-altman"
-    },
-    {
-      "title": "Anthropic kurz vor $30-Mrd.-Abschluss bei $900-Mrd.-Bewertung",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-05-22/anthropic-to-close-over-30-billion-round-as-soon-as-next-week"
-    },
-    {
-      "title": "KI-Sicherheitsberichte fluten Open-Source-Teams – ein Weckruf",
-      "source_url": "https://simonwillison.net/2026/May/26/the-pressure/"
-    },
-    {
-      "title": "Papst Leo XIV. veröffentlicht erste KI-Enzyklika 'Magnifica Humanitas'",
-      "source_url": "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html"
-    },
-    {
-      "title": "Hassabis: Wir stehen an den Ausläufern der Singularität",
-      "source_url": "https://www.axios.com/2026/05/26/deepmind-ceo-demis-hassabis"
-    },
-    {
-      "title": "LeCun nennt 'General Intelligence' Unsinn – Hassabis widerspricht scharf",
-      "source_url": "https://the-decoder.com/deepminds-hassabis-sees-humanity-in-the-foothills-of-the-singularity-while-lecun-says-current-ai-isnt-intelligent/"
-    },
-    {
-      "title": "Zitat: Hassabis über die Singularität und gesellschaftliche Blindheit",
-      "source_url": "https://startupfortune.com/demis-hassabis-says-agi-could-arrive-by-2029/"
     }
   ]
 }
