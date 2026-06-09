@@ -1,73 +1,48 @@
 {
   "articles": [
     {
-      "title": "OpenAI reicht vertraulichen Börsenantrag ein",
-      "source_url": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/",
-      "edition_date": "2026-06-09"
-    },
-    {
       "title": "Altmans Versprechen: AGI soll jedem Menschen nutzen",
-      "source_url": "https://openai.com/index/built-to-benefit-everyone-our-plan/",
-      "edition_date": "2026-06-09"
-    },
-    {
-      "title": "OpenAI Deployment Company: 4 Mrd. Dollar Enterprise-Arm",
-      "source_url": "https://openai.com/index/openai-launches-the-deployment-company/",
-      "edition_date": "2026-06-09"
-    },
-    {
-      "title": "Holo3.1: Lokale Computer-Use-Agenten für Web, Desktop, Mobile",
-      "source_url": "https://huggingface.co/blog/Hcompany/holo31",
-      "edition_date": "2026-06-09"
-    },
-    {
-      "title": "VivaTech 2026: Europas KI-Strategie nimmt Form an",
-      "source_url": "https://techcrunch.com/2026/06/02/why-vivatech-2026-is-the-place-to-see-europes-ai-strategy-take-shape/",
-      "edition_date": "2026-06-09"
-    },
-    {
-      "title": "OpenAI Economic Research Exchange sucht externe Forscher",
-      "source_url": "https://openai.com/index/economic-research-exchange/",
-      "edition_date": "2026-06-09"
-    },
-    {
-      "title": "MIT ChartNet: Kleine Modelle schlagen Riesen bei Diagrammanalyse",
-      "source_url": "https://news.mit.edu/2026/mit-researchers-teach-ai-models-to-interpret-charts-0603",
-      "edition_date": "2026-06-09"
-    },
-    {
-      "title": "Hacker News: \"Is AI Making Me Dumb?\" trending",
-      "source_url": "https://news.ycombinator.com/item?id=48139148",
-      "edition_date": "2026-06-09"
+      "source_url": "https://openai.com/index/built-to-benefit-everyone-our-plan/"
     },
     {
       "title": "Altman: IPO-Zeitpunkt noch offen",
-      "source_url": "https://www.cnbc.com/2026/06/08/openai-confidentially-files-for-ipo-prepping-wall-street-for-ai-debut.html",
-      "edition_date": "2026-06-09"
+      "source_url": "https://www.cnbc.com/2026/06/08/openai-confidentially-files-for-ipo-prepping-wall-street-for-ai-debut.html"
     },
     {
-      "title": "ChatGPT verliert: Marktanteil sinkt auf 54,7 % — Gemini verdoppelt sich",
-      "source_url": "https://llm-stats.com/ai-news"
+      "title": "MIT ChartNet: Kleine Modelle schlagen Riesen bei Diagrammanalyse",
+      "source_url": "https://news.mit.edu/2026/mit-researchers-teach-ai-models-to-interpret-charts-0603"
     },
     {
-      "title": "Apple WWDC 2026: iOS 27, Siri 2.0 mit Gemini, Claude als iPhone-Option",
-      "source_url": "https://www.tomsguide.com/news/live/wwdc-2026-live-news-updates"
+      "title": "VivaTech 2026: Europas KI-Strategie nimmt Form an",
+      "source_url": "https://techcrunch.com/2026/06/02/why-vivatech-2026-is-the-place-to-see-europes-ai-strategy-take-shape/"
     },
     {
-      "title": "DeepMind: Solipsistische Superintelligenz wäre strukturell nicht kooperativ",
-      "source_url": "https://deepmind.google/research/publications/"
+      "title": "OpenAI Economic Research Exchange sucht externe Forscher",
+      "source_url": "https://openai.com/index/economic-research-exchange/"
     },
     {
-      "title": "Gemini 3.5 Flash: Pflicht-Standard in Google Enterprise ab heute",
-      "source_url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
+      "title": "OpenAI reicht vertraulichen Börsenantrag ein",
+      "source_url": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/"
     },
     {
-      "title": "Gemma 4 12B: Googles Frontier-KI für den Consumer-Laptop",
-      "source_url": "https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud"
+      "title": "Holo3.1: Lokale Computer-Use-Agenten für Web, Desktop, Mobile",
+      "source_url": "https://huggingface.co/blog/Hcompany/holo31"
+    },
+    {
+      "title": "OpenAI Deployment Company: 4 Mrd. Dollar Enterprise-Arm",
+      "source_url": "https://openai.com/index/openai-launches-the-deployment-company/"
+    },
+    {
+      "title": "Hacker News: \"Is AI Making Me Dumb?\" trending",
+      "source_url": "https://news.ycombinator.com/item?id=48139148"
     },
     {
       "title": "Trumps KI-Chefberater Krishnan verlässt das Weiße Haus",
       "source_url": "https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/"
+    },
+    {
+      "title": "DeepMind: Solipsistische Superintelligenz wäre strukturell nicht kooperativ",
+      "source_url": "https://deepmind.google/research/publications/"
     },
     {
       "title": "ChatGPT Lockdown Mode schützt vor Prompt-Injection-Angriffen",
@@ -78,12 +53,28 @@
       "source_url": "https://www.gurufocus.com/news/8904566/openais-major-overhaul-aiming-for-growth-before-ipo"
     },
     {
-      "title": "Arxiv: KI-Agenten beenden klassisches Software-Engineering",
-      "source_url": "https://arxiv.org/abs/2606.05608"
+      "title": "Gemini 3.5 Flash: Pflicht-Standard in Google Enterprise ab heute",
+      "source_url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
     },
     {
-      "title": "OpenAI Codex: Plugins, Sites und Enterprise-Workspaces",
-      "source_url": "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      "title": "Gemma 4 12B: Googles Frontier-KI für den Consumer-Laptop",
+      "source_url": "https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud"
+    },
+    {
+      "title": "Apple WWDC 2026: iOS 27, Siri 2.0 mit Gemini, Claude als iPhone-Option",
+      "source_url": "https://www.tomsguide.com/news/live/wwdc-2026-live-news-updates"
+    },
+    {
+      "title": "ChatGPT verliert: Marktanteil sinkt auf 54,7 % — Gemini verdoppelt sich",
+      "source_url": "https://llm-stats.com/ai-news"
+    },
+    {
+      "title": "Linux Foundation gruendet Tokenomics Foundation",
+      "source_url": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-intent-to-launch-the-tokenomics-foundation-to-establish-open-standards-for-ai-cost-management"
+    },
+    {
+      "title": "Arxiv: KI-Agenten beenden klassisches Software-Engineering",
+      "source_url": "https://arxiv.org/abs/2606.05608"
     },
     {
       "title": "BYD enthuellt geheimes Humanoid-Roboter-Projekt",
@@ -94,32 +85,36 @@
       "source_url": "https://wan-ifra.org/2026/06/nyts-sulzberger-condemns-ai-giants-for-brazen-theft-of-intellectual-property/"
     },
     {
-      "title": "ChatGPT erreicht eine Milliarde monatliche Nutzer",
-      "source_url": "https://www.indexbox.io/blog/chatgpt-reaches-1-billion-monthly-active-users-fastest-app-ever/"
+      "title": "KI-Token-Kosten fressen Unternehmensbudgets auf",
+      "source_url": "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/"
     },
     {
-      "title": "Linux Foundation gruendet Tokenomics Foundation",
-      "source_url": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-intent-to-launch-the-tokenomics-foundation-to-establish-open-standards-for-ai-cost-management"
+      "title": "OpenAI Codex: Plugins, Sites und Enterprise-Workspaces",
+      "source_url": "https://openai.com/index/codex-for-every-role-tool-workflow/"
     },
     {
       "title": "Hugging Face veroeffentlicht Transformers v5",
       "source_url": "https://huggingface.co/blog/transformers-v5"
     },
     {
-      "title": "KI-Token-Kosten fressen Unternehmensbudgets auf",
-      "source_url": "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/"
+      "title": "ChatGPT erreicht eine Milliarde monatliche Nutzer",
+      "source_url": "https://www.indexbox.io/blog/chatgpt-reaches-1-billion-monthly-active-users-fastest-app-ever/"
     },
     {
-      "title": "SpaceX startet Roadshow für $75-Mrd.-Rekord-IPO",
-      "source_url": "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html"
+      "title": "Zitat: Anthropic über rekursive KI-Selbstverbesserung",
+      "source_url": "https://www.anthropic.com/institute/recursive-self-improvement"
     },
     {
-      "title": "Great American AI Act: 269-seitiger Kongress-Entwurf",
-      "source_url": "https://fedscoop.com/bipartisan-great-american-ai-act-draft-proposes-new-federal-ai-governance-framework/"
+      "title": "Anthropic fordert globalen KI-Pause-Mechanismus",
+      "source_url": "https://www.anthropic.com/institute/recursive-self-improvement"
     },
     {
       "title": "NVIDIA RTX Spark: KI-Superchip für Consumer-Laptops",
       "source_url": "https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark"
+    },
+    {
+      "title": "Microsoft MAI-Thinking-1: Reasoning ohne OpenAI-Daten",
+      "source_url": "https://www.indexbox.io/blog/microsoft-unveils-seven-in-house-ai-models-at-build-2026-reducing-reliance-on-openai/"
     },
     {
       "title": "OpenAI Dreaming V3: ChatGPT-Gedächtnis komplett neugebaut",
@@ -130,16 +125,12 @@
       "source_url": "https://huggingface.co/blog/Hcompany/holo31"
     },
     {
-      "title": "Microsoft MAI-Thinking-1: Reasoning ohne OpenAI-Daten",
-      "source_url": "https://www.indexbox.io/blog/microsoft-unveils-seven-in-house-ai-models-at-build-2026-reducing-reliance-on-openai/"
+      "title": "Great American AI Act: 269-seitiger Kongress-Entwurf",
+      "source_url": "https://fedscoop.com/bipartisan-great-american-ai-act-draft-proposes-new-federal-ai-governance-framework/"
     },
     {
-      "title": "Anthropic fordert globalen KI-Pause-Mechanismus",
-      "source_url": "https://www.anthropic.com/institute/recursive-self-improvement"
-    },
-    {
-      "title": "Zitat: Anthropic über rekursive KI-Selbstverbesserung",
-      "source_url": "https://www.anthropic.com/institute/recursive-self-improvement"
+      "title": "SpaceX startet Roadshow für $75-Mrd.-Rekord-IPO",
+      "source_url": "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html"
     },
     {
       "title": "Gemma 4 12B: Googles Multimodal-KI läuft auf dem Standard-Laptop",
