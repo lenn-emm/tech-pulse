@@ -1,6 +1,50 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "OpenAI reicht vertraulichen Börsenantrag ein",
+      "source_url": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/",
+      "edition_date": "2026-06-09"
+    },
+    {
+      "title": "Altmans Versprechen: AGI soll jedem Menschen nutzen",
+      "source_url": "https://openai.com/index/built-to-benefit-everyone-our-plan/",
+      "edition_date": "2026-06-09"
+    },
+    {
+      "title": "OpenAI Deployment Company: 4 Mrd. Dollar Enterprise-Arm",
+      "source_url": "https://openai.com/index/openai-launches-the-deployment-company/",
+      "edition_date": "2026-06-09"
+    },
+    {
+      "title": "Holo3.1: Lokale Computer-Use-Agenten für Web, Desktop, Mobile",
+      "source_url": "https://huggingface.co/blog/Hcompany/holo31",
+      "edition_date": "2026-06-09"
+    },
+    {
+      "title": "VivaTech 2026: Europas KI-Strategie nimmt Form an",
+      "source_url": "https://techcrunch.com/2026/06/02/why-vivatech-2026-is-the-place-to-see-europes-ai-strategy-take-shape/",
+      "edition_date": "2026-06-09"
+    },
+    {
+      "title": "OpenAI Economic Research Exchange sucht externe Forscher",
+      "source_url": "https://openai.com/index/economic-research-exchange/",
+      "edition_date": "2026-06-09"
+    },
+    {
+      "title": "MIT ChartNet: Kleine Modelle schlagen Riesen bei Diagrammanalyse",
+      "source_url": "https://news.mit.edu/2026/mit-researchers-teach-ai-models-to-interpret-charts-0603",
+      "edition_date": "2026-06-09"
+    },
+    {
+      "title": "Hacker News: \"Is AI Making Me Dumb?\" trending",
+      "source_url": "https://news.ycombinator.com/item?id=48139148",
+      "edition_date": "2026-06-09"
+    },
+    {
+      "title": "Altman: IPO-Zeitpunkt noch offen",
+      "source_url": "https://www.cnbc.com/2026/06/08/openai-confidentially-files-for-ipo-prepping-wall-street-for-ai-debut.html",
+      "edition_date": "2026-06-09"
+    },
     {
       "title": "ChatGPT verliert: Marktanteil sinkt auf 54,7 % — Gemini verdoppelt sich",
       "source_url": "https://llm-stats.com/ai-news"
@@ -284,42 +328,6 @@
     {
       "title": "Claude Opus 4.8: Dynamic Workflows und Fast Mode ab sofort live",
       "source_url": "https://www.anthropic.com/claude/opus"
-    },
-    {
-      "title": "OpenAI Rosalind: KI-Bioabwehr-Modell für Pandemieschutz geöffnet",
-      "source_url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/"
-    },
-    {
-      "title": "DeepMind-CEO Hassabis: KI ist ein Uebergang auf Artenebene",
-      "source_url": "https://stanforddaily.com/2026/05/29/deepmind-ceo-warns-about-ai/"
-    },
-    {
-      "title": "ClickUp entlässt 22% der Belegschaft und setzt 3.000 KI-Agenten ein",
-      "source_url": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/"
-    },
-    {
-      "title": "Anthropic deutet Mythos-Modell als Opus-4.8-Nachfolger an",
-      "source_url": "https://qz.com/anthropic-claude-opus-4-8-mythos-release-052826"
-    },
-    {
-      "title": "AGI ist drei bis vier Jahre entfernt",
-      "source_url": "https://sherwood.news/tech/google-deepminds-hassabis-agi-is-3-to-4-years-away/"
-    },
-    {
-      "title": "OpenAI, Google, Microsoft fördern KI-Alphabetisierung an Schulen",
-      "source_url": "https://www.404media.co/literacy-in-future-technologies-artificial-intelligence-act-adam-schiff-mike-rounds/"
-    },
-    {
-      "title": "Meta One: KI-Abos für Instagram, Facebook und WhatsApp live",
-      "source_url": "https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/"
-    },
-    {
-      "title": "MIT Technology Review: KI-Jobpocalypse ausgeblieben – bislang",
-      "source_url": "https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/"
-    },
-    {
-      "title": "Mistral plant eigene KI-Chips und neues Rechenzentrum",
-      "source_url": "https://www.cnbc.com/2026/05/28/mistral-arthur-mensch-design-chips-ai-data-centers.html"
     }
   ]
 }
