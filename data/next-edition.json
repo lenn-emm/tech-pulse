@@ -1,110 +1,97 @@
 {
   "edition": {
-    "title": "Tech Pulse — Montag, 09. Juni 2026",
-    "edition_date": "2026-06-09",
-    "summary": "OpenAI läutet mit IPO-Antrag, neuem AGI-Nutzenplan und einer 4-Milliarden-Enterprise-Einheit einen historischen Montag ein — während die Open-Source-Community mit Holo3.1 lokale Computer-Agenten auf ein neues Level hebt."
+    "title": "Tech Pulse — Mittwoch, 10. Juni 2026",
+    "edition_date": "2026-06-10",
+    "summary": "WWDC 2026 bestimmt die Agenda: Apple besiegelt einen milliardenschweren Gemini-Deal und stellt Siri auf eine neue Basis — doch EU und China bleiben ausgesperrt. Dazu: Anthropics Enterprise-Skalierung, Microsofts agentischer Copilot-Desktop und der 53-Tage-Countdown bis zur EU-AI-Act-Vollstreckung."
   },
   "articles": [
     {
-      "position": 1,
-      "format": "hero",
-      "zone": "core",
-      "category": "company_news",
-      "title": "OpenAI reicht vertraulichen Börsenantrag ein",
-      "summary": "Am Montag, 8. Juni, gab OpenAI bekannt, einen vertraulichen S-1-Antrag bei der SEC eingereicht zu haben — nur Wochen nach dem gleichen Schritt von Anthropic. Das Unternehmen, zuletzt mit 852 Mrd. Dollar bewertet, lässt den genauen IPO-Zeitpunkt bewusst offen. Der Doppelschlag beider KI-Giganten markiert den Beginn des bedeutendsten KI-Börsen-Zyklus aller Zeiten.",
-      "source_url": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/",
-      "source_name": "TechCrunch",
-      "read_time_min": 4
-    },
-    {
-      "position": 2,
-      "format": "feature",
-      "zone": "core",
-      "category": "company_news",
-      "title": "Altmans Versprechen: AGI soll jedem Menschen nutzen",
-      "summary": "Sam Altman und Chefwissenschaftler Jakub Pachocki veröffentlichten 'Built to Benefit Everyone' — ein strategisches Manifest, das persönliche AGI für jeden Erdenbürger zum Kern von OpenAIs Mission erklärt. Der Plan umfasst Maßnahmen zu globalem Zugang, Sicherheit und wirtschaftlicher Teilhabe und erscheint auf dem Höhepunkt von OpenAIs historischer IPO-Woche.",
-      "source_url": "https://openai.com/index/built-to-benefit-everyone-our-plan/",
-      "source_name": "OpenAI",
-      "read_time_min": 5
-    },
-    {
-      "position": 3,
-      "format": "feature",
-      "zone": "core",
+      "title": "Apple integriert Google Gemini als Herzstück des neuen Siri AI",
+      "summary": "Beim WWDC 2026 enthüllte Apple — in Tim Cooks letztem CEO-Keynote-Auftritt — eine von Grund auf neu gebaute Siri-Generation, die cloud-seitig von einem maßgeschneiderten Google-Gemini-Modell befeuert wird, zu einem kolportierten Preis von rund einer Milliarde Dollar pro Jahr. Der neue Assistent, offiziell \"Siri AI\" getauft, startet hinter einer globalen Waitlist; EU- und China-Nutzer erhalten vorerst keinen Zugang, weil regulatorische Genehmigungen fehlen. Mit iOS 27 bekommt das iPhone erstmals Frontier-KI-Kapazität direkt eingebettet — doch der blockierte EU-Rollout zeigt, wie tief der Regulierungsdruck schon in Apple-Produktentscheidungen hineinwirkt.",
+      "source_url": "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
+      "source_name": "Apple Newsroom",
       "category": "product",
-      "title": "OpenAI Deployment Company: 4 Mrd. Dollar Enterprise-Arm",
-      "summary": "Mit 19 Investoren und Beratungsfirmen — von TPG über Bain Capital bis Brookfield — launcht OpenAI eine neue Einheit, die KI direkt in Unternehmensabläufe einbettet. Im Kern stehen 'Forward Deployed Engineers', die dauerhaft in Organisationen arbeiten. Dazu kommt die Übernahme der Beratungsfirma Tomoro mit 150 erfahrenen KI-Spezialisten.",
-      "source_url": "https://openai.com/index/openai-launches-the-deployment-company/",
-      "source_name": "OpenAI",
-      "read_time_min": 4
+      "format": "hero",
+      "zone": "adjacent",
+      "read_time_min": 6,
+      "position": 1
     },
     {
-      "position": 4,
+      "title": "Anthropic formalisiert Claude-Partnernetzwerk mit neuem Tier-Modell",
+      "summary": "Anthropic hat Services Track und Partner Hub eingeführt: Systemintegratoren werden anhand zertifizierter Mitarbeitenden, produktiven Deployments und öffentlichen Customer Stories in Select-, Preferred- und Global-Premier-Tiers eingeteilt. Seit Programmbeginn haben sich über 40.000 Firmen beworben und mehr als 10.000 Berater eine Claude-Zertifizierung erworben — ein Zeichen des rapiden Enterprise-Wachstums. Der strukturierte Kanal-Aufbau kurz vor dem geplanten Börsengang signalisiert, dass Anthropic seinen Vertrieb systematisch für eine Post-IPO-Phase skaliert.",
+      "source_url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "source_name": "Anthropic",
+      "category": "company_news",
+      "format": "feature",
+      "zone": "core",
+      "read_time_min": 4,
+      "position": 2
+    },
+    {
+      "title": "WWDC Dev Tools: Claude und Gemini im Swift-Package tauschbar",
+      "summary": "Apple hat eine neue LanguageModel-Protokollschicht ins Foundation Models Framework integriert: App-Entwickler können per Swift Package Manager nahtlos zwischen Apples On-Device-Modell, Google Gemini und Anthropic Claude wechseln — ohne eine Zeile Sessionlogik anzupassen. Anthropic und Google haben unmittelbar eigene Swift-Packages veröffentlicht, die Auth, Billing und Token-Tracking übernehmen. Dieser standardisierte \"AI-Provider-Slot\" könnte die Plattformhoheit bei mobiler KI für Millionen iOS-Entwickler dauerhaft formen.",
+      "source_url": "https://www.techtimes.com/articles/318039/20260609/wwdc-2026-developer-tools-foundation-models-now-swaps-ai-providers-without-code-changes.htm",
+      "source_name": "TechTimes",
+      "category": "product",
+      "format": "feature",
+      "zone": "core",
+      "read_time_min": 4,
+      "position": 3
+    },
+    {
+      "title": "GitHub Copilot Desktop App: Agentische Workflows mit isolierten Worktrees",
+      "summary": "GitHub hat auf dem Microsoft Build 2026 die Copilot App als nativen Desktop-Client für agent-natives Arbeiten veröffentlicht — aktuell im Technical Preview für Pro-, Pro+-, Business- und Enterprise-Nutzer. Jede Agent-Session läuft in einem eigenen Git-Worktree, ein zentrales \"My Work\"-Dashboard bündelt laufende Sessions, Issues und Pull Requests. Die App verschiebt das primäre Entwickler-Interface von der IDE zu einem eigenständigen Agent-Control-Center — ein grundlegender Paradigmenwechsel für VS Code und JetBrains-Nutzer.",
+      "source_url": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/",
+      "source_name": "GitHub Blog",
+      "category": "product",
       "format": "feature",
       "zone": "adjacent",
-      "category": "model_release",
-      "title": "Holo3.1: Lokale Computer-Use-Agenten für Web, Desktop, Mobile",
-      "summary": "H Company veröffentlicht Holo3.1 auf Hugging Face — eine Familie von Computer-Use-Agenten, die robust über Web-, Desktop- und Mobile-Umgebungen hinweg agieren. Quantisierte Checkpoints ermöglichen lokale Inferenz ohne Cloud-Abhängigkeit. Als Open-Source-Lösung sind die Modelle ein ernsthafter Konkurrent zu proprietären Computer-Use-Angeboten von Anthropic und anderen.",
-      "source_url": "https://huggingface.co/blog/Hcompany/holo31",
-      "source_name": "Hugging Face",
-      "read_time_min": 3
+      "read_time_min": 5,
+      "position": 4
     },
     {
-      "position": 5,
-      "format": "visual",
-      "zone": "adjacent",
+      "title": "EU AI Act: Noch 53 Tage bis zu Strafen von bis zu 35 Millionen Euro",
+      "summary": "Am 2. August 2026 tritt der Kern des EU AI Acts in Kraft — nationale Behörden erhalten dann vollständige Inspektions- und Sanktionsbefugnisse, das European AI Office kann Quellcode-Zugang bei GPAI-Modellen einfordern. Unternehmen mit hochriskanten KI-Systemen drohen Bußgelder bis zu 35 Millionen Euro oder 7 % des weltweiten Jahresumsatzes; US-Firmen mit EU-Kunden sind gleichermaßen betroffen. Konformitätsbewertungen und technische Dokumentation benötigen häufig mehrere Monate — wer jetzt noch nicht begonnen hat, riskiert den Enforcement-Stichtag unvorbereitet zu erreichen.",
+      "source_url": "https://www.hklaw.com/en/insights/publications/2026/04/us-companies-face-eu-ai-acts-possible-august-2026-compliance-deadline",
+      "source_name": "Holland & Knight",
       "category": "regulation",
-      "title": "VivaTech 2026: Europas KI-Strategie nimmt Form an",
-      "summary": "Vom 17.–20. Juni versammeln sich 15.000 Startups und 4.000 Investoren in Paris — Europas größtes Tech-Event feiert sein 10-jähriges Jubiläum. Während US-Konzerne Modell-Benchmarks pushen, setzt Europa auf industrielle KI, Infrastrukturautonomie und regulatorische Verlässlichkeit. NVIDIA demonstriert Sovereign AI; der Gegensatz zur Silicon-Valley-Logik könnte nicht schärfer sein.",
-      "source_url": "https://techcrunch.com/2026/06/02/why-vivatech-2026-is-the-place-to-see-europes-ai-strategy-take-shape/",
-      "source_name": "TechCrunch",
-      "read_time_min": 5
+      "format": "feature",
+      "zone": "outside",
+      "read_time_min": 6,
+      "position": 5
     },
     {
-      "position": 6,
+      "title": "Google DeepMind lanciert europäisches Robotik-Accelerator-Programm",
+      "summary": "Google DeepMind hat 15 europäische Frühphasen-Robotik-Startups für ein dreimonatiges Intensivprogramm in London ausgewählt, das Zugang zu Gemini-Robotik-Modellen, Googles KI-Infra und tiefem technischem Mentoring bietet. Der Accelerator ist Googles erstes dediziertes Robotik-Förderprogramm für Europa und signalisiert das wachsende strategische Gewicht des Kontinents im globalen Robotik-Wettlauf.",
+      "source_url": "https://www.startuphub.ai/ai-news/ai-research/2026/google-deepmind-fuels-european-robotics-startups",
+      "source_name": "StartupHub.ai",
+      "category": "company_news",
+      "format": "quick",
+      "zone": "core",
+      "read_time_min": 2,
+      "position": 6
+    },
+    {
+      "title": "Microsoft MAI-Code-1-Flash: 5B-Modell, 60 % weniger Token beim Coding",
+      "summary": "Microsoft hat MAI-Code-1-Flash auf GitHub Copilot ausgerollt — ein 5-Milliarden-Parameter-Modell, das 60 % weniger Token als vergleichbare Coding-Modelle benötigt und SWE Bench Pro mit 51 % anführt. Das Modell ist ab sofort im Copilot-Modell-Picker für Free-, Student- und Pro-Nutzer verfügbar.",
+      "source_url": "https://chatforest.com/builders-log/microsoft-mai-code-1-flash-github-copilot-coding-model-build-2026/",
+      "source_name": "ChatForest",
+      "category": "model_release",
       "format": "quick",
       "zone": "adjacent",
-      "category": "research",
-      "title": "OpenAI Economic Research Exchange sucht externe Forscher",
-      "summary": "OpenAI lanciert eine Kooperationsplattform für Wirtschaftswissenschaftler, die die Auswirkungen von KI auf Arbeit, Unternehmen und Volkswirtschaften unabhängig messen sollen. Bewerbungen sind bis 5. Juli 2026 möglich.",
-      "source_url": "https://openai.com/index/economic-research-exchange/",
-      "source_name": "OpenAI",
-      "read_time_min": 2
+      "read_time_min": 2,
+      "position": 7
     },
     {
-      "position": 7,
-      "format": "quick",
-      "zone": "outside",
-      "category": "research",
-      "title": "MIT ChartNet: Kleine Modelle schlagen Riesen bei Diagrammanalyse",
-      "summary": "MIT-Forscher veröffentlichen ChartNet, einen Trainingsdatensatz, mit dem kleinere Open-Source-VLMs deutlich größere kommerzielle Modelle bei Datenextraktion aus Diagrammen übertreffen — ein Demokratisierungsschub für KI-gestützte Datenanalyse.",
-      "source_url": "https://news.mit.edu/2026/mit-researchers-teach-ai-models-to-interpret-charts-0603",
-      "source_name": "MIT News",
-      "read_time_min": 2
-    },
-    {
-      "position": 8,
+      "title": "Siri AI bleibt EU und China vorenthalten — regulatorische Sperre",
+      "summary": "Apple hat bestätigt, dass das neue Siri AI trotz des milliardenschweren Gemini-Deals in der EU und China zunächst nicht verfügbar sein wird, da behördliche Genehmigungen ausstehen. Weltweit müssen Nutzer einer Waitlist beitreten — ungewöhnlich für ein Kern-iPhone-Feature, das zugleich kein Datum für einen breiteren Rollout nennt.",
+      "source_url": "https://www.macrumors.com/2026/06/08/siri-ai-not-available-eu-china/",
+      "source_name": "MacRumors",
+      "category": "product",
       "format": "quick",
       "zone": "wildcard",
-      "category": "research",
-      "title": "Hacker News: \"Is AI Making Me Dumb?\" trending",
-      "summary": "Ein Essay zur kognitiven Abhängigkeit von KI-Werkzeugen klettert auf die Frontpage von Hacker News und löst eine der meistkommentierten Debatten des Monats aus — mit geteilten Meinungen zwischen Entlastung und Denkfaulheit.",
-      "source_url": "https://news.ycombinator.com/item?id=48139148",
-      "source_name": "Hacker News",
-      "read_time_min": 1
-    },
-    {
-      "position": 9,
-      "format": "quote",
-      "zone": "core",
-      "category": "company_news",
-      "title": "Altman: IPO-Zeitpunkt noch offen",
-      "summary": "OpenAI bestätigt die IPO-Registrierung, signalisiert aber bewusste Zurückhaltung beim Timing — ein ungewöhnliches Zeichen von Geduld auf dem Weg an die Börse.",
-      "quote_text": "We have not decided on timing yet; it may be a while because there are things we want to do that are likely easier as a private company.",
-      "quote_author": "Sam Altman, CEO OpenAI",
-      "source_url": "https://www.cnbc.com/2026/06/08/openai-confidentially-files-for-ipo-prepping-wall-street-for-ai-debut.html",
-      "source_name": "CNBC",
-      "read_time_min": 1
+      "read_time_min": 2,
+      "position": 8
     }
   ]
 }
