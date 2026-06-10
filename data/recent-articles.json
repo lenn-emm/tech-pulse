@@ -1,6 +1,46 @@
 {
   "articles": [
     {
+      "title": "Apple integriert Google Gemini als Herzstück des neuen Siri AI",
+      "source_url": "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
+      "edition_date": "2026-06-10"
+    },
+    {
+      "title": "Anthropic formalisiert Claude-Partnernetzwerk mit neuem Tier-Modell",
+      "source_url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "edition_date": "2026-06-10"
+    },
+    {
+      "title": "WWDC Dev Tools: Claude und Gemini im Swift-Package tauschbar",
+      "source_url": "https://www.techtimes.com/articles/318039/20260609/wwdc-2026-developer-tools-foundation-models-now-swaps-ai-providers-without-code-changes.htm",
+      "edition_date": "2026-06-10"
+    },
+    {
+      "title": "GitHub Copilot Desktop App: Agentische Workflows mit isolierten Worktrees",
+      "source_url": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/",
+      "edition_date": "2026-06-10"
+    },
+    {
+      "title": "EU AI Act: Noch 53 Tage bis zu Strafen von bis zu 35 Millionen Euro",
+      "source_url": "https://www.hklaw.com/en/insights/publications/2026/04/us-companies-face-eu-ai-acts-possible-august-2026-compliance-deadline",
+      "edition_date": "2026-06-10"
+    },
+    {
+      "title": "Google DeepMind lanciert europäisches Robotik-Accelerator-Programm",
+      "source_url": "https://www.startuphub.ai/ai-news/ai-research/2026/google-deepmind-fuels-european-robotics-startups",
+      "edition_date": "2026-06-10"
+    },
+    {
+      "title": "Microsoft MAI-Code-1-Flash: 5B-Modell, 60 % weniger Token beim Coding",
+      "source_url": "https://chatforest.com/builders-log/microsoft-mai-code-1-flash-github-copilot-coding-model-build-2026/",
+      "edition_date": "2026-06-10"
+    },
+    {
+      "title": "Siri AI bleibt EU und China vorenthalten — regulatorische Sperre",
+      "source_url": "https://www.macrumors.com/2026/06/08/siri-ai-not-available-eu-china/",
+      "edition_date": "2026-06-10"
+    },
+    {
       "title": "Altmans Versprechen: AGI soll jedem Menschen nutzen",
       "source_url": "https://openai.com/index/built-to-benefit-everyone-our-plan/"
     },
@@ -287,38 +327,6 @@
     {
       "title": "KI lernt wissenschaftlichen Geschmack per Community-Feedback",
       "source_url": "https://arxiv.org/abs/2603.14473"
-    },
-    {
-      "title": "Apple WWDC 2026: Siri 2.0 und systemweite KI für iOS 27",
-      "source_url": "https://developer.apple.com/wwdc26/"
-    },
-    {
-      "title": "Anthropic überholt OpenAI mit 965-Mrd.-Dollar-Bewertung",
-      "source_url": "https://www.thestreet.com/technology/anthropic-drops-new-claude-model-as-openai-ipo-race-heats-up"
-    },
-    {
-      "title": "DuckDuckGo wächst 30 % nach Googles KI-Pflichtumstellung",
-      "source_url": "https://www.macrumors.com/2026/05/29/duckduckgo-no-ai-search/"
-    },
-    {
-      "title": "Meta entwickelt KI-Anhänger als Wearables-Kernstück",
-      "source_url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/"
-    },
-    {
-      "title": "OpenAI gibt GPT-Rosalind für Bioabwehr frei",
-      "source_url": "https://openai.com/index/introducing-gpt-rosalind/"
-    },
-    {
-      "title": "Anthropic startet Claude Opus 4.8 mit Dynamic Workflows",
-      "source_url": "https://www.anthropic.com/news/claude-opus-4-8"
-    },
-    {
-      "title": "Anthropic: $900-Mrd.-Runde macht KI-Startup wertvoller als OpenAI",
-      "source_url": "https://www.shacknews.com/article/149157/anthropic-900-billion-valuation"
-    },
-    {
-      "title": "Claude Opus 4.8: Dynamic Workflows und Fast Mode ab sofort live",
-      "source_url": "https://www.anthropic.com/claude/opus"
     }
   ]
 }
