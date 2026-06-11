@@ -1,6 +1,37 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "Claude Fable 5: Mythos-Klasse jetzt für alle verfügbar",
+      "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+    },
+    {
+      "title": "Anthropic setzt 200 Mio. Dollar für KI-Jobverlust-Forschung ein",
+      "source_url": "https://www.washingtonpost.com/business/2026/06/10/anthropic-dario-amodei-ai/52f6800a-6510-11f1-bdd4-805ebb99a693_story.html"
+    },
+    {
+      "title": "Visa und OpenAI: KI-Agenten erhalten eigene Zahlungsinfrastruktur",
+      "source_url": "https://investor.visa.com/news/news-details/2026/Visa-Partners-with-OpenAI-to-Power-the-Next-Generation-of-AI-Commerce/default.aspx"
+    },
+    {
+      "title": "Pentagon ersetzt Claude: zu sicher für den Krieg",
+      "source_url": "https://www.techtimes.com/articles/317998/20260608/pentagon-racing-replace-anthropics-claude-because-it-was-too-safe-war.htm"
+    },
+    {
+      "title": "Claude Managed Agents: Cron-Zeitpläne und Credential-Vaults in Beta",
+      "source_url": "https://www.anthropic.com/engineering/managed-agents"
+    },
+    {
+      "title": "Hassabis: AGI möglicherweise schon 2029 erreichbar",
+      "source_url": "https://sherwood.news/tech/google-deepminds-hassabis-agi-is-3-to-4-years-away/"
+    },
+    {
+      "title": "OpenAI und Oracle: GPT-Modelle über OCI-Commitment buchbar",
+      "source_url": "https://openai.com/index/openai-on-oracle-cloud/"
+    },
+    {
+      "title": "Demis Hassabis über die Ausläufer der Singularität",
+      "source_url": "https://www.fastcompany.com/91544235/demis-hassabis-google-io-2026"
+    },
     {
       "title": "Apple integriert Google Gemini als Herzstück des neuen Siri AI",
       "source_url": "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/"
@@ -288,38 +319,6 @@
     {
       "title": "Microsoft Build 2026: Copilot avanciert zum Peer Programmer",
       "source_url": "https://www.notebookcheck.net/Microsoft-Build-2026-What-to-expect-from-the-June-2-keynote.1311546.0.html"
-    },
-    {
-      "title": "Salesforces Anthropic-Stake ist jetzt 5 Milliarden wert",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-06-01/salesforce-investment-in-anthropic-is-valued-at-about-5-billion"
-    },
-    {
-      "title": "Anthropic und OpenAI sind Nvidias erste Vera-Großkunden",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-06-01/nvidia-says-anthropic-openai-among-big-users-of-new-vera-chip"
-    },
-    {
-      "title": "Hacker nutzen LLM-Agenten für ersten skalierten 2FA-Bypass",
-      "source_url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html"
-    },
-    {
-      "title": "Google DeepMind holt Contextual-AI-Gründerteam an Bord",
-      "source_url": "https://www.heygotrade.com/en/news/google-io-2026-gemini-deepmind-contextual-ai/"
-    },
-    {
-      "title": "Simon Willison über die KI-Polarisierung",
-      "source_url": "https://simonwillison.net/"
-    },
-    {
-      "title": "EU-KI-Verordnung bekommt neue Fristen und ein Nudification-Verbot",
-      "source_url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
-    },
-    {
-      "title": "Nvidia Vera Rubin NVL72 geht auf Computex in Serie",
-      "source_url": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/"
-    },
-    {
-      "title": "KI lernt wissenschaftlichen Geschmack per Community-Feedback",
-      "source_url": "https://arxiv.org/abs/2603.14473"
     }
   ]
 }
