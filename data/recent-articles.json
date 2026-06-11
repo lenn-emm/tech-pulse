@@ -1,60 +1,40 @@
 {
   "articles": [
     {
-      "title": "Claude Fable 5: Mythos-Klasse jetzt für alle verfügbar",
-      "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+      "title": "OpenAI und Oracle: GPT-Modelle über OCI-Commitment buchbar",
+      "source_url": "https://openai.com/index/openai-on-oracle-cloud/"
     },
     {
-      "title": "Anthropic setzt 200 Mio. Dollar für KI-Jobverlust-Forschung ein",
-      "source_url": "https://www.washingtonpost.com/business/2026/06/10/anthropic-dario-amodei-ai/52f6800a-6510-11f1-bdd4-805ebb99a693_story.html"
+      "title": "Claude Fable 5: Mythos-Klasse jetzt für alle verfügbar",
+      "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
     },
     {
       "title": "Visa und OpenAI: KI-Agenten erhalten eigene Zahlungsinfrastruktur",
       "source_url": "https://investor.visa.com/news/news-details/2026/Visa-Partners-with-OpenAI-to-Power-the-Next-Generation-of-AI-Commerce/default.aspx"
     },
     {
-      "title": "Pentagon ersetzt Claude: zu sicher für den Krieg",
-      "source_url": "https://www.techtimes.com/articles/317998/20260608/pentagon-racing-replace-anthropics-claude-because-it-was-too-safe-war.htm"
+      "title": "Hassabis: AGI möglicherweise schon 2029 erreichbar",
+      "source_url": "https://sherwood.news/tech/google-deepminds-hassabis-agi-is-3-to-4-years-away/"
     },
     {
       "title": "Claude Managed Agents: Cron-Zeitpläne und Credential-Vaults in Beta",
       "source_url": "https://www.anthropic.com/engineering/managed-agents"
     },
     {
-      "title": "Hassabis: AGI möglicherweise schon 2029 erreichbar",
-      "source_url": "https://sherwood.news/tech/google-deepminds-hassabis-agi-is-3-to-4-years-away/"
+      "title": "Pentagon ersetzt Claude: zu sicher für den Krieg",
+      "source_url": "https://www.techtimes.com/articles/317998/20260608/pentagon-racing-replace-anthropics-claude-because-it-was-too-safe-war.htm"
     },
     {
-      "title": "OpenAI und Oracle: GPT-Modelle über OCI-Commitment buchbar",
-      "source_url": "https://openai.com/index/openai-on-oracle-cloud/"
+      "title": "Anthropic setzt 200 Mio. Dollar für KI-Jobverlust-Forschung ein",
+      "source_url": "https://www.washingtonpost.com/business/2026/06/10/anthropic-dario-amodei-ai/52f6800a-6510-11f1-bdd4-805ebb99a693_story.html"
     },
     {
       "title": "Demis Hassabis über die Ausläufer der Singularität",
       "source_url": "https://www.fastcompany.com/91544235/demis-hassabis-google-io-2026"
     },
     {
-      "title": "Apple integriert Google Gemini als Herzstück des neuen Siri AI",
-      "source_url": "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/"
-    },
-    {
-      "title": "WWDC Dev Tools: Claude und Gemini im Swift-Package tauschbar",
-      "source_url": "https://www.techtimes.com/articles/318039/20260609/wwdc-2026-developer-tools-foundation-models-now-swaps-ai-providers-without-code-changes.htm"
-    },
-    {
-      "title": "Anthropic formalisiert Claude-Partnernetzwerk mit neuem Tier-Modell",
-      "source_url": "https://www.anthropic.com/news/services-track-partner-hub"
-    },
-    {
       "title": "Siri AI bleibt EU und China vorenthalten — regulatorische Sperre",
       "source_url": "https://www.macrumors.com/2026/06/08/siri-ai-not-available-eu-china/"
-    },
-    {
-      "title": "GitHub Copilot Desktop App: Agentische Workflows mit isolierten Worktrees",
-      "source_url": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/"
-    },
-    {
-      "title": "Microsoft MAI-Code-1-Flash: 5B-Modell, 60 % weniger Token beim Coding",
-      "source_url": "https://chatforest.com/builders-log/microsoft-mai-code-1-flash-github-copilot-coding-model-build-2026/"
     },
     {
       "title": "EU AI Act: Noch 53 Tage bis zu Strafen von bis zu 35 Millionen Euro",
@@ -65,6 +45,30 @@
       "source_url": "https://www.startuphub.ai/ai-news/ai-research/2026/google-deepmind-fuels-european-robotics-startups"
     },
     {
+      "title": "Microsoft MAI-Code-1-Flash: 5B-Modell, 60 % weniger Token beim Coding",
+      "source_url": "https://chatforest.com/builders-log/microsoft-mai-code-1-flash-github-copilot-coding-model-build-2026/"
+    },
+    {
+      "title": "WWDC Dev Tools: Claude und Gemini im Swift-Package tauschbar",
+      "source_url": "https://www.techtimes.com/articles/318039/20260609/wwdc-2026-developer-tools-foundation-models-now-swaps-ai-providers-without-code-changes.htm"
+    },
+    {
+      "title": "GitHub Copilot Desktop App: Agentische Workflows mit isolierten Worktrees",
+      "source_url": "https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/"
+    },
+    {
+      "title": "Anthropic formalisiert Claude-Partnernetzwerk mit neuem Tier-Modell",
+      "source_url": "https://www.anthropic.com/news/services-track-partner-hub"
+    },
+    {
+      "title": "Apple integriert Google Gemini als Herzstück des neuen Siri AI",
+      "source_url": "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/"
+    },
+    {
+      "title": "Hacker News: \"Is AI Making Me Dumb?\" trending",
+      "source_url": "https://news.ycombinator.com/item?id=48139148"
+    },
+    {
       "title": "Altman: IPO-Zeitpunkt noch offen",
       "source_url": "https://www.cnbc.com/2026/06/08/openai-confidentially-files-for-ipo-prepping-wall-street-for-ai-debut.html"
     },
@@ -73,28 +77,24 @@
       "source_url": "https://techcrunch.com/2026/06/02/why-vivatech-2026-is-the-place-to-see-europes-ai-strategy-take-shape/"
     },
     {
-      "title": "Altmans Versprechen: AGI soll jedem Menschen nutzen",
-      "source_url": "https://openai.com/index/built-to-benefit-everyone-our-plan/"
-    },
-    {
-      "title": "Holo3.1: Lokale Computer-Use-Agenten für Web, Desktop, Mobile",
-      "source_url": "https://huggingface.co/blog/Hcompany/holo31"
-    },
-    {
-      "title": "Hacker News: \"Is AI Making Me Dumb?\" trending",
-      "source_url": "https://news.ycombinator.com/item?id=48139148"
-    },
-    {
-      "title": "MIT ChartNet: Kleine Modelle schlagen Riesen bei Diagrammanalyse",
-      "source_url": "https://news.mit.edu/2026/mit-researchers-teach-ai-models-to-interpret-charts-0603"
+      "title": "OpenAI Economic Research Exchange sucht externe Forscher",
+      "source_url": "https://openai.com/index/economic-research-exchange/"
     },
     {
       "title": "OpenAI reicht vertraulichen Börsenantrag ein",
       "source_url": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/"
     },
     {
-      "title": "OpenAI Economic Research Exchange sucht externe Forscher",
-      "source_url": "https://openai.com/index/economic-research-exchange/"
+      "title": "Holo3.1: Lokale Computer-Use-Agenten für Web, Desktop, Mobile",
+      "source_url": "https://huggingface.co/blog/Hcompany/holo31"
+    },
+    {
+      "title": "MIT ChartNet: Kleine Modelle schlagen Riesen bei Diagrammanalyse",
+      "source_url": "https://news.mit.edu/2026/mit-researchers-teach-ai-models-to-interpret-charts-0603"
+    },
+    {
+      "title": "Altmans Versprechen: AGI soll jedem Menschen nutzen",
+      "source_url": "https://openai.com/index/built-to-benefit-everyone-our-plan/"
     },
     {
       "title": "OpenAI Deployment Company: 4 Mrd. Dollar Enterprise-Arm",
@@ -105,8 +105,8 @@
       "source_url": "https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/"
     },
     {
-      "title": "Apple WWDC 2026: iOS 27, Siri 2.0 mit Gemini, Claude als iPhone-Option",
-      "source_url": "https://www.tomsguide.com/news/live/wwdc-2026-live-news-updates"
+      "title": "Gemini 3.5 Flash: Pflicht-Standard in Google Enterprise ab heute",
+      "source_url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
     },
     {
       "title": "ChatGPT verliert: Marktanteil sinkt auf 54,7 % — Gemini verdoppelt sich",
@@ -115,10 +115,6 @@
     {
       "title": "DeepMind: Solipsistische Superintelligenz wäre strukturell nicht kooperativ",
       "source_url": "https://deepmind.google/research/publications/"
-    },
-    {
-      "title": "Gemini 3.5 Flash: Pflicht-Standard in Google Enterprise ab heute",
-      "source_url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
     },
     {
       "title": "OpenAI vor IPO: ChatGPT wird zur $850-Mrd.-Super-App",
@@ -133,16 +129,20 @@
       "source_url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/"
     },
     {
+      "title": "Apple WWDC 2026: iOS 27, Siri 2.0 mit Gemini, Claude als iPhone-Option",
+      "source_url": "https://www.tomsguide.com/news/live/wwdc-2026-live-news-updates"
+    },
+    {
       "title": "Arxiv: KI-Agenten beenden klassisches Software-Engineering",
       "source_url": "https://arxiv.org/abs/2606.05608"
     },
     {
-      "title": "Hugging Face veroeffentlicht Transformers v5",
-      "source_url": "https://huggingface.co/blog/transformers-v5"
-    },
-    {
       "title": "BYD enthuellt geheimes Humanoid-Roboter-Projekt",
       "source_url": "https://carnewschina.com/2026/06/04/byd-confirms-humanoid-robot-development-says-future-sales-could-use-dealer-network/"
+    },
+    {
+      "title": "OpenAI Codex: Plugins, Sites und Enterprise-Workspaces",
+      "source_url": "https://openai.com/index/codex-for-every-role-tool-workflow/"
     },
     {
       "title": "NYT-Verleger Sulzberger: KI-Firmen begehen dreisten Diebstahl",
@@ -157,19 +157,19 @@
       "source_url": "https://www.indexbox.io/blog/chatgpt-reaches-1-billion-monthly-active-users-fastest-app-ever/"
     },
     {
-      "title": "OpenAI Codex: Plugins, Sites und Enterprise-Workspaces",
-      "source_url": "https://openai.com/index/codex-for-every-role-tool-workflow/"
+      "title": "Hugging Face veroeffentlicht Transformers v5",
+      "source_url": "https://huggingface.co/blog/transformers-v5"
     },
     {
       "title": "KI-Token-Kosten fressen Unternehmensbudgets auf",
       "source_url": "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/"
     },
     {
-      "title": "Anthropic fordert globalen KI-Pause-Mechanismus",
+      "title": "Zitat: Anthropic über rekursive KI-Selbstverbesserung",
       "source_url": "https://www.anthropic.com/institute/recursive-self-improvement"
     },
     {
-      "title": "Zitat: Anthropic über rekursive KI-Selbstverbesserung",
+      "title": "Anthropic fordert globalen KI-Pause-Mechanismus",
       "source_url": "https://www.anthropic.com/institute/recursive-self-improvement"
     },
     {
@@ -197,12 +197,12 @@
       "source_url": "https://openai.com/index/chatgpt-memory-dreaming/"
     },
     {
-      "title": "Gemma 4 12B: Googles Multimodal-KI läuft auf dem Standard-Laptop",
-      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/"
-    },
-    {
       "title": "Trump unterzeichnet KI-Executive-Order für freiwillige Frontier-Prüfung",
       "source_url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/"
+    },
+    {
+      "title": "Gemma 4 12B: Googles Multimodal-KI läuft auf dem Standard-Laptop",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/"
     },
     {
       "title": "MiniMax M3: Chinas Open-Weight-Riese mit 1-Mio.-Token-Kontext",
@@ -225,16 +225,16 @@
       "source_url": "https://www.globalpolicywatch.com/2026/06/eu-tech-sovereignty-package/"
     },
     {
+      "title": "Anthropic öffnet Claude Mythos nach EU-Verhandlungen",
+      "source_url": "https://www.cnbc.com/2026/06/01/anthropic-eu-ai-mythos-access-advanced-model.html"
+    },
+    {
       "title": "Microsoft baut eigene KI-Modelle, um OpenAI-Abhängigkeit zu senken",
       "source_url": "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html"
     },
     {
       "title": "Google Gemini Spark: 24/7-KI-Assistent für Ultra-Abonnenten live",
       "source_url": "https://aiweekly.co/ai-news-today/google-ai-news"
-    },
-    {
-      "title": "Anthropic öffnet Claude Mythos nach EU-Verhandlungen",
-      "source_url": "https://www.cnbc.com/2026/06/01/anthropic-eu-ai-mythos-access-advanced-model.html"
     },
     {
       "title": "OpenAI legt Abschaltdaten für o3 und GPT-4.5 fest",
