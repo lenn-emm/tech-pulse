@@ -1,6 +1,46 @@
 {
   "articles": [
     {
+      "title": "OpenAI kauft Cloud-Startup Ona für Codex-Agenten-Infrastruktur",
+      "source_url": "https://www.cnbc.com/2026/06/11/open-ai-ona-acquisition-codex.html",
+      "edition_date": "2026-06-12"
+    },
+    {
+      "title": "Gemini 3.5 Pro: Googles stärkstes Modell steht kurz vor Launch",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+      "edition_date": "2026-06-12"
+    },
+    {
+      "title": "US-Kongress: Entwurf würde staatliche KI-Gesetze drei Jahre stoppen",
+      "source_url": "https://rollcall.com/2026/06/04/bipartisan-ai-draft-proposes-three-year-preemption-of-state-laws/",
+      "edition_date": "2026-06-12"
+    },
+    {
+      "title": "Hugging Face: Agenten trainieren Modelle selbstständig auf neue Skills",
+      "source_url": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/hugging-face-agents-train-models-with-new-skills",
+      "edition_date": "2026-06-12"
+    },
+    {
+      "title": "Erstmals streben zwei Frontier-KI-Firmen gleichzeitig an die Börse",
+      "source_url": "https://fortune.com/2026/06/09/openai-files-confidential-s-1-sec-ipo/",
+      "edition_date": "2026-06-12"
+    },
+    {
+      "title": "Glasswing wächst: 200 Organisationen, 23.000 Schwachstellen entdeckt",
+      "source_url": "https://www.anthropic.com/research/glasswing-initial-update",
+      "edition_date": "2026-06-12"
+    },
+    {
+      "title": "DeepMind: Open Models als Schlüssel zu nationaler KI-Souveränität",
+      "source_url": "https://www.startuphub.ai/ai-news/ai-research/2026/google-deepmind-discusses-open-models-ai-ownership",
+      "edition_date": "2026-06-12"
+    },
+    {
+      "title": "Johannes Landgraf, CEO Ona",
+      "source_url": "https://openai.com/index/openai-to-acquire-ona/",
+      "edition_date": "2026-06-12"
+    },
+    {
       "title": "OpenAI und Oracle: GPT-Modelle über OCI-Commitment buchbar",
       "source_url": "https://openai.com/index/openai-on-oracle-cloud/"
     },
@@ -287,38 +327,6 @@
     {
       "title": "Willison: KI hat den Wendepunkt überschritten, dunkle Fabriken kommen",
       "source_url": "https://www.lennysnewsletter.com/p/an-ai-state-of-the-union"
-    },
-    {
-      "title": "Colorado AI Act: Erstes US-KI-Gesetz tritt am 30. Juni in Kraft",
-      "source_url": "https://www.cooley.com/news/insight/2026/2026-04-24-state-ai-laws-where-are-they-now"
-    },
-    {
-      "title": "Willison: Neun Muster für robuste KI-Agentensysteme",
-      "source_url": "https://simonw.substack.com/p/agentic-engineering-patterns"
-    },
-    {
-      "title": "OpenAI und Disney: Sora darf Mickey bis Star Wars zeigen",
-      "source_url": "https://openai.com/index/disney-sora-agreement/"
-    },
-    {
-      "title": "DOE Genesis Mission: KI-Allianz für alle 17 nationalen Labore",
-      "source_url": "https://openai.com/index/us-department-of-energy-collaboration/"
-    },
-    {
-      "title": "GitHub Copilot: Abo fällt, Token-Tarif tritt in Kraft",
-      "source_url": "https://dataconomy.com/2026/06/01/github-copilot-token-pricing-backlash/"
-    },
-    {
-      "title": "Colorados KI-Gesetz: Noch 28 Tage bis zum Inkrafttreten",
-      "source_url": "https://www.gunder.com/en/news-insights/insights/2026-ai-laws-update-key-regulations-and-practical-guidance"
-    },
-    {
-      "title": "Anthropic stellt vertraulichen IPO-Antrag beim SEC",
-      "source_url": "https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html"
-    },
-    {
-      "title": "Microsoft Build 2026: Copilot avanciert zum Peer Programmer",
-      "source_url": "https://www.notebookcheck.net/Microsoft-Build-2026-What-to-expect-from-the-June-2-keynote.1311546.0.html"
     }
   ]
 }
