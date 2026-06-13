@@ -2,6 +2,41 @@
   "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
     {
+      "title": "DiffusionGemma: Google öffnet 4× schnelleres Textdiffusionsmodell",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/",
+      "edition_date": "2026-06-13"
+    },
+    {
+      "title": "Kimi K2.7-Code: Moonshots 1-Billion-Parameter Coding-Agent",
+      "source_url": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/",
+      "edition_date": "2026-06-13"
+    },
+    {
+      "title": "Claude Fable 5 kostenlos bis 22. Juni — 9 Tage bleiben",
+      "source_url": "https://www.ghacks.net/2026/06/10/anthropic-releases-claude-fable-5-to-pro-max-and-enterprise-users-free-until-june-22/",
+      "edition_date": "2026-06-13"
+    },
+    {
+      "title": "DeepMind startet $10-Mio.-Programm für Multi-Agenten-Sicherheit",
+      "source_url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
+      "edition_date": "2026-06-13"
+    },
+    {
+      "title": "Simon Willison: Agentic Engineering Patterns für 2026",
+      "source_url": "https://simonw.substack.com/p/agentic-engineering-patterns",
+      "edition_date": "2026-06-13"
+    },
+    {
+      "title": "GPT-4.5 läuft am 27. Juni ab — 14 Tage für die Migration",
+      "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "edition_date": "2026-06-13"
+    },
+    {
+      "title": "Rohin Shah, Google DeepMind",
+      "source_url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+      "edition_date": "2026-06-13"
+    },
+    {
       "title": "Erstmals streben zwei Frontier-KI-Firmen gleichzeitig an die Börse",
       "source_url": "https://fortune.com/2026/06/09/openai-files-confidential-s-1-sec-ipo/"
     },
@@ -292,34 +327,6 @@
     {
       "title": "Project Glasswing: 150 neue Orgs, 10.000+ kritische Lücken",
       "source_url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/"
-    },
-    {
-      "title": "GPT-5.5 und Codex jetzt allgemein auf Amazon Bedrock verfügbar",
-      "source_url": "https://aws.amazon.com/blogs/aws/get-started-with-openai-gpt-5-5-gpt-5-4-models-and-codex-on-amazon-bedrock/"
-    },
-    {
-      "title": "Erster autonomer LLM-Agent erbeutet AWS-Datenbank in einer Stunde",
-      "source_url": "https://cybernews.com/ai-news/ai-agent-conducts-cyberattacks-one-hour/"
-    },
-    {
-      "title": "ClickUp tauscht 290 Stellen gegen 3.000 KI-Agenten",
-      "source_url": "https://thenextweb.com/news/clickup-layoffs-22-percent-ai-100x-org-million-salary"
-    },
-    {
-      "title": "Anthropic reicht vertraulichen IPO-Antrag bei SEC ein",
-      "source_url": "https://www.anthropic.com/news/confidential-draft-s1-sec"
-    },
-    {
-      "title": "Claude Opus 4.8: Dynamische Workflows und 1M-Token-Kontext",
-      "source_url": "https://www.artificialintelligence-news.com/news/anthropic-releases-claude-opus-4-8-news/"
-    },
-    {
-      "title": "Zeb Evans, CEO ClickUp",
-      "source_url": "https://www.businesstoday.in/technology/news/story/people-who-automate-jobs-with-ai-will-always-have-a-job-productivity-startup-clickup-cuts-22-of-workforce-532801-2026-05-22"
-    },
-    {
-      "title": "Willison: KI hat den Wendepunkt überschritten, dunkle Fabriken kommen",
-      "source_url": "https://www.lennysnewsletter.com/p/an-ai-state-of-the-union"
     }
   ]
 }
