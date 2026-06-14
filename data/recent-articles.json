@@ -2,43 +2,39 @@
   "articles": [
     {
       "title": "Anthropic Claude Corps: 1.000 KI-Fellows für Nonprofits",
-      "source_url": "https://www.washingtonpost.com/business/2026/06/11/anthropic-ai-claude-corps-daniela-amodei/d11fd0a0-6595-11f1-bdd4-805ebb99a693_story.html",
-      "edition_date": "2026-06-14"
-    },
-    {
-      "title": "Google verklagt Cybercrime-Netz für Gemini-Missbrauch",
-      "source_url": "https://www.helpnetsecurity.com/2026/06/12/google-china-based-cybercrime-network-lawsuit/",
-      "edition_date": "2026-06-14"
+      "source_url": "https://www.washingtonpost.com/business/2026/06/11/anthropic-ai-claude-corps-daniela-amodei/d11fd0a0-6595-11f1-bdd4-805ebb99a693_story.html"
     },
     {
       "title": "OpenAI pensioniert GPT-5.2 — alle wechseln zu GPT-5.5",
-      "source_url": "https://www.techtimes.com/articles/318345/20260613/openai-retires-gpt-52-moves-everyone-gpt-55-what-changes-chatgpt-users-developers.htm",
-      "edition_date": "2026-06-14"
-    },
-    {
-      "title": "Uber verbrennt KI-Budget in 4 Monaten — jetzt Obergrenzen",
-      "source_url": "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/",
-      "edition_date": "2026-06-14"
+      "source_url": "https://www.techtimes.com/articles/318345/20260613/openai-retires-gpt-52-moves-everyone-gpt-55-what-changes-chatgpt-users-developers.htm"
     },
     {
       "title": "EU veröffentlicht finalen Code of Practice für KI-Kennzeichnung",
-      "source_url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content",
-      "edition_date": "2026-06-14"
+      "source_url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content"
     },
     {
       "title": "Simon Willison: Claude Fable 5 ist unerbittlich proaktiv",
-      "source_url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/",
-      "edition_date": "2026-06-14"
+      "source_url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/"
+    },
+    {
+      "title": "Uber verbrennt KI-Budget in 4 Monaten — jetzt Obergrenzen",
+      "source_url": "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/"
+    },
+    {
+      "title": "Google verklagt Cybercrime-Netz für Gemini-Missbrauch",
+      "source_url": "https://www.helpnetsecurity.com/2026/06/12/google-china-based-cybercrime-network-lawsuit/"
     },
     {
       "title": "LiteLLM-Lücke aktiv ausgenutzt — CISA setzt Frist 22. Juni",
-      "source_url": "https://www.helpnetsecurity.com/2026/06/09/litellm-vulnerability-under-active-attack-cisa-warns-cve-2026-42271/",
-      "edition_date": "2026-06-14"
+      "source_url": "https://www.helpnetsecurity.com/2026/06/09/litellm-vulnerability-under-active-attack-cisa-warns-cve-2026-42271/"
     },
     {
       "title": "Hugging Face: Chinesische Modelle dominieren Open-Weight-Charts",
-      "source_url": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026",
-      "edition_date": "2026-06-14"
+      "source_url": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026"
+    },
+    {
+      "title": "Kimi K2.7-Code: Moonshots 1-Billion-Parameter Coding-Agent",
+      "source_url": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/"
     },
     {
       "title": "DiffusionGemma: Google öffnet 4× schnelleres Textdiffusionsmodell",
@@ -49,84 +45,80 @@
       "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes"
     },
     {
+      "title": "Simon Willison: Agentic Engineering Patterns für 2026",
+      "source_url": "https://simonw.substack.com/p/agentic-engineering-patterns"
+    },
+    {
       "title": "Rohin Shah, Google DeepMind",
       "source_url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/"
-    },
-    {
-      "title": "DeepMind startet $10-Mio.-Programm für Multi-Agenten-Sicherheit",
-      "source_url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/"
-    },
-    {
-      "title": "Kimi K2.7-Code: Moonshots 1-Billion-Parameter Coding-Agent",
-      "source_url": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/"
     },
     {
       "title": "Claude Fable 5 kostenlos bis 22. Juni — 9 Tage bleiben",
       "source_url": "https://www.ghacks.net/2026/06/10/anthropic-releases-claude-fable-5-to-pro-max-and-enterprise-users-free-until-june-22/"
     },
     {
-      "title": "Simon Willison: Agentic Engineering Patterns für 2026",
-      "source_url": "https://simonw.substack.com/p/agentic-engineering-patterns"
+      "title": "DeepMind startet $10-Mio.-Programm für Multi-Agenten-Sicherheit",
+      "source_url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/"
     },
     {
       "title": "Glasswing wächst: 200 Organisationen, 23.000 Schwachstellen entdeckt",
       "source_url": "https://www.anthropic.com/research/glasswing-initial-update"
     },
     {
-      "title": "Hugging Face: Agenten trainieren Modelle selbstständig auf neue Skills",
-      "source_url": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/hugging-face-agents-train-models-with-new-skills"
+      "title": "DeepMind: Open Models als Schlüssel zu nationaler KI-Souveränität",
+      "source_url": "https://www.startuphub.ai/ai-news/ai-research/2026/google-deepmind-discusses-open-models-ai-ownership"
     },
     {
       "title": "US-Kongress: Entwurf würde staatliche KI-Gesetze drei Jahre stoppen",
       "source_url": "https://rollcall.com/2026/06/04/bipartisan-ai-draft-proposes-three-year-preemption-of-state-laws/"
     },
     {
-      "title": "Johannes Landgraf, CEO Ona",
-      "source_url": "https://openai.com/index/openai-to-acquire-ona/"
-    },
-    {
-      "title": "OpenAI kauft Cloud-Startup Ona für Codex-Agenten-Infrastruktur",
-      "source_url": "https://www.cnbc.com/2026/06/11/open-ai-ona-acquisition-codex.html"
-    },
-    {
       "title": "Erstmals streben zwei Frontier-KI-Firmen gleichzeitig an die Börse",
       "source_url": "https://fortune.com/2026/06/09/openai-files-confidential-s-1-sec-ipo/"
-    },
-    {
-      "title": "DeepMind: Open Models als Schlüssel zu nationaler KI-Souveränität",
-      "source_url": "https://www.startuphub.ai/ai-news/ai-research/2026/google-deepmind-discusses-open-models-ai-ownership"
     },
     {
       "title": "Gemini 3.5 Pro: Googles stärkstes Modell steht kurz vor Launch",
       "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/"
     },
     {
-      "title": "Hassabis: AGI möglicherweise schon 2029 erreichbar",
-      "source_url": "https://sherwood.news/tech/google-deepminds-hassabis-agi-is-3-to-4-years-away/"
+      "title": "Hugging Face: Agenten trainieren Modelle selbstständig auf neue Skills",
+      "source_url": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/hugging-face-agents-train-models-with-new-skills"
     },
     {
-      "title": "Demis Hassabis über die Ausläufer der Singularität",
-      "source_url": "https://www.fastcompany.com/91544235/demis-hassabis-google-io-2026"
+      "title": "OpenAI kauft Cloud-Startup Ona für Codex-Agenten-Infrastruktur",
+      "source_url": "https://www.cnbc.com/2026/06/11/open-ai-ona-acquisition-codex.html"
+    },
+    {
+      "title": "Johannes Landgraf, CEO Ona",
+      "source_url": "https://openai.com/index/openai-to-acquire-ona/"
+    },
+    {
+      "title": "Hassabis: AGI möglicherweise schon 2029 erreichbar",
+      "source_url": "https://sherwood.news/tech/google-deepminds-hassabis-agi-is-3-to-4-years-away/"
     },
     {
       "title": "Visa und OpenAI: KI-Agenten erhalten eigene Zahlungsinfrastruktur",
       "source_url": "https://investor.visa.com/news/news-details/2026/Visa-Partners-with-OpenAI-to-Power-the-Next-Generation-of-AI-Commerce/default.aspx"
     },
     {
-      "title": "Claude Fable 5: Mythos-Klasse jetzt für alle verfügbar",
-      "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+      "title": "Demis Hassabis über die Ausläufer der Singularität",
+      "source_url": "https://www.fastcompany.com/91544235/demis-hassabis-google-io-2026"
     },
     {
       "title": "OpenAI und Oracle: GPT-Modelle über OCI-Commitment buchbar",
       "source_url": "https://openai.com/index/openai-on-oracle-cloud/"
     },
     {
-      "title": "Pentagon ersetzt Claude: zu sicher für den Krieg",
-      "source_url": "https://www.techtimes.com/articles/317998/20260608/pentagon-racing-replace-anthropics-claude-because-it-was-too-safe-war.htm"
-    },
-    {
       "title": "Claude Managed Agents: Cron-Zeitpläne und Credential-Vaults in Beta",
       "source_url": "https://www.anthropic.com/engineering/managed-agents"
+    },
+    {
+      "title": "Claude Fable 5: Mythos-Klasse jetzt für alle verfügbar",
+      "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+    },
+    {
+      "title": "Pentagon ersetzt Claude: zu sicher für den Krieg",
+      "source_url": "https://www.techtimes.com/articles/317998/20260608/pentagon-racing-replace-anthropics-claude-because-it-was-too-safe-war.htm"
     },
     {
       "title": "Anthropic setzt 200 Mio. Dollar für KI-Jobverlust-Forschung ein",
@@ -173,6 +165,10 @@
       "source_url": "https://news.ycombinator.com/item?id=48139148"
     },
     {
+      "title": "Altmans Versprechen: AGI soll jedem Menschen nutzen",
+      "source_url": "https://openai.com/index/built-to-benefit-everyone-our-plan/"
+    },
+    {
       "title": "OpenAI reicht vertraulichen Börsenantrag ein",
       "source_url": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/"
     },
@@ -181,24 +177,20 @@
       "source_url": "https://www.cnbc.com/2026/06/08/openai-confidentially-files-for-ipo-prepping-wall-street-for-ai-debut.html"
     },
     {
-      "title": "OpenAI Deployment Company: 4 Mrd. Dollar Enterprise-Arm",
-      "source_url": "https://openai.com/index/openai-launches-the-deployment-company/"
+      "title": "Holo3.1: Lokale Computer-Use-Agenten für Web, Desktop, Mobile",
+      "source_url": "https://huggingface.co/blog/Hcompany/holo31"
     },
     {
       "title": "VivaTech 2026: Europas KI-Strategie nimmt Form an",
       "source_url": "https://techcrunch.com/2026/06/02/why-vivatech-2026-is-the-place-to-see-europes-ai-strategy-take-shape/"
     },
     {
-      "title": "Altmans Versprechen: AGI soll jedem Menschen nutzen",
-      "source_url": "https://openai.com/index/built-to-benefit-everyone-our-plan/"
-    },
-    {
-      "title": "Holo3.1: Lokale Computer-Use-Agenten für Web, Desktop, Mobile",
-      "source_url": "https://huggingface.co/blog/Hcompany/holo31"
-    },
-    {
       "title": "OpenAI Economic Research Exchange sucht externe Forscher",
       "source_url": "https://openai.com/index/economic-research-exchange/"
+    },
+    {
+      "title": "OpenAI Deployment Company: 4 Mrd. Dollar Enterprise-Arm",
+      "source_url": "https://openai.com/index/openai-launches-the-deployment-company/"
     },
     {
       "title": "ChatGPT Lockdown Mode schützt vor Prompt-Injection-Angriffen",
@@ -233,10 +225,6 @@
       "source_url": "https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud"
     },
     {
-      "title": "Hugging Face veroeffentlicht Transformers v5",
-      "source_url": "https://huggingface.co/blog/transformers-v5"
-    },
-    {
       "title": "Arxiv: KI-Agenten beenden klassisches Software-Engineering",
       "source_url": "https://arxiv.org/abs/2606.05608"
     },
@@ -261,12 +249,12 @@
       "source_url": "https://openai.com/index/codex-for-every-role-tool-workflow/"
     },
     {
-      "title": "KI-Token-Kosten fressen Unternehmensbudgets auf",
-      "source_url": "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/"
+      "title": "Hugging Face veroeffentlicht Transformers v5",
+      "source_url": "https://huggingface.co/blog/transformers-v5"
     },
     {
-      "title": "Zitat: Anthropic über rekursive KI-Selbstverbesserung",
-      "source_url": "https://www.anthropic.com/institute/recursive-self-improvement"
+      "title": "KI-Token-Kosten fressen Unternehmensbudgets auf",
+      "source_url": "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/"
     },
     {
       "title": "Microsoft MAI-Thinking-1: Reasoning ohne OpenAI-Daten",
@@ -279,6 +267,10 @@
     {
       "title": "Holo3.1: Open-Weight Computer-Use für Web und Desktop",
       "source_url": "https://huggingface.co/blog/Hcompany/holo31"
+    },
+    {
+      "title": "Zitat: Anthropic über rekursive KI-Selbstverbesserung",
+      "source_url": "https://www.anthropic.com/institute/recursive-self-improvement"
     },
     {
       "title": "Great American AI Act: 269-seitiger Kongress-Entwurf",
@@ -309,16 +301,16 @@
       "source_url": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/"
     },
     {
-      "title": "Gemma 4 12B: Googles Multimodal-KI läuft auf dem Standard-Laptop",
-      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/"
-    },
-    {
       "title": "Zitat: Charity Majors über Zeit, Entropie und KI im Team",
       "source_url": "https://charity.wtf/2026/06/02/ai-enthusiasts-are-in-a-race-against-time-ai-skeptics-are-in-a-race-against-entropy-xpost/"
     },
     {
       "title": "OpenAI Codex erhält Plugins, Annotationen und geteilte Web-Apps",
       "source_url": "https://openai.com/news/"
+    },
+    {
+      "title": "Gemma 4 12B: Googles Multimodal-KI läuft auf dem Standard-Laptop",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/"
     },
     {
       "title": "EU ernennt Jim Hagemann Snabe zum ersten KI-Sondergesandten",
