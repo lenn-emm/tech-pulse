@@ -1,6 +1,46 @@
 {
   "articles": [
     {
+      "title": "Fable 5 offline: Regierung stoppt Anthropics stärkstes Modell",
+      "source_url": "https://www.cnbc.com/2026/06/12/anthropic-disables-access-to-fable-5-and-mythos-5-to-comply-with-government-directive.html",
+      "edition_date": "2026-06-15"
+    },
+    {
+      "title": "Anthropic vor IPO: 47 Mrd. Umsatz, fast 1 Billion Bewertung",
+      "source_url": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/",
+      "edition_date": "2026-06-15"
+    },
+    {
+      "title": "HHS durchleuchtet Medicaid-Audits mit KI — Betrug im dreistelligen Milliardenbereich",
+      "source_url": "https://www.healthcaredive.com/news/hhs-ai-fraud-state-audit-aero/820989/",
+      "edition_date": "2026-06-15"
+    },
+    {
+      "title": "NAVER und NVIDIA bauen Gigawatt-KI-Fabriken in Südkorea",
+      "source_url": "https://nvidianews.nvidia.com/news/naver-ai-infrastructure",
+      "edition_date": "2026-06-15"
+    },
+    {
+      "title": "US-Bundesstaaten regulieren KI trotz Trumps Warnung",
+      "source_url": "https://www.usnews.com/news/us/articles/2026-06-14/trump-tried-to-block-state-ai-regulations-but-some-states-are-forging-ahead",
+      "edition_date": "2026-06-15"
+    },
+    {
+      "title": "OpenAI stellt GPT-5.2 ein — alle wechseln zu GPT-5.5",
+      "source_url": "https://openai.com/index/introducing-gpt-5-5/",
+      "edition_date": "2026-06-15"
+    },
+    {
+      "title": "Fable-5-Jailbreak öffentlich: 120.000-Zeichen-Prompt auf GitHub",
+      "source_url": "https://trilogyai.substack.com/p/anthropics-claude-fable-5-backlash",
+      "edition_date": "2026-06-15"
+    },
+    {
+      "title": "Zitat: Daniela Amodei über den nächsten KI-Wettbewerb",
+      "source_url": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/",
+      "edition_date": "2026-06-15"
+    },
+    {
       "title": "Anthropic Claude Corps: 1.000 KI-Fellows für Nonprofits",
       "source_url": "https://www.washingtonpost.com/business/2026/06/11/anthropic-ai-claude-corps-daniela-amodei/d11fd0a0-6595-11f1-bdd4-805ebb99a693_story.html"
     },
@@ -287,38 +327,6 @@
     {
       "title": "OpenAI Dreaming V3: ChatGPT-Gedächtnis komplett neugebaut",
       "source_url": "https://openai.com/index/chatgpt-memory-dreaming/"
-    },
-    {
-      "title": "Trump unterzeichnet KI-Executive-Order für freiwillige Frontier-Prüfung",
-      "source_url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/"
-    },
-    {
-      "title": "MiniMax M3: Chinas Open-Weight-Riese mit 1-Mio.-Token-Kontext",
-      "source_url": "https://pandaily.com/minimax-m3-model-2026"
-    },
-    {
-      "title": "Willison: KI-Enthusiasten und Skeptiker sitzen im selben Team",
-      "source_url": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/"
-    },
-    {
-      "title": "Zitat: Charity Majors über Zeit, Entropie und KI im Team",
-      "source_url": "https://charity.wtf/2026/06/02/ai-enthusiasts-are-in-a-race-against-time-ai-skeptics-are-in-a-race-against-entropy-xpost/"
-    },
-    {
-      "title": "OpenAI Codex erhält Plugins, Annotationen und geteilte Web-Apps",
-      "source_url": "https://openai.com/news/"
-    },
-    {
-      "title": "Gemma 4 12B: Googles Multimodal-KI läuft auf dem Standard-Laptop",
-      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/"
-    },
-    {
-      "title": "EU ernennt Jim Hagemann Snabe zum ersten KI-Sondergesandten",
-      "source_url": "https://www.globalpolicywatch.com/2026/06/eu-tech-sovereignty-package/"
-    },
-    {
-      "title": "Anthropic öffnet Claude Mythos nach EU-Verhandlungen",
-      "source_url": "https://www.cnbc.com/2026/06/01/anthropic-eu-ai-mythos-access-advanced-model.html"
     }
   ]
 }
