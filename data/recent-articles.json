@@ -2,6 +2,46 @@
   "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
     {
+      "title": "Washington-Treffen ohne Ergebnis: Fable 5 bleibt offline",
+      "source_url": "https://thenextweb.com/news/anthropic-commerce-meeting-fable-mythos-crisis",
+      "edition_date": "2026-06-16"
+    },
+    {
+      "title": "Kein Jailbreak: 'Fix this code' ist Standard-Entwicklerpraxis",
+      "source_url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
+      "edition_date": "2026-06-16"
+    },
+    {
+      "title": "100+ Sicherheitsexperten fordern Ende des Fable-Verbots",
+      "source_url": "https://techcrunch.com/2026/06/15/cybersecurity-vets-protest-dangerous-us-government-ban-on-anthropics-most-powerful-models/",
+      "edition_date": "2026-06-16"
+    },
+    {
+      "title": "90 Minuten: Wie Amazon-CEO Jassy Fable 5 zu Fall brachte",
+      "source_url": "https://fortune.com/2026/06/14/how-a-warning-from-amazon-led-the-white-house-to-shut-down-anthropics-mythos-model/",
+      "edition_date": "2026-06-16"
+    },
+    {
+      "title": "EU AI Act: Parlament-Abstimmung kann Hochrisiko-Fristen auf 2027 verschieben",
+      "source_url": "https://www.noze.it/en/insights/ai-act-omnibus-adozione/",
+      "edition_date": "2026-06-16"
+    },
+    {
+      "title": "Sacks: Dario lehnte Fix und Modell-Abschaltung ab",
+      "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-adviser-david-sacks-says-anthropic-refused-to-fix-fable-5-jailbreak-before-us-export-controls",
+      "edition_date": "2026-06-16"
+    },
+    {
+      "title": "R Street: Fable-Verbot war schlechte Idee, schlecht umgesetzt",
+      "source_url": "https://www.rstreet.org/commentary/the-fable-fiasco-a-bad-idea-applied-badly/",
+      "edition_date": "2026-06-16"
+    },
+    {
+      "title": "Zitat: Katie Moussouris über das, was die Regierung verboten hat",
+      "source_url": "https://fortune.com/2026/06/15/fix-this-code-three-words-behind-us-government-shut-down-anthropic-fable-mythos-ai-models-katie-moussouris-open-letter/",
+      "edition_date": "2026-06-16"
+    },
+    {
       "title": "Anthropic vor IPO: 47 Mrd. Umsatz, fast 1 Billion Bewertung",
       "source_url": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/"
     },
@@ -288,38 +328,6 @@
     {
       "title": "KI-Token-Kosten fressen Unternehmensbudgets auf",
       "source_url": "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/"
-    },
-    {
-      "title": "Microsoft MAI-Thinking-1: Reasoning ohne OpenAI-Daten",
-      "source_url": "https://www.indexbox.io/blog/microsoft-unveils-seven-in-house-ai-models-at-build-2026-reducing-reliance-on-openai/"
-    },
-    {
-      "title": "NVIDIA RTX Spark: KI-Superchip für Consumer-Laptops",
-      "source_url": "https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark"
-    },
-    {
-      "title": "Holo3.1: Open-Weight Computer-Use für Web und Desktop",
-      "source_url": "https://huggingface.co/blog/Hcompany/holo31"
-    },
-    {
-      "title": "Zitat: Anthropic über rekursive KI-Selbstverbesserung",
-      "source_url": "https://www.anthropic.com/institute/recursive-self-improvement"
-    },
-    {
-      "title": "Great American AI Act: 269-seitiger Kongress-Entwurf",
-      "source_url": "https://fedscoop.com/bipartisan-great-american-ai-act-draft-proposes-new-federal-ai-governance-framework/"
-    },
-    {
-      "title": "Anthropic fordert globalen KI-Pause-Mechanismus",
-      "source_url": "https://www.anthropic.com/institute/recursive-self-improvement"
-    },
-    {
-      "title": "SpaceX startet Roadshow für $75-Mrd.-Rekord-IPO",
-      "source_url": "https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html"
-    },
-    {
-      "title": "OpenAI Dreaming V3: ChatGPT-Gedächtnis komplett neugebaut",
-      "source_url": "https://openai.com/index/chatgpt-memory-dreaming/"
     }
   ]
 }
