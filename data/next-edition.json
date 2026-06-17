@@ -1,8 +1,8 @@
 {
   "edition": {
-    "title": "Tech Pulse — Dienstag, 16. Juni 2026",
-    "edition_date": "2026-06-16",
-    "summary": "Ein Treffen im US-Handelsministerium endete heute ohne Ergebnis: Fable 5 bleibt gesperrt, während Cybersecurity-Veteranen protestieren und enthüllt wird, dass ein normaler Debugging-Prompt den größten KI-Streit des Jahres ausgelöst hat."
+    "title": "Tech Pulse — Mittwoch, 17. Juni 2026",
+    "edition_date": "2026-06-17",
+    "summary": "Bloomberg enthüllt den vollen Wortlaut des Lutnick-Briefes, der den Fable-5-Shutdown auslöste — während Europa mit Milliarden-Investitionen und Dienst-Abkündigungen auf die US-KI-Abhängigkeitsdebatte reagiert und erstmals Strafverfolgung für KI-Exportverstöße im Raum steht."
   },
   "articles": [
     {
@@ -10,90 +10,77 @@
       "format": "hero",
       "zone": "core",
       "category": "company_news",
-      "title": "Washington-Treffen ohne Ergebnis: Fable 5 bleibt offline",
-      "summary": "Anthropics Führungskräfte und Vertreter des US-Handelsministeriums haben am Dienstag formal getagt — ohne Ergebnis. Commerce-Sekretär Lutnick, per Video aus dem G7 in Frankreich zugeschaltet, signalisierte Gesprächsbereitschaft für eine Wiederherstellung des Consumer-Zugangs, knüpfte dies aber an eine Lösung des Jailbreak-Streits. Fable 5 bleibt vorerst weltweit offline — vier Tage nach dem Shutdown, der Anthropic und Washington in offenen Konflikt gebracht hat.",
-      "source_url": "https://thenextweb.com/news/anthropic-commerce-meeting-fable-mythos-crisis",
-      "source_name": "The Next Web",
+      "title": "Lutnick-Brief enthüllt: Wortlaut des Fable-5-Shutdowns",
+      "summary": "Bloomberg hat den vollständigen Text des Briefes veröffentlicht, mit dem Commerce Secretary Howard Lutnick Anthropic am 12. Juni zur sofortigen weltweiten Abschaltung von Fable 5 und Mythos 5 zwang. Das Dokument droht explizit mit straf- und zivilrechtlichen Konsequenzen und beruft sich auf den Export Administration Regulations Act — erstmals ist damit schwarz auf weiß belegt, dass die US-Regierung ein KI-Modell als 'zivile Technologie mit militärischem Missbrauchspotenzial' klassifiziert hat. Der Brief-Wortlaut liefert die juristische Blaupause, auf der Washington künftig KI-Exporte regulieren könnte.",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-06-16/read-the-lutnick-letter-that-led-anthropic-to-disable-mythos",
+      "source_name": "Bloomberg",
       "read_time_min": 5
     },
     {
       "position": 2,
       "format": "feature",
       "zone": "adjacent",
-      "category": "company_news",
-      "title": "Kein Jailbreak: 'Fix this code' ist Standard-Entwicklerpraxis",
-      "summary": "Sicherheitsforscherin Katie Moussouris hat enthüllt, was wirklich hinter dem Exportkontrollverbot steckt: Der angebliche Jailbreak war der einfache Prompt 'Fix this code'. Amazon-Forscher hatten Fable gebeten, Code auf Schwachstellen zu scannen — das Modell verweigerte. Als sie es als Fix-Anfrage umformulierten, gehorchte es. Moussouris nennt dies genau das, was KI-Systeme für Cyberverteidiger leisten sollen — und beschreibt das Verbot als Angriff auf defensives Security-Tooling.",
-      "source_url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/",
-      "source_name": "TechCrunch",
+      "category": "regulation",
+      "title": "Trumps Anthropic-Vorgehen alarmiert US-Verbündete weltweit",
+      "summary": "Bloomberg dokumentiert, wie das Fable-5-Exportverbot in Europa, Japan und Singapur als Vorbote einer neuen KI-Abhängigkeitskrise gewertet wird. Was bis dato ein theoretisches 'Killswitch'-Szenario war — US-Regierung kappt den Zugang zu amerikanischer KI per Erlass — ist zur handfesten politischen Realität geworden. Der Artikel bündelt internationale Reaktionen und zeigt, wie ein einziger Regierungsbrief den globalen Druck auf nationale KI-Souveränitätsprogramme massiv erhöht hat.",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-06-16/trump-s-anthropic-crackdown-sets-off-ai-alarms-for-us-allies",
+      "source_name": "Bloomberg",
       "read_time_min": 5
     },
     {
       "position": 3,
       "format": "feature",
       "zone": "adjacent",
-      "category": "company_news",
-      "title": "100+ Sicherheitsexperten fordern Ende des Fable-Verbots",
-      "summary": "Alex Stamos (Stanford), Ian Levy (ehem. NCSC) und über 100 weitere Cybersecurity-Veteranen haben in einem offenen Brief die US-Regierung aufgefordert, das Exportkontrollverbot gegen Fable 5 und Mythos 5 zurückzunehmen. Die Experten warnen, das Verbot schwäche die amerikanische Cyberabwehr — und treffe genau die Tools, die Verteidiger täglich benötigen, um Angreifern einen Schritt voraus zu sein.",
-      "source_url": "https://techcrunch.com/2026/06/15/cybersecurity-vets-protest-dangerous-us-government-ban-on-anthropics-most-powerful-models/",
-      "source_name": "TechCrunch",
+      "category": "regulation",
+      "title": "Frankreich: €655 Mio. KI-Invest und Mistral für alle Beamten",
+      "summary": "Premier Lecornu kündigte 655 Millionen Euro für France 2030 und einen Mistral-gestützten AI-Assistenten für rund eine Million Staatsbedienstete an — direkt motiviert durch das Fable-5-Verbot. Das System soll bei der Rechtsprechungsanalyse und Forschungsförderung helfen; Minister wollen gleichzeitig den unkontrollierten Einsatz kommerzieller US-KI-Tools in Behörden unterbinden. Frankreich demonstriert: Ein einziger Exportkontroll-Brief aus Washington reicht aus, um eine nationale KI-Souveränitätsstrategie zu beschleunigen.",
+      "source_url": "https://thenextweb.com/news/france-to-spend-e655m-on-ai",
+      "source_name": "The Next Web",
       "read_time_min": 4
     },
     {
       "position": 4,
       "format": "visual",
       "zone": "core",
-      "category": "company_news",
-      "title": "90 Minuten: Wie Amazon-CEO Jassy Fable 5 zu Fall brachte",
-      "summary": "Fortune rekonstruiert den Minutenplan des 12. Juni: Amazon-Chef Andy Jassy eskalierte einen internen Jailbreak-Test direkt zu Treasury-Sekretär Bessent, Commerce-Sekretär Lutnick und Cyber-Direktor Coker. Wenige Stunden später landete ein Brief von Lutnick bei Dario Amodei — Anthropic hatte 90 Minuten, um beide Modelle weltweit abzuschalten. Amazons Rolle als Anthropics größter Investor und gleichzeitiger Whistleblower wird dabei zum zentralen Widerspruch der Geschichte.",
-      "source_url": "https://fortune.com/2026/06/14/how-a-warning-from-amazon-led-the-white-house-to-shut-down-anthropics-mythos-model/",
-      "source_name": "Fortune",
-      "read_time_min": 6
+      "category": "regulation",
+      "title": "Strafrechtliche Drohung: Was Lutnick Anthropic wirklich schrieb",
+      "summary": "PYMNTS legt die juristische Drohkulisse des Lutnick-Briefes offen: Das Commerce Department stellte Anthropic bei Nichteinhaltung explizit straf- und zivilrechtliche Verfolgung in Aussicht — ein Instrument, das gegen KI-Unternehmen bislang kaum angewendet wurde. Rechtliche Grundlage ist der Export Administration Regulations Act; seine erstmalige Anwendung auf ein Sprachmodell schafft einen Präzedenzfall weit über den Fable-5-Fall hinaus. Für die gesamte Frontier-AI-Branche gilt damit: Exportkontroll-Compliance ist kein Risikoposten mehr, sondern existenzielle Pflicht.",
+      "source_url": "https://www.pymnts.com/news/artificial-intelligence/2026/commerce-department-threatened-anthropic-with-criminal-charges-over-ai-models/",
+      "source_name": "PYMNTS",
+      "read_time_min": 4
     },
     {
       "position": 5,
       "format": "feature",
       "zone": "outside",
       "category": "regulation",
-      "title": "EU AI Act: Parlament-Abstimmung kann Hochrisiko-Fristen auf 2027 verschieben",
-      "summary": "Das Europäische Parlament erwartet noch im Juni die finale Abstimmung über das Digital-Omnibus-Paket, das Hochrisiko-KI-Auflagen vom 2. August 2026 auf den 2. Dezember 2027 verschiebt. Für die 78 Prozent der Unternehmen, die laut Umfragen noch keine Compliance-Schritte unternommen haben, wäre das eine entscheidende Atempause — doch solange kein Amtsblatt-Eintrag vorliegt, gilt weiterhin das August-Datum.",
-      "source_url": "https://www.noze.it/en/insights/ai-act-omnibus-adozione/",
-      "source_name": "noze",
+      "title": "Pentagon-KI steht still: Bann trifft auch den Auftraggeber",
+      "summary": "Breaking Defense befragte Experten zum realen Schaden des Fable-5-Verbots für das US-Verteidigungsministerium: Analysetools, Simulationsumgebungen und Informationsaufbereitungssysteme stehen still, weil sie Claude-Modelle einbinden. Das bittere Paradox: Das Pentagon war selbst mitverantwortlich für den Druck auf Anthropic — es forderte Freigaben für autonome Waffeneinsätze, die Anthropic ablehnte, was zur 'Supply Chain Risk'-Einstufung führte. Der Bann beschädigt nun beide Seiten gleichermaßen.",
+      "source_url": "https://breakingdefense.com/2026/06/how-the-commerce-crackdown-on-anthropic-could-impact-the-pentagon-experts/",
+      "source_name": "Breaking Defense",
       "read_time_min": 4
     },
     {
       "position": 6,
       "format": "quick",
-      "zone": "core",
+      "zone": "wildcard",
       "category": "company_news",
-      "title": "Sacks: Dario lehnte Fix und Modell-Abschaltung ab",
-      "summary": "Der KI-Chefberater des Weißen Hauses veröffentlichte am 14. Juni die Regierungsversion: Dario Amodei wurde angeboten, entweder die Sicherheitslücke zu schließen oder das Modell zurückzuziehen — und lehnte beides ab. Die Exportkontrolle sei Konsequenz dieser Entscheidung, nicht ein Angriff auf die Industrie.",
-      "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-adviser-david-sacks-says-anthropic-refused-to-fix-fable-5-jailbreak-before-us-export-controls",
-      "source_name": "Tom's Hardware",
+      "title": "Frankreichs Geheimdienst DGSI trennt sich von Palantir",
+      "summary": "Frankreichs Inlandsgeheimdienst DGSI ersetzt Palantir durch den europäischen Datenanbieter ChapsVision — explizit mit Verweis auf US-Abhängigkeitsrisiken nach dem Anthropic-Shutdown. Wenn selbst Geheimdienste US-Tech-Abhängigkeit als Sicherheitsrisiko einstufen, könnte das weitere Behörden zur Neubewertung ihrer Lieferketten zwingen.",
+      "source_url": "https://www.france24.com/en/europe/20260616-french-spies-break-with-data-analysis-giant-palantir-wary-of-relying-on-us-tech",
+      "source_name": "France 24",
       "read_time_min": 3
     },
     {
       "position": 7,
       "format": "quick",
-      "zone": "wildcard",
-      "category": "regulation",
-      "title": "R Street: Fable-Verbot war schlechte Idee, schlecht umgesetzt",
-      "summary": "Der konservative Think Tank R Street Institute kritisiert das Vorgehen der Regierung als rechtlich fragwürdig und strategisch kontraproduktiv — mit erheblichen Kollateralschäden für US-Cybersicherheit, aber ohne konkreten nationalen Sicherheitsnachweis. Auch rechts der Mitte wächst der Widerstand gegen den Fable-5-Shutdown.",
-      "source_url": "https://www.rstreet.org/commentary/the-fable-fiasco-a-bad-idea-applied-badly/",
-      "source_name": "R Street Institute",
-      "read_time_min": 3
-    },
-    {
-      "position": 8,
-      "format": "quote",
-      "zone": "adjacent",
+      "zone": "core",
       "category": "company_news",
-      "title": "Zitat: Katie Moussouris über das, was die Regierung verboten hat",
-      "summary": "Sicherheitsforscherin und CEO von Luta Security — im Fortune-Gastbeitrag vom 15. Juni.",
-      "quote_text": "The government tried to protect us from the most valuable thing an AI model can do for defensive security: executing the find, fix, and test loop defenders run every day.",
-      "quote_author": "Katie Moussouris, CEO Luta Security",
-      "source_url": "https://fortune.com/2026/06/15/fix-this-code-three-words-behind-us-government-shut-down-anthropic-fable-mythos-ai-models-katie-moussouris-open-letter/",
-      "source_name": "Fortune",
-      "read_time_min": 1
+      "title": "Anthropic erstattet: Pro-Abo-Rückzahlung bis 20. Juni",
+      "summary": "Abonnenten, die sich zwischen dem 9. und 14. Juni angemeldet haben, erhalten automatische Rückerstattungen — Frist ist der 20. Juni. Ein Wiederherstellungsdatum für Fable 5 und Mythos 5 hat Anthropic weiterhin nicht kommuniziert.",
+      "source_url": "https://www.anthropic.com/news/fable-mythos-access",
+      "source_name": "Anthropic",
+      "read_time_min": 2
     }
   ]
 }
