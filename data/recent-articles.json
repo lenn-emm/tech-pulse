@@ -1,6 +1,40 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "Lutnick-Brief enthüllt: Wortlaut des Fable-5-Shutdowns",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-06-16/read-the-lutnick-letter-that-led-anthropic-to-disable-mythos",
+      "edition_date": "2026-06-17"
+    },
+    {
+      "title": "Trumps Anthropic-Vorgehen alarmiert US-Verbündete weltweit",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-06-16/trump-s-anthropic-crackdown-sets-off-ai-alarms-for-us-allies",
+      "edition_date": "2026-06-17"
+    },
+    {
+      "title": "Frankreich: €655 Mio. KI-Invest und Mistral für alle Beamten",
+      "source_url": "https://thenextweb.com/news/france-to-spend-e655m-on-ai",
+      "edition_date": "2026-06-17"
+    },
+    {
+      "title": "Strafrechtliche Drohung: Was Lutnick Anthropic wirklich schrieb",
+      "source_url": "https://www.pymnts.com/news/artificial-intelligence/2026/commerce-department-threatened-anthropic-with-criminal-charges-over-ai-models/",
+      "edition_date": "2026-06-17"
+    },
+    {
+      "title": "Pentagon-KI steht still: Bann trifft auch den Auftraggeber",
+      "source_url": "https://breakingdefense.com/2026/06/how-the-commerce-crackdown-on-anthropic-could-impact-the-pentagon-experts/",
+      "edition_date": "2026-06-17"
+    },
+    {
+      "title": "Frankreichs Geheimdienst DGSI trennt sich von Palantir",
+      "source_url": "https://www.france24.com/en/europe/20260616-french-spies-break-with-data-analysis-giant-palantir-wary-of-relying-on-us-tech",
+      "edition_date": "2026-06-17"
+    },
+    {
+      "title": "Anthropic erstattet: Pro-Abo-Rückzahlung bis 20. Juni",
+      "source_url": "https://www.anthropic.com/news/fable-mythos-access",
+      "edition_date": "2026-06-17"
+    },
     {
       "title": "EU AI Act: Parlament-Abstimmung kann Hochrisiko-Fristen auf 2027 verschieben",
       "source_url": "https://www.noze.it/en/insights/ai-act-omnibus-adozione/"
@@ -292,34 +326,6 @@
     {
       "title": "Arxiv: KI-Agenten beenden klassisches Software-Engineering",
       "source_url": "https://arxiv.org/abs/2606.05608"
-    },
-    {
-      "title": "BYD enthuellt geheimes Humanoid-Roboter-Projekt",
-      "source_url": "https://carnewschina.com/2026/06/04/byd-confirms-humanoid-robot-development-says-future-sales-could-use-dealer-network/"
-    },
-    {
-      "title": "NYT-Verleger Sulzberger: KI-Firmen begehen dreisten Diebstahl",
-      "source_url": "https://wan-ifra.org/2026/06/nyts-sulzberger-condemns-ai-giants-for-brazen-theft-of-intellectual-property/"
-    },
-    {
-      "title": "Linux Foundation gruendet Tokenomics Foundation",
-      "source_url": "https://www.linuxfoundation.org/press/linux-foundation-announces-the-intent-to-launch-the-tokenomics-foundation-to-establish-open-standards-for-ai-cost-management"
-    },
-    {
-      "title": "ChatGPT erreicht eine Milliarde monatliche Nutzer",
-      "source_url": "https://www.indexbox.io/blog/chatgpt-reaches-1-billion-monthly-active-users-fastest-app-ever/"
-    },
-    {
-      "title": "OpenAI Codex: Plugins, Sites und Enterprise-Workspaces",
-      "source_url": "https://openai.com/index/codex-for-every-role-tool-workflow/"
-    },
-    {
-      "title": "Hugging Face veroeffentlicht Transformers v5",
-      "source_url": "https://huggingface.co/blog/transformers-v5"
-    },
-    {
-      "title": "KI-Token-Kosten fressen Unternehmensbudgets auf",
-      "source_url": "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/"
     }
   ]
 }
