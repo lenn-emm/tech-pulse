@@ -1,6 +1,45 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "Amodei & Hassabis fordern US-geführte KI-Koalition bei G7",
+      "source_url": "https://www.cnbc.com/2026/06/17/anthropic-amodei-google-hassabis-us-ai-coalition-g7.html",
+      "edition_date": "2026-06-18"
+    },
+    {
+      "title": "Anthropic und Trump-Regierung nähern sich Fable-5-Deal",
+      "source_url": "https://www.theglobeandmail.com/business/article-anthropic-trump-officials-deal-restore-fable-5-mythos-5/",
+      "edition_date": "2026-06-18"
+    },
+    {
+      "title": "G7 als KI-Machtgipfel: Tech-CEOs neben Staatschefs",
+      "source_url": "https://www.cnbc.com/2026/06/17/g7-trump-ai-tech-leaders-openai-anthropic-google.html",
+      "edition_date": "2026-06-18"
+    },
+    {
+      "title": "Tech-Layoffs: 1.115 KI-Jobs täglich — doppeltes Tempo",
+      "source_url": "https://www.techtimes.com/articles/318466/20260616/tech-layoffs-hit-1115-day-2026-companies-cite-ai-cuts-fail-boost-returns.htm",
+      "edition_date": "2026-06-18"
+    },
+    {
+      "title": "OpenAI LifeSciBench: 750 Bioforschungs-Tasks als KI-Prüfstand",
+      "source_url": "https://openai.com/index/introducing-life-sci-bench/",
+      "edition_date": "2026-06-18"
+    },
+    {
+      "title": "DeepMind: KI-Bewusstsein ist politisch, nicht wissenschaftlich lösbar",
+      "source_url": "https://deepmind.google/research/publications/248131/",
+      "edition_date": "2026-06-18"
+    },
+    {
+      "title": "Kanada bestätigt Ja zur US-geführten KI-Koalition",
+      "source_url": "https://thenextweb.com/news/anthropic-google-us-led-ai-coalition-g7-amodei-hassabis",
+      "edition_date": "2026-06-18"
+    },
+    {
+      "title": "144 Mastra-KI-npm-Pakete durch Lieferketten-Angriff verseucht",
+      "source_url": "https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html",
+      "edition_date": "2026-06-18"
+    },
     {
       "title": "Kanada bestätigt Ja zur US-geführten KI-Koalition",
       "source_url": "https://thenextweb.com/news/anthropic-google-us-led-ai-coalition-g7-amodei-hassabis"
@@ -288,38 +327,6 @@
     {
       "title": "Hacker News: \"Is AI Making Me Dumb?\" trending",
       "source_url": "https://news.ycombinator.com/item?id=48139148"
-    },
-    {
-      "title": "Altmans Versprechen: AGI soll jedem Menschen nutzen",
-      "source_url": "https://openai.com/index/built-to-benefit-everyone-our-plan/"
-    },
-    {
-      "title": "OpenAI reicht vertraulichen Börsenantrag ein",
-      "source_url": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/"
-    },
-    {
-      "title": "Altman: IPO-Zeitpunkt noch offen",
-      "source_url": "https://www.cnbc.com/2026/06/08/openai-confidentially-files-for-ipo-prepping-wall-street-for-ai-debut.html"
-    },
-    {
-      "title": "OpenAI Deployment Company: 4 Mrd. Dollar Enterprise-Arm",
-      "source_url": "https://openai.com/index/openai-launches-the-deployment-company/"
-    },
-    {
-      "title": "Holo3.1: Lokale Computer-Use-Agenten für Web, Desktop, Mobile",
-      "source_url": "https://huggingface.co/blog/Hcompany/holo31"
-    },
-    {
-      "title": "VivaTech 2026: Europas KI-Strategie nimmt Form an",
-      "source_url": "https://techcrunch.com/2026/06/02/why-vivatech-2026-is-the-place-to-see-europes-ai-strategy-take-shape/"
-    },
-    {
-      "title": "OpenAI Economic Research Exchange sucht externe Forscher",
-      "source_url": "https://openai.com/index/economic-research-exchange/"
-    },
-    {
-      "title": "ChatGPT Lockdown Mode schützt vor Prompt-Injection-Angriffen",
-      "source_url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/"
     }
   ]
 }
