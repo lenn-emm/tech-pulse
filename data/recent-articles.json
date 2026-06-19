@@ -1,88 +1,85 @@
 {
+  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
     {
-      "title": "Amodei & Hassabis fordern US-geführte KI-Koalition bei G7",
-      "source_url": "https://www.cnbc.com/2026/06/17/anthropic-amodei-google-hassabis-us-ai-coalition-g7.html",
-      "edition_date": "2026-06-18"
+      "title": "Anthropic eröffnet Bengaluru-Büro, Indien-Umsatz verdoppelt",
+      "source_url": "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india"
     },
     {
-      "title": "Anthropic und Trump-Regierung nähern sich Fable-5-Deal",
-      "source_url": "https://www.theglobeandmail.com/business/article-anthropic-trump-officials-deal-restore-fable-5-mythos-5/",
-      "edition_date": "2026-06-18"
+      "title": "DeepMind schützt sich vor eigenen KI-Agenten",
+      "source_url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/"
     },
     {
-      "title": "G7 als KI-Machtgipfel: Tech-CEOs neben Staatschefs",
-      "source_url": "https://www.cnbc.com/2026/06/17/g7-trump-ai-tech-leaders-openai-anthropic-google.html",
-      "edition_date": "2026-06-18"
+      "title": "KI-Coding-Markt 2026: Claude Code schlägt Cursor bei Zufriedenheit",
+      "source_url": "https://www.ideaplan.io/blog/ai-coding-assistant-market-share-2026"
     },
     {
-      "title": "Tech-Layoffs: 1.115 KI-Jobs täglich — doppeltes Tempo",
-      "source_url": "https://www.techtimes.com/articles/318466/20260616/tech-layoffs-hit-1115-day-2026-companies-cite-ai-cuts-fail-boost-returns.htm",
-      "edition_date": "2026-06-18"
+      "title": "Hugging Face ML Intern: Agent trainiert sich selbst",
+      "source_url": "https://www.edtechinnovationhub.com/news/hugging-face-releases-ml-intern-the-ai-agent-teaching-itself-to-beat-claude-code-on-scientific-reasoning"
     },
     {
-      "title": "OpenAI LifeSciBench: 750 Bioforschungs-Tasks als KI-Prüfstand",
-      "source_url": "https://openai.com/index/introducing-life-sci-bench/",
-      "edition_date": "2026-06-18"
+      "title": "Anthropic startet Seoul-Büro mit Samsung- und NAVER-Deals",
+      "source_url": "https://anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific"
     },
     {
-      "title": "DeepMind: KI-Bewusstsein ist politisch, nicht wissenschaftlich lösbar",
-      "source_url": "https://deepmind.google/research/publications/248131/",
-      "edition_date": "2026-06-18"
+      "title": "OpenAI Partner-Netzwerk und ChatGPT-Gesundheits-KI live",
+      "source_url": "https://openai.com/news/product-releases/"
     },
     {
-      "title": "Kanada bestätigt Ja zur US-geführten KI-Koalition",
-      "source_url": "https://thenextweb.com/news/anthropic-google-us-led-ai-coalition-g7-amodei-hassabis",
-      "edition_date": "2026-06-18"
-    },
-    {
-      "title": "144 Mastra-KI-npm-Pakete durch Lieferketten-Angriff verseucht",
-      "source_url": "https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html",
-      "edition_date": "2026-06-18"
-    },
-    {
-      "title": "Kanada bestätigt Ja zur US-geführten KI-Koalition",
-      "source_url": "https://thenextweb.com/news/anthropic-google-us-led-ai-coalition-g7-amodei-hassabis"
-    },
-    {
-      "title": "OpenAI LifeSciBench: 750 Bioforschungs-Tasks als KI-Prüfstand",
-      "source_url": "https://openai.com/index/introducing-life-sci-bench/"
-    },
-    {
-      "title": "Tech-Layoffs: 1.115 KI-Jobs täglich — doppeltes Tempo",
-      "source_url": "https://www.techtimes.com/articles/318466/20260616/tech-layoffs-hit-1115-day-2026-companies-cite-ai-cuts-fail-boost-returns.htm"
+      "title": "Colorado schiebt KI-Gesetz auf 2027 und entschärft Pflichten",
+      "source_url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/colorado-ai-act-amended-and-effective-date-delayed"
     },
     {
       "title": "DeepMind: KI-Bewusstsein ist politisch, nicht wissenschaftlich lösbar",
       "source_url": "https://deepmind.google/research/publications/248131/"
     },
     {
-      "title": "Anthropic und Trump-Regierung nähern sich Fable-5-Deal",
-      "source_url": "https://www.theglobeandmail.com/business/article-anthropic-trump-officials-deal-restore-fable-5-mythos-5/"
-    },
-    {
       "title": "Amodei & Hassabis fordern US-geführte KI-Koalition bei G7",
       "source_url": "https://www.cnbc.com/2026/06/17/anthropic-amodei-google-hassabis-us-ai-coalition-g7.html"
+    },
+    {
+      "title": "OpenAI LifeSciBench: 750 Bioforschungs-Tasks als KI-Prüfstand",
+      "source_url": "https://openai.com/index/introducing-life-sci-bench/"
+    },
+    {
+      "title": "Kanada bestätigt Ja zur US-geführten KI-Koalition",
+      "source_url": "https://thenextweb.com/news/anthropic-google-us-led-ai-coalition-g7-amodei-hassabis"
+    },
+    {
+      "title": "Anthropic und Trump-Regierung nähern sich Fable-5-Deal",
+      "source_url": "https://www.theglobeandmail.com/business/article-anthropic-trump-officials-deal-restore-fable-5-mythos-5/"
     },
     {
       "title": "G7 als KI-Machtgipfel: Tech-CEOs neben Staatschefs",
       "source_url": "https://www.cnbc.com/2026/06/17/g7-trump-ai-tech-leaders-openai-anthropic-google.html"
     },
     {
-      "title": "144 Mastra-KI-npm-Pakete durch Lieferketten-Angriff verseucht",
-      "source_url": "https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html"
+      "title": "Tech-Layoffs: 1.115 KI-Jobs täglich — doppeltes Tempo",
+      "source_url": "https://www.techtimes.com/articles/318466/20260616/tech-layoffs-hit-1115-day-2026-companies-cite-ai-cuts-fail-boost-returns.htm"
     },
     {
-      "title": "Pentagon-KI steht still: Bann trifft auch den Auftraggeber",
-      "source_url": "https://breakingdefense.com/2026/06/how-the-commerce-crackdown-on-anthropic-could-impact-the-pentagon-experts/"
+      "title": "144 Mastra-KI-npm-Pakete durch Lieferketten-Angriff verseucht",
+      "source_url": "https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html"
     },
     {
       "title": "Frankreichs Geheimdienst DGSI trennt sich von Palantir",
       "source_url": "https://www.france24.com/en/europe/20260616-french-spies-break-with-data-analysis-giant-palantir-wary-of-relying-on-us-tech"
     },
     {
+      "title": "Pentagon-KI steht still: Bann trifft auch den Auftraggeber",
+      "source_url": "https://breakingdefense.com/2026/06/how-the-commerce-crackdown-on-anthropic-could-impact-the-pentagon-experts/"
+    },
+    {
+      "title": "Strafrechtliche Drohung: Was Lutnick Anthropic wirklich schrieb",
+      "source_url": "https://www.pymnts.com/news/artificial-intelligence/2026/commerce-department-threatened-anthropic-with-criminal-charges-over-ai-models/"
+    },
+    {
       "title": "Trumps Anthropic-Vorgehen alarmiert US-Verbündete weltweit",
       "source_url": "https://www.bloomberg.com/news/articles/2026-06-16/trump-s-anthropic-crackdown-sets-off-ai-alarms-for-us-allies"
+    },
+    {
+      "title": "Frankreich: €655 Mio. KI-Invest und Mistral für alle Beamten",
+      "source_url": "https://thenextweb.com/news/france-to-spend-e655m-on-ai"
     },
     {
       "title": "Lutnick-Brief enthüllt: Wortlaut des Fable-5-Shutdowns",
@@ -93,12 +90,20 @@
       "source_url": "https://www.anthropic.com/news/fable-mythos-access"
     },
     {
-      "title": "Frankreich: €655 Mio. KI-Invest und Mistral für alle Beamten",
-      "source_url": "https://thenextweb.com/news/france-to-spend-e655m-on-ai"
+      "title": "100+ Sicherheitsexperten fordern Ende des Fable-Verbots",
+      "source_url": "https://techcrunch.com/2026/06/15/cybersecurity-vets-protest-dangerous-us-government-ban-on-anthropics-most-powerful-models/"
     },
     {
-      "title": "Strafrechtliche Drohung: Was Lutnick Anthropic wirklich schrieb",
-      "source_url": "https://www.pymnts.com/news/artificial-intelligence/2026/commerce-department-threatened-anthropic-with-criminal-charges-over-ai-models/"
+      "title": "R Street: Fable-Verbot war schlechte Idee, schlecht umgesetzt",
+      "source_url": "https://www.rstreet.org/commentary/the-fable-fiasco-a-bad-idea-applied-badly/"
+    },
+    {
+      "title": "EU AI Act: Parlament-Abstimmung kann Hochrisiko-Fristen auf 2027 verschieben",
+      "source_url": "https://www.noze.it/en/insights/ai-act-omnibus-adozione/"
+    },
+    {
+      "title": "Kein Jailbreak: 'Fix this code' ist Standard-Entwicklerpraxis",
+      "source_url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/"
     },
     {
       "title": "90 Minuten: Wie Amazon-CEO Jassy Fable 5 zu Fall brachte",
@@ -109,40 +114,24 @@
       "source_url": "https://fortune.com/2026/06/15/fix-this-code-three-words-behind-us-government-shut-down-anthropic-fable-mythos-ai-models-katie-moussouris-open-letter/"
     },
     {
-      "title": "EU AI Act: Parlament-Abstimmung kann Hochrisiko-Fristen auf 2027 verschieben",
-      "source_url": "https://www.noze.it/en/insights/ai-act-omnibus-adozione/"
+      "title": "Washington-Treffen ohne Ergebnis: Fable 5 bleibt offline",
+      "source_url": "https://thenextweb.com/news/anthropic-commerce-meeting-fable-mythos-crisis"
     },
     {
       "title": "Sacks: Dario lehnte Fix und Modell-Abschaltung ab",
       "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-adviser-david-sacks-says-anthropic-refused-to-fix-fable-5-jailbreak-before-us-export-controls"
     },
     {
-      "title": "R Street: Fable-Verbot war schlechte Idee, schlecht umgesetzt",
-      "source_url": "https://www.rstreet.org/commentary/the-fable-fiasco-a-bad-idea-applied-badly/"
+      "title": "Anthropic vor IPO: 47 Mrd. Umsatz, fast 1 Billion Bewertung",
+      "source_url": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/"
     },
     {
-      "title": "Washington-Treffen ohne Ergebnis: Fable 5 bleibt offline",
-      "source_url": "https://thenextweb.com/news/anthropic-commerce-meeting-fable-mythos-crisis"
-    },
-    {
-      "title": "100+ Sicherheitsexperten fordern Ende des Fable-Verbots",
-      "source_url": "https://techcrunch.com/2026/06/15/cybersecurity-vets-protest-dangerous-us-government-ban-on-anthropics-most-powerful-models/"
-    },
-    {
-      "title": "Kein Jailbreak: 'Fix this code' ist Standard-Entwicklerpraxis",
-      "source_url": "https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/"
-    },
-    {
-      "title": "Fable-5-Jailbreak öffentlich: 120.000-Zeichen-Prompt auf GitHub",
-      "source_url": "https://trilogyai.substack.com/p/anthropics-claude-fable-5-backlash"
+      "title": "Fable 5 offline: Regierung stoppt Anthropics stärkstes Modell",
+      "source_url": "https://www.cnbc.com/2026/06/12/anthropic-disables-access-to-fable-5-and-mythos-5-to-comply-with-government-directive.html"
     },
     {
       "title": "OpenAI stellt GPT-5.2 ein — alle wechseln zu GPT-5.5",
       "source_url": "https://openai.com/index/introducing-gpt-5-5/"
-    },
-    {
-      "title": "HHS durchleuchtet Medicaid-Audits mit KI — Betrug im dreistelligen Milliardenbereich",
-      "source_url": "https://www.healthcaredive.com/news/hhs-ai-fraud-state-audit-aero/820989/"
     },
     {
       "title": "NAVER und NVIDIA bauen Gigawatt-KI-Fabriken in Südkorea",
@@ -153,16 +142,16 @@
       "source_url": "https://www.usnews.com/news/us/articles/2026-06-14/trump-tried-to-block-state-ai-regulations-but-some-states-are-forging-ahead"
     },
     {
-      "title": "Anthropic vor IPO: 47 Mrd. Umsatz, fast 1 Billion Bewertung",
-      "source_url": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/"
+      "title": "HHS durchleuchtet Medicaid-Audits mit KI — Betrug im dreistelligen Milliardenbereich",
+      "source_url": "https://www.healthcaredive.com/news/hhs-ai-fraud-state-audit-aero/820989/"
     },
     {
       "title": "Zitat: Daniela Amodei über den nächsten KI-Wettbewerb",
       "source_url": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/"
     },
     {
-      "title": "Fable 5 offline: Regierung stoppt Anthropics stärkstes Modell",
-      "source_url": "https://www.cnbc.com/2026/06/12/anthropic-disables-access-to-fable-5-and-mythos-5-to-comply-with-government-directive.html"
+      "title": "Fable-5-Jailbreak öffentlich: 120.000-Zeichen-Prompt auf GitHub",
+      "source_url": "https://trilogyai.substack.com/p/anthropics-claude-fable-5-backlash"
     },
     {
       "title": "LiteLLM-Lücke aktiv ausgenutzt — CISA setzt Frist 22. Juni",
@@ -173,16 +162,12 @@
       "source_url": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026"
     },
     {
-      "title": "Simon Willison: Claude Fable 5 ist unerbittlich proaktiv",
-      "source_url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/"
+      "title": "Anthropic Claude Corps: 1.000 KI-Fellows für Nonprofits",
+      "source_url": "https://www.washingtonpost.com/business/2026/06/11/anthropic-ai-claude-corps-daniela-amodei/d11fd0a0-6595-11f1-bdd4-805ebb99a693_story.html"
     },
     {
       "title": "EU veröffentlicht finalen Code of Practice für KI-Kennzeichnung",
       "source_url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-code-practice-marking-and-labelling-ai-generated-content"
-    },
-    {
-      "title": "Anthropic Claude Corps: 1.000 KI-Fellows für Nonprofits",
-      "source_url": "https://www.washingtonpost.com/business/2026/06/11/anthropic-ai-claude-corps-daniela-amodei/d11fd0a0-6595-11f1-bdd4-805ebb99a693_story.html"
     },
     {
       "title": "Google verklagt Cybercrime-Netz für Gemini-Missbrauch",
@@ -195,6 +180,10 @@
     {
       "title": "OpenAI pensioniert GPT-5.2 — alle wechseln zu GPT-5.5",
       "source_url": "https://www.techtimes.com/articles/318345/20260613/openai-retires-gpt-52-moves-everyone-gpt-55-what-changes-chatgpt-users-developers.htm"
+    },
+    {
+      "title": "Simon Willison: Claude Fable 5 ist unerbittlich proaktiv",
+      "source_url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/"
     },
     {
       "title": "DeepMind startet $10-Mio.-Programm für Multi-Agenten-Sicherheit",
@@ -327,6 +316,10 @@
     {
       "title": "Hacker News: \"Is AI Making Me Dumb?\" trending",
       "source_url": "https://news.ycombinator.com/item?id=48139148"
+    },
+    {
+      "title": "Altmans Versprechen: AGI soll jedem Menschen nutzen",
+      "source_url": "https://openai.com/index/built-to-benefit-everyone-our-plan/"
     }
   ]
 }
