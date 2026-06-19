@@ -1,97 +1,86 @@
 {
   "edition": {
-    "title": "Tech Pulse — Donnerstag, 18. Juni 2026",
-    "edition_date": "2026-06-18",
-    "summary": "G7-Gipfel wird zur KI-Bühne: Amodei und Hassabis fordern eine US-geführte KI-Koalition, während hinter den Kulissen Verhandlungen über die Rückkehr von Fable 5 laufen — und die Tech-Branche täglich 1.115 Stellen abbaut."
+    "title": "Tech Pulse — Freitag, 19. Juni 2026",
+    "edition_date": "2026-06-19",
+    "summary": "DeepMind behandelt seine KI-Agenten wie potenzielle Insider-Bedrohungen — und stellt dafür einen neuen Defense-in-Depth-Rahmen vor. Anthropic verdoppelt gleichzeitig seinen Asien-Pazifik-Fußabdruck mit neuen Büros in Seoul und Bengaluru, während Marktdaten zeigen: Claude Code gewinnt bei Zufriedenheit, Cursor verliert Boden."
   },
   "articles": [
     {
       "position": 1,
       "format": "hero",
       "zone": "core",
-      "category": "company_news",
-      "title": "Amodei & Hassabis fordern US-geführte KI-Koalition bei G7",
-      "summary": "Dario Amodei (Anthropic) und Demis Hassabis (Google DeepMind) nutzten das G7-Gipfeltreffen in Évian-les-Bains, um Staatschefs öffentlich zu einer US-angeführten internationalen KI-Koalition aufzurufen — mit strukturiertem Modellzugang, Chip-Exportkontrollen gegen China und gemeinsamen Sicherheitsstandards. Das zweistündige Mittagessen mit Trump, Altman, Mensch und weiteren Gründern markiert das erste Mal, dass Frontier-KI-CEOs gleichberechtigt am Tisch globaler Machtpolitik sitzen. Kanadas Premier Carney signalisierte unmittelbar danach Zustimmung — bindende Vereinbarungen blieben jedoch aus.",
-      "source_url": "https://www.cnbc.com/2026/06/17/anthropic-amodei-google-hassabis-us-ai-coalition-g7.html",
-      "source_name": "CNBC",
-      "read_time_min": 5
+      "category": "research",
+      "title": "DeepMind schützt sich vor eigenen KI-Agenten",
+      "summary": "Google DeepMind hat am 18. Juni den AI Control Roadmap veröffentlicht — ein Defense-in-Depth-Rahmen, der KI-Agenten intern wie potenzielle Insider-Bedrohungen behandelt. Das Modell schichtet Sandboxing, KI-gestützte Aufsicht und gestufte Reaktionsmechanismen übereinander, weil DeepMind akzeptiert, dass das Alignment-Problem niemals vollständig lösbar ist. Die Roadmap mit vier Erkennungsstufen (D1–D4) und drei Reaktionsstufen (R1–R3) soll zum Industriestandard für sichere Agenten-Infrastruktur werden — und erscheint exakt dann, wenn solche Systeme bei Google intern massenhaft ausgerollt werden.",
+      "source_url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+      "source_name": "Google DeepMind",
+      "read_time_min": 6
     },
     {
       "position": 2,
       "format": "feature",
       "zone": "core",
       "category": "company_news",
-      "title": "Anthropic und Trump-Regierung nähern sich Fable-5-Deal",
-      "summary": "Laut The Globe and Mail arbeiten Anthropic-Techniker und Commerce-Department-Beamte täglich an einer Lösung, die Fable 5 und Mythos 5 wieder zugänglich machen soll. Anthropic besteht darauf, dass der gefundene 'Jailbreak' nur kleinere Schwachstellen aufdeckt, die auch andere öffentliche Modelle finden — Washington hingegen fordert überprüfbare Schutzmechanismen gegen Missbrauch durch China und Russland. Ein konkretes Rückgabedatum steht weiterhin aus, doch der Ton der Gespräche gilt als konstruktiver als in der Vorwoche.",
-      "source_url": "https://www.theglobeandmail.com/business/article-anthropic-trump-officials-deal-restore-fable-5-mythos-5/",
-      "source_name": "The Globe and Mail",
-      "read_time_min": 4
+      "title": "Anthropic startet Seoul-Büro mit Samsung- und NAVER-Deals",
+      "summary": "Anthropic hat am 18. Juni sein Büro in Seoul eröffnet — inklusive strategischer Partnerschaften mit Samsung und NAVER. Als Representative Director übernimmt KiYoung Choi, ehemaliger Snowflake-Korea-GM, der das Unternehmen durch Südkoreas komplexe Konglomerat-Strukturen navigieren soll. Seoul ist Anthropics dritter Asien-Pazifik-Hub und markiert den bisher ambitioniertesten Schritt in Richtung asiatischer Großkunden.",
+      "source_url": "https://anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific",
+      "source_name": "Anthropic",
+      "read_time_min": 3
     },
     {
       "position": 3,
       "format": "visual",
       "zone": "adjacent",
-      "category": "company_news",
-      "title": "G7 als KI-Machtgipfel: Tech-CEOs neben Staatschefs",
-      "summary": "CNBC dokumentiert das historische Format: Neben Altman, Amodei und Hassabis saßen auch Mistral-Chef Arthur Mensch, Cohere-CEO Aidan Gomez und Sakana-AI-Gründer Ren Ito am Tisch mit G7-Staats- und Regierungschefs. Der Artikel beschreibt, wie das Treffen als 'Signal dafür, wo Macht sitzt' gewertet wird — und wie eng geopolitische und kommerzielle KI-Interessen verflochten sind. Der G7-Gipfel hat KI erstmals als eigenständigen Tagesordnungspunkt auf Augenhöhe mit klassischen Sicherheits- und Wirtschaftsfragen behandelt.",
-      "source_url": "https://www.cnbc.com/2026/06/17/g7-trump-ai-tech-leaders-openai-anthropic-google.html",
-      "source_name": "CNBC",
+      "category": "product",
+      "title": "KI-Coding-Markt 2026: Claude Code schlägt Cursor bei Zufriedenheit",
+      "summary": "Neue Marktdaten zeigen eine Machtverschiebung im 12,8-Mrd.-Dollar-Markt für KI-Coding-Tools: Cursors Anteil sank von 41 % auf 26 %, während Claude Code bei der Entwicklerzufriedenheit mit 46 % führt (Cursor: 19 %, GitHub Copilot: 9 %). 85 % aller Entwickler nutzen inzwischen KI-Tools, aber 70 % kombinieren mehrere gleichzeitig — das Sieger-Pattern: Cursor für schnelle Edits, Claude Code für komplexe Aufgaben.",
+      "source_url": "https://www.ideaplan.io/blog/ai-coding-assistant-market-share-2026",
+      "source_name": "Ideaplan",
       "read_time_min": 4
     },
     {
       "position": 4,
       "format": "feature",
       "zone": "adjacent",
-      "category": "company_news",
-      "title": "Tech-Layoffs: 1.115 KI-Jobs täglich — doppeltes Tempo",
-      "summary": "TechTimes analysiert: Bis Mitte Juni 2026 haben 267 Entlassungswellen 186.000 Jobs vernichtet — 1.115 pro Arbeitstag, fast doppelt so schnell wie 2025. In 53 % der Fälle wird KI explizit als Grund genannt; gleichzeitig zeigt eine Gartner-Studie, dass die entlassenden Unternehmen keine bessere Finanzperformance erzielen. Der wachsende Befund: 'KI-Washing' — das Vorschützen von Automatisierung für ohnehin geplante Stellenabbauten — ist in der Branche weit verbreitet.",
-      "source_url": "https://www.techtimes.com/articles/318466/20260616/tech-layoffs-hit-1115-day-2026-companies-cite-ai-cuts-fail-boost-returns.htm",
-      "source_name": "TechTimes",
-      "read_time_min": 4
+      "category": "product",
+      "title": "OpenAI Partner-Netzwerk und ChatGPT-Gesundheits-KI live",
+      "summary": "OpenAI hat am 18. Juni das OpenAI Partner Network gestartet — ein strukturiertes Unternehmens-Ökosystem — und gleichzeitig die Gesundheitsintelligenz in ChatGPT ausgebaut. Dazu kommen Scheduled Tasks: Nutzer können wiederkehrende KI-Aufgaben planen, pausieren und verwalten. Die Kombination positioniert ChatGPT erstmals als vollständiges Betriebssystem für professionelle Workflows weit über reinen Chat hinaus.",
+      "source_url": "https://openai.com/news/product-releases/",
+      "source_name": "OpenAI",
+      "read_time_min": 3
     },
     {
       "position": 5,
       "format": "feature",
-      "zone": "core",
-      "category": "research",
-      "title": "OpenAI LifeSciBench: 750 Bioforschungs-Tasks als KI-Prüfstand",
-      "summary": "OpenAI hat LifeSciBench veröffentlicht — ein von 173 PhD-Wissenschaftlern erstelltes Benchmark mit 750 Aufgaben aus sieben biologischen Forschungsabläufen und 19.020 Bewertungskriterien. Es testet erstmals echte Entscheidungsprozesse in der Arzneimittelforschung, nicht bloßes Faktenwissen. Selbst das beste Modell, GPT-Rosalind, besteht nur 36,1 % der Aufgaben — ein deutlicher Hinweis, wie weit KI vom praxistauglichen Bioforschungsassistenten noch entfernt ist.",
-      "source_url": "https://openai.com/index/introducing-life-sci-bench/",
-      "source_name": "OpenAI",
-      "read_time_min": 4
+      "zone": "outside",
+      "category": "regulation",
+      "title": "Colorado schiebt KI-Gesetz auf 2027 und entschärft Pflichten",
+      "summary": "Colorados Gouverneur Polis unterzeichnete SB 189 und verschob den Colorado AI Act — das erste umfassende US-KI-Gesetz — von Juni 2026 auf den 1. Januar 2027. Gleichzeitig wurden Kernpflichten gestrichen: Arbeitgeber müssen weder Risikomanagementsysteme aufbauen noch Impact Assessments oder jährliche Reviews durchführen. Das Muster ist deutlich — selbst in regulierungsfreundlichen Bundesstaaten weichen Compliance-Anforderungen unter Branchendruck zurück.",
+      "source_url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/colorado-ai-act-amended-and-effective-date-delayed",
+      "source_name": "Hunton Andrews Kurth",
+      "read_time_min": 3
     },
     {
       "position": 6,
-      "format": "feature",
-      "zone": "outside",
-      "category": "research",
-      "title": "DeepMind: KI-Bewusstsein ist politisch, nicht wissenschaftlich lösbar",
-      "summary": "Adam Bales und Iason Gabriel von Google DeepMind argumentieren im Paper 'Artificial Minds, Human Disagreement', dass die Frage nach maschinellem Bewusstsein prinzipiell unentscheidbar ist — kein Test kann sie endgültig klären. Anstatt eine Antwort zu versprechen, schlagen die Autoren gesellschaftliche Deliberation vor: Konsens über KI-Schutzpolitiken sei möglich, auch wenn philosophische Grundfragen offenbleiben. Das Paper erscheint zu einem Zeitpunkt, an dem Regulierungsbehörden weltweit über Rechtsstatus und Schutzpflichten für KI-Systeme diskutieren.",
-      "source_url": "https://deepmind.google/research/publications/248131/",
-      "source_name": "Google DeepMind",
-      "read_time_min": 5
+      "format": "quick",
+      "zone": "core",
+      "category": "company_news",
+      "title": "Anthropic eröffnet Bengaluru-Büro, Indien-Umsatz verdoppelt",
+      "summary": "Anthropic hat sein erstes Büro in Bengaluru eröffnet und neue Partnerschaften in Indien besiegelt. Der indische Umsatz hat sich seit der Expansion-Ankündigung im Oktober 2025 verdoppelt — das Team fokussiert auf Enterprise-Kunden, digitale Startups und KI-gestützte Bildungstools.",
+      "source_url": "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india",
+      "source_name": "Anthropic",
+      "read_time_min": 2
     },
     {
       "position": 7,
       "format": "quick",
-      "zone": "adjacent",
-      "category": "regulation",
-      "title": "Kanada bestätigt Ja zur US-geführten KI-Koalition",
-      "summary": "Premier Mark Carney signalisierte beim G7-Gipfel als erster Staatschef Zustimmung zu einer US-angeführten KI-Koalition. Kanada könnte damit als früher Testfall für westliche Solidarität im KI-Wettbewerb mit China gelten — auch wenn bislang keine bindenden Abkommen unterzeichnet wurden.",
-      "source_url": "https://thenextweb.com/news/anthropic-google-us-led-ai-coalition-g7-amodei-hassabis",
-      "source_name": "The Next Web",
-      "read_time_min": 2
-    },
-    {
-      "position": 8,
-      "format": "quick",
       "zone": "wildcard",
-      "category": "product",
-      "title": "144 Mastra-KI-npm-Pakete durch Lieferketten-Angriff verseucht",
-      "summary": "Ein Angreifer kompromittierte ein altes Mastra-npm-Contributor-Konto und schleuste binnen 88 Minuten einen getarnten Infostealer in 144 Pakete ein — darunter @mastra/core mit 918.000 wöchentlichen Downloads. Die Schadsoftware stahl Browser-Daten und Krypto-Wallet-Inhalte; alle Pakete wurden zurückgezogen. Wer Mastra-Pakete vor dem 18. Juni installiert hat, sollte Credentials sofort rotieren.",
-      "source_url": "https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html",
-      "source_name": "The Hacker News",
-      "read_time_min": 3
+      "category": "research",
+      "title": "Hugging Face ML Intern: Agent trainiert sich selbst",
+      "summary": "Hugging Face hat ML Intern vorgestellt — einen KI-Agenten, der sich eigenständig auf neue wissenschaftliche Reasoning-Aufgaben trainiert und Claude Code auf bestimmten Benchmarks übertrifft. Das Projekt demonstriert, dass agentenbasiertes Selbsttraining eine neue Iterationsschleife für Modell-Entwicklung eröffnet.",
+      "source_url": "https://www.edtechinnovationhub.com/news/hugging-face-releases-ml-intern-the-ai-agent-teaching-itself-to-beat-claude-code-on-scientific-reasoning",
+      "source_name": "EdTech Innovation Hub",
+      "read_time_min": 2
     }
   ]
 }
