@@ -1,6 +1,20 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "OpenAI bringt klinische Gesundheitsqualität zu 230 Mio. ChatGPT-Nutzern",
+      "source_url": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
+      "edition_date": "2026-06-20"
+    },
+    {
+      "title": "TCS und Anthropic starten globale Partnerschaft für regulierte Branchen",
+      "source_url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+      "edition_date": "2026-06-20"
+    },
+    {
+      "title": "Varonis-Forscher über den SearchLeak-Exploit in Microsoft 365 Copilot",
+      "source_url": "https://www.varonis.com/blog/searchleak",
+      "edition_date": "2026-06-20"
+    },
     {
       "title": "KI-Entlassungswelle: 150.000 Tech-Jobs in 2026, Tempo 44% höher",
       "source_url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/"
@@ -308,18 +322,6 @@
     {
       "title": "Claude Managed Agents: Cron-Zeitpläne und Credential-Vaults in Beta",
       "source_url": "https://www.anthropic.com/engineering/managed-agents"
-    },
-    {
-      "title": "Hassabis: AGI möglicherweise schon 2029 erreichbar",
-      "source_url": "https://sherwood.news/tech/google-deepminds-hassabis-agi-is-3-to-4-years-away/"
-    },
-    {
-      "title": "Siri AI bleibt EU und China vorenthalten — regulatorische Sperre",
-      "source_url": "https://www.macrumors.com/2026/06/08/siri-ai-not-available-eu-china/"
-    },
-    {
-      "title": "WWDC Dev Tools: Claude und Gemini im Swift-Package tauschbar",
-      "source_url": "https://www.techtimes.com/articles/318039/20260609/wwdc-2026-developer-tools-foundation-models-now-swaps-ai-providers-without-code-changes.htm"
     }
   ]
 }
