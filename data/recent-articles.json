@@ -1,6 +1,51 @@
 {
   "articles": [
     {
+      "title": "OpenAI gewinnt KI-Pionier Shazeer und Politikexperten Ball vor IPO",
+      "source_url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
+      "edition_date": "2026-06-20"
+    },
+    {
+      "title": "Anthropic eröffnet Seoul-Büro: NAVER, Samsung und LG als Partner",
+      "source_url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+      "edition_date": "2026-06-20"
+    },
+    {
+      "title": "DeepMind und Partner fördern Multi-Agenten-KI-Sicherheit mit $10 Mio.",
+      "source_url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+      "edition_date": "2026-06-20"
+    },
+    {
+      "title": "Colorado kippt KI-Gesetz kurz vor Inkrafttreten",
+      "source_url": "https://www.bytebacklaw.com/2026/05/colorado-repeals-replaces-its-ai-act-what-the-new-law-means/",
+      "edition_date": "2026-06-20"
+    },
+    {
+      "title": "Pew Research: Nur 16% der Amerikaner glauben an positive KI-Wirkung",
+      "source_url": "https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/",
+      "edition_date": "2026-06-20"
+    },
+    {
+      "title": "OpenAI reicht vertraulichen IPO-Antrag bei der SEC ein",
+      "source_url": "https://fortune.com/2026/06/09/openai-files-confidential-s-1-sec-ipo/",
+      "edition_date": "2026-06-20"
+    },
+    {
+      "title": "KI-Entlassungswelle: 150.000 Tech-Jobs in 2026, Tempo 44% höher",
+      "source_url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/",
+      "edition_date": "2026-06-20"
+    },
+    {
+      "title": "Google und SpaceX besiegeln $30-Milliarden-Rechenleistungs-Deal",
+      "source_url": "https://www.techrepublic.com/article/news-google-spacex-compute-deal/",
+      "edition_date": "2026-06-20"
+    },
+    {
+      "title": "OpenAI über seinen SEC-Antrag",
+      "source_url": "https://openai.com/index/openai-submits-confidential-s-1/",
+      "edition_date": "2026-06-20"
+    },
+    {
       "title": "DeepMind schützt sich vor eigenen KI-Agenten",
       "source_url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
       "edition_date": "2026-06-19"
@@ -298,34 +343,6 @@
     {
       "title": "Claude Fable 5: Mythos-Klasse jetzt für alle verfügbar",
       "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
-    },
-    {
-      "title": "Anthropic setzt 200 Mio. Dollar für KI-Jobverlust-Forschung ein",
-      "source_url": "https://www.washingtonpost.com/business/2026/06/10/anthropic-dario-amodei-ai/52f6800a-6510-11f1-bdd4-805ebb99a693_story.html"
-    },
-    {
-      "title": "Visa und OpenAI: KI-Agenten erhalten eigene Zahlungsinfrastruktur",
-      "source_url": "https://investor.visa.com/news/news-details/2026/Visa-Partners-with-OpenAI-to-Power-the-Next-Generation-of-AI-Commerce/default.aspx"
-    },
-    {
-      "title": "Demis Hassabis über die Ausläufer der Singularität",
-      "source_url": "https://www.fastcompany.com/91544235/demis-hassabis-google-io-2026"
-    },
-    {
-      "title": "Pentagon ersetzt Claude: zu sicher für den Krieg",
-      "source_url": "https://www.techtimes.com/articles/317998/20260608/pentagon-racing-replace-anthropics-claude-because-it-was-too-safe-war.htm"
-    },
-    {
-      "title": "Claude Managed Agents: Cron-Zeitpläne und Credential-Vaults in Beta",
-      "source_url": "https://www.anthropic.com/engineering/managed-agents"
-    },
-    {
-      "title": "OpenAI und Oracle: GPT-Modelle über OCI-Commitment buchbar",
-      "source_url": "https://openai.com/index/openai-on-oracle-cloud/"
-    },
-    {
-      "title": "EU AI Act: Noch 53 Tage bis zu Strafen von bis zu 35 Millionen Euro",
-      "source_url": "https://www.hklaw.com/en/insights/publications/2026/04/us-companies-face-eu-ai-acts-possible-august-2026-compliance-deadline"
     }
   ]
 }
