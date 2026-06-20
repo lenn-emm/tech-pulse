@@ -1,86 +1,110 @@
 {
   "edition": {
-    "title": "Tech Pulse — Freitag, 19. Juni 2026",
-    "edition_date": "2026-06-19",
-    "summary": "DeepMind behandelt seine KI-Agenten wie potenzielle Insider-Bedrohungen — und stellt dafür einen neuen Defense-in-Depth-Rahmen vor. Anthropic verdoppelt gleichzeitig seinen Asien-Pazifik-Fußabdruck mit neuen Büros in Seoul und Bengaluru, während Marktdaten zeigen: Claude Code gewinnt bei Zufriedenheit, Cursor verliert Boden."
+    "title": "Tech Pulse — Samstag, 20. Juni 2026",
+    "edition_date": "2026-06-20",
+    "summary": "OpenAI rüstet sich mit dem Transformer-Pionier Noam Shazeer und einem IPO-Antrag für den Börsengang, während Anthropic nach Seoul expandiert — und eine Pew-Studie zeigt, dass das Vertrauen der Öffentlichkeit in KI trotz wachsender Nutzung auf einem Tiefstand ist."
   },
   "articles": [
     {
       "position": 1,
       "format": "hero",
       "zone": "core",
-      "category": "research",
-      "title": "DeepMind schützt sich vor eigenen KI-Agenten",
-      "summary": "Google DeepMind hat am 18. Juni den AI Control Roadmap veröffentlicht — ein Defense-in-Depth-Rahmen, der KI-Agenten intern wie potenzielle Insider-Bedrohungen behandelt. Das Modell schichtet Sandboxing, KI-gestützte Aufsicht und gestufte Reaktionsmechanismen übereinander, weil DeepMind akzeptiert, dass das Alignment-Problem niemals vollständig lösbar ist. Die Roadmap mit vier Erkennungsstufen (D1–D4) und drei Reaktionsstufen (R1–R3) soll zum Industriestandard für sichere Agenten-Infrastruktur werden — und erscheint exakt dann, wenn solche Systeme bei Google intern massenhaft ausgerollt werden.",
-      "source_url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
-      "source_name": "Google DeepMind",
-      "read_time_min": 6
+      "category": "company_news",
+      "title": "OpenAI gewinnt KI-Pionier Shazeer und Politikexperten Ball vor IPO",
+      "summary": "OpenAI hat Noam Shazeer, Co-Autor des legendären Transformer-Papers \"Attention Is All You Need\", von Google DeepMind abgeworben — zusammen mit Dean Ball, dem ehemaligen KI-Chefberater des Weißen Hauses, der ab 6. Juli das neue Team Strategic Futures leiten wird. Die Doppelverpflichtung kurz nach dem vertraulichen SEC-S-1-Filing zeigt: OpenAI baut gleichzeitig Forschungstiefe und politisches Gewicht auf, um seinen Börsengang im Q4 2026 abzusichern. Shazeer war 2024 über Googles $2,7-Milliarden-Deal mit Character AI zu Google zurückgekehrt — nun verlässt er das Unternehmen erneut.",
+      "source_url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
+      "source_name": "TechCrunch",
+      "read_time_min": 4
     },
     {
       "position": 2,
       "format": "feature",
       "zone": "core",
       "category": "company_news",
-      "title": "Anthropic startet Seoul-Büro mit Samsung- und NAVER-Deals",
-      "summary": "Anthropic hat am 18. Juni sein Büro in Seoul eröffnet — inklusive strategischer Partnerschaften mit Samsung und NAVER. Als Representative Director übernimmt KiYoung Choi, ehemaliger Snowflake-Korea-GM, der das Unternehmen durch Südkoreas komplexe Konglomerat-Strukturen navigieren soll. Seoul ist Anthropics dritter Asien-Pazifik-Hub und markiert den bisher ambitioniertesten Schritt in Richtung asiatischer Großkunden.",
-      "source_url": "https://anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific",
+      "title": "Anthropic eröffnet Seoul-Büro: NAVER, Samsung und LG als Partner",
+      "summary": "Anthropic hat sein drittes Asien-Pazifik-Büro in Seoul eröffnet und gleichzeitig Partnerschaften mit NAVER, Samsung SDS, LG CNS, Nexon und weiteren koreanischen Konzernen bekannt gegeben — Claude Code soll die Engineering-Organisationen dieser Unternehmen durchdringen. Bemerkenswert: Die Expansion erfolgt trotz US-Exportbeschränkungen, die koreanischen Nutzern den Zugang zu Fable 5 und Mythos 5 noch verwehren. Anthropic unterzeichnete zudem ein MOU mit Koreas Ministerium für Wissenschaft und IKT.",
+      "source_url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
       "source_name": "Anthropic",
       "read_time_min": 3
     },
     {
       "position": 3,
-      "format": "visual",
-      "zone": "adjacent",
-      "category": "product",
-      "title": "KI-Coding-Markt 2026: Claude Code schlägt Cursor bei Zufriedenheit",
-      "summary": "Neue Marktdaten zeigen eine Machtverschiebung im 12,8-Mrd.-Dollar-Markt für KI-Coding-Tools: Cursors Anteil sank von 41 % auf 26 %, während Claude Code bei der Entwicklerzufriedenheit mit 46 % führt (Cursor: 19 %, GitHub Copilot: 9 %). 85 % aller Entwickler nutzen inzwischen KI-Tools, aber 70 % kombinieren mehrere gleichzeitig — das Sieger-Pattern: Cursor für schnelle Edits, Claude Code für komplexe Aufgaben.",
-      "source_url": "https://www.ideaplan.io/blog/ai-coding-assistant-market-share-2026",
-      "source_name": "Ideaplan",
-      "read_time_min": 4
+      "format": "feature",
+      "zone": "core",
+      "category": "research",
+      "title": "DeepMind und Partner fördern Multi-Agenten-KI-Sicherheit mit $10 Mio.",
+      "summary": "Google DeepMind hat gemeinsam mit Schmidt Sciences, der Cooperative AI Foundation und ARIA (UK) einen $10-Millionen-Forschungsfonds für Multi-Agenten-KI-Sicherheit angekündigt. Hintergrund ist die Sorge, dass Millionen autonomer Agenten verschiedener Anbieter bald in digitalen Umgebungen interagieren — was zu unvorhersehbaren Risiken führen kann. Grants reichen von bis zu $300.000 (Tier 1) bis zu $1 Mio. (Tier 2), Bewerbungen sind bis 8. August 2026 möglich.",
+      "source_url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+      "source_name": "Google DeepMind",
+      "read_time_min": 3
     },
     {
       "position": 4,
-      "format": "feature",
+      "format": "visual",
       "zone": "adjacent",
-      "category": "product",
-      "title": "OpenAI Partner-Netzwerk und ChatGPT-Gesundheits-KI live",
-      "summary": "OpenAI hat am 18. Juni das OpenAI Partner Network gestartet — ein strukturiertes Unternehmens-Ökosystem — und gleichzeitig die Gesundheitsintelligenz in ChatGPT ausgebaut. Dazu kommen Scheduled Tasks: Nutzer können wiederkehrende KI-Aufgaben planen, pausieren und verwalten. Die Kombination positioniert ChatGPT erstmals als vollständiges Betriebssystem für professionelle Workflows weit über reinen Chat hinaus.",
-      "source_url": "https://openai.com/news/product-releases/",
-      "source_name": "OpenAI",
+      "category": "regulation",
+      "title": "Colorado kippt KI-Gesetz kurz vor Inkrafttreten",
+      "summary": "Colorado-Gouverneur Jared Polis hat das wegweisende Colorado AI Act (SB 24-205) aufgehoben und durch eine überarbeitete Fassung ersetzt — nur zwei Monate, bevor es zum ersten umfassenden US-Bundesstaatsgesetz für hochriskante KI-Systeme hätte werden sollen. Das ursprüngliche Gesetz hätte Unternehmen zu Folgenabschätzungen und Diskriminierungsschutz verpflichtet. Die abrupte Kehrtwende ist ein Signal für die breitere Unsicherheit in der US-amerikanischen KI-Regulierungslandschaft.",
+      "source_url": "https://www.bytebacklaw.com/2026/05/colorado-repeals-replaces-its-ai-act-what-the-new-law-means/",
+      "source_name": "ByteBack Law",
       "read_time_min": 3
     },
     {
       "position": 5,
       "format": "feature",
       "zone": "outside",
-      "category": "regulation",
-      "title": "Colorado schiebt KI-Gesetz auf 2027 und entschärft Pflichten",
-      "summary": "Colorados Gouverneur Polis unterzeichnete SB 189 und verschob den Colorado AI Act — das erste umfassende US-KI-Gesetz — von Juni 2026 auf den 1. Januar 2027. Gleichzeitig wurden Kernpflichten gestrichen: Arbeitgeber müssen weder Risikomanagementsysteme aufbauen noch Impact Assessments oder jährliche Reviews durchführen. Das Muster ist deutlich — selbst in regulierungsfreundlichen Bundesstaaten weichen Compliance-Anforderungen unter Branchendruck zurück.",
-      "source_url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/colorado-ai-act-amended-and-effective-date-delayed",
-      "source_name": "Hunton Andrews Kurth",
-      "read_time_min": 3
+      "category": "research",
+      "title": "Pew Research: Nur 16% der Amerikaner glauben an positive KI-Wirkung",
+      "summary": "Eine neue Pew Research-Studie offenbart ein Paradox: Rund die Hälfte der US-Erwachsenen nutzt KI-Chatbots bereits täglich — doch nur 16% erwarten positive gesellschaftliche Auswirkungen in den nächsten 20 Jahren; 40% befürchten negative. Besonders pessimistisch sind Unter-30-Jährige (14% positiv), und fast zwei Drittel vertrauen weder der Regierung noch den Unternehmen, KI verantwortungsvoll zu regulieren. Der wachsende Graben zwischen Adoption und Vertrauen dürfte Regulatoren und die Branche gleichermaßen unter Druck setzen.",
+      "source_url": "https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/",
+      "source_name": "Pew Research Center",
+      "read_time_min": 4
     },
     {
       "position": 6,
       "format": "quick",
       "zone": "core",
       "category": "company_news",
-      "title": "Anthropic eröffnet Bengaluru-Büro, Indien-Umsatz verdoppelt",
-      "summary": "Anthropic hat sein erstes Büro in Bengaluru eröffnet und neue Partnerschaften in Indien besiegelt. Der indische Umsatz hat sich seit der Expansion-Ankündigung im Oktober 2025 verdoppelt — das Team fokussiert auf Enterprise-Kunden, digitale Startups und KI-gestützte Bildungstools.",
-      "source_url": "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india",
-      "source_name": "Anthropic",
+      "title": "OpenAI reicht vertraulichen IPO-Antrag bei der SEC ein",
+      "summary": "OpenAI hat einen vertraulichen S-1-Entwurf bei der SEC eingereicht und damit offiziell den Börsengang-Prozess eingeleitet; Goldman Sachs und Morgan Stanley begleiten die Emission. Die angestrebte Bewertung liegt bei rund einer Billion Dollar.",
+      "source_url": "https://fortune.com/2026/06/09/openai-files-confidential-s-1-sec-ipo/",
+      "source_name": "Fortune",
       "read_time_min": 2
     },
     {
       "position": 7,
       "format": "quick",
-      "zone": "wildcard",
-      "category": "research",
-      "title": "Hugging Face ML Intern: Agent trainiert sich selbst",
-      "summary": "Hugging Face hat ML Intern vorgestellt — einen KI-Agenten, der sich eigenständig auf neue wissenschaftliche Reasoning-Aufgaben trainiert und Claude Code auf bestimmten Benchmarks übertrifft. Das Projekt demonstriert, dass agentenbasiertes Selbsttraining eine neue Iterationsschleife für Modell-Entwicklung eröffnet.",
-      "source_url": "https://www.edtechinnovationhub.com/news/hugging-face-releases-ml-intern-the-ai-agent-teaching-itself-to-beat-claude-code-on-scientific-reasoning",
-      "source_name": "EdTech Innovation Hub",
+      "zone": "adjacent",
+      "category": "company_news",
+      "title": "KI-Entlassungswelle: 150.000 Tech-Jobs in 2026, Tempo 44% höher",
+      "summary": "In der Tech-Branche wurden 2026 bislang rund 150.000 Stellen abgebaut — knapp 1.000 Entlassungen pro Tag, 44% schneller als im Vorjahr. Als Haupttreiber gilt KI-getriebene Automatisierung und Umstrukturierung.",
+      "source_url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/",
+      "source_name": "TechCrunch",
       "read_time_min": 2
+    },
+    {
+      "position": 8,
+      "format": "quick",
+      "zone": "adjacent",
+      "category": "product",
+      "title": "Google und SpaceX besiegeln $30-Milliarden-Rechenleistungs-Deal",
+      "summary": "Google zahlt SpaceX von Oktober 2026 bis Juni 2029 rund $920 Mio. monatlich für Zugang zu 110.000 NVIDIA-GPUs — rund $30 Mrd. gesamt. Der Deal unterstreicht den Branchentrend: KI-Erfolg entscheidet sich zunehmend auf der Infrastruktur-Ebene.",
+      "source_url": "https://www.techrepublic.com/article/news-google-spacex-compute-deal/",
+      "source_name": "TechRepublic",
+      "read_time_min": 2
+    },
+    {
+      "position": 9,
+      "format": "quote",
+      "zone": "wildcard",
+      "category": "company_news",
+      "title": "OpenAI über seinen SEC-Antrag",
+      "summary": "OpenAI kommentierte die Einreichung seines vertraulichen S-1 trocken.",
+      "quote_text": "We expect it to leak so we're just announcing it.",
+      "quote_author": "OpenAI",
+      "source_url": "https://openai.com/index/openai-submits-confidential-s-1/",
+      "source_name": "OpenAI",
+      "read_time_min": 1
     }
   ]
 }
