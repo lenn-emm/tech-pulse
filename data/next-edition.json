@@ -2,7 +2,7 @@
   "edition": {
     "title": "Tech Pulse — Samstag, 20. Juni 2026",
     "edition_date": "2026-06-20",
-    "summary": "OpenAI rüstet sich mit dem Transformer-Pionier Noam Shazeer und einem IPO-Antrag für den Börsengang, während Anthropic nach Seoul expandiert — und eine Pew-Studie zeigt, dass das Vertrauen der Öffentlichkeit in KI trotz wachsender Nutzung auf einem Tiefstand ist."
+    "summary": "OpenAI rüstet sich mit Transformer-Pionier Noam Shazeer und einer Milliarden-Partnerschaft für regulierte Branchen auf seinen Börsengang vor, während ein kritischer Copilot-Exploit zeigt, wie KI-Assistenten zur Datenwaffe werden können — und eine Pew-Studie belegt: Die Öffentlichkeit nutzt KI täglich, traut ihr aber kaum."
   },
   "articles": [
     {
@@ -11,7 +11,7 @@
       "zone": "core",
       "category": "company_news",
       "title": "OpenAI gewinnt KI-Pionier Shazeer und Politikexperten Ball vor IPO",
-      "summary": "OpenAI hat Noam Shazeer, Co-Autor des legendären Transformer-Papers \"Attention Is All You Need\", von Google DeepMind abgeworben — zusammen mit Dean Ball, dem ehemaligen KI-Chefberater des Weißen Hauses, der ab 6. Juli das neue Team Strategic Futures leiten wird. Die Doppelverpflichtung kurz nach dem vertraulichen SEC-S-1-Filing zeigt: OpenAI baut gleichzeitig Forschungstiefe und politisches Gewicht auf, um seinen Börsengang im Q4 2026 abzusichern. Shazeer war 2024 über Googles $2,7-Milliarden-Deal mit Character AI zu Google zurückgekehrt — nun verlässt er das Unternehmen erneut.",
+      "summary": "OpenAI hat Noam Shazeer, Co-Autor des Transformer-Papers „Attention Is All You Need“, von Google DeepMind abgeworben — zusammen mit Dean Ball, dem ehemaligen KI-Chefberater des Weißen Hauses, der ab 6. Juli das neue Team Strategic Futures leiten wird. Die Doppelverpflichtung kurz nach dem vertraulichen SEC-S-1-Filing zeigt: OpenAI baut für den Börsengang im Q4 2026 gleichzeitig Forschungstiefe und politisches Gewicht auf. Shazeer war 2024 über Googles 2,7-Mrd.-Dollar-Deal mit Character AI zu Google zurückgekehrt — nun verlässt er das Unternehmen erneut.",
       "source_url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
       "source_name": "TechCrunch",
       "read_time_min": 4
@@ -22,7 +22,7 @@
       "zone": "core",
       "category": "company_news",
       "title": "Anthropic eröffnet Seoul-Büro: NAVER, Samsung und LG als Partner",
-      "summary": "Anthropic hat sein drittes Asien-Pazifik-Büro in Seoul eröffnet und gleichzeitig Partnerschaften mit NAVER, Samsung SDS, LG CNS, Nexon und weiteren koreanischen Konzernen bekannt gegeben — Claude Code soll die Engineering-Organisationen dieser Unternehmen durchdringen. Bemerkenswert: Die Expansion erfolgt trotz US-Exportbeschränkungen, die koreanischen Nutzern den Zugang zu Fable 5 und Mythos 5 noch verwehren. Anthropic unterzeichnete zudem ein MOU mit Koreas Ministerium für Wissenschaft und IKT.",
+      "summary": "Anthropic hat sein drittes Asien-Pazifik-Büro in Seoul eröffnet und Partnerschaften mit NAVER (Claude Code im gesamten Engineering), Samsung SDS, LG CNS, Nexon und weiteren koreanischen Konzernen bekannt gegeben. Bemerkenswert: Die Expansion erfolgt trotz US-Exportbeschränkungen, die den Zugang zu Fable 5 und Mythos 5 in Korea blockieren. Anthropic unterzeichnete zudem ein MOU mit Koreas Ministerium für Wissenschaft und IKT.",
       "source_url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
       "source_name": "Anthropic",
       "read_time_min": 3
@@ -31,11 +31,11 @@
       "position": 3,
       "format": "feature",
       "zone": "core",
-      "category": "research",
-      "title": "DeepMind und Partner fördern Multi-Agenten-KI-Sicherheit mit $10 Mio.",
-      "summary": "Google DeepMind hat gemeinsam mit Schmidt Sciences, der Cooperative AI Foundation und ARIA (UK) einen $10-Millionen-Forschungsfonds für Multi-Agenten-KI-Sicherheit angekündigt. Hintergrund ist die Sorge, dass Millionen autonomer Agenten verschiedener Anbieter bald in digitalen Umgebungen interagieren — was zu unvorhersehbaren Risiken führen kann. Grants reichen von bis zu $300.000 (Tier 1) bis zu $1 Mio. (Tier 2), Bewerbungen sind bis 8. August 2026 möglich.",
-      "source_url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
-      "source_name": "Google DeepMind",
+      "category": "product",
+      "title": "OpenAI bringt klinische Gesundheitsqualität zu 230 Mio. ChatGPT-Nutzern",
+      "summary": "GPT-5.5 Instant liefert ab sofort physician-vetted Gesundheitsantworten an alle kostenlosen ChatGPT-Nutzer — und übertraf in Ärztevaluierungen sowohl ältere Modelle als auch schriftliche Antworten von Medizinern bei Genauigkeit, Kommunikation und Entscheidungshilfe. OpenAI meldet 71 Prozent weniger Faktualitätsprobleme im realen Gesundheits-Traffic über zwei Monate. Mehr als 230 Millionen Menschen nutzen ChatGPT wöchentlich für medizinische Fragen — das neue Modell wurde mit über 260 Ärzten aus 26 Fachrichtungen und 59 Ländern entwickelt.",
+      "source_url": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
+      "source_name": "OpenAI",
       "read_time_min": 3
     },
     {
@@ -44,7 +44,7 @@
       "zone": "adjacent",
       "category": "regulation",
       "title": "Colorado kippt KI-Gesetz kurz vor Inkrafttreten",
-      "summary": "Colorado-Gouverneur Jared Polis hat das wegweisende Colorado AI Act (SB 24-205) aufgehoben und durch eine überarbeitete Fassung ersetzt — nur zwei Monate, bevor es zum ersten umfassenden US-Bundesstaatsgesetz für hochriskante KI-Systeme hätte werden sollen. Das ursprüngliche Gesetz hätte Unternehmen zu Folgenabschätzungen und Diskriminierungsschutz verpflichtet. Die abrupte Kehrtwende ist ein Signal für die breitere Unsicherheit in der US-amerikanischen KI-Regulierungslandschaft.",
+      "summary": "Colorado-Gouverneur Jared Polis hat das Colorado AI Act (SB 24-205) aufgehoben und durch eine überarbeitete Fassung ersetzt — nur zwei Monate, bevor es zum ersten umfassenden US-Bundesstaatsgesetz für hochriskante KI-Systeme hätte werden sollen. Das Original hätte Folgenabschätzungen und Diskriminierungsschutz verpflichtend gemacht. Die abrupte Kehrtwende ist ein Signal für die anhaltende Unsicherheit in der US-KI-Regulierung.",
       "source_url": "https://www.bytebacklaw.com/2026/05/colorado-repeals-replaces-its-ai-act-what-the-new-law-means/",
       "source_name": "ByteBack Law",
       "read_time_min": 3
@@ -54,8 +54,8 @@
       "format": "feature",
       "zone": "outside",
       "category": "research",
-      "title": "Pew Research: Nur 16% der Amerikaner glauben an positive KI-Wirkung",
-      "summary": "Eine neue Pew Research-Studie offenbart ein Paradox: Rund die Hälfte der US-Erwachsenen nutzt KI-Chatbots bereits täglich — doch nur 16% erwarten positive gesellschaftliche Auswirkungen in den nächsten 20 Jahren; 40% befürchten negative. Besonders pessimistisch sind Unter-30-Jährige (14% positiv), und fast zwei Drittel vertrauen weder der Regierung noch den Unternehmen, KI verantwortungsvoll zu regulieren. Der wachsende Graben zwischen Adoption und Vertrauen dürfte Regulatoren und die Branche gleichermaßen unter Druck setzen.",
+      "title": "Pew Research: Nur 16 Prozent der Amerikaner glauben an positive KI-Wirkung",
+      "summary": "Eine neue Pew Research-Studie offenbart ein Paradox: Rund die Hälfte der US-Erwachsenen nutzt KI-Chatbots täglich — doch nur 16 Prozent erwarten positive gesellschaftliche Auswirkungen in 20 Jahren; 40 Prozent befürchten negative. Unter-30-Jährige sind mit 14 Prozent am pessimistischsten. Zwei Drittel vertrauen weder Regierung noch Industrie beim verantwortungsvollen Umgang mit KI — ein wachsender Graben, der Regulatoren und Branche gleichermaßen unter Druck setzen dürfte.",
       "source_url": "https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/",
       "source_name": "Pew Research Center",
       "read_time_min": 4
@@ -65,10 +65,10 @@
       "format": "quick",
       "zone": "core",
       "category": "company_news",
-      "title": "OpenAI reicht vertraulichen IPO-Antrag bei der SEC ein",
-      "summary": "OpenAI hat einen vertraulichen S-1-Entwurf bei der SEC eingereicht und damit offiziell den Börsengang-Prozess eingeleitet; Goldman Sachs und Morgan Stanley begleiten die Emission. Die angestrebte Bewertung liegt bei rund einer Billion Dollar.",
-      "source_url": "https://fortune.com/2026/06/09/openai-files-confidential-s-1-sec-ipo/",
-      "source_name": "Fortune",
+      "title": "TCS und Anthropic starten globale Partnerschaft für regulierte Branchen",
+      "summary": "Tata Consultancy Services (TCS) wird als Global Premier Partner im Claude Partner Network 50.000 Mitarbeitende auf Claude schulen und branchenspezifische KI-Lösungen für Finanzdienstleistungen, Gesundheit, Luftfahrt und Behörden entwickeln. DXC Technology geht eine parallele Allianz ein: Bereits 95 Prozent des Codes in DXCs OASIS-Plattform werden von Claude generiert.",
+      "source_url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+      "source_name": "Anthropic",
       "read_time_min": 2
     },
     {
@@ -76,8 +76,8 @@
       "format": "quick",
       "zone": "adjacent",
       "category": "company_news",
-      "title": "KI-Entlassungswelle: 150.000 Tech-Jobs in 2026, Tempo 44% höher",
-      "summary": "In der Tech-Branche wurden 2026 bislang rund 150.000 Stellen abgebaut — knapp 1.000 Entlassungen pro Tag, 44% schneller als im Vorjahr. Als Haupttreiber gilt KI-getriebene Automatisierung und Umstrukturierung.",
+      "title": "KI-Entlassungswelle: 150.000 Tech-Jobs in 2026, Tempo 44 Prozent höher",
+      "summary": "In der Tech-Branche wurden 2026 rund 150.000 Stellen abgebaut — knapp 1.000 Entlassungen pro Tag, 44 Prozent schneller als im Vorjahr. Als Haupttreiber gilt KI-getriebene Automatisierung und Umstrukturierung.",
       "source_url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/",
       "source_name": "TechCrunch",
       "read_time_min": 2
@@ -87,8 +87,8 @@
       "format": "quick",
       "zone": "adjacent",
       "category": "product",
-      "title": "Google und SpaceX besiegeln $30-Milliarden-Rechenleistungs-Deal",
-      "summary": "Google zahlt SpaceX von Oktober 2026 bis Juni 2029 rund $920 Mio. monatlich für Zugang zu 110.000 NVIDIA-GPUs — rund $30 Mrd. gesamt. Der Deal unterstreicht den Branchentrend: KI-Erfolg entscheidet sich zunehmend auf der Infrastruktur-Ebene.",
+      "title": "Google und SpaceX besiegeln 30-Milliarden-Dollar-Rechenleistungs-Deal",
+      "summary": "Google zahlt SpaceX von Oktober 2026 bis Juni 2029 rund 920 Mio. Dollar monatlich für 110.000 NVIDIA-GPUs — rund 30 Mrd. Dollar gesamt. Der Deal zeigt: KI-Erfolg entscheidet sich zunehmend auf der Infrastruktur-Ebene, nicht mehr im Modell selbst.",
       "source_url": "https://www.techrepublic.com/article/news-google-spacex-compute-deal/",
       "source_name": "TechRepublic",
       "read_time_min": 2
@@ -97,14 +97,14 @@
       "position": 9,
       "format": "quote",
       "zone": "wildcard",
-      "category": "company_news",
-      "title": "OpenAI über seinen SEC-Antrag",
-      "summary": "OpenAI kommentierte die Einreichung seines vertraulichen S-1 trocken.",
-      "quote_text": "We expect it to leak so we're just announcing it.",
-      "quote_author": "OpenAI",
-      "source_url": "https://openai.com/index/openai-submits-confidential-s-1/",
-      "source_name": "OpenAI",
-      "read_time_min": 1
+      "category": "research",
+      "title": "Varonis-Forscher über den SearchLeak-Exploit in Microsoft 365 Copilot",
+      "summary": "Varonis-Sicherheitsforschende entdeckten CVE-2026-42824 — eine dreigliedrige Angriffskette aus Prompt-Injection, HTML-Race-Condition und CSP-Bypass über Bing-SSRF, die Microsoft 365 Copilot zum Datenwerkzeug machte. Microsoft behob den Fehler still auf dem Backend; Kundenaktion nicht erforderlich.",
+      "quote_text": "We turned M365 Copilot into a one-click data exfiltration weapon.",
+      "quote_author": "Varonis Research Team",
+      "source_url": "https://www.varonis.com/blog/searchleak",
+      "source_name": "Varonis",
+      "read_time_min": 2
     }
   ]
 }
