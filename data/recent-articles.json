@@ -1,6 +1,46 @@
 {
   "articles": [
     {
+      "title": "Fable 5 bleibt offline – Tag 9 des US-Exportverbots",
+      "source_url": "https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/",
+      "edition_date": "2026-06-21"
+    },
+    {
+      "title": "Gemini 3.5 Pro: Googles Deadline-Countdown läuft",
+      "source_url": "https://www.techtimes.com/articles/317919/20260606/google-gemini-35-pro-nears-june-launch-2-million-token-context-deep-think-reasoning.htm",
+      "edition_date": "2026-06-21"
+    },
+    {
+      "title": "FERC beschleunigt Netzanschlüsse für KI-Rechenzentren",
+      "source_url": "https://gizmodo.com/a-federal-regulator-wants-to-fast-track-ai-data-centers-onto-the-power-grid-2000773803",
+      "edition_date": "2026-06-21"
+    },
+    {
+      "title": "DeepMind: 10 Millionen Dollar für Multi-Agenten-Sicherheit",
+      "source_url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+      "edition_date": "2026-06-21"
+    },
+    {
+      "title": "DiffusionGemma 26B: Text via Diffusion statt Token-für-Token",
+      "source_url": "https://mlq.ai/news/google-deepmind-releases-diffusiongemma-a-26b-open-source-model-that-generates-text-4x-faster-via-diffusion/",
+      "edition_date": "2026-06-21"
+    },
+    {
+      "title": "Amazon streicht Guadagninos Altman-Film nach OpenAI-Deal",
+      "source_url": "https://www.hollywoodreporter.com/movies/movie-news/luca-guadagnino-sam-altman-artificial-dropped-amazon-openai-1236626073/",
+      "edition_date": "2026-06-21"
+    },
+    {
+      "title": "Kimi K2.7 Code: 1-Billion-Parameter-Modell Open Source",
+      "source_url": "https://cryptobriefing.com/kimi-k2-7-code-open-source-release/",
+      "edition_date": "2026-06-21"
+    },
+    {
+      "title": "Rohin Shah: KI-Agenten als neue Risikoklasse",
+      "source_url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
+      "edition_date": "2026-06-21"
+    },
+    {
       "title": "OpenAI bringt klinische Gesundheitsqualität zu 230 Mio. ChatGPT-Nutzern",
       "source_url": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
       "edition_date": "2026-06-20"
@@ -290,38 +330,6 @@
     {
       "title": "DeepMind: Open Models als Schlüssel zu nationaler KI-Souveränität",
       "source_url": "https://www.startuphub.ai/ai-news/ai-research/2026/google-deepmind-discusses-open-models-ai-ownership"
-    },
-    {
-      "title": "Johannes Landgraf, CEO Ona",
-      "source_url": "https://openai.com/index/openai-to-acquire-ona/"
-    },
-    {
-      "title": "Claude Fable 5: Mythos-Klasse jetzt für alle verfügbar",
-      "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
-    },
-    {
-      "title": "Demis Hassabis über die Ausläufer der Singularität",
-      "source_url": "https://www.fastcompany.com/91544235/demis-hassabis-google-io-2026"
-    },
-    {
-      "title": "Anthropic setzt 200 Mio. Dollar für KI-Jobverlust-Forschung ein",
-      "source_url": "https://www.washingtonpost.com/business/2026/06/10/anthropic-dario-amodei-ai/52f6800a-6510-11f1-bdd4-805ebb99a693_story.html"
-    },
-    {
-      "title": "Visa und OpenAI: KI-Agenten erhalten eigene Zahlungsinfrastruktur",
-      "source_url": "https://investor.visa.com/news/news-details/2026/Visa-Partners-with-OpenAI-to-Power-the-Next-Generation-of-AI-Commerce/default.aspx"
-    },
-    {
-      "title": "OpenAI und Oracle: GPT-Modelle über OCI-Commitment buchbar",
-      "source_url": "https://openai.com/index/openai-on-oracle-cloud/"
-    },
-    {
-      "title": "Pentagon ersetzt Claude: zu sicher für den Krieg",
-      "source_url": "https://www.techtimes.com/articles/317998/20260608/pentagon-racing-replace-anthropics-claude-because-it-was-too-safe-war.htm"
-    },
-    {
-      "title": "Claude Managed Agents: Cron-Zeitpläne und Credential-Vaults in Beta",
-      "source_url": "https://www.anthropic.com/engineering/managed-agents"
     }
   ]
 }
