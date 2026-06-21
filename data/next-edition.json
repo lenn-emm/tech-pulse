@@ -1,110 +1,99 @@
 {
   "edition": {
-    "title": "Tech Pulse — Samstag, 20. Juni 2026",
-    "edition_date": "2026-06-20",
-    "summary": "OpenAI rüstet sich mit Transformer-Pionier Noam Shazeer und einer Milliarden-Partnerschaft für regulierte Branchen auf seinen Börsengang vor, während ein kritischer Copilot-Exploit zeigt, wie KI-Assistenten zur Datenwaffe werden können — und eine Pew-Studie belegt: Die Öffentlichkeit nutzt KI täglich, traut ihr aber kaum."
+    "title": "Tech Pulse — Sonntag, 21. Juni 2026",
+    "edition_date": "2026-06-21",
+    "summary": "Neun Tage nach dem US-Exportverbot bleibt Anthropics Fable 5 weltweit gesperrt – die Kernfrage der Woche. Dazu: Googles Gemini-Deadline, FERC beschleunigt KI-Stromversorgung, und DeepMinds 10-Millionen-Dollar-Wette auf Multi-Agenten-Sicherheit."
   },
   "articles": [
     {
-      "position": 1,
+      "title": "Fable 5 bleibt offline – Tag 9 des US-Exportverbots",
+      "summary": "Das US-Regierung erzwang am 12. Juni per nationaler Sicherheitsrichtlinie die globale Abschaltung von Anthropics Fable 5 und Mythos 5 – offiziell wegen einer entdeckten Jailbreak-Methode. Neun Tage später sind die Modelle weiterhin nicht verfügbar, und Anthropic-Nutzer weltweit stoßen noch immer auf API-Fehler. Anthropic widerspricht der Einschätzung, dass ein enger Jailbreak-Vektor Grund genug sei, einen kommerziellen Dienst für Hunderte Millionen Nutzer abzuschalten.",
+      "source_url": "https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/",
+      "source_name": "Fortune",
+      "category": "company_news",
       "format": "hero",
       "zone": "core",
-      "category": "company_news",
-      "title": "OpenAI gewinnt KI-Pionier Shazeer und Politikexperten Ball vor IPO",
-      "summary": "OpenAI hat Noam Shazeer, Co-Autor des Transformer-Papers „Attention Is All You Need“, von Google DeepMind abgeworben — zusammen mit Dean Ball, dem ehemaligen KI-Chefberater des Weißen Hauses, der ab 6. Juli das neue Team Strategic Futures leiten wird. Die Doppelverpflichtung kurz nach dem vertraulichen SEC-S-1-Filing zeigt: OpenAI baut für den Börsengang im Q4 2026 gleichzeitig Forschungstiefe und politisches Gewicht auf. Shazeer war 2024 über Googles 2,7-Mrd.-Dollar-Deal mit Character AI zu Google zurückgekehrt — nun verlässt er das Unternehmen erneut.",
-      "source_url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
-      "source_name": "TechCrunch",
-      "read_time_min": 4
+      "read_time_min": 5,
+      "position": 1
     },
     {
-      "position": 2,
+      "title": "Gemini 3.5 Pro: Googles Deadline-Countdown läuft",
+      "summary": "Google versprach bei Google I/O im Mai, Gemini 3.5 Pro bis Ende Juni bereitzustellen – per 21. Juni ist das Modell jedoch noch immer nur ausgewählten Vertex AI-Unternehmenskunden zugänglich. Mit bestätigtem 2-Millionen-Token-Kontextfenster und Deep Think-Reasoning-Modus bleibt die allgemeine Verfügbarkeit neun Tage vor Monatsende offen. Prediction Markets geben derzeit etwa 50–55% Wahrscheinlichkeit für eine Veröffentlichung vor dem 30. Juni.",
+      "source_url": "https://www.techtimes.com/articles/317919/20260606/google-gemini-35-pro-nears-june-launch-2-million-token-context-deep-think-reasoning.htm",
+      "source_name": "TechTimes",
+      "category": "model_release",
       "format": "feature",
       "zone": "core",
-      "category": "company_news",
-      "title": "Anthropic eröffnet Seoul-Büro: NAVER, Samsung und LG als Partner",
-      "summary": "Anthropic hat sein drittes Asien-Pazifik-Büro in Seoul eröffnet und Partnerschaften mit NAVER (Claude Code im gesamten Engineering), Samsung SDS, LG CNS, Nexon und weiteren koreanischen Konzernen bekannt gegeben. Bemerkenswert: Die Expansion erfolgt trotz US-Exportbeschränkungen, die den Zugang zu Fable 5 und Mythos 5 in Korea blockieren. Anthropic unterzeichnete zudem ein MOU mit Koreas Ministerium für Wissenschaft und IKT.",
-      "source_url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
-      "source_name": "Anthropic",
-      "read_time_min": 3
+      "read_time_min": 4,
+      "position": 2
     },
     {
-      "position": 3,
-      "format": "feature",
-      "zone": "core",
-      "category": "product",
-      "title": "OpenAI bringt klinische Gesundheitsqualität zu 230 Mio. ChatGPT-Nutzern",
-      "summary": "GPT-5.5 Instant liefert ab sofort physician-vetted Gesundheitsantworten an alle kostenlosen ChatGPT-Nutzer — und übertraf in Ärztevaluierungen sowohl ältere Modelle als auch schriftliche Antworten von Medizinern bei Genauigkeit, Kommunikation und Entscheidungshilfe. OpenAI meldet 71 Prozent weniger Faktualitätsprobleme im realen Gesundheits-Traffic über zwei Monate. Mehr als 230 Millionen Menschen nutzen ChatGPT wöchentlich für medizinische Fragen — das neue Modell wurde mit über 260 Ärzten aus 26 Fachrichtungen und 59 Ländern entwickelt.",
-      "source_url": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
-      "source_name": "OpenAI",
-      "read_time_min": 3
-    },
-    {
-      "position": 4,
-      "format": "visual",
-      "zone": "adjacent",
+      "title": "FERC beschleunigt Netzanschlüsse für KI-Rechenzentren",
+      "summary": "Die US-Bundesbehörde FERC hat am 18. Juni Show-Cause-Orders an sechs große regionale Netzbetreiber geschickt und verlangt Reformvorschläge für den Anschluss großer Stromverbraucher wie KI-Rechenzentren. Die Betreiber haben 60 Tage Zeit, bestehende Regeln zu verteidigen oder Reformen vorzuschlagen; FERC-Chefin Laura Swett stufte die Versorgungssicherheit für KI-Infrastruktur als nationale Priorität ein. Das Verfahren umgeht den üblichen mehrjährigen Rulemaking-Prozess und kann in Wochen abgeschlossen werden.",
+      "source_url": "https://gizmodo.com/a-federal-regulator-wants-to-fast-track-ai-data-centers-onto-the-power-grid-2000773803",
+      "source_name": "Gizmodo",
       "category": "regulation",
-      "title": "Colorado kippt KI-Gesetz kurz vor Inkrafttreten",
-      "summary": "Colorado-Gouverneur Jared Polis hat das Colorado AI Act (SB 24-205) aufgehoben und durch eine überarbeitete Fassung ersetzt — nur zwei Monate, bevor es zum ersten umfassenden US-Bundesstaatsgesetz für hochriskante KI-Systeme hätte werden sollen. Das Original hätte Folgenabschätzungen und Diskriminierungsschutz verpflichtend gemacht. Die abrupte Kehrtwende ist ein Signal für die anhaltende Unsicherheit in der US-KI-Regulierung.",
-      "source_url": "https://www.bytebacklaw.com/2026/05/colorado-repeals-replaces-its-ai-act-what-the-new-law-means/",
-      "source_name": "ByteBack Law",
-      "read_time_min": 3
+      "format": "feature",
+      "zone": "adjacent",
+      "read_time_min": 4,
+      "position": 3
     },
     {
-      "position": 5,
+      "title": "DeepMind: 10 Millionen Dollar für Multi-Agenten-Sicherheit",
+      "summary": "Google DeepMind hat zusammen mit Schmidt Sciences, der Cooperative AI Foundation und ARIA einen 10-Millionen-Dollar-Forschungsfonds für Multi-Agenten-KI-Sicherheit aufgelegt. Im Zentrum steht die Frage, was passiert, wenn Millionen von KI-Agenten verschiedener Anbieter in digitalen Umgebungen interagieren, verhandeln und miteinander kommunizieren. Bewerbungen sind bis 8. August 2026 möglich; Grants reichen von bis zu 300.000 bis zu einer Million Dollar.",
+      "source_url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
+      "source_name": "Google DeepMind",
+      "category": "research",
       "format": "feature",
       "zone": "outside",
-      "category": "research",
-      "title": "Pew Research: Nur 16 Prozent der Amerikaner glauben an positive KI-Wirkung",
-      "summary": "Eine neue Pew Research-Studie offenbart ein Paradox: Rund die Hälfte der US-Erwachsenen nutzt KI-Chatbots täglich — doch nur 16 Prozent erwarten positive gesellschaftliche Auswirkungen in 20 Jahren; 40 Prozent befürchten negative. Unter-30-Jährige sind mit 14 Prozent am pessimistischsten. Zwei Drittel vertrauen weder Regierung noch Industrie beim verantwortungsvollen Umgang mit KI — ein wachsender Graben, der Regulatoren und Branche gleichermaßen unter Druck setzen dürfte.",
-      "source_url": "https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/",
-      "source_name": "Pew Research Center",
-      "read_time_min": 4
+      "read_time_min": 5,
+      "position": 4
     },
     {
-      "position": 6,
-      "format": "quick",
-      "zone": "core",
+      "title": "DiffusionGemma 26B: Text via Diffusion statt Token-für-Token",
+      "summary": "Google DeepMind veröffentlichte Anfang Juni DiffusionGemma, ein Open-Weight-Modell mit 26 Milliarden Parametern (3,8B aktiv), das Text nicht autoregressive, sondern durch paralleles Entrauschen von 256-Token-Blöcken generiert. Auf einem einzelnen NVIDIA H100 soll das Modell über 1.100 Token pro Sekunde erreichen – viermal schneller als Gemma 4. Qualitativ bleibt es laut Google hinter Produktionsmodellen zurück, zeigt aber einen grundlegend neuen Architekturansatz.",
+      "source_url": "https://mlq.ai/news/google-deepmind-releases-diffusiongemma-a-26b-open-source-model-that-generates-text-4x-faster-via-diffusion/",
+      "source_name": "MLQ.ai",
+      "category": "model_release",
+      "format": "visual",
+      "zone": "outside",
+      "read_time_min": 3,
+      "position": 5
+    },
+    {
+      "title": "Amazon streicht Guadagninos Altman-Film nach OpenAI-Deal",
+      "summary": "Amazon MGM Studios hat den fast fertigen Spielfilm 'Artificial' von Luca Guadagnino fallengelassen – Monate nachdem Amazon eine 50-Milliarden-Dollar-Partnerschaft mit OpenAI abgeschlossen hatte. Andrew Garfield spielt Sam Altman in dem Drama über die OpenAI-Führungskrise 2023; der Film soll nun bei anderen Studios platziert werden.",
+      "source_url": "https://www.hollywoodreporter.com/movies/movie-news/luca-guadagnino-sam-altman-artificial-dropped-amazon-openai-1236626073/",
+      "source_name": "The Hollywood Reporter",
       "category": "company_news",
-      "title": "TCS und Anthropic starten globale Partnerschaft für regulierte Branchen",
-      "summary": "Tata Consultancy Services (TCS) wird als Global Premier Partner im Claude Partner Network 50.000 Mitarbeitende auf Claude schulen und branchenspezifische KI-Lösungen für Finanzdienstleistungen, Gesundheit, Luftfahrt und Behörden entwickeln. DXC Technology geht eine parallele Allianz ein: Bereits 95 Prozent des Codes in DXCs OASIS-Plattform werden von Claude generiert.",
-      "source_url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
-      "source_name": "Anthropic",
-      "read_time_min": 2
-    },
-    {
-      "position": 7,
       "format": "quick",
-      "zone": "adjacent",
-      "category": "company_news",
-      "title": "KI-Entlassungswelle: 150.000 Tech-Jobs in 2026, Tempo 44 Prozent höher",
-      "summary": "In der Tech-Branche wurden 2026 rund 150.000 Stellen abgebaut — knapp 1.000 Entlassungen pro Tag, 44 Prozent schneller als im Vorjahr. Als Haupttreiber gilt KI-getriebene Automatisierung und Umstrukturierung.",
-      "source_url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/",
-      "source_name": "TechCrunch",
-      "read_time_min": 2
-    },
-    {
-      "position": 8,
-      "format": "quick",
-      "zone": "adjacent",
-      "category": "product",
-      "title": "Google und SpaceX besiegeln 30-Milliarden-Dollar-Rechenleistungs-Deal",
-      "summary": "Google zahlt SpaceX von Oktober 2026 bis Juni 2029 rund 920 Mio. Dollar monatlich für 110.000 NVIDIA-GPUs — rund 30 Mrd. Dollar gesamt. Der Deal zeigt: KI-Erfolg entscheidet sich zunehmend auf der Infrastruktur-Ebene, nicht mehr im Modell selbst.",
-      "source_url": "https://www.techrepublic.com/article/news-google-spacex-compute-deal/",
-      "source_name": "TechRepublic",
-      "read_time_min": 2
-    },
-    {
-      "position": 9,
-      "format": "quote",
       "zone": "wildcard",
+      "read_time_min": 2,
+      "position": 6
+    },
+    {
+      "title": "Kimi K2.7 Code: 1-Billion-Parameter-Modell Open Source",
+      "summary": "Moonshot AI veröffentlichte K2.7 Code unter modifizierter MIT-Lizenz: 1 Billion Gesamtparameter, 32 Milliarden aktiv, optimiert für agentic Coding-Aufgaben über lange Sequenzen. Das Modell spart 30% Reasoning-Token gegenüber seinem Vorgänger und ist auf Hugging Face und der Kimi-API verfügbar.",
+      "source_url": "https://cryptobriefing.com/kimi-k2-7-code-open-source-release/",
+      "source_name": "Cryptobriefing",
+      "category": "model_release",
+      "format": "quick",
+      "zone": "adjacent",
+      "read_time_min": 2,
+      "position": 7
+    },
+    {
+      "title": "Rohin Shah: KI-Agenten als neue Risikoklasse",
+      "summary": "Der DeepMind-Sicherheitsforscher über die emergenten Risiken von Millionen interagierender KI-Agenten – Anlass für den neuen 10-Millionen-Dollar-Forschungsfonds.",
+      "quote_text": "The mass-market arrival of agents that can carry out tasks without human oversight and follow instructions given to them by other agents creates a whole new class of risk.",
+      "quote_author": "Rohin Shah, Director AGI Safety & Alignment Research, Google DeepMind",
+      "source_url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
+      "source_name": "MIT Technology Review",
       "category": "research",
-      "title": "Varonis-Forscher über den SearchLeak-Exploit in Microsoft 365 Copilot",
-      "summary": "Varonis-Sicherheitsforschende entdeckten CVE-2026-42824 — eine dreigliedrige Angriffskette aus Prompt-Injection, HTML-Race-Condition und CSP-Bypass über Bing-SSRF, die Microsoft 365 Copilot zum Datenwerkzeug machte. Microsoft behob den Fehler still auf dem Backend; Kundenaktion nicht erforderlich.",
-      "quote_text": "We turned M365 Copilot into a one-click data exfiltration weapon.",
-      "quote_author": "Varonis Research Team",
-      "source_url": "https://www.varonis.com/blog/searchleak",
-      "source_name": "Varonis",
-      "read_time_min": 2
+      "format": "quote",
+      "zone": "outside",
+      "read_time_min": 1,
+      "position": 8
     }
   ]
 }
