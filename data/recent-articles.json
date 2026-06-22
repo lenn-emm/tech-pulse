@@ -1,6 +1,35 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "Nobel-Preisträger Jumper verlässt DeepMind für Anthropic",
+      "source_url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/",
+      "edition_date": "2026-06-22"
+    },
+    {
+      "title": "SpaceX kauft Cursor für 60 Mrd. — größte Startup-Übernahme",
+      "source_url": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html",
+      "edition_date": "2026-06-22"
+    },
+    {
+      "title": "KI-Regulierung im Chaos — Anthropic zahlt den Preis",
+      "source_url": "https://www.cnn.com/2026/06/21/tech/anthropic-ai-regulation",
+      "edition_date": "2026-06-22"
+    },
+    {
+      "title": "Agentjacking: KI-Coding-Agenten via Sentry-Exploit entführt",
+      "source_url": "https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html",
+      "edition_date": "2026-06-22"
+    },
+    {
+      "title": "Exportverbot schockiert US-Verbündete weltweit",
+      "source_url": "https://iapp.org/news/a/the-global-implications-of-the-white-houses-export-controls-on-anthropic",
+      "edition_date": "2026-06-22"
+    },
+    {
+      "title": "DeepMinds Talentabwanderung: Was bleibt nach Shazeer und Jumper?",
+      "source_url": "https://nokiapoweruser.com/google-deepmind-ai-talent-exodus-openai-anthropic/",
+      "edition_date": "2026-06-22"
+    },
     {
       "title": "Rohin Shah: KI-Agenten als neue Risikoklasse",
       "source_url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/"
@@ -296,30 +325,6 @@
     {
       "title": "Hugging Face: Agenten trainieren Modelle selbstständig auf neue Skills",
       "source_url": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/hugging-face-agents-train-models-with-new-skills"
-    },
-    {
-      "title": "Erstmals streben zwei Frontier-KI-Firmen gleichzeitig an die Börse",
-      "source_url": "https://fortune.com/2026/06/09/openai-files-confidential-s-1-sec-ipo/"
-    },
-    {
-      "title": "Glasswing wächst: 200 Organisationen, 23.000 Schwachstellen entdeckt",
-      "source_url": "https://www.anthropic.com/research/glasswing-initial-update"
-    },
-    {
-      "title": "DeepMind: Open Models als Schlüssel zu nationaler KI-Souveränität",
-      "source_url": "https://www.startuphub.ai/ai-news/ai-research/2026/google-deepmind-discusses-open-models-ai-ownership"
-    },
-    {
-      "title": "Johannes Landgraf, CEO Ona",
-      "source_url": "https://openai.com/index/openai-to-acquire-ona/"
-    },
-    {
-      "title": "Claude Fable 5: Mythos-Klasse jetzt für alle verfügbar",
-      "source_url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
-    },
-    {
-      "title": "Demis Hassabis über die Ausläufer der Singularität",
-      "source_url": "https://www.fastcompany.com/91544235/demis-hassabis-google-io-2026"
     }
   ]
 }
