@@ -1,6 +1,46 @@
 {
   "articles": [
     {
+      "title": "OpenAI Daybreak: GPT-5.5-Cyber und globale Patch-Initiative",
+      "source_url": "https://openai.com/index/daybreak-securing-the-world/",
+      "edition_date": "2026-06-24"
+    },
+    {
+      "title": "DeepMind investiert 75 Mio. Dollar in Indie-Studio A24",
+      "source_url": "https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/",
+      "edition_date": "2026-06-24"
+    },
+    {
+      "title": "Fable-5-Krise: Weißes Haus setzt Bedingungen für Rückkehr",
+      "source_url": "https://app.dealroom.co/news/note/white-house-sets-re-release-conditions-for-anthropic-s-fable-5-as-guardrail-dispute-deepens",
+      "edition_date": "2026-06-24"
+    },
+    {
+      "title": "Samsung dreht ChatGPT-Bann um — globaler Codex-Rollout",
+      "source_url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/",
+      "edition_date": "2026-06-24"
+    },
+    {
+      "title": "GPT-5.6 vor dem Start: 1,5 Mio. Token und Alignment-Fix",
+      "source_url": "https://www.techtimes.com/articles/318799/20260621/gpt-56-launch-window-starts-monday-alignment-fix-15m-token-context-inside.htm",
+      "edition_date": "2026-06-24"
+    },
+    {
+      "title": "ScaleSWE: 30B-Open-Modell ebenbürtig zu Frontier-Coding-Agenten",
+      "source_url": "https://www.buildthisnow.com/blog/guide/mechanics/ai-research-june-2026",
+      "edition_date": "2026-06-24"
+    },
+    {
+      "title": "Holo3.1: Computer-Use-Agent läuft jetzt lokal auf dem Desktop",
+      "source_url": "https://huggingface.co/blog/Hcompany/holo31",
+      "edition_date": "2026-06-24"
+    },
+    {
+      "title": "Trump: Anthropic ist kein Sicherheitsrisiko mehr",
+      "source_url": "https://beincrypto.com/trump-speaks-on-anthropic-claude-fable-mythos-controversy/",
+      "edition_date": "2026-06-24"
+    },
+    {
       "title": "DeepMinds Talentabwanderung: Was bleibt nach Shazeer und Jumper?",
       "source_url": "https://nokiapoweruser.com/google-deepmind-ai-talent-exodus-openai-anthropic/"
     },
@@ -75,10 +115,6 @@
     {
       "title": "OpenAI gewinnt KI-Pionier Shazeer und Politikexperten Ball vor IPO",
       "source_url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/"
-    },
-    {
-      "title": "DeepMind und Partner fördern Multi-Agenten-KI-Sicherheit mit $10 Mio.",
-      "source_url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/"
     },
     {
       "title": "OpenAI über seinen SEC-Antrag",
@@ -213,10 +249,6 @@
       "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-adviser-david-sacks-says-anthropic-refused-to-fix-fable-5-jailbreak-before-us-export-controls"
     },
     {
-      "title": "Zitat: Daniela Amodei über den nächsten KI-Wettbewerb",
-      "source_url": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/"
-    },
-    {
       "title": "Anthropic vor IPO: 47 Mrd. Umsatz, fast 1 Billion Bewertung",
       "source_url": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/"
     },
@@ -225,11 +257,7 @@
       "source_url": "https://www.cnbc.com/2026/06/12/anthropic-disables-access-to-fable-5-and-mythos-5-to-comply-with-government-directive.html"
     },
     {
-      "title": "OpenAI stellt GPT-5.2 ein — alle wechseln zu GPT-5.5",
-      "source_url": "https://openai.com/index/introducing-gpt-5-5/"
-    },
-    {
-      "title": "HHS durchleuchtet Medicaid-Audits mit KI — Betrug im dreistelligen Milliardenbereich",
+      "title": "HHS durchleuchtet Medicaid-Audits mit KI",
       "source_url": "https://www.healthcaredive.com/news/hhs-ai-fraud-state-audit-aero/820989/"
     },
     {
@@ -265,36 +293,12 @@
       "source_url": "https://www.helpnetsecurity.com/2026/06/12/google-china-based-cybercrime-network-lawsuit/"
     },
     {
-      "title": "OpenAI pensioniert GPT-5.2 — alle wechseln zu GPT-5.5",
-      "source_url": "https://www.techtimes.com/articles/318345/20260613/openai-retires-gpt-52-moves-everyone-gpt-55-what-changes-chatgpt-users-developers.htm"
-    },
-    {
       "title": "Anthropic Claude Corps: 1.000 KI-Fellows für Nonprofits",
       "source_url": "https://www.washingtonpost.com/business/2026/06/11/anthropic-ai-claude-corps-daniela-amodei/d11fd0a0-6595-11f1-bdd4-805ebb99a693_story.html"
     },
     {
       "title": "Simon Willison: Claude Fable 5 ist unerbittlich proaktiv",
       "source_url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/"
-    },
-    {
-      "title": "Kimi K2.7-Code: Moonshots 1-Billion-Parameter Coding-Agent",
-      "source_url": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/"
-    },
-    {
-      "title": "Claude Fable 5 kostenlos bis 22. Juni — 9 Tage bleiben",
-      "source_url": "https://www.ghacks.net/2026/06/10/anthropic-releases-claude-fable-5-to-pro-max-and-enterprise-users-free-until-june-22/"
-    },
-    {
-      "title": "DeepMind startet $10-Mio.-Programm für Multi-Agenten-Sicherheit",
-      "source_url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/"
-    },
-    {
-      "title": "GPT-4.5 läuft am 27. Juni ab — 14 Tage für die Migration",
-      "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes"
-    },
-    {
-      "title": "Rohin Shah, Google DeepMind",
-      "source_url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/"
     },
     {
       "title": "DiffusionGemma: Google öffnet 4× schnelleres Textdiffusionsmodell",
