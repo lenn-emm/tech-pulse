@@ -1,48 +1,53 @@
 {
+  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
     {
-      "title": "OpenAI Daybreak: GPT-5.5-Cyber und globale Patch-Initiative",
-      "source_url": "https://openai.com/index/daybreak-securing-the-world/",
-      "edition_date": "2026-06-24"
+      "title": "ScaleSWE: 30B-Open-Modell ebenbürtig zu Frontier-Coding-Agenten",
+      "source_url": "https://www.buildthisnow.com/blog/guide/mechanics/ai-research-june-2026"
     },
     {
       "title": "DeepMind investiert 75 Mio. Dollar in Indie-Studio A24",
-      "source_url": "https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/",
-      "edition_date": "2026-06-24"
-    },
-    {
-      "title": "Fable-5-Krise: Weißes Haus setzt Bedingungen für Rückkehr",
-      "source_url": "https://app.dealroom.co/news/note/white-house-sets-re-release-conditions-for-anthropic-s-fable-5-as-guardrail-dispute-deepens",
-      "edition_date": "2026-06-24"
-    },
-    {
-      "title": "Samsung dreht ChatGPT-Bann um — globaler Codex-Rollout",
-      "source_url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/",
-      "edition_date": "2026-06-24"
-    },
-    {
-      "title": "GPT-5.6 vor dem Start: 1,5 Mio. Token und Alignment-Fix",
-      "source_url": "https://www.techtimes.com/articles/318799/20260621/gpt-56-launch-window-starts-monday-alignment-fix-15m-token-context-inside.htm",
-      "edition_date": "2026-06-24"
-    },
-    {
-      "title": "ScaleSWE: 30B-Open-Modell ebenbürtig zu Frontier-Coding-Agenten",
-      "source_url": "https://www.buildthisnow.com/blog/guide/mechanics/ai-research-june-2026",
-      "edition_date": "2026-06-24"
-    },
-    {
-      "title": "Holo3.1: Computer-Use-Agent läuft jetzt lokal auf dem Desktop",
-      "source_url": "https://huggingface.co/blog/Hcompany/holo31",
-      "edition_date": "2026-06-24"
+      "source_url": "https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/"
     },
     {
       "title": "Trump: Anthropic ist kein Sicherheitsrisiko mehr",
-      "source_url": "https://beincrypto.com/trump-speaks-on-anthropic-claude-fable-mythos-controversy/",
-      "edition_date": "2026-06-24"
+      "source_url": "https://beincrypto.com/trump-speaks-on-anthropic-claude-fable-mythos-controversy/"
+    },
+    {
+      "title": "Samsung dreht ChatGPT-Bann um — globaler Codex-Rollout",
+      "source_url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/"
+    },
+    {
+      "title": "Fable-5-Krise: Weißes Haus setzt Bedingungen für Rückkehr",
+      "source_url": "https://app.dealroom.co/news/note/white-house-sets-re-release-conditions-for-anthropic-s-fable-5-as-guardrail-dispute-deepens"
+    },
+    {
+      "title": "OpenAI Daybreak: GPT-5.5-Cyber und globale Patch-Initiative",
+      "source_url": "https://openai.com/index/daybreak-securing-the-world/"
+    },
+    {
+      "title": "Holo3.1: Computer-Use-Agent läuft jetzt lokal auf dem Desktop",
+      "source_url": "https://huggingface.co/blog/Hcompany/holo31"
+    },
+    {
+      "title": "GPT-5.6 vor dem Start: 1,5 Mio. Token und Alignment-Fix",
+      "source_url": "https://www.techtimes.com/articles/318799/20260621/gpt-56-launch-window-starts-monday-alignment-fix-15m-token-context-inside.htm"
+    },
+    {
+      "title": "Nobel-Preisträger Jumper verlässt DeepMind für Anthropic",
+      "source_url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/"
     },
     {
       "title": "DeepMinds Talentabwanderung: Was bleibt nach Shazeer und Jumper?",
       "source_url": "https://nokiapoweruser.com/google-deepmind-ai-talent-exodus-openai-anthropic/"
+    },
+    {
+      "title": "KI-Regulierung im Chaos — Anthropic zahlt den Preis",
+      "source_url": "https://www.cnn.com/2026/06/21/tech/anthropic-ai-regulation"
+    },
+    {
+      "title": "Agentjacking: KI-Coding-Agenten via Sentry-Exploit entführt",
+      "source_url": "https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html"
     },
     {
       "title": "SpaceX kauft Cursor für 60 Mrd. — größte Startup-Übernahme",
@@ -53,20 +58,8 @@
       "source_url": "https://iapp.org/news/a/the-global-implications-of-the-white-houses-export-controls-on-anthropic"
     },
     {
-      "title": "KI-Regulierung im Chaos — Anthropic zahlt den Preis",
-      "source_url": "https://www.cnn.com/2026/06/21/tech/anthropic-ai-regulation"
-    },
-    {
-      "title": "Nobel-Preisträger Jumper verlässt DeepMind für Anthropic",
-      "source_url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/"
-    },
-    {
-      "title": "Agentjacking: KI-Coding-Agenten via Sentry-Exploit entführt",
-      "source_url": "https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html"
-    },
-    {
-      "title": "Amazon streicht Guadagninos Altman-Film nach OpenAI-Deal",
-      "source_url": "https://www.hollywoodreporter.com/movies/movie-news/luca-guadagnino-sam-altman-artificial-dropped-amazon-openai-1236626073/"
+      "title": "Fable 5 bleibt offline – Tag 9 des US-Exportverbots",
+      "source_url": "https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/"
     },
     {
       "title": "Rohin Shah: KI-Agenten als neue Risikoklasse",
@@ -81,24 +74,24 @@
       "source_url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/"
     },
     {
-      "title": "FERC beschleunigt Netzanschlüsse für KI-Rechenzentren",
-      "source_url": "https://gizmodo.com/a-federal-regulator-wants-to-fast-track-ai-data-centers-onto-the-power-grid-2000773803"
-    },
-    {
-      "title": "Fable 5 bleibt offline – Tag 9 des US-Exportverbots",
-      "source_url": "https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/"
+      "title": "Kimi K2.7 Code: 1-Billion-Parameter-Modell Open Source",
+      "source_url": "https://cryptobriefing.com/kimi-k2-7-code-open-source-release/"
     },
     {
       "title": "Gemini 3.5 Pro: Googles Deadline-Countdown läuft",
       "source_url": "https://www.techtimes.com/articles/317919/20260606/google-gemini-35-pro-nears-june-launch-2-million-token-context-deep-think-reasoning.htm"
     },
     {
-      "title": "Kimi K2.7 Code: 1-Billion-Parameter-Modell Open Source",
-      "source_url": "https://cryptobriefing.com/kimi-k2-7-code-open-source-release/"
+      "title": "FERC beschleunigt Netzanschlüsse für KI-Rechenzentren",
+      "source_url": "https://gizmodo.com/a-federal-regulator-wants-to-fast-track-ai-data-centers-onto-the-power-grid-2000773803"
     },
     {
-      "title": "OpenAI reicht vertraulichen IPO-Antrag bei der SEC ein",
-      "source_url": "https://fortune.com/2026/06/09/openai-files-confidential-s-1-sec-ipo/"
+      "title": "Amazon streicht Guadagninos Altman-Film nach OpenAI-Deal",
+      "source_url": "https://www.hollywoodreporter.com/movies/movie-news/luca-guadagnino-sam-altman-artificial-dropped-amazon-openai-1236626073/"
+    },
+    {
+      "title": "KI-Entlassungswelle: 150.000 Tech-Jobs in 2026, Tempo 44% höher",
+      "source_url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/"
     },
     {
       "title": "Pew Research: Nur 16% der Amerikaner glauben an positive KI-Wirkung",
@@ -109,32 +102,40 @@
       "source_url": "https://www.techrepublic.com/article/news-google-spacex-compute-deal/"
     },
     {
+      "title": "OpenAI gewinnt KI-Pionier Shazeer und Politikexperten Ball vor IPO",
+      "source_url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/"
+    },
+    {
       "title": "Anthropic eröffnet Seoul-Büro: NAVER, Samsung und LG als Partner",
       "source_url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem"
     },
     {
-      "title": "OpenAI gewinnt KI-Pionier Shazeer und Politikexperten Ball vor IPO",
-      "source_url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/"
+      "title": "OpenAI reicht vertraulichen IPO-Antrag bei der SEC ein",
+      "source_url": "https://fortune.com/2026/06/09/openai-files-confidential-s-1-sec-ipo/"
+    },
+    {
+      "title": "DeepMind und Partner fördern Multi-Agenten-KI-Sicherheit mit $10 Mio.",
+      "source_url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/"
     },
     {
       "title": "OpenAI über seinen SEC-Antrag",
       "source_url": "https://openai.com/index/openai-submits-confidential-s-1/"
     },
     {
-      "title": "KI-Entlassungswelle: 150.000 Tech-Jobs in 2026, Tempo 44% höher",
-      "source_url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/"
-    },
-    {
       "title": "Colorado kippt KI-Gesetz kurz vor Inkrafttreten",
       "source_url": "https://www.bytebacklaw.com/2026/05/colorado-repeals-replaces-its-ai-act-what-the-new-law-means/"
     },
     {
-      "title": "Anthropic startet Seoul-Büro mit Samsung- und NAVER-Deals",
-      "source_url": "https://anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific"
+      "title": "Colorado schiebt KI-Gesetz auf 2027 und entschärft Pflichten",
+      "source_url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/colorado-ai-act-amended-and-effective-date-delayed"
     },
     {
-      "title": "Anthropic eröffnet Bengaluru-Büro, Indien-Umsatz verdoppelt",
-      "source_url": "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india"
+      "title": "DeepMind schützt sich vor eigenen KI-Agenten",
+      "source_url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/"
+    },
+    {
+      "title": "Anthropic startet Seoul-Büro mit Samsung- und NAVER-Deals",
+      "source_url": "https://anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific"
     },
     {
       "title": "KI-Coding-Markt 2026: Claude Code schlägt Cursor bei Zufriedenheit",
@@ -145,16 +146,12 @@
       "source_url": "https://www.edtechinnovationhub.com/news/hugging-face-releases-ml-intern-the-ai-agent-teaching-itself-to-beat-claude-code-on-scientific-reasoning"
     },
     {
+      "title": "Anthropic eröffnet Bengaluru-Büro, Indien-Umsatz verdoppelt",
+      "source_url": "https://www.anthropic.com/news/bengaluru-office-partnerships-across-india"
+    },
+    {
       "title": "OpenAI Partner-Netzwerk und ChatGPT-Gesundheits-KI live",
       "source_url": "https://openai.com/news/product-releases/"
-    },
-    {
-      "title": "Colorado schiebt KI-Gesetz auf 2027 und entschärft Pflichten",
-      "source_url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/colorado-ai-act-amended-and-effective-date-delayed"
-    },
-    {
-      "title": "DeepMind schützt sich vor eigenen KI-Agenten",
-      "source_url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/"
     },
     {
       "title": "Amodei & Hassabis fordern US-geführte KI-Koalition bei G7",
@@ -249,6 +246,10 @@
       "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/trump-adviser-david-sacks-says-anthropic-refused-to-fix-fable-5-jailbreak-before-us-export-controls"
     },
     {
+      "title": "Zitat: Daniela Amodei über den nächsten KI-Wettbewerb",
+      "source_url": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/"
+    },
+    {
       "title": "Anthropic vor IPO: 47 Mrd. Umsatz, fast 1 Billion Bewertung",
       "source_url": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/"
     },
@@ -257,7 +258,11 @@
       "source_url": "https://www.cnbc.com/2026/06/12/anthropic-disables-access-to-fable-5-and-mythos-5-to-comply-with-government-directive.html"
     },
     {
-      "title": "HHS durchleuchtet Medicaid-Audits mit KI",
+      "title": "OpenAI stellt GPT-5.2 ein — alle wechseln zu GPT-5.5",
+      "source_url": "https://openai.com/index/introducing-gpt-5-5/"
+    },
+    {
+      "title": "HHS durchleuchtet Medicaid-Audits mit KI — Betrug im dreistelligen Milliardenbereich",
       "source_url": "https://www.healthcaredive.com/news/hhs-ai-fraud-state-audit-aero/820989/"
     },
     {
@@ -293,6 +298,10 @@
       "source_url": "https://www.helpnetsecurity.com/2026/06/12/google-china-based-cybercrime-network-lawsuit/"
     },
     {
+      "title": "OpenAI pensioniert GPT-5.2 — alle wechseln zu GPT-5.5",
+      "source_url": "https://www.techtimes.com/articles/318345/20260613/openai-retires-gpt-52-moves-everyone-gpt-55-what-changes-chatgpt-users-developers.htm"
+    },
+    {
       "title": "Anthropic Claude Corps: 1.000 KI-Fellows für Nonprofits",
       "source_url": "https://www.washingtonpost.com/business/2026/06/11/anthropic-ai-claude-corps-daniela-amodei/d11fd0a0-6595-11f1-bdd4-805ebb99a693_story.html"
     },
@@ -301,28 +310,16 @@
       "source_url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/"
     },
     {
-      "title": "DiffusionGemma: Google öffnet 4× schnelleres Textdiffusionsmodell",
-      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/"
+      "title": "Kimi K2.7-Code: Moonshots 1-Billion-Parameter Coding-Agent",
+      "source_url": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/"
     },
     {
-      "title": "Simon Willison: Agentic Engineering Patterns für 2026",
-      "source_url": "https://simonw.substack.com/p/agentic-engineering-patterns"
+      "title": "Claude Fable 5 kostenlos bis 22. Juni — 9 Tage bleiben",
+      "source_url": "https://www.ghacks.net/2026/06/10/anthropic-releases-claude-fable-5-to-pro-max-and-enterprise-users-free-until-june-22/"
     },
     {
-      "title": "OpenAI kauft Cloud-Startup Ona für Codex-Agenten-Infrastruktur",
-      "source_url": "https://www.cnbc.com/2026/06/11/open-ai-ona-acquisition-codex.html"
-    },
-    {
-      "title": "Gemini 3.5 Pro: Googles stärkstes Modell steht kurz vor Launch",
-      "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/"
-    },
-    {
-      "title": "US-Kongress: Entwurf würde staatliche KI-Gesetze drei Jahre stoppen",
-      "source_url": "https://rollcall.com/2026/06/04/bipartisan-ai-draft-proposes-three-year-preemption-of-state-laws/"
-    },
-    {
-      "title": "Hugging Face: Agenten trainieren Modelle selbstständig auf neue Skills",
-      "source_url": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/hugging-face-agents-train-models-with-new-skills"
+      "title": "DeepMind startet $10-Mio.-Programm für Multi-Agenten-Sicherheit",
+      "source_url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/"
     }
   ]
 }
