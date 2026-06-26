@@ -1,6 +1,45 @@
 {
-  "_comment": "Auto-generiert von edition-publish.yml nach jedem Supabase-Write. Wird von der Claude-Cloud-Routine für Dedup gelesen. Nicht manuell editieren.",
   "articles": [
+    {
+      "title": "Alibaba bestahl Claude: 25.000 Fake-Accounts, 28,8 Mio. Anfragen",
+      "source_url": "https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html",
+      "edition_date": "2026-06-26"
+    },
+    {
+      "title": "Jalapeño: OpenAIs erster KI-Inferenz-Chip — in nur neun Monaten",
+      "source_url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+      "edition_date": "2026-06-26"
+    },
+    {
+      "title": "Claude Tag: Anthropics KI-Kollege lebt jetzt dauerhaft im Slack-Channel",
+      "source_url": "https://www.anthropic.com/news/introducing-claude-tag",
+      "edition_date": "2026-06-26"
+    },
+    {
+      "title": "Vier DeepMind-Forscher in sechs Tagen: Adler und Pritzel zu Anthropic",
+      "source_url": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/",
+      "edition_date": "2026-06-26"
+    },
+    {
+      "title": "Kann DeepMind an der Spitze bleiben? Erstmals zweifeln Analysten",
+      "source_url": "https://fortune.com/2026/06/23/google-deepmind-ai-researcher-departures-raise-doubts-about-ability-to-win-the-ai-race-shazeer-jumper-eye-on-ai/",
+      "edition_date": "2026-06-26"
+    },
+    {
+      "title": "Fable 5: Tag 13 — Anthropic bestätigt weiterhin null Traffic",
+      "source_url": "https://explainx.ai/blog/is-fable-5-back-2026",
+      "edition_date": "2026-06-26"
+    },
+    {
+      "title": "GPT-4.5 stirbt morgen: Ende der GPT-4-Ära in ChatGPT",
+      "source_url": "https://www.techradar.com/ai-platforms-assistants/chatgpt/openai-just-quietly-retired-the-last-of-the-gpt-4-models-and-it-feels-like-the-end-of-an-ai-era",
+      "edition_date": "2026-06-26"
+    },
+    {
+      "title": "Anthropic-Technikleiter: Claude Code macht Entwicklerarbeit einsamer",
+      "source_url": "https://fortune.com/2026/06/23/anthropic-engineering-head-claude-code-lonely-experience-big-tech-morale/",
+      "edition_date": "2026-06-26"
+    },
     {
       "title": "ScaleSWE: 30B-Open-Modell ebenbürtig zu Frontier-Coding-Agenten",
       "source_url": "https://www.buildthisnow.com/blog/guide/mechanics/ai-research-june-2026"
@@ -288,38 +327,6 @@
     {
       "title": "Hugging Face: Chinesische Modelle dominieren Open-Weight-Charts",
       "source_url": "https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026"
-    },
-    {
-      "title": "LiteLLM-Lücke aktiv ausgenutzt — CISA setzt Frist 22. Juni",
-      "source_url": "https://www.helpnetsecurity.com/2026/06/09/litellm-vulnerability-under-active-attack-cisa-warns-cve-2026-42271/"
-    },
-    {
-      "title": "Google verklagt Cybercrime-Netz für Gemini-Missbrauch",
-      "source_url": "https://www.helpnetsecurity.com/2026/06/12/google-china-based-cybercrime-network-lawsuit/"
-    },
-    {
-      "title": "OpenAI pensioniert GPT-5.2 — alle wechseln zu GPT-5.5",
-      "source_url": "https://www.techtimes.com/articles/318345/20260613/openai-retires-gpt-52-moves-everyone-gpt-55-what-changes-chatgpt-users-developers.htm"
-    },
-    {
-      "title": "Anthropic Claude Corps: 1.000 KI-Fellows für Nonprofits",
-      "source_url": "https://www.washingtonpost.com/business/2026/06/11/anthropic-ai-claude-corps-daniela-amodei/d11fd0a0-6595-11f1-bdd4-805ebb99a693_story.html"
-    },
-    {
-      "title": "Simon Willison: Claude Fable 5 ist unerbittlich proaktiv",
-      "source_url": "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/"
-    },
-    {
-      "title": "Kimi K2.7-Code: Moonshots 1-Billion-Parameter Coding-Agent",
-      "source_url": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/"
-    },
-    {
-      "title": "Claude Fable 5 kostenlos bis 22. Juni — 9 Tage bleiben",
-      "source_url": "https://www.ghacks.net/2026/06/10/anthropic-releases-claude-fable-5-to-pro-max-and-enterprise-users-free-until-june-22/"
-    },
-    {
-      "title": "DeepMind startet $10-Mio.-Programm für Multi-Agenten-Sicherheit",
-      "source_url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/"
     }
   ]
 }
